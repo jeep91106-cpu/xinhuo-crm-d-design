@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+*.env
+*.env.*
+*.sql.gz
+*.dump
+*.bak
+.obsidian/workspace*.json
+.obsidian/cache
+__pycache__/
+.venv/
+.tmp/
+.cache/
+.logs/
+*.tmp
+node_modules/

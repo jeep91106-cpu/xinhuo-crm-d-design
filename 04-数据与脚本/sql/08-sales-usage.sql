@@ -1,0 +1,8 @@
+﻿SELECT '## 仅商务岗位单角色用户：人数/登录/操作' AS _;
+SELECT COUNT(*) users, SUM(l.logins>0) users_logged_in, COALESCE(SUM(l.logins),0) total_logins, COALESCE(SUM(o.ops),0) total_ops FROM (SELECT ur.user_id FROM sys_user_role ur GROUP BY ur.user_id HAVING COUNT(*)=1 AND MAX(ur.role_id)=153) s JOIN sys_user u ON u.user_id=s.user_id LEFT JOIN (SELECT user_name, COUNT(*) logins FROM sys_logininfor WHERE status='0' GROUP BY user_name) l ON l.user_name=u.user_name LEFT JOIN (SELECT oper_name, COUNT(*) ops FROM sys_oper_log GROUP BY oper_name) o ON o.oper_name=u.user_name;
+SELECT '## 仅商务单角色用户 各自登录次数分布（匿名）' AS _;
+SELECT COALESCE(l.logins,0) logins, COUNT(*) users FROM (SELECT ur.user_id FROM sys_user_role ur GROUP BY ur.user_id HAVING COUNT(*)=1 AND MAX(ur.role_id)=153) s JOIN sys_user u ON u.user_id=s.user_id LEFT JOIN (SELECT user_name, COUNT(*) logins FROM sys_logininfor WHERE status='0' GROUP BY user_name) l ON l.user_name=u.user_name GROUP BY logins ORDER BY logins;
+SELECT '## 开户申请申请人：单角色商务 vs 多角色' AS _;
+SELECT CASE WHEN m.cnt=1 THEN '单角色' ELSE '多角色' END kind, r.role_name, COUNT(*) n FROM dig_accountopen_apply a JOIN (SELECT user_id, COUNT(*) cnt FROM sys_user_role GROUP BY user_id) m ON m.user_id=a.create_by JOIN sys_user_role ur ON ur.user_id=a.create_by JOIN sys_role r ON r.role_id=ur.role_id WHERE r.role_id=153 GROUP BY kind, r.role_name;
+SELECT '## 抖音(1) vs 外转(10) 客户：账户数、消耗、充值 汇总' AS _;
+SELECT c.types, COUNT(DISTINCT c.id) customers, COUNT(DISTINCT a.id) accounts, COUNT(DISTINCT a.supplier_id) suppliers FROM dig_customer c LEFT JOIN dig_advertising_account a ON a.customer_id=c.id AND a.del_flag='0' WHERE c.del_flag='0' GROUP BY c.types;

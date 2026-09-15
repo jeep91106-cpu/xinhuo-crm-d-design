@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>薪火 CRM · 可编辑原型</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="nav">
+      <div class="brand">
+        <div class="mark"></div>
+        <div>
+          <h1>薪火 CRM</h1>
+          <p>设计原型 · 可编辑</p>
+        </div>
+      </div>
+      <div class="sec">工作台</div>
+      <button data-page="biz" class="active">商务工作台</button>
+      <button data-page="open">开户媒介</button>
+      <button data-page="recharge">充值媒介</button>
+      <button data-page="finance">财务工作台</button>
+      <button data-page="boss">老板看板</button>
+      <div class="sec">单据</div>
+      <button data-page="apply">开户申请</button>
+      <button data-page="handle">处理开户</button>
+      <button data-page="customer">客户四层</button>
+      <div class="sec">配置</div>
+      <button data-page="tpl">字段模板</button>
+      <button data-page="wf">工作流</button>
+    </aside>
+    <main class="main">
+      <div class="top">
+        <div>
+          <h2 id="title">商务工作台</h2>
+          <p class="desc" id="desc">只处理我发起的单、被驳回的单，以及媒介改过来客/资质后的确认。</p>
+        </div>
+        <div class="role-switch" id="roles"></div>
+      </div>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

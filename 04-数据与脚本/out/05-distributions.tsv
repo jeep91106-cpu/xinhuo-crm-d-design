@@ -1,0 +1,734 @@
+﻿_
+## adv: type x customer_type x data_type x del_flag
+type	customer_type	data_type	del_flag	n	running	first_created	last_created
+1001	10	10	0	6935	6935	2026-07-11 11:51:09	2026-09-14 15:24:56
+102	1	10	0	3641	3641	2026-07-08 17:31:01	2026-09-13 18:00:02
+1004	10	10	0	1622	1622	2026-07-16 17:03:29	2026-09-07 15:07:36
+1002	10	10	0	390	390	2026-07-16 17:20:50	2026-09-08 16:32:05
+102	1	10	1	89	89	2026-07-08 18:00:01	2026-08-31 14:48:25
+1001	10	10	1	85	85	2026-07-17 10:28:38	2026-09-14 14:32:30
+1003	10	10	0	10	10	2026-07-31 10:54:49	2026-08-04 16:04:11
+100	1	10	0	8	8	2026-07-24 11:14:58	2026-09-04 18:00:03
+100	10	10	0	5	5	2026-08-01 10:26:32	2026-08-01 10:26:32
+102	1	95	0	2	2	2026-07-30 14:15:39	2026-07-30 16:34:28
+1002	10	95	0	1	1	2026-08-01 11:24:31	2026-08-01 11:24:31
+_
+## adv: type x supplier x dy_agentId (alive)
+type	supplier_id	supplier_name	suppliertype	pay_type	dy_agentId	n
+1001	286	本地推-迪雾	NOAGENT	2	1	4970
+102	285	本地推供应商	AGENT	2	1	3642
+1001	293	本地推-央广	NOAGENT	2	1	1578
+1004	294	巨量AD-央广	NOAGENT	2	1	901
+1002	288	腾讯K4-山东易搜	NOAGENT	2	1	384
+1004	291	巨量AD-珠海今日	NOAGENT	2	1	361
+1004	295	巨量AD-亿点	NOAGENT	2	1	360
+1001	302	本地推-意克	NOAGENT	2	1	186
+1001	292	本地推-国鑫/众盟	NOAGENT	2	1	169
+1001	297	本地推-杭州博晟	NOAGENT	2	1	27
+1003	299	快手-铁磁	NOAGENT	2	1	9
+100	298	薪火相承- 综合	AGENT	2	1	8
+100	291	巨量AD-珠海今日	NOAGENT	2	1	5
+1002	289	腾讯K4-微盟	NOAGENT	2	1	4
+1001	305	本地推-奥帕特	NOAGENT	2	1	3
+1002	304	腾讯-上海亦芯	NOAGENT	2	1	3
+1001	300	本地推-云联抖动	NOAGENT	2	1	2
+1003	290	快手-福建烈焰	NOAGENT	2	1	1
+102	298	薪火相承- 综合	AGENT	2	1	1
+_
+## adv created per month x type (18m)
+ym	type	n
+2026-07	100	4
+2026-07	102	2451
+2026-07	1001	5882
+2026-07	1002	153
+2026-07	1003	1
+2026-07	1004	1225
+2026-08	100	7
+2026-08	102	850
+2026-08	1001	1111
+2026-08	1002	91
+2026-08	1003	9
+2026-08	1004	347
+2026-09	100	2
+2026-09	102	431
+2026-09	1001	27
+2026-09	1002	147
+2026-09	1004	50
+_
+## customer: types x customer_status x status x wallet x credit
+types	customer_status	status	del_flag	wallet_status	credit_datatype	credit_limit_type	n
+1	0	1	0	1	1	10	64
+10	0	0	0	0	1	0	56
+10	0	0	0	1	1	10	46
+1	0	0	0	1	1	10	39
+1	0	0	1	0	1	0	34
+1	0	0	0	0	1	0	30
+10	0	0	1	0	1	0	29
+10	0	1	0	1	1	10	24
+10	0	0	0	1	1	0	15
+10	0	0	0	1	1	30	12
+1	0	0	1	1	1	0	10
+10	0	1	0	1	1	30	7
+1	0	0	0	1	1	30	6
+1	0	0	0	1	1	0	6
+1	0	1	0	1	1	30	4
+10	0	0	0	0	1	10	3
+10	0	0	1	1	1	0	2
+3	0	0	0	0	1	0	1
+1	0	0	0	0	1	30	1
+10	0	1	0	0	1	0	1
+1	0	0	1	1	1	10	1
+4	0	0	0	0	1	0	1
+1	0	0	0	0	1	10	1
+2	0	0	0	0	1	0	1
+10	0	0	1	1	1	10	1
+1	0	1	0	0	1	0	1
+_
+## customer created per month x types
+ym	types	n
+NULL	1	1
+NULL	10	1
+NULL	2	1
+NULL	3	1
+NULL	4	1
+2026-07	1	145
+2026-07	10	146
+2026-08	1	40
+2026-08	10	43
+2026-09	1	11
+2026-09	10	6
+_
+## subject: isapi x supplier x del_flag
+isapi	supplier_id	supplier_name	del_flag	n
+1	285	本地推供应商	0	931
+0	286	本地推-迪雾	0	496
+0	285	本地推供应商	0	152
+0	293	本地推-央广	0	111
+0	292	本地推-国鑫/众盟	0	25
+0	291	巨量AD-珠海今日	0	19
+0	285	本地推供应商	1	16
+0	286	本地推-迪雾	1	13
+1	285	本地推供应商	1	12
+0	288	腾讯K4-山东易搜	0	10
+0	0	NULL	1	10
+0	295	巨量AD-亿点	0	10
+1	286	本地推-迪雾	0	9
+0	298	薪火相承- 综合	0	7
+1	291	巨量AD-珠海今日	0	7
+1	302	本地推-意克	0	7
+1	298	薪火相承- 综合	0	7
+0	298	薪火相承- 综合	1	5
+0	294	巨量AD-央广	0	5
+0	289	腾讯K4-微盟	0	4
+0	292	本地推-国鑫/众盟	1	3
+0	288	腾讯K4-山东易搜	1	3
+1	288	腾讯K4-山东易搜	0	3
+0	300	本地推-云联抖动	0	2
+0	293	本地推-央广	1	2
+0	302	本地推-意克	0	2
+0	302	本地推-意克	1	1
+0	291	巨量AD-珠海今日	1	1
+0	294	巨量AD-央广	1	1
+0	297	本地推-杭州博晟	0	1
+0	299	快手-铁磁	0	1
+0	304	腾讯-上海亦芯	0	1
+0	290	快手-福建烈焰	0	1
+1	297	本地推-杭州博晟	0	1
+1	286	本地推-迪雾	1	1
+_
+## subject.account_infojson keys
+ks	n
+NULL	1880
+_
+## subject.account_infojson empty/invalid
+empty_n	invalid_n	total
+0	0	1880
+_
+## customer.account_infojson keys
+ks	n
+NULL	396
+_
+## shop.account_infojson keys
+ks	n
+NULL	8490
+_
+## shop: supplier x del_flag
+supplier_id	del_flag	n	with_subject
+286	0	3883	3883
+293	0	1513	1513
+285	0	1298	1298
+294	0	900	900
+295	0	359	359
+288	0	130	130
+286	1	129	129
+292	0	71	71
+285	1	56	56
+292	1	35	35
+291	0	27	27
+297	0	21	21
+0	1	11	11
+298	0	11	11
+288	1	10	10
+299	0	9	9
+302	0	9	9
+289	0	4	4
+0	0	4	4
+298	1	3	3
+300	0	2	2
+291	1	2	2
+290	0	1	1
+304	0	1	1
+305	0	1	1
+_
+## openapply: state x data_type x account_type x customer_type
+state	data_type	account_type	customer_type	n	avg_reply_h	first_t	last_t	avg_addnum	has_supplier	has_accounts
+1	1	102		92	2.5	2026-08-04 09:56:00	2026-09-13 17:31:00	11.3	0	92
+1	10	1001		25	12.9	2026-08-03 16:09:00	2026-09-07 09:20:00	12.2	25	25
+1	1	巨量本地		14	4.4	2026-07-28 14:48:00	2026-08-01 09:59:00	10.4	0	14
+1	10	1004		12	2.3	2026-08-03 11:08:00	2026-09-07 15:06:00	27.5	12	12
+1	10	巨量AD		7	9.9	2026-07-30 17:42:00	2026-07-31 18:10:00	5.0	7	6
+1	10	1002		4	13.3	2026-08-14 17:25:00	2026-09-07 11:19:00	35.3	4	4
+2	10	本地推		4	52.5	2026-07-20 15:16:00	2026-08-04 12:00:00	8.3	4	0
+1	10	本地推	101,直客	4	32.3	2026-07-25 14:30:00	2026-07-27 14:21:00	20.0	4	4
+2	10	巨量AD		3	0.7	2026-07-27 14:06:00	2026-07-31 15:45:00	10.0	3	0
+1	10	本地推		3	3.0	2026-07-29 10:12:00	2026-08-03 09:30:00	17.3	3	3
+1	1	100		3	7.0	2026-08-14 20:33:00	2026-09-03 11:02:00	1.0	0	3
+1	1	巨量AD		3	0.0	2026-07-28 11:00:00	2026-08-03 09:04:00	7.3	0	3
+2	1	102		3	22.7	2026-08-22 18:22:00	2026-09-07 16:28:00	1.7	0	0
+2	10	1001		2	26.0	2026-08-20 16:23:00	2026-08-26 11:05:00	12.0	2	0
+1	10		101,直客	2	0.0	2026-07-16 14:58:00	2026-07-16 14:59:00	5.0	2	1
+2	1	巨量本地		2	0.0	2026-07-28 14:36:00	2026-07-28 14:39:00	50.0	0	0
+1	1	巨量本地	101,直客	1	12.0	2026-07-27 21:17:00	2026-07-27 21:17:00	3.0	0	1
+1	10	123123	101,渠道	1	0.0	2026-07-15 16:52:00	2026-07-15 16:52:00	10.0	1	0
+2	1	巨量AD		1	0.0	2026-07-28 09:55:00	2026-07-28 09:55:00	1.0	0	0
+1	1	本地推		1	0.0	2026-07-31 10:29:00	2026-07-31 10:29:00	1.0	0	1
+1	1	巨量本地	101,渠道	1	0.0	2026-07-28 11:03:00	2026-07-28 11:03:00	3.0	0	1
+2	10	本地推	101,直客	1	0.0	2026-07-25 12:06:00	2026-07-25 12:06:00	20.0	1	0
+_
+## openapply per month
+ym	n	done
+2026-07	44	34
+2026-08	112	108
+2026-09	33	31
+_
+## recharge: datatypes x approval_state x opentypes x sync x del x supplement
+datatypes	approval_state	opentypes	sync_state	del_flag	supplement_state	n	cash_sum	currency_sum	avg_h
+0	2	1	30	0	0	1084	12575594	14158364	0.0
+0	2	1	0	0	0	171	2636019	2887647	2.7
+0	2	1	0	0	1	25	562816	635590	7.7
+0	0	1	0	1	0	7	136500	149580	NULL
+0	5	1	0	0	0	3	19643	21209	0.0
+0	0	1	0	1	1	1	110000	124300	NULL
+_
+## recharge per month x adv.type (real recharges)
+ym	type	n	cash_sum
+2026-07	100	1	185185
+2026-07	102	150	1156846
+2026-07	1001	7	172132
+2026-07	1002	4	115943
+2026-07	1003	1	1000
+2026-08	102	628	6786439
+2026-08	1001	59	1485084
+2026-08	1002	20	478955
+2026-08	1003	5	20182
+2026-08	1004	17	475180
+2026-09	102	399	5163626
+_
+## recharge: source x tags x capital_type x credit_datatype
+source	tags	capital_type	credit_datatype	n
+机器人	续费	auto	1	1020
+PC申请		auto	1	182
+PC申请	续费	auto	1	73
+NULL	续费	auto	1	12
+NULL		auto	1	3
+PC申请	新开	auto	1	1
+_
+## cashrecharge: retype x approval_state x tag x del x invoice x recharge_flag
+retype	approval_state	tag	del_flag	invoice_flag	recharge_flag	n	money_sum	avg_h
+0	0	N续	0	0	0	142	3805376	NULL
+0	1	N续	0	0	0	2	8000	48.5
+0	0	N续	1	0	0	1	1	NULL
+_
+## cashrecharge per month
+ym	n	money_sum
+2026-07	64	1490020
+2026-08	81	2323358
+_
+## transfer: approval x status x sync x conversion x source
+approval_state	status	sync_state	sync_state_in	transfer_conversion	source	del_flag	n	avg_h
+1	1	30	30	equipoise	机器人	0	86	0.0
+0	0	0	0	equipoise	PC申请	2	1	NULL
+_
+## transfer cross-customer
+same_cus	cross_cus	null_cus
+87	0	0
+_
+## return_coin: approval x status x refund_type x sync
+approval_state	status	refund_type	sync_state	del_flag	n	avg_h
+1	2	0	30	0	80	0.0
+1	2	0	0	0	10	0.2
+1	2	0	0	2	2	0.0
+0	0	0	0	2	2	NULL
+_
+## limit_apply: approval x datatype x credit_datatype x usable x state x timely
+approval_state	datatype	credit_datatype	usable	state	timely_pay	n	avg_h
+3	1	1	1	1	0	178	0.0
+3	1	1	0	1	0	36	0.0
+3	1	1	1	1	1	30	0.0
+3	1	1	0	1	1	8	0.0
+1	1	1	0	1	0	1	0.0
+1	1	1	1	1	0	1	14.0
+_
+## operratio approval_state x usable
+approval_state	usable	n
+1	0	72
+1	1	177
+2	0	1
+3	0	7
+3	1	8
+_
+## statelog business_type x status
+business_type	status	n	first_t	last_t
+1	1	2	2026-08-04 15:42:50	2026-08-04 15:42:50
+2	2	1280	2026-07-10 18:04:45	2026-09-14 15:07:18
+3	1	92	2026-07-11 12:00:13	2026-09-14 14:45:45
+4	1	86	2026-07-28 09:07:23	2026-09-14 15:21:47
+_
+## statelog remarks top 30
+business_type	status	rem	n
+2	2	广告账户充值记录-抖音媒介确认	1090
+2	2	广告账户充值记录-CRM媒介确认	190
+4	1	转户记录-抖音媒介确认	86
+3	1	退币记录-抖音媒介确认	83
+3	1	退币记录-CRM媒介确认	9
+1	1	现金充值记录-财务确认	2
+_
+## approval process config
+id	no	type	role_id	role_name	dept_name	sort	limit_start	limit_end	del_flag
+11	12	NULL	NULL	NULL	NULL	0	0.00	0.00	0
+7	12	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+10	13	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+4	16	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+5	18	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+8	22	NULL	NULL	NULL	NULL	0	0.00	0.00	0
+6	22	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+3	3	NULL	NULL	NULL	NULL	0	0.00	0.00	2
+9	3	NULL	NULL	NULL	NULL	0	0.00	0.00	0
+2	3	NULL	NULL	NULL	NULL	10	0.00	0.00	0
+_
+## approval process detail
+id	approval_id	type	role_id	role_name	dept_name	limit_start	limit_end	account_type	has_user
+1	1	0	NULL	NULL	薪火相承	NULL	NULL	ALL	1
+14	2	0	121	财务	厦门抖音事业部	0.00	99999999.00	ALL	1
+3	3	1	107	抖音商务	NULL	NULL	NULL	ALL	0
+4	4	0	NULL	NULL	财务部	NULL	NULL	ALL	1
+24	5	0	NULL	NULL	厦门财务部	1.00	100000.00	ALL	1
+25	6	2	NULL	NULL	薪火相承	0.00	100000.00	ALL	1
+16	7	2	NULL	NULL	薪火相承	0.00	200000.00	ALL	1
+20	8	1	125	董事长（总审批权限）	薪火相承	200001.00	99999999.00	ALL	1
+15	9	0	NULL	NULL	财务部	0.00	999999.00	ALL	1
+18	10	0	NULL	NULL	厦门财务部	0.00	99999999.00	ALL	1
+21	11	1	125	董事长（总审批权限）	NULL	200001.00	99999999.00	ALL	0
+_
+## sys_approval: type x state x role
+type	approval_state	role_name	n
+NULL	1	NULL	28
+0	1	NULL	5
+0	2	NULL	1
+1	1	董事长（总审批权限）	2
+_
+## consume per month: douyin vs other
+ym	dy_rows	other_rows	dy_spend	other_spend
+2026-05	0	4276	NULL	7328565
+2026-06	0	18145	NULL	29852354
+2026-07	8463	14848	4027262	22801487
+2026-08	8115	6734	7562846	11027331
+2026-09	4174	957	4903005	1168174
+_
+## other_consume: business_type x supplier x agent
+business_type	business_type_name	supplier_id	agent_name	n	cost_sum	first_d	last_d
+NULL	NULL	286	本地推-迪雾	37069	59415628	2026-05-11 00:00:00	2026-09-13 00:00:00
+NULL	NULL	288	腾讯K4-山东易搜	6106	7046201	2026-05-12 00:00:00	2026-09-06 00:00:00
+NULL	NULL	292	本地推-国鑫/众盟	1785	5716082	2026-07-15 00:00:00	2026-09-13 00:00:00
+_
+## douyin_consume: business_type x dy_agentId x agent x reporting_tag
+business_type	business_type_name	dy_agentId	agent_name	account_reporting_tag	n	spend_sum	first_d	last_d
+127	巨量本地推	3	薪火相承（厦门）网络科技有限公司	自运营	8867	6380214	2026-07-07 00:00:00	2026-09-12 00:00:00
+1204	本地推-交易-搜索快投	3	薪火相承（厦门）网络科技有限公司	自运营	4549	1148456	2026-07-07 00:00:00	2026-09-12 00:00:00
+127	巨量本地推	3	薪火相承（厦门）网络科技有限公司	走量	3723	7120503	2026-07-07 00:00:00	2026-09-12 00:00:00
+186	本地推-品牌竞价	3	薪火相承（厦门）网络科技有限公司	自运营	1033	220396	2026-07-07 00:00:00	2026-09-12 00:00:00
+127	巨量本地推	3	薪火相承（厦门）网络科技有限公司	NULL	967	822458	2026-07-07 00:00:00	2026-09-13 00:00:00
+1203	本地推-线索-搜索直投-极速版	3	薪火相承（厦门）网络科技有限公司	自运营	544	131852	2026-07-07 00:00:00	2026-09-12 00:00:00
+1204	本地推-交易-搜索快投	3	薪火相承（厦门）网络科技有限公司	NULL	333	78945	2026-07-07 00:00:00	2026-09-13 00:00:00
+1200	本地推-交易-搜索直投	3	薪火相承（厦门）网络科技有限公司	自运营	267	119408	2026-07-07 00:00:00	2026-09-12 00:00:00
+1203	本地推-线索-搜索直投-极速版	3	薪火相承（厦门）网络科技有限公司	走量	89	12325	2026-08-21 00:00:00	2026-09-12 00:00:00
+186	本地推-品牌竞价	3	薪火相承（厦门）网络科技有限公司	NULL	66	14176	2026-07-07 00:00:00	2026-09-13 00:00:00
+23	搜索	4	薪火相承- 综合	无标签	62	30944	2026-08-11 00:00:00	2026-09-12 00:00:00
+1203	本地推-线索-搜索直投-极速版	3	薪火相承（厦门）网络科技有限公司	NULL	54	11850	2026-07-07 00:00:00	2026-09-13 00:00:00
+1204	本地推-交易-搜索快投	3	薪火相承（厦门）网络科技有限公司	走量	53	17872	2026-07-07 00:00:00	2026-09-12 00:00:00
+127	巨量本地推	3	薪火相承（厦门）网络科技有限公司	无标签	37	88741	2026-07-27 00:00:00	2026-09-08 00:00:00
+1	巨量营销	4	薪火相承- 综合	无标签	30	131933	2026-08-11 00:00:00	2026-08-31 00:00:00
+1200	本地推-交易-搜索直投	3	薪火相承（厦门）网络科技有限公司	NULL	29	5555	2026-07-08 00:00:00	2026-09-13 00:00:00
+186	本地推-品牌竞价	3	薪火相承（厦门）网络科技有限公司	走量	18	571	2026-07-08 00:00:00	2026-09-12 00:00:00
+1	本地广告	4	薪火相承- 综合	无标签	8	48260	2026-08-07 00:00:00	2026-08-10 00:00:00
+23	搜索广告	4	薪火相承- 综合	无标签	7	2633	2026-08-03 00:00:00	2026-08-10 00:00:00
+1200	本地推-交易-搜索直投	3	薪火相承（厦门）网络科技有限公司	走量	6	3402	2026-07-07 00:00:00	2026-07-16 00:00:00
+23	搜索	4	薪火相承- 综合	NULL	3	1465	2026-09-13 00:00:00	2026-09-13 00:00:00
+16	非标	4	薪火相承- 综合	无标签	3	100000	2026-08-05 00:00:00	2026-08-21 00:00:00
+23	搜索广告	4	薪火相承- 综合	NULL	3	1128	2026-08-01 00:00:00	2026-08-04 00:00:00
+1203	本地推-线索-搜索直投-极速版	3	薪火相承（厦门）网络科技有限公司	无标签	1	26	2026-08-19 00:00:00	2026-08-19 00:00:00
+_
+## which adv.type feeds which consume table
+src	type	accounts	rows_n
+dy	100	3	116
+dy	102	795	20593
+dy	1001	3	43
+other	102	119	3825
+other	1001	1828	35029
+other	1002	189	6106
+_
+## dy_developinfo (no secrets)
+id	agent_id	account_type	types	platformtype	has_token	update_time
+3	1859790744743936	102	1	LOCAL	1	2026-09-14 12:00:00
+4	1871415418016772	100	3	AD	1	2026-09-14 12:00:00
+5	NULL	2	3	NULL	0	NULL
+6	NULL	2	1	NULL	1	2026-09-14 12:00:00
+_
+## supplier list
+id	supplier_name	types	pay_type	account_type	suppliertype	dy_agentId	ks_agentId	del_flag	has_main_wallet	last_consume_date	has_api	returnratio
+284	快手供应商	2	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+285	本地推供应商	1	2	102	AGENT	3	0	0	1	2026-09-13 00:00:00	0	0.00
+286	本地推-迪雾	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+287	腾讯K4-福建腾飞	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+288	腾讯K4-山东易搜	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+289	腾讯K4-微盟	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+290	快手-福建烈焰	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+291	巨量AD-珠海今日	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+292	本地推-国鑫/众盟	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+293	本地推-央广	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+294	巨量AD-央广	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+295	巨量AD-亿点	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+296	本地推-杭州博晟	1	2	0	NOAGENT	0	0	1	0	NULL	0	0.00
+297	本地推-杭州博晟	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+298	薪火相承- 综合	1	2	100	AGENT	4	0	0	0	2026-09-13 00:00:00	0	0.00
+299	快手-铁磁	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+300	本地推-云联抖动	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+301	本地推-杭州博晟	10	2	0	NOAGENT	0	0	1	0	NULL	0	0.00
+302	本地推-意克	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+303	快手-亦心	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+304	腾讯-上海亦芯	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+305	本地推-奥帕特	10	2	0	NOAGENT	0	0	0	0	NULL	0	0.00
+_
+## customer x dept relation
+dept_name	n
+厦门商务部	39
+沈阳运营一部	29
+沈阳商务一部	28
+沈阳总经办一部	28
+沈阳媒介一部	28
+沈阳商务二部	24
+沈阳运营二部	21
+沈阳总经办二部	20
+沈阳媒介二部	20
+厦门总经办	8
+厦门人资部	4
+天津人资部	4
+厦门财务部	4
+厦门媒介部	4
+天津媒介部	4
+天津商务部	3
+厦门抖音事业部	2
+天津财务部	2
+天津总经办	2
+沈阳财务部	1
+沈阳人资部	1
+人资部	1
+千川=剪辑	1
+厦门抖音运营部_del	1
+财务部	1
+_
+## cols: customer_tag / advertising_tag / external_orderno / customer_statement / customer_bill / wallet_bill / supplier_bill / edit_accountrecharge
+table_name	cols
+dig_advertising_tag	id | account_id(客户ID) | tag_name(标签)
+dig_customer_bill	id | customer_id(客户ID) | account_id(广告账户ID) | cash_pay(客户现金备款变更金额) | credit_pay(客户授信使用金额变更) | monetary_credit_pay(货币授信支付) | currency(账户货币金额变更) | cash_balance(操作后客户现金备款余额) | credit_usemoney(操作后客户授信使用金额) | monetary_credituse(货币授信已用) | currency_balance(操作后账户货币余额) | remarks | business_type(业务类型) | business_dataid(业务数据ID) | create_by | create_time(创建时间) | before_ratio(客户返点) | serialnum(区分1-首单 2-首续 3-续费 ；这个主要用于抖音的服务费计算提成) | unconsumed_currency | business_ratio | applicant_userid(申请人) | applicant_time(申请时间) | supplier_id(供应商ID) | display_statement(是否显示对账单 0-否 1-是) | wallet_info(钱包json) | service_id(运营ID) | service_name(运营名称) | sale_id(销售ID) | sale_name(销售名称) | ks_agentId(快手端口ID) | zero_amount(抹零金额) | dat
+dig_customer_bill_split	id | statement_id(现金流水对账单ID) | bill_id(现金流水记录ID) | out_bill_id(这个id主要是对于bill_type为3的数据) | bill_type(现金流水类型 1-欠款 2-回款  3- 流水明细对应) | bill_total_amount(现金流水 (欠款/回款)总金额) | bill_used_amount(现金流水 已对账关联金额)
+dig_customer_statement	id(主键ID) | customer_id(客户ID) | customer_name(客户名称) | current_return_date(本期回款日期) | previous_return_date(上期回款日期) | generate_date(本期对账单生成日期) | arrears_amount(欠款金额) | return_amount(回款金额) | detail_json(各业务流水汇总Json) | is_completed(是否已对账 1-已对账 0-未对账(默认值)) | last_return_date(最后回款日期) | overdue_amount(逾期回款金额) | overdue_days(回款逾期天数) | update_date(对账单修改日期) | remark(备注说明) | credit_datatype(账单类型 1-现金账单 2-消耗账单) | consume(消耗数量) | consume_before_ratio(折算返点)
+dig_customer_tag	id | customer_id(客户ID) | tag_name(标签)
+dig_customer_wallet_bill	id | customer_id(客户ID) | wallet_id(钱包ID) | wallet_name(钱包名字) | money(操作金额) | balance(操作后余额) | business_type(业务类型) | business_dataid(关联业务ID) | remark(备注) | create_by(创建人) | create_time(创建时间) | before_ratio(返点) | applicant_userid(申请人) | applicant_time(申请时间) | supplier_id(供应商ID) | customer_bill_id(客户流水ID) | wallet_key(钱包key) | credit_pay(本次授信已用) | credit_usemoney(总共授信已用)
+dig_cus_operbalance	id | datatype(类型 1-市场费) | customer_id(客户ID) | oper_balance(操作的余额数) | oper_credit_usemoney(操作的垫款已使用数) | remarks(备注) | approval_state(审批状态 0-审批中 1-审批完成 2-审批拒回) | create_by(创建人) | create_name(创建人名字) | create_time(创建时间) | revision | wallet_json(钱包json) | voucher_url(附件) | complete_time(审批完成时间) | after_currency(调整的后返币) | after_money(调整的后返款)
+dig_edit_accountrecharge	id | adverrecharge_id(账户充值记录ID) | customer_id(客户ID) | account_id(账户ID) | edit_type(修改类型：1.基于金额根据新返点调整货币 2-基于货币根据新返点调整备款) | before_ratio(改之前的返点) | before_currency(改之前的货币数量) | before_service_charge(改之前的服务费) | before_servicepoint(改之前的服务费点数) | later_ratio(后返点数) | after_ratio(改之后的返点) | after_service_charge(改之后的服务费) | after_servicepoint(改之后的服务费点数) | edit_later_ratio(改之后的后返点数) | oper_balance(备款操作金额) | oper_service_charge(操作服务费金额) | oper_currency(操作货币金额) | oper_later_money(操作的后返金额) | oper_later_currency(操作的后返货币) | remarks(备注) | approval_state(审批状态 0-审批中 1-审批完成 2-审批拒回) | create_by(创建人) | create_name(创建人名字) | create_time(创建时间) | revision | customer_name(客户名称) | account_no(账户ID) |
+dig_external_orderno	id | order_no(单号) | response_txt(单号返回内容) | data_id(关联记录ID) | data_type(数据类型：1-充值 2-退币 3-转户) | create_by(创建人) | create_time(创建时间)
+dig_supplier_bill	id | supplier_id(供应商ID) | supplier_account_id(供应商收款账号ID) | money(收支金额，正数加，负数扣) | arrears(操作之后当前数跳对供应商欠款) | returnratio(供应商返点比例) | remarks(备注) | business_type(业务类型：1.广告账号充值扣款 2.向供应商支付回款 3.供应商退款) | business_dataid(业务数据ID，如果类型是广告账号充值，对应的就是账号充值记录ID，如果是向供应商支付回款，则对应的就是现金流水记录ID，如果是供应商退款，则对应的就是现金流水记录供应商退款记录ID) | revision(乐观锁) | create_by(创建人) | create_date(创建日期)
+robot_send_record	id(主键ID) | group_name(微信群名称) | send_success(是否发送成功 0失败 1成功) | error_msg(失败错误信息) | content_json(原始下发消息内容（content数组json）) | create_time(回执接收时间) | update_time
+_
+## customer_tag values
+_
+## oper_log range
+min_t	max_t	n	errors
+2026-07-06 14:35:38	2026-09-14 15:24:56	5837	106
+_
+## oper_log: title x business_type (last 6m)
+title	business_type	n
+ 广告账户	2	919
+ 客户主体	2	316
+ 广告账户充值记录	1	282
+开启关闭客户钱包	1	278
+客户垫款额度申请变更	1	268
+ 店铺	3	259
+客户申请调整返点	1	252
+开户申请	1	214
+处理开户申请	2	204
+客户 	1	188
+ 外转媒介确认充值	2	182
+ 广告账户	3	180
+ 现金充值记录	1	178
+ 店铺	2	154
+导入客户-主体 - 店铺的数据	6	123
+用户管理	2	120
+ 广告账户	5	114
+角色管理	2	104
+字典类型	3	103
+客户 	3	94
+ 客户主体	1	94
+ 抖音媒介确认充值	2	92
+客户 	2	91
+ 广告账户	1	88
+ 客户主体	3	87
+ 店铺	1	67
+部门管理	3	51
+主体转客户申请	2	50
+用户管理	1	50
+角色管理	3	41
+主体转客户申请	1	38
+部门管理	1	36
+客户 	5	35
+菜单管理	2	32
+字典数据	2	30
+部门管理	2	28
+退币记录	1	25
+个人信息	2	22
+ 店铺	5	20
+供应商	1	19
+ 删除开户申请	3	17
+新增客户备款和垫款金额流水 	2	16
+供应商	2	16
+ 现金充值记录	2	16
+用户头像	2	15
+ 抖音媒介确认退币	2	15
+修改客户前返比例 	2	15
+外转广告账户消耗记录	5	14
+ 广告账户充值记录	5	14
+收支账户	2	14
+审批流程	2	14
+客户销售运营批量重置 	2	13
+审批流程	1	11
+字典数据	1	11
+批量调整账户充值申请	1	11
+删除广告账户充值	3	8
+菜单管理	1	8
+ 外转媒介确认退币	2	8
+批量修改腾讯消耗记录的运营、销售	2	6
+主体转客户申请	3	5
+_
+## oper_log: role x title (last 6m)
+role_name	title	n
+AE数据	 广告账户	896
+AE数据	 客户主体	298
+AE数据	 店铺	270
+AE数据	客户垫款额度申请变更	253
+AE数据	开启关闭客户钱包	238
+AE数据	客户申请调整返点	225
+AE数据	客户 	188
+AE数据	主体转客户申请	72
+AE数据	导入客户-主体 - 店铺的数据	69
+AE数据	新增客户备款和垫款金额流水 	14
+AE数据	角色管理	14
+AE数据	外转广告账户消耗记录	12
+AE数据	修改客户前返比例 	12
+AE数据	 广告账户充值记录	11
+AE数据	批量调整账户充值申请	11
+AE数据	客户销售运营批量重置 	11
+AE数据	用户管理	7
+AE数据	 现金充值记录	6
+AE数据	供应商	6
+AE数据	批量修改腾讯消耗记录的运营、销售	6
+AE数据	抖音广告账户消耗记录	5
+AE数据	转户记录	2
+AE数据	开户申请	2
+AE数据	个人信息	1
+AE数据	用户头像	1
+AE数据	 删除现金充值记录	1
+AE数据	删除广告账户充值	1
+人事行政	用户管理	30
+人事行政	角色管理	9
+充值媒介	 广告账户充值记录	278
+充值媒介	 外转媒介确认充值	182
+充值媒介	 现金充值记录	176
+充值媒介	 抖音媒介确认充值	89
+充值媒介	退币记录	25
+充值媒介	 广告账户	20
+充值媒介	 抖音媒介确认退币	15
+充值媒介	 外转媒介确认退币	8
+充值媒介	 店铺	6
+充值媒介	 客户主体	5
+充值媒介	删除广告账户充值	5
+充值媒介	供应商	5
+充值媒介	开户申请	5
+充值媒介	收支账户	3
+充值媒介	处理开户申请	2
+充值媒介	用户头像	2
+充值媒介	个人信息	2
+充值媒介	转户记录	2
+充值媒介	客户 	1
+商务岗位	 店铺	147
+商务岗位	 广告账户	139
+商务岗位	开户申请	138
+商务岗位	客户 	118
+商务岗位	 客户主体	77
+商务岗位	客户申请调整返点	27
+商务岗位	开启关闭客户钱包	26
+商务岗位	 删除开户申请	16
+商务岗位	个人信息	12
+商务岗位	客户垫款额度申请变更	9
+商务岗位	用户头像	7
+商务岗位	 外转媒介确认充值	7
+商务岗位	 广告账户充值记录	7
+商务岗位	申请修改客户余额	5
+商务岗位	处理开户申请	2
+商务岗位	退币记录	1
+商务岗位	客户销售运营批量重置 	1
+商务岗位	主体转客户申请	1
+开户媒介	 广告账户	238
+开户媒介	处理开户申请	198
+开户媒介	 客户主体	76
+开户媒介	 店铺	51
+开户媒介	开户申请	41
+开户媒介	客户 	20
+开户媒介	主体转客户申请	19
+开户媒介	导入客户-主体 - 店铺的数据	8
+开户媒介	个人信息	7
+开户媒介	 外转媒介确认充值	7
+开户媒介	 广告账户充值记录	7
+开户媒介	供应商	5
+开户媒介	用户管理	3
+开户媒介	用户头像	3
+总经理	 客户主体	8
+总经理	客户 	5
+总经理	个人信息	1
+抖音运营	开户申请	36
+抖音运营	客户 	27
+抖音运营	 客户主体	14
+抖音运营	 广告账户	8
+抖音运营	导入客户-主体 - 店铺的数据	7
+抖音运营	用户头像	2
+抖音运营	个人信息	2
+抖音运营	 删除开户申请	1
+系统管理员	 广告账户	932
+系统管理员	 客户主体	347
+系统管理员	 店铺	295
+系统管理员	客户垫款额度申请变更	253
+系统管理员	开启关闭客户钱包	250
+系统管理员	客户 	240
+系统管理员	客户申请调整返点	226
+系统管理员	用户管理	137
+系统管理员	角色管理	89
+系统管理员	处理开户申请	86
+系统管理员	主体转客户申请	76
+系统管理员	部门管理	72
+系统管理员	导入客户-主体 - 店铺的数据	71
+系统管理员	开户申请	25
+系统管理员	审批流程	22
+系统管理员	修改客户前返比例 	15
+系统管理员	新增客户备款和垫款金额流水 	15
+系统管理员	 广告账户充值记录	14
+系统管理员	 现金充值记录	13
+系统管理员	客户销售运营批量重置 	12
+系统管理员	外转广告账户消耗记录	12
+系统管理员	供应商	11
+系统管理员	批量调整账户充值申请	11
+系统管理员	收支账户	9
+系统管理员	批量修改腾讯消耗记录的运营、销售	6
+系统管理员	抖音广告账户消耗记录	5
+系统管理员	用户头像	3
+系统管理员	个人信息	3
+系统管理员	 抖音媒介确认充值	3
+系统管理员	转户记录	2
+系统管理员	 删除现金充值记录	1
+系统管理员	删除广告账户充值	1
+系统管理员	退币记录	1
+董事长（总审批权限）	角色管理	45
+董事长（总审批权限）	客户 	36
+董事长（总审批权限）	用户管理	26
+董事长（总审批权限）	 广告账户	20
+董事长（总审批权限）	审批流程	19
+董事长（总审批权限）	 客户主体	17
+董事长（总审批权限）	开启关闭客户钱包	11
+董事长（总审批权限）	 店铺	11
+董事长（总审批权限）	部门管理	10
+董事长（总审批权限）	收支账户	9
+董事长（总审批权限）	 现金充值记录	7
+董事长（总审批权限）	处理开户申请	4
+董事长（总审批权限）	修改客户前返比例 	3
+董事长（总审批权限）	开户申请	3
+董事长（总审批权限）	 抖音媒介确认充值	2
+董事长（总审批权限）	 广告账户充值记录	2
+董事长（总审批权限）	新增客户备款和垫款金额流水 	1
+董事长（总审批权限）	退币记录	1
+董事长（总审批权限）	客户申请调整返点	1
+董事长（总审批权限）	客户销售运营批量重置 	1
+财务	收支账户	7
+财务	导入-银行流水记录导入EXCEL	5
+_
+## oper_log: top errors
+title	em	n
+ 现金充值记录	客户有多个钱包，请设置收款的钱包	33
+ 店铺		15
+开户申请	申请的客户类型和选择的客户的类型不一致！	12
+ 店铺	nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or nu	8
+角色管理	不允许操作超级管理员角色	7
+导入客户-主体 - 店铺的数据	
+\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate 	6
+导入客户-主体 - 店铺的数据	For input string: ""	6
+客户 	客户名称已存在	5
+新增客户备款和垫款金额流水 	客户有多个钱包，请设置收款的钱包	2
+转户记录	目标账户不存在	2
+ 客户主体	nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or nu	2
+字典类型	腾讯账户标签已分配,不能删除	1
+角色管理	系统管理员已分配,不能删除	1
+角色管理	快手商务经理已分配,不能删除	1
+客户 	String index out of range: -1	1
+字典类型	快手退币已分配,不能删除	1
+角色管理	抖音商务已分配,不能删除	1
+角色管理	抖音运营已分配,不能删除	1
+ 广告账户	java.util.ArrayList cannot be cast to java.lang.CharSequence	1
+_
+## logins per month x role
+ym	role_name	n	users
+2026-07	系统管理员	148	4
+2026-07	开户媒介	74	4
+2026-07	AE数据	58	1
+2026-07	商务岗位	56	3
+2026-07	充值媒介	42	2
+2026-07	董事长（总审批权限）	36	1
+2026-07	总经理	15	3
+2026-07	人事行政	11	1
+2026-07	财务	7	1
+2026-07	抖音运营	6	2
+2026-08	商务岗位	58	3
+2026-08	系统管理员	56	4
+2026-08	开户媒介	50	4
+2026-08	AE数据	20	1
+2026-08	抖音运营	18	2
+2026-08	充值媒介	14	2
+2026-08	董事长（总审批权限）	10	1
+2026-08	财务	3	1
+2026-08	人事行政	2	1
+2026-08	总经理	1	1
+2026-09	系统管理员	31	4
+2026-09	商务岗位	26	3
+2026-09	董事长（总审批权限）	19	1
+2026-09	开户媒介	15	4
+2026-09	AE数据	5	1
+2026-09	充值媒介	5	2
+2026-09	人事行政	3	1
+2026-09	抖音运营	1	1

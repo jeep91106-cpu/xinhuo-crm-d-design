@@ -1,0 +1,10 @@
+﻿SELECT '## 店铺 shop_no 位数 x 账户类型（店铺=来客？）' AS _;
+SELECT a.type, CHAR_LENGTH(s.shop_no) len, COUNT(DISTINCT s.id) shops, SUM(s.shop_name=cs.subject_name) same_name_as_subject FROM dig_shop s JOIN dig_customer_subject cs ON cs.id=s.subject_id LEFT JOIN dig_advertising_account a ON a.shop_id=s.id AND a.del_flag='0' WHERE s.del_flag='0' GROUP BY a.type, len ORDER BY a.type, shops DESC;
+SELECT '## 账户 original_subjectid 位数 x 类型（=直客ID？）' AS _;
+SELECT type, CHAR_LENGTH(original_subjectid) len, COUNT(*) n FROM dig_advertising_account WHERE del_flag='0' AND original_subjectid IS NOT NULL AND original_subjectid<>'' AND original_subjectid<>'0' GROUP BY type, len ORDER BY type, n DESC;
+SELECT '## 账户 account_no 位数 x 类型' AS _;
+SELECT type, CHAR_LENGTH(account_no) len, COUNT(*) n FROM dig_advertising_account WHERE del_flag='0' GROUP BY type, len ORDER BY type, n DESC;
+SELECT '## 每个主体下店铺数分布（本地推 vs 非本地推）' AS _;
+SELECT CASE WHEN t.t IN (102,1001) THEN '本地推' ELSE '非本地推' END biz, t.shops, COUNT(*) subjects FROM (SELECT cs.id, MIN(a.type) t, COUNT(DISTINCT s.id) shops FROM dig_customer_subject cs JOIN dig_advertising_account a ON a.subject_id=cs.id AND a.del_flag='0' LEFT JOIN dig_shop s ON s.subject_id=cs.id AND s.del_flag='0' GROUP BY cs.id) t GROUP BY biz, t.shops ORDER BY biz, t.shops;
+SELECT '## 消耗表里的 agent_id / advertiser 相关列取样长度' AS _;
+SELECT CHAR_LENGTH(agent_id) len, COUNT(*) n FROM dig_douyin_account_consume WHERE agent_id IS NOT NULL AND agent_id<>'' GROUP BY len;

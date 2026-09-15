@@ -1,0 +1,1032 @@
+_
+## sys_role
+role_id	role_name	role_key	role_sort	data_scope	status	del_flag	remark
+113	主播	Anchor	0	5	0	2	NULL
+114	客服	ds_service	0	5	0	2	NULL
+115	中控	ds_control	0	5	0	2	NULL
+116	抖音总监	DYprojectDirector	0	4	0	2	NULL
+121	财务	Financial	0	1	0	0	NULL
+122	电商部总监	DSprojectDirector	0	4	0	2	NULL
+124	电商剪辑	ds_Editor	0	5	0	2	NULL
+132	拼多多运营	Doddo	0	1	0	2	NULL
+133	抖音指定业务（巨量本地）	juliang	0	4	0	2	NULL
+134	采购	caigou	0	1	0	2	NULL
+148	充值媒介	zhijiekh	0	1	0	0	NULL
+149	外部账号	externalUser	0	3	0	0	NULL
+150	RPA机器人	rpa	0	1	0	0	NULL
+151	合同	ht	0	1	0	2	NULL
+153	商务岗位	dx	0	5	0	0	NULL
+154	抖音2销售	2x	0	2	0	2	NULL
+155	小红书管理	xhsgs	0	1	0	2	NULL
+156	小绿书管理	xlsgw	0	1	0	2	NULL
+157	小绿书本人	xlsbr	0	5	0	2	NULL
+159	抖音指定业务（巨量本地）	juliang	0	5	0	2	NULL
+160	媒体全部业务	all	0	1	0	2	NULL
+162	抖音全部业务	dyAll	0	3	0	2	NULL
+163	腾讯全部业务	tcAll	0	5	0	2	NULL
+164	腾讯指定业务（广点通）	tcGDT	0	5	0	2	NULL
+167	测试	ww	0	1	0	2	NULL
+170	抖音财务	dycw	0	3	0	2	NULL
+171	腾讯财务	txcw	0	3	0	2	NULL
+172	小红书财务	xhscw	0	3	0	2	NULL
+1	超级管理员	admin	1	1	0	0	超级管理员
+105	测试岗位	cs_admin	1	1	0	2	这是一个测试岗位
+125	董事长（总审批权限）	dsz	1	1	0	0	NULL
+126	总经理	zjl	1	3	0	0	NULL
+137	系统管理员	system_admin	1	1	0	0	NULL
+169	测试运营	ceshiyun	1	2	0	2	NULL
+141	抖音总经理	dyzjl	2	1	0	2	NULL
+173	抖音销售岗	2	2	1	0	2	NULL
+2	普通角色	common	3	2	0	2	普通角色
+111	人事行政	hr	3	1	0	0	NULL
+120	财务助理	AccountingClerk	3	4	0	0	NULL
+174	AE数据	AESJ	3	1	0	0	NULL
+100	磁力商务	ks_sales	4	5	0	2	NULL
+109	磁力剪辑	ks_Editor	4	5	0	2	NULL
+147	视频号运营	sphyy	4	1	0	2	NULL
+103	项目经理	projectManager	5	4	0	2	NULL
+107	抖音商务	dy_sales	5	5	0	2	NULL
+108	巨量运营	dy_service	5	5	0	2	NULL
+110	巨量剪辑	dy_Editor	5	5	0	2	NULL
+118	抖音运营经理	dy_Operations Manager	5	2	0	0	NULL
+135	开户媒介	dymj	5	1	0	0	NULL
+168	抖音运营	DYYUNY	30	1	0	0	NULL
+166	沸点测试	www	100	2	0	2	NULL
+152	抖音销售	dyxs	150	1	0	2	NULL
+165	小红书销售	xhs-xs	165	5	0	2	NULL
+_
+## users by role
+role_id	role_name	users	active
+153	商务岗位	15	15
+168	抖音运营	8	8
+150	RPA机器人	5	5
+126	总经理	5	5
+135	开户媒介	5	5
+137	系统管理员	4	4
+121	财务	3	3
+111	人事行政	3	3
+125	董事长（总审批权限）	2	2
+148	充值媒介	2	2
+174	AE数据	1	1
+118	抖音运营经理	0	NULL
+110	巨量剪辑	0	NULL
+172	小红书财务	0	NULL
+103	项目经理	0	NULL
+166	沸点测试	0	NULL
+160	媒体全部业务	0	NULL
+154	抖音2销售	0	NULL
+141	抖音总经理	0	NULL
+122	电商部总监	0	NULL
+114	客服	0	NULL
+107	抖音商务	0	NULL
+169	测试运营	0	NULL
+1	超级管理员	0	NULL
+163	腾讯全部业务	0	NULL
+156	小绿书管理	0	NULL
+149	外部账号	0	NULL
+132	拼多多运营	0	NULL
+116	抖音总监	0	NULL
+109	磁力剪辑	0	NULL
+171	腾讯财务	0	NULL
+100	磁力商务	0	NULL
+165	小红书销售	0	NULL
+159	抖音指定业务（巨量本地）	0	NULL
+152	抖音销售	0	NULL
+134	采购	0	NULL
+120	财务助理	0	NULL
+113	主播	0	NULL
+173	抖音销售岗	0	NULL
+105	测试岗位	0	NULL
+167	测试	0	NULL
+162	抖音全部业务	0	NULL
+155	小红书管理	0	NULL
+147	视频号运营	0	NULL
+124	电商剪辑	0	NULL
+115	中控	0	NULL
+108	巨量运营	0	NULL
+170	抖音财务	0	NULL
+2	普通角色	0	NULL
+164	腾讯指定业务（广点通）	0	NULL
+157	小绿书本人	0	NULL
+151	合同	0	NULL
+133	抖音指定业务（巨量本地）	0	NULL
+_
+## sys_dept
+dept_id	parent_id	ancestors	dept_name	order_num	status	del_flag
+100	0	0	薪火相承	0	0	0
+231	100	0,100	快手事业部_del	1	0	2
+239	100	0,100	厦门抖音事业部	2	0	0
+278	100	0,100	总经理_del	2	0	2
+283	100	0,100	总经理_del	2	0	2
+284	100	0,100	11_del	2	0	2
+252	100	0,100	快手=大健康_del	3	0	2
+280	100	0,100	天津抖音事业部	4	0	0
+276	100	0,100	沈阳抖音事业部	7	0	0
+243	100	0,100	后勤部	10	0	0
+270	100	0,100	外部_del	100	0	2
+274	100	0,100	小红书事业部_del	274	0	2
+271	100	0,100	外转事业部_del	275	0	2
+234	231	0,100,231	运营部_del	1	0	2
+235	231	0,100,231	销售部_del	2	0	2
+268	231	0,100,231	代理客户_del	22	0	2
+269	234	0,100,231,234	运营0部_del	0	0	2
+223	234	0,100,231,234	运营测试一部_del	1	0	2
+224	234	0,100,231,234	运营测试二部_del	2	0	2
+227	234	0,100,231,234	运营测试三部_del	3	0	2
+226	234	0,100,231,234	运营测试四部_del	4	0	2
+267	234	0,100,231,234	运营测试五部_del	6	0	2
+228	235	0,100,231,235	销售测试一部_del	1	0	2
+220	235	0,100,231,235	销售测试一部_del	2	0	2
+266	239	0,100,239	抖音运营测试一部_del	0	0	2
+296	239	0,100,239	厦门人资部	1	0	0
+287	239	0,100,239	厦门总经办	1	0	0
+288	239	0,100,239	厦门商务部	1	0	0
+297	239	0,100,239	厦门媒介部	2	0	0
+295	239	0,100,239	厦门财务部	2	0	0
+281	239	0,100,239	厦门后勤部_del	3	0	2
+265	239	0,100,239	抖音运营测试二部_del	6	0	2
+244	239	0,100,239	抖音运营测试三部_del	10	0	2
+245	239	0,100,239	厦门抖音运营部_del	20	0	2
+251	239	0,100,239	抖音运营测试五部_del	245	0	2
+247	239	0,100,239	抖音运营测试六部_del	246	0	2
+230	243	0,100,243	财务部	3	0	0
+229	243	0,100,243	人资部	5	0	0
+246	243	0,100,243	设计部	40	0	0
+248	246	0,100,243,246	快手=剪辑_del	41	0	2
+249	246	0,100,243,246	千川=剪辑	42	0	0
+260	252	0,100,252	销售部_del	1	0	2
+261	252	0,100,252	运营部_del	2	0	2
+262	260	0,100,252,260	大健康销售1部_del	1	0	2
+253	260	0,100,252,260	大健康销售2部_del	2	0	2
+254	260	0,100,252,260	大健康销售3部_del	3	0	2
+255	260	0,100,252,260	大健康销售4部_del	4	0	2
+256	260	0,100,252,260	大健康销售5部_del	5	0	2
+257	260	0,100,252,260	大健康销售6部_del	6	0	2
+258	260	0,100,252,260	大健康销售7部_del	7	0	2
+263	260	0,100,252,260	大健康销售8部_del	8	0	2
+272	271	0,100,271	外转运营部_del	276	0	2
+273	271	0,100,271	外转销售部_del	277	0	2
+275	274	0,100,274	聚光部_del	276	0	2
+285	276	0,100,276	沈阳事业一部	2	0	0
+294	276	0,100,276	沈阳财务部_del	2	0	2
+293	276	0,100,276	沈阳人资部_del	2	0	2
+279	276	0,100,276	沈阳财务部	3	0	0
+302	276	0,100,276	沈阳媒介一部_del	3	0	2
+277	276	0,100,276	沈阳事业二部	3	0	0
+304	276	0,100,276	沈阳人资部	4	0	0
+286	276	0,100,276	沈阳商务一部_del	6	0	2
+305	277	0,100,276,277	沈阳总经办二部	1	0	0
+306	277	0,100,276,277	沈阳商务二部	2	0	0
+307	277	0,100,276,277	沈阳媒介二部	3	0	0
+309	277	0,100,276,277	沈阳运营二部	4	0	0
+299	285	0,100,276,285	沈阳总经办一部	1	0	0
+301	285	0,100,276,285	沈阳媒介一部_del	1	0	2
+300	285	0,100,276,285	沈阳商务一部	2	0	0
+303	285	0,100,276,285	沈阳媒介一部	3	0	0
+308	285	0,100,276,285	沈阳运营一部	4	0	0
+289	280	0,100,280	天津总经办	1	0	0
+282	280	0,100,280	天津后勤部_del	1	0	2
+298	280	0,100,280	天津媒介部	2	0	0
+291	280	0,100,280	天津人资部	2	0	0
+290	280	0,100,280	天津商务部	2	0	0
+292	280	0,100,280	天津财务部	3	0	0
+_
+## users by dept
+dept_id	dept_name	users
+306	沈阳商务二部	10
+100	薪火相承	5
+297	厦门媒介部	5
+295	厦门财务部	4
+308	沈阳运营一部	4
+309	沈阳运营二部	3
+287	厦门总经办	3
+300	沈阳商务一部	2
+289	天津总经办	1
+305	沈阳总经办二部	1
+291	天津人资部	1
+296	厦门人资部	1
+298	天津媒介部	1
+299	沈阳总经办一部	1
+290	天津商务部	1
+304	沈阳人资部	1
+288	厦门商务部	1
+277	沈阳事业二部	1
+239	厦门抖音事业部	1
+223	运营测试一部_del	0
+249	千川=剪辑	0
+268	代理客户_del	0
+285	沈阳事业一部	0
+235	销售部_del	0
+260	销售部_del	0
+278	总经理_del	0
+226	运营测试四部_del	0
+252	快手=大健康_del	0
+270	外部_del	0
+292	天津财务部	0
+244	抖音运营测试三部_del	0
+262	大健康销售1部_del	0
+280	天津抖音事业部	0
+228	销售测试一部_del	0
+254	大健康销售3部_del	0
+272	外转运营部_del	0
+294	沈阳财务部_del	0
+246	设计部	0
+265	抖音运营测试二部_del	0
+282	天津后勤部_del	0
+230	财务部	0
+256	大健康销售5部_del	0
+274	小红书事业部_del	0
+302	沈阳媒介一部_del	0
+220	销售测试一部_del	0
+248	快手=剪辑_del	0
+267	运营测试五部_del	0
+284	11_del	0
+234	运营部_del	0
+258	大健康销售7部_del	0
+276	沈阳抖音事业部	0
+307	沈阳媒介二部	0
+224	运营测试二部_del	0
+251	抖音运营测试五部_del	0
+269	运营0部_del	0
+286	沈阳商务一部_del	0
+243	后勤部	0
+261	运营部_del	0
+279	沈阳财务部	0
+227	运营测试三部_del	0
+253	大健康销售2部_del	0
+271	外转事业部_del	0
+293	沈阳人资部_del	0
+245	厦门抖音运营部_del	0
+263	大健康销售8部_del	0
+281	厦门后勤部_del	0
+229	人资部	0
+255	大健康销售4部_del	0
+273	外转销售部_del	0
+301	沈阳媒介一部_del	0
+247	抖音运营测试六部_del	0
+266	抖音运营测试一部_del	0
+283	总经理_del	0
+231	快手事业部_del	0
+257	大健康销售6部_del	0
+275	聚光部_del	0
+303	沈阳媒介一部	0
+_
+## user totals
+total	not_deleted	active	last_login
+49	48	48	2026-09-14 15:17:47
+_
+## role_menu counts
+role_name	menus
+超级管理员	5
+人事行政	203
+抖音运营经理	85
+财务助理	260
+财务	308
+董事长（总审批权限）	404
+总经理	399
+开户媒介	75
+系统管理员	412
+充值媒介	248
+外部账号	162
+商务岗位	111
+抖音运营	195
+AE数据	409
+_
+## role x top menu
+role_name	top_menu	items
+AE数据	抖音事业部	82
+AE数据	其他媒体	81
+AE数据	小红书事业部	81
+AE数据	公共管理	48
+AE数据	财务管理	46
+AE数据	人事行政	20
+AE数据	系统管理	18
+AE数据	合同/发票	15
+AE数据	报表管理	10
+AE数据	通知管理	6
+AE数据	系统工具	2
+人事行政	小红书事业部	81
+人事行政	其他媒体	81
+人事行政	人事行政	20
+人事行政	合同/发票	12
+人事行政	通知管理	5
+人事行政	系统管理	2
+人事行政	系统工具	2
+充值媒介	抖音事业部	82
+充值媒介	其他媒体	81
+充值媒介	财务管理	46
+充值媒介	公共管理	20
+充值媒介	合同/发票	15
+充值媒介	报表管理	4
+商务岗位	抖音事业部	51
+商务岗位	其他媒体	31
+商务岗位	公共管理	24
+商务岗位	合同/发票	3
+商务岗位	系统管理	2
+外部账号	抖音事业部	81
+外部账号	其他媒体	81
+开户媒介	抖音事业部	26
+开户媒介	其他媒体	22
+开户媒介	合同/发票	10
+开户媒介	公共管理	10
+开户媒介	通知管理	5
+开户媒介	系统管理	2
+总经理	小红书事业部	81
+总经理	抖音事业部	81
+总经理	其他媒体	81
+总经理	财务管理	46
+总经理	公共管理	39
+总经理	人事行政	20
+总经理	系统管理	18
+总经理	合同/发票	15
+总经理	报表管理	10
+总经理	通知管理	6
+总经理	系统工具	2
+抖音运营	小红书事业部	81
+抖音运营	其他媒体	59
+抖音运营	抖音事业部	31
+抖音运营	公共管理	14
+抖音运营	通知管理	6
+抖音运营	系统管理	2
+抖音运营	系统工具	2
+抖音运营经理	抖音事业部	65
+抖音运营经理	财务管理	7
+抖音运营经理	通知管理	5
+抖音运营经理	公共管理	4
+抖音运营经理	系统管理	2
+抖音运营经理	报表管理	2
+系统管理员	其他媒体	82
+系统管理员	抖音事业部	82
+系统管理员	小红书事业部	81
+系统管理员	公共管理	49
+系统管理员	财务管理	46
+系统管理员	人事行政	20
+系统管理员	系统管理	18
+系统管理员	合同/发票	15
+系统管理员	报表管理	10
+系统管理员	通知管理	6
+系统管理员	系统工具	2
+系统管理员	快手事业部	1
+董事长（总审批权限）	抖音事业部	82
+董事长（总审批权限）	其他媒体	81
+董事长（总审批权限）	小红书事业部	81
+董事长（总审批权限）	财务管理	46
+董事长（总审批权限）	公共管理	45
+董事长（总审批权限）	人事行政	20
+董事长（总审批权限）	系统管理	18
+董事长（总审批权限）	合同/发票	15
+董事长（总审批权限）	报表管理	8
+董事长（总审批权限）	通知管理	6
+董事长（总审批权限）	系统工具	2
+财务	其他媒体	81
+财务	抖音事业部	75
+财务	财务管理	46
+财务	公共管理	40
+财务	人事行政	20
+财务	系统管理	18
+财务	合同/发票	13
+财务	报表管理	7
+财务	通知管理	6
+财务	系统工具	2
+财务助理	抖音事业部	85
+财务助理	快手事业部	79
+财务助理	财务管理	48
+财务助理	公共管理	32
+财务助理	报表管理	12
+财务助理	系统管理	3
+财务助理	系统工具	1
+超级管理员	快手事业部	2
+超级管理员	公共管理	2
+超级管理员	系统工具	1
+_
+## dict types
+dict_id	dict_name	dict_type	status	remark
+1	用户性别	sys_user_sex	0	用户性别列表
+2	菜单状态	sys_show_hide	0	菜单状态列表
+3	系统开关	sys_normal_disable	0	系统开关列表
+4	任务状态	sys_job_status	0	任务状态列表
+5	任务分组	sys_job_group	0	任务分组列表
+6	系统是否	sys_yes_no	0	系统是否列表
+7	通知类型	sys_notice_type	0	通知类型列表
+8	通知状态	sys_notice_status	0	通知状态列表
+9	操作类型	sys_oper_type	0	操作类型列表
+10	系统状态	sys_common_status	0	登录状态列表
+100	学历类型	sys_user_qualification	0	学历类型列表
+101	账户类型	account_type	0	NULL
+102	员工状态	sys_user_state	0	员工状态（0实习期 1正式员工 2离职员工）
+103	审批流程	base_approval	0	NULL
+104	账户业务类型	ks_account_type	0	NULL
+106	开户申请状态	openaccountstate	0	NULL
+107	报销类型	reimburse_type	0	NULL
+108	系统收支账户流水业务类型	cashflow_businesstype	0	NULL
+109	系统审批状态	base_approval_state	0	NULL
+110	费用类型	cost_type	0	NULL
+111	请假类型	base_leave_type	0	NULL
+112	数据同步状态	sync_state	0	NULL
+113	快手消耗类型	ks_comsume_type	0	NULL
+114	银行流水标注类型	bank_type	0	NULL
+115	备款调整类型	oper_balance_type	0	NULL
+116	客户标签	customer_tags	0	NULL
+117	内部公司/主体	company_self	0	NULL
+118	开票内容	invoice_content	0	NULL
+119	行业	industry	0	NULL
+120	现金收款标签	cash_rehcarge_tags	0	NULL
+121	客户钱包	customerWallet	0	NULL
+123	抖音账户标签	account_dy_tags	0	NULL
+131	开票内容	invoice_type	0	NULL
+132	银行流水收支类型	bank_billCategory	0	NULL
+133	客户类型	customer_type	0	NULL
+134	抖音账户充值	account_recharge_dy_tags	0	NULL
+135	银行流水标记类型	bank_billType	0	NULL
+136	其他账户标签	account_om_tags	0	NULL
+_
+## dict data
+dict_type	dict_sort	dict_label	dict_value	status	remark
+account_dy_tags	0	已转户	已转户	0	NULL
+account_dy_tags	0	已注销	已注销	0	NULL
+account_om_tags	0	已转户	已转户	0	NULL
+account_om_tags	0	已注销	已注销	0	NULL
+account_recharge_dy_tags	0	新开	新开	0	新开/续费
+account_recharge_dy_tags	0	续费	续费	0	新开/续费
+account_type	1	银行卡	1	0	NULL
+account_type	2	支付宝	2	0	NULL
+account_type	3	微信	3	0	NULL
+account_type	4	农行(公)	4	0	NULL
+account_type	5	农行(私)	5	0	NULL
+account_type	6	工行(公)	6	0	NULL
+account_type	7	建行(公)	7	0	NULL
+account_type	8	招行(公)	8	0	NULL
+account_type	9	招行(私)	9	0	NULL
+account_type	10	中信(公)	10	0	NULL
+account_type	11	平安(公)	11	0	NULL
+account_type	12	中行(公)	12	0	NULL
+account_type	13	渤海(公)	13	0	NULL
+account_type	14	平安(私)	14	0	NULL
+account_type	15	服务单	15	0	NULL
+account_type	16	恒丰(私)	16	0	NULL
+account_type	17	工行(私)	17	0	NULL
+account_type	18	建行(私)	18	0	NULL
+account_type	19	东莞(公)	19	0	NULL
+account_type	20	交行(公)	20	0	NULL
+account_type	21	民生(公)	21	0	NULL
+account_type	22	深圳农商(公)	22	0	NULL
+account_type	23	广发(公)	23	0	NULL
+account_type	24	中信(私)	24	0	NULL
+account_type	25	兴业(公)	25	0	NULL
+account_type	26	江苏银行(公)	26	0	NULL
+account_type	27	广发(私)	27	0	NULL
+account_type	28	兴业(私)	28	0	NULL
+account_type	29	浦发(私)	29	0	NULL
+account_type	30	浦发(公)	30	0	NULL
+account_type	31	邮政(公)	31	0	NULL
+account_type	32	华夏(私)	32	0	NULL
+base_approval	3	退现	3	0	NULL
+base_approval	5	报销	5	1	NULL
+base_approval	6	费用审批	6	1	NULL
+base_approval	7	采购申请审批	7	1	NULL
+base_approval	8	请假审批	8	1	NULL
+base_approval	9	转正申请	9	1	NULL
+base_approval	10	激励政策审批	10	1	NULL
+base_approval	11	调休审批	11	1	NULL
+base_approval	12	临时垫款额度申请	22	0	NULL
+base_approval	12	客户垫款额度申请	12	0	NULL
+base_approval	13	客户转账申请	13	0	NULL
+base_approval	14	备款调整-市场费	14	0	NULL
+base_approval	15	备款调整-其它	15	0	NULL
+base_approval	16	调整账户充值	16	0	NULL
+base_approval	17	客户合同审批	17	0	NULL
+base_approval	18	客户返点申请	18	0	NULL
+base_approval_state	2	审批中	0	0	NULL
+base_approval_state	3	审批通过	1	0	NULL
+base_approval_state	4	审批拒回	2	0	NULL
+base_leave_type	1	年假	1	0	NULL
+base_leave_type	2	事假	2	0	NULL
+base_leave_type	3	病假	3	0	NULL
+base_leave_type	4	调休假	4	0	NULL
+base_leave_type	5	婚假	5	0	NULL
+base_leave_type	6	产假	6	0	NULL
+base_leave_type	7	其他	7	0	NULL
+cashflow_businesstype	1	客户现金充值	1	0	NULL
+cashflow_businesstype	2	向供应商打款	2	0	NULL
+cashflow_businesstype	3	客户退现	3	0	NULL
+cashflow_businesstype	4	其他收入	4	0	NULL
+cashflow_businesstype	5	其他支出	5	0	NULL
+cashflow_businesstype	6	供应商退款	6	0	NULL
+cashflow_businesstype	7	内部报销	7	0	NULL
+cashflow_businesstype	9	费用申请	8	0	NULL
+cashflow_businesstype	10	采购申请	9	0	NULL
+cash_rehcarge_tags	1	首充	首充	0	首单/首续
+cash_rehcarge_tags	2	首续	首续	0	首单/首续
+cash_rehcarge_tags	3	N续	N续	0	首单/首续
+company_self	0	薪火	薪火	0	NULL
+cost_type	0	广告费	1	0	NULL
+cost_type	2	货款	2	0	NULL
+cost_type	3	激励活动经费	3	0	NULL
+customerWallet	0	一类	一类	0	NULL
+customerWallet	0	二类	二类	0	NULL
+customerWallet	0	团购一类	团购一类	1	NULL
+customerWallet	0	团购二类	团购二类	1	NULL
+customer_tags	101	自运营	101	0	自/代运营
+customer_tags	102	代运营	102	0	自/代运营
+customer_tags	106	直客	直客	0	直客/渠道
+customer_tags	107	渠道	渠道	0	直客/渠道
+customer_type	1	抖音	1	0	NULL
+customer_type	2	快手	2	0	NULL
+customer_type	3	腾讯	3	0	NULL
+customer_type	4	小红书	4	0	NULL
+customer_type	10	其他	10	0	NULL
+industry	0	招商加盟-其他招商加盟	招商加盟-其他招商加盟	0	NULL
+industry	0	招商加盟-减肥加盟	招商加盟-减肥加盟	0	NULL
+industry	0	招商加盟-饮品烘焙加盟	招商加盟-饮品烘焙加盟	0	NULL
+industry	0	招商加盟-保健品加盟	招商加盟-保健品加盟	0	NULL
+industry	0	招商加盟-酒加盟	招商加盟-酒加盟	0	NULL
+industry	0	招商加盟-商务服务加盟	招商加盟-商务服务加盟	0	NULL
+industry	0	招商加盟-大健康代加工招商	招商加盟-大健康代加工招商	0	NULL
+industry	0	美妆-美妆工具	美妆-美妆工具	0	NULL
+industry	0	美妆-美妆特殊化妆品	美妆-美妆特殊化妆品	0	NULL
+industry	0	美妆-面部洗护	美妆-面部洗护	0	NULL
+industry	0	美妆-面部彩妆	美妆-面部彩妆	0	NULL
+industry	0	美妆-香水/香有	美妆-香水/香有	0	NULL
+industry	0	美妆-美甲工具	美妆-美甲工具	0	NULL
+industry	0	美妆-唇部护理	美妆-唇部护理	0	NULL
+industry	0	美妆-眼部护理	美妆-眼部护理	0	NULL
+industry	0	美妆-唇部彩妆	美妆-唇部彩妆	0	NULL
+industry	0	美妆-眼部彩妆	美妆-眼部彩妆	0	NULL
+industry	0	美妆-其他美妆	美妆-其他美妆	0	NULL
+industry	0	母婴宠物-宠物生活	母婴宠物-宠物生活	0	NULL
+industry	0	母婴宠物-孕产妇用品	母婴宠物-孕产妇用品	0	NULL
+industry	0	母婴宠物-婴幼儿玩具	母婴宠物-婴幼儿玩具	0	NULL
+industry	0	母婴宠物-其他母婴宠物	母婴宠物-其他母婴宠物	0	NULL
+industry	0	母婴宠物-喂养用品	母婴宠物-喂养用品	0	NULL
+industry	0	母婴宠物-营养辅食	母婴宠物-营养辅食	0	NULL
+industry	0	母婴宠物-婴童奶粉	母婴宠物-婴童奶粉	0	NULL
+industry	0	母婴宠物-尿裤	母婴宠物-尿裤	0	NULL
+industry	0	母婴宠物-婴童洗护	母婴宠物-婴童洗护	0	NULL
+industry	0	母婴宠物-婴童床品	母婴宠物-婴童床品	0	NULL
+industry	0	母婴宠物-儿童家具	母婴宠物-儿童家具	0	NULL
+industry	0	母婴宠物-出行用品	母婴宠物-出行用品	0	NULL
+industry	0	母婴宠物-安全防护	母婴宠物-安全防护	0	NULL
+industry	0	日化-家清纸品	日化-家清纸品	0	NULL
+industry	0	日化-其他日化用品	日化-其他日化用品	0	NULL
+industry	0	日化-洗发护发	日化-洗发护发	0	NULL
+industry	0	日化-私处洗护	日化-私处洗护	0	NULL
+industry	0	日化-腔护理	日化-腔护理	0	NULL
+industry	0	日化-日化特殊化妆品	日化-日化特殊化妆品	0	NULL
+industry	0	日化-假发	日化-假发	0	NULL
+industry	0	日化-身体护理	日化-身体护理	0	NULL
+industry	0	日化-身体清洁	日化-身体清洁	0	NULL
+industry	0	日化-手部洗护	日化-手部洗护	0	NULL
+industry	0	日化-成人护理	日化-成人护理	0	NULL
+industry	0	实体书籍-考试/教材/教辅/论文	实体书籍-考试/教材/教辅/论文	0	NULL
+industry	0	实体书籍-儿童读物/童书	实体书籍-儿童读物/童书	0	NULL
+industry	0	实体书籍-其他成人类书籍	实体书籍-其他成人类书籍	0	NULL
+industry	0	丽人-美发	丽人-美发	0	NULL
+industry	0	丽人-美甲美睫	丽人-美甲美睫	0	NULL
+industry	0	丽人-补发/织发定制	丽人-补发/织发定制	0	NULL
+industry	0	丽人-美容美体	丽人-美容美体	0	NULL
+industry	0	丽人-纹身	丽人-纹身	0	NULL
+industry	0	丽人-其他丽人	丽人-其他丽人	0	NULL
+industry	0	购物-3C及电器卖场及门店	购物-3C及电器卖场及门店	0	NULL
+industry	0	购物-亲子购物卖场及门店	购物-亲子购物卖场及门店	0	NULL
+industry	0	购物-烟酒卖场及门店	购物-烟酒卖场及门店	0	NULL
+industry	0	购物-宠物用品卖场及门店	购物-宠物用品卖场及门店	0	NULL
+industry	0	购物-服饰鞋帽箱包卖场及门店	购物-服饰鞋帽箱包卖场及门店	0	NULL
+industry	0	购物-家居建材卖场及门店	购物-家居建材卖场及门店	0	NULL
+industry	0	购物-综合商超	购物-综合商超	0	NULL
+industry	0	购物-运动户外卖场及门店	购物-运动户外卖场及门店	0	NULL
+industry	0	购物-美妆个护卖场及门店	购物-美妆个护卖场及门店	0	NULL
+industry	0	购物-珠宝钟表眼镜卖场及门店	购物-珠宝钟表眼镜卖场及门店	0	NULL
+industry	0	购物-其他购物	购物-其他购物	0	NULL
+industry	0	购物-日用百货卖场及门店	购物-日用百货卖场及门店	0	NULL
+industry	0	购物-市场	购物-市场	0	NULL
+industry	0	文化用品-文玩收藏	文化用品-文玩收藏	0	NULL
+industry	0	文化用品-文教文化用品	文化用品-文教文化用品	0	NULL
+industry	0	文化用品-乐器及配件	文化用品-乐器及配件	0	NULL
+industry	0	文化用品-艺术品	文化用品-艺术品	0	NULL
+industry	0	文化用品-民俗工艺/非遗	文化用品-民俗工艺/非遗	0	NULL
+industry	0	文化用品-玩具	文化用品-玩具	0	NULL
+industry	0	文化用品-其他文化用品	文化用品-其他文化用品	0	NULL
+industry	0	运动户外-其他运动户外	运动户外-其他运动户外	0	NULL
+industry	0	运动户外-户外装备	运动户外-户外装备	0	NULL
+industry	0	运动户外-运动休闲用品	运动户外-运动休闲用品	0	NULL
+industry	0	平台类客户-平台类客户	平台类客户-平台类客户	0	NULL
+industry	0	传媒资讯-在线小说	传媒资讯-在线小说	0	NULL
+industry	0	传媒资讯-短剧	传媒资讯-短剧	0	NULL
+industry	0	任务激励广告-任务激励广告	任务激励广告-任务激励广告	0	NULL
+industry	0	微信加粉广告-微信加粉广告	微信加粉广告-微信加粉广告	0	NULL
+industry	0	教育培训-学历教育	教育培训-学历教育	0	NULL
+industry	0	教育培训-语言培训	教育培训-语言培训	0	NULL
+industry	0	教育培训-成人兴趣培训	教育培训-成人兴趣培训	0	NULL
+industry	0	教育培训-职业技能培训	教育培训-职业技能培训	0	NULL
+industry	0	教育培训-特殊人群教育	教育培训-特殊人群教育	0	NULL
+industry	0	教育培训-职业资格考试培训	教育培训-职业资格考试培训	0	NULL
+industry	0	教育培训-其他教育培训	教育培训-其他教育培训	0	NULL
+industry	0	教育培训-智能教育	教育培训-智能教育	0	NULL
+industry	0	教育培训-学习卡	教育培训-学习卡	0	NULL
+industry	0	教育培训-冬令营/夏令营/研学游	教育培训-冬令营/夏令营/研学游	0	NULL
+industry	0	教育培训-留学	教育培训-留学	0	NULL
+industry	0	教育培训-学历考试培训	教育培训-学历考试培训	0	NULL
+industry	0	教育培训-家庭教育	教育培训-家庭教育	0	NULL
+industry	0	教育培训-中小幼教育机构	教育培训-中小幼教育机构	0	NULL
+industry	0	教育培训-中小幼教育课程	教育培训-中小幼教育课程	0	NULL
+industry	0	金融业-银行业	金融业-银行业	0	NULL
+industry	0	金融业-证券业	金融业-证券业	0	NULL
+industry	0	金融业-保险业	金融业-保险业	0	NULL
+industry	0	金融业-拍卖典当	金融业-拍卖典当	0	NULL
+industry	0	金融业-基金	金融业-基金	0	NULL
+industry	0	金融业-征信机构	金融业-征信机构	0	NULL
+industry	0	金融业-其他金融业	金融业-其他金融业	0	NULL
+industry	0	金融业-另类投资	金融业-另类投资	0	NULL
+industry	0	金融业-金融理财培训	金融业-金融理财培训	0	NULL
+industry	0	金融业-期货	金融业-期货	0	NULL
+industry	0	金融业-消费金融	金融业-消费金融	0	NULL
+industry	0	金融业-第三方支付	金融业-第三方支付	0	NULL
+industry	0	金融业-金融门户网站	金融业-金融门户网站	0	NULL
+industry	0	食品饮料-休闲食品	食品饮料-休闲食品	0	NULL
+industry	0	食品饮料-水饮冲调	食品饮料-水饮冲调	0	NULL
+industry	0	食品饮料-粮油干货	食品饮料-粮油干货	0	NULL
+industry	0	食品饮料-海鲜水产	食品饮料-海鲜水产	0	NULL
+industry	0	食品饮料-其他食品饮料	食品饮料-其他食品饮料	0	NULL
+industry	0	食品饮料-酒类	食品饮料-酒类	0	NULL
+industry	0	食品饮料-茶叶	食品饮料-茶叶	0	NULL
+industry	0	食品饮料-膳食营养品	食品饮料-膳食营养品	0	NULL
+industry	0	食品饮料-传统滋补	食品饮料-传统滋补	0	NULL
+industry	0	食品饮料-水果蔬菜	食品饮料-水果蔬菜	0	NULL
+industry	0	房地产-房地产开发商	房地产-房地产开发商	0	NULL
+industry	0	食品饮料-冷冻食品	食品饮料-冷冻食品	0	NULL
+industry	0	3c及电器-智能设备	3c及电器-智能设备	0	NULL
+industry	0	食品饮料-肉禽蛋品	食品饮料-肉禽蛋品	0	NULL
+industry	0	3c及电器-其他3C及电器	3c及电器-其他3C及电器	0	NULL
+industry	0	商务服务-包装印刷	商务服务-包装印刷	0	NULL
+industry	0	3c及电器-手机及配件	3c及电器-手机及配件	0	NULL
+industry	0	商务服务-中介服务	商务服务-中介服务	0	NULL
+industry	0	3c及电器-电脑	3c及电器-电脑	0	NULL
+industry	0	商务服务-管理咨询	商务服务-管理咨询	0	NULL
+industry	0	3c及电器-个护健康电器	3c及电器-个护健康电器	0	NULL
+industry	0	商务服务-市场营销服务	商务服务-市场营销服务	0	NULL
+industry	0	3c及电器-电器配件	3c及电器-电器配件	0	NULL
+industry	0	商务服务-会展服务	商务服务-会展服务	0	NULL
+industry	0	3c及电器-大家电	3c及电器-大家电	0	NULL
+industry	0	商务服务-设计	商务服务-设计	0	NULL
+industry	0	3c及电器-3C数码设备及配件	3c及电器-3C数码设备及配件	0	NULL
+industry	0	商务服务-会计税务	商务服务-会计税务	0	NULL
+industry	0	3c及电器-电子教育及配件	3c及电器-电子教育及配件	0	NULL
+industry	0	商务服务-其他商务服务	商务服务-其他商务服务	0	NULL
+industry	0	3c及电器-打印设备	3c及电器-打印设备	0	NULL
+industry	0	商务服务-综合法律服务	商务服务-综合法律服务	0	NULL
+industry	0	3c及电器-计算机及配件	3c及电器-计算机及配件	0	NULL
+industry	0	商务服务-其他法律服务	商务服务-其他法律服务	0	NULL
+industry	0	3c及电器-办公耗材	3c及电器-办公耗材	0	NULL
+industry	0	商务服务-废旧回收	商务服务-废旧回收	0	NULL
+industry	0	3c及电器-影像与监控设备	3c及电器-影像与监控设备	0	NULL
+industry	0	商务服务-节能	商务服务-节能	0	NULL
+industry	0	3c及电器-投影与显示设备	3c及电器-投影与显示设备	0	NULL
+industry	0	商务服务-商用物流运输	商务服务-商用物流运输	0	NULL
+industry	0	3c及电器-智慧零售设备	3c及电器-智慧零售设备	0	NULL
+industry	0	生活服务-生活服务综合平台	生活服务-生活服务综合平台	0	NULL
+industry	0	3c及电器-电玩及配件	3c及电器-电玩及配件	0	NULL
+industry	0	生活服务-便民服务	生活服务-便民服务	0	NULL
+industry	0	3c及电器-网络设备	3c及电器-网络设备	0	NULL
+industry	0	生活服务-家政服务	生活服务-家政服务	0	NULL
+industry	0	3c及电器-线材与配件	3c及电器-线材与配件	0	NULL
+industry	0	生活服务-二手交易	生活服务-二手交易	0	NULL
+industry	0	3c及电器-电脑组件	3c及电器-电脑组件	0	NULL
+industry	0	生活服务-租赁服务	生活服务-租赁服务	0	NULL
+industry	0	3c及电器-环境电器	3c及电器-环境电器	0	NULL
+industry	0	生活服务-配送服务	生活服务-配送服务	0	NULL
+industry	0	3c及电器-厨房电器	3c及电器-厨房电器	0	NULL
+industry	0	生活服务-移民服务	生活服务-移民服务	0	NULL
+industry	0	3c及电器-清洁电器	3c及电器-清洁电器	0	NULL
+industry	0	生活服务-其他生活服务	生活服务-其他生活服务	0	NULL
+industry	0	3c及电器-冷藏电器	3c及电器-冷藏电器	0	NULL
+industry	0	生活服务-婚庆策划	生活服务-婚庆策划	0	NULL
+industry	0	3c及电器-影音设备及配件	3c及电器-影音设备及配件	0	NULL
+industry	0	生活服务-婚嫁平台	生活服务-婚嫁平台	0	NULL
+industry	0	3c及电器-摄影摄像及配件	3c及电器-摄影摄像及配件	0	NULL
+industry	0	生活服务-养老服务	生活服务-养老服务	0	NULL
+industry	0	3c及电器-电脑外设及配件	3c及电器-电脑外设及配件	0	NULL
+industry	0	生活服务-孕产服务	生活服务-孕产服务	0	NULL
+industry	0	3c及电器-影音电器	3c及电器-影音电器	0	NULL
+industry	0	生活服务-婚纱摄影	生活服务-婚纱摄影	0	NULL
+industry	0	3c及电器-办公设备	3c及电器-办公设备	0	NULL
+industry	0	生活服务-孕婴童摄影	生活服务-孕婴童摄影	0	NULL
+industry	0	3c及电器-门禁安防设备	3c及电器-门禁安防设备	0	NULL
+industry	0	生活服务-印刷摄影	生活服务-印刷摄影	0	NULL
+industry	0	3c及电器-元器件	3c及电器-元器件	0	NULL
+industry	0	生活服务-保安安保	生活服务-保安安保	0	NULL
+industry	0	服装配饰-其他服装配饰	服装配饰-其他服装配饰	0	NULL
+industry	0	生活服务-维修服务	生活服务-维修服务	0	NULL
+industry	0	服装配饰-内衣	服装配饰-内衣	0	NULL
+industry	0	生活服务-洗涤护理	生活服务-洗涤护理	0	NULL
+industry	0	服装配饰-黄金珠宝	服装配饰-黄金珠宝	0	NULL
+industry	0	生活服务-搬家运输	生活服务-搬家运输	0	NULL
+industry	0	服装配饰-钟表眼镜	服装配饰-钟表眼镜	0	NULL
+industry	0	生活服务-婚纱礼服	生活服务-婚纱礼服	0	NULL
+industry	0	服装配饰-男鞋	服装配饰-男鞋	0	NULL
+industry	0	生活服务-彩妆造型	生活服务-彩妆造型	0	NULL
+industry	0	服装配饰-童鞋	服装配饰-童鞋	0	NULL
+industry	0	生活服务-婚车租赁	生活服务-婚车租赁	0	NULL
+industry	0	服装配饰-箱包	服装配饰-箱包	0	NULL
+industry	0	生活服务-婚礼喜品	生活服务-婚礼喜品	0	NULL
+industry	0	服装配饰-女鞋	服装配饰-女鞋	0	NULL
+industry	0	生活服务-婚宴	生活服务-婚宴	0	NULL
+industry	0	服装配饰-男装	服装配饰-男装	0	NULL
+industry	0	生活服务-司仪主持	生活服务-司仪主持	0	NULL
+industry	0	服装配饰-其他特殊服装	服装配饰-其他特殊服装	0	NULL
+industry	0	生活服务-旅拍	生活服务-旅拍	0	NULL
+industry	0	服装配饰-女装	服装配饰-女装	0	NULL
+industry	0	生活服务-婚礼跟拍	生活服务-婚礼跟拍	0	NULL
+industry	0	服装配饰-运动户外及功能鞋	服装配饰-运动户外及功能鞋	0	NULL
+industry	0	生活服务-婴幼服务	生活服务-婴幼服务	0	NULL
+industry	0	服装配饰-童装	服装配饰-童装	0	NULL
+industry	0	生活服务-宠物服务	生活服务-宠物服务	0	NULL
+industry	0	服装配饰-服饰配件	服装配饰-服饰配件	0	NULL
+industry	0	家居建材-家装建材	家居建材-家装建材	0	NULL
+industry	0	服装配饰-时尚饰品	服装配饰-时尚饰品	0	NULL
+industry	0	家居建材-家具	家居建材-家具	0	NULL
+industry	0	服装配饰-功能性运动服	服装配饰-功能性运动服	0	NULL
+industry	0	家居建材-其他家居建材	家居建材-其他家居建材	0	NULL
+industry	0	房地产-物业管理公司	房地产-物业管理公司	0	NULL
+industry	0	家居建材-居家饰品	家居建材-居家饰品	0	NULL
+industry	0	房地产-其他房地产	房地产-其他房地产	0	NULL
+industry	0	家居建材-家装平台	家居建材-家装平台	0	NULL
+industry	0	房地产-房地产综合服务平台	房地产-房地产综合服务平台	0	NULL
+industry	0	家居建材-家装灯饰光源	家居建材-家装灯饰光源	0	NULL
+industry	0	房地产-房地产分销商/渠道机构	房地产-房地产分销商/渠道机构	0	NULL
+industry	0	家居建材-床上用品	家居建材-床上用品	0	NULL
+industry	0	出行旅游-景点	出行旅游-景点	0	NULL
+industry	0	家居建材-居家布艺	家居建材-居家布艺	0	NULL
+industry	0	出行旅游-酒店宾馆	出行旅游-酒店宾馆	0	NULL
+industry	0	家居建材-装修服务	家居建材-装修服务	0	NULL
+industry	0	出行旅游-OTA(online travel Agent)	出行旅游-OTA(online travel Agent)	0	NULL
+industry	0	家居建材-五金/工具	家居建材-五金/工具	0	NULL
+industry	0	出行旅游-旅行服务	出行旅游-旅行服务	0	NULL
+industry	0	家居建材-厨具	家居建材-厨具	0	NULL
+industry	0	出行旅游-航空公司	出行旅游-航空公司	0	NULL
+industry	0	家居建材-家务工具	家居建材-家务工具	0	NULL
+industry	0	出行旅游-公路客运公司	出行旅游-公路客运公司	0	NULL
+industry	0	家居建材-防护用品	家居建材-防护用品	0	NULL
+industry	0	出行旅游-邮轮	出行旅游-邮轮	0	NULL
+industry	0	家居建材-婚庆用品	家居建材-婚庆用品	0	NULL
+industry	0	出行旅游-商旅票务代理其他出行旅游	出行旅游-商旅票务代理其他出行旅游	0	NULL
+industry	0	家居建材-雨具	家居建材-雨具	0	NULL
+industry	0	出行旅游-外旅局	出行旅游-外旅局	0	NULL
+industry	0	家居建材-收纳整理工具	家居建材-收纳整理工具	0	NULL
+industry	0	出行旅游-汽车租赁	出行旅游-汽车租赁	0	NULL
+industry	0	家居建材-火机烟具	家居建材-火机烟具	0	NULL
+industry	0	出行旅游-打车/专车/接机	出行旅游-打车/专车/接机	0	NULL
+industry	0	家居建材-节日/装扮用品	家居建材-节日/装扮用品	0	NULL
+industry	0	出行旅游-自行车/非机动车租赁	出行旅游-自行车/非机动车租赁	0	NULL
+industry	0	家居建材-卫浴用具	家居建材-卫浴用具	0	NULL
+industry	0	出行旅游-公共交通票务	出行旅游-公共交通票务	0	NULL
+industry	0	通信-通信设备	通信-通信设备	0	NULL
+industry	0	出行旅游-客栈民宿	出行旅游-客栈民宿	0	NULL
+industry	0	金融业-综合金融平台	金融业-综合金融平台	0	NULL
+industry	0	社会公共-政府政务文化旅游	社会公共-政府政务文化旅游	0	NULL
+industry	0	商务服务-贷款通期咨询	商务服务-贷款通期咨询	0	NULL
+industry	0	社会公共-社会组织	社会公共-社会组织	0	NULL
+industry	0	游戏-休闲游戏	游戏-休闲游戏	0	NULL
+industry	0	社会公共-宗教	社会公共-宗教	0	NULL
+industry	0	游戏-角色扮演	游戏-角色扮演	0	NULL
+industry	0	社会公共-其他社会公共	社会公共-其他社会公共	0	NULL
+industry	0	游戏-体育竞技	游戏-体育竞技	0	NULL
+industry	0	社会公共-政府政务科教卫生	社会公共-政府政务科教卫生	0	NULL
+industry	0	游戏-MOBA	游戏-MOBA	0	NULL
+industry	0	社会公共-政府政务环境安全	社会公共-政府政务环境安全	0	NULL
+industry	0	游戏-其他游戏	游戏-其他游戏	0	NULL
+industry	0	互联网电商服务-综合电商平台	互联网电商服务-综合电商平台	0	NULL
+industry	0	游戏-射击游戏	游戏-射击游戏	0	NULL
+industry	0	互联网电商服务-跨境电商平台	互联网电商服务-跨境电商平台	0	NULL
+industry	0	游戏-动作游戏	游戏-动作游戏	0	NULL
+industry	0	互联网电商服务-电商导购平台	互联网电商服务-电商导购平台	0	NULL
+industry	0	游戏-SLG	游戏-SLG	0	NULL
+industry	0	互联网电商服务-其他互联网电商服务	互联网电商服务-其他互联网电商服务	0	NULL
+industry	0	游戏-塔防游戏	游戏-塔防游戏	0	NULL
+industry	0	互联网电商服务-垂直电商平台	互联网电商服务-垂直电商平台	0	NULL
+industry	0	游戏-模拟经营	游戏-模拟经营	0	NULL
+industry	0	农资园艺-农机/农具	农资园艺-农机/农具	0	NULL
+industry	0	游戏-卡牌游戏	游戏-卡牌游戏	0	NULL
+industry	0	农资园艺-鲜活植物	农资园艺-鲜活植物	0	NULL
+industry	0	游戏-音乐游戏	游戏-音乐游戏	0	NULL
+industry	0	农资园艺-畜牧/养殖物资	农资园艺-畜牧/养殖物资	0	NULL
+industry	0	游戏-游戏平台	游戏-游戏平台	0	NULL
+industry	0	农资园艺-农用肥料	农资园艺-农用肥料	0	NULL
+industry	0	游戏-游戏助手/加速器	游戏-游戏助手/加速器	0	NULL
+industry	0	农资园艺-其他农资园艺	农资园艺-其他农资园艺	0	NULL
+industry	0	游戏-狼人杀/剧本杀	游戏-狼人杀/剧本杀	0	NULL
+industry	0	农资园艺-种子	农资园艺-种子	0	NULL
+industry	0	游戏-传统棋类游戏	游戏-传统棋类游戏	0	NULL
+industry	0	农资园艺-农药	农资园艺-农药	0	NULL
+industry	0	引流电商广告-引流电商广告	引流电商广告-引流电商广告	0	NULL
+industry	0	农资园艺-生活鲜花	农资园艺-生活鲜花	0	NULL
+industry	0	社交通讯-一般社交通讯	社交通讯-一般社交通讯	0	NULL
+industry	0	机械设备-电气设备	机械设备-电气设备	0	NULL
+industry	0	社交通讯-交友类社交通讯	社交通讯-交友类社交通讯	0	NULL
+industry	0	机械设备-通用机械设备	机械设备-通用机械设备	0	NULL
+industry	0	社交通讯-婚恋社交通讯	社交通讯-婚恋社交通讯	0	NULL
+industry	0	机械设备-工程机械	机械设备-工程机械	0	NULL
+industry	0	社交通讯-其他社交通讯	社交通讯-其他社交通讯	0	NULL
+industry	0	机械设备-机床与加工	机械设备-机床与加工	0	NULL
+industry	0	社交通讯-泛娱乐社交通讯	社交通讯-泛娱乐社交通讯	0	NULL
+industry	0	机械设备-食品制药设备	机械设备-食品制药设备	0	NULL
+industry	0	医药健康-其他医疗	医药健康-其他医疗	0	NULL
+industry	0	机械设备-环保与清洁	机械设备-环保与清洁	0	NULL
+industry	0	医药健康-宠物药品	医药健康-宠物药品	0	NULL
+industry	0	机械设备-其他机械设备	机械设备-其他机械设备	0	NULL
+industry	0	医药健康-医药健康平台	医药健康-医药健康平台	0	NULL
+industry	0	机械设备-工业品	机械设备-工业品	0	NULL
+industry	0	医药健康-医药健康线下零售	医药健康-医药健康线下零售	0	NULL
+industry	0	休闲娱乐-洗浴按摩	休闲娱乐-洗浴按摩	0	NULL
+industry	0	医药健康-美容美体医疗器械	医药健康-美容美体医疗器械	0	NULL
+industry	0	休闲娱乐-演出	休闲娱乐-演出	0	NULL
+industry	0	医药健康-计生用品	医药健康-计生用品	0	NULL
+industry	0	休闲娱乐-传统娱乐	休闲娱乐-传统娱乐	0	NULL
+industry	0	医药健康-特医食品	医药健康-特医食品	0	NULL
+industry	0	休闲娱乐-运动健身	休闲娱乐-运动健身	0	NULL
+industry	0	医疗机构-医疗周边服务	医疗机构-医疗周边服务	0	NULL
+industry	0	休闲娱乐-户外玩乐	休闲娱乐-户外玩乐	0	NULL
+industry	0	医疗机构-医疗美容	医疗机构-医疗美容	0	NULL
+industry	0	休闲娱乐-其他休闲娱乐	休闲娱乐-其他休闲娱乐	0	NULL
+industry	0	医疗机构-植发机构	医疗机构-植发机构	0	NULL
+industry	0	休闲娱乐-电影	休闲娱乐-电影	0	NULL
+industry	0	医疗机构-综合医院/诊所	医疗机构-综合医院/诊所	0	NULL
+industry	0	休闲娱乐-推理/桌游	休闲娱乐-推理/桌游	0	NULL
+industry	0	医疗机构-体检中心	医疗机构-体检中心	0	NULL
+industry	0	休闲娱乐-酒吧	休闲娱乐-酒吧	0	NULL
+industry	0	医疗机构-康复疗养	医疗机构-康复疗养	0	NULL
+industry	0	休闲娱乐-DIY手工坊	休闲娱乐-DIY手工坊	0	NULL
+industry	0	医疗机构-妇幼医院	医疗机构-妇幼医院	0	NULL
+industry	0	休闲娱乐-儿童乐园	休闲娱乐-儿童乐园	0	NULL
+industry	0	医疗机构-医疗机构服务平台	医疗机构-医疗机构服务平台	0	NULL
+industry	0	休闲娱乐-新奇体验	休闲娱乐-新奇体验	0	NULL
+industry	0	医疗机构-齿科	医疗机构-齿科	0	NULL
+industry	0	休闲娱乐-休闲运动	休闲娱乐-休闲运动	0	NULL
+industry	0	医疗机构-眼科	医疗机构-眼科	0	NULL
+industry	0	休闲娱乐-展馆/展览	休闲娱乐-展馆/展览	0	NULL
+industry	0	医疗机构-心理咨询	医疗机构-心理咨询	0	NULL
+industry	0	传媒资讯-传媒服务商	传媒资讯-传媒服务商	0	NULL
+industry	0	医疗机构-其他医疗机构	医疗机构-其他医疗机构	0	NULL
+industry	0	传媒资讯-影音娱乐	传媒资讯-影音娱乐	0	NULL
+industry	0	医疗机构-男科	医疗机构-男科	0	NULL
+industry	0	传媒资讯-其他传媒资讯	传媒资讯-其他传媒资讯	0	NULL
+industry	0	医疗机构-妇科	医疗机构-妇科	0	NULL
+industry	0	传媒资讯-信息资讯	传媒资讯-信息资讯	0	NULL
+industry	0	医疗机构-皮肤医院	医疗机构-皮肤医院	0	NULL
+industry	0	餐饮服务-饮品	餐饮服务-饮品	0	NULL
+industry	0	游戏-棋牌捕鱼	游戏-棋牌捕鱼	0	NULL
+industry	0	餐饮服务-其他餐饮服务	餐饮服务-其他餐饮服务	0	NULL
+industry	0	教育培训-理财培训	教育培训-理财培训	0	NULL
+industry	0	餐饮服务-地方菜	餐饮服务-地方菜	0	NULL
+industry	0	教育培训-新媒体运营培训	教育培训-新媒体运营培训	0	NULL
+industry	0	餐饮服务-面包甜点	餐饮服务-面包甜点	0	NULL
+industry	0	教育培训-中医健康养生培训	教育培训-中医健康养生培训	0	NULL
+industry	0	餐饮服务-西餐	餐饮服务-西餐	0	NULL
+industry	0	金融业-贷款服务	金融业-贷款服务	0	NULL
+industry	0	餐饮服务-日韩料理	餐饮服务-日韩料理	0	NULL
+industry	0	商务服务-代运营服务	商务服务-代运营服务	0	NULL
+industry	0	餐饮服务-东南亚菜	餐饮服务-东南亚菜	0	NULL
+industry	0	商务服务-个人经济纠纷咨询	商务服务-个人经济纠纷咨询	0	NULL
+industry	0	餐饮服务-火锅	餐饮服务-火锅	0	NULL
+industry	0	商务服务-贷款逾期咨询	商务服务-贷款逾期咨询	0	NULL
+industry	0	餐饮服务-快餐小吃	餐饮服务-快餐小吃	0	NULL
+industry	0	商务服务-人力资源服务	商务服务-人力资源服务	0	NULL
+industry	0	餐饮服务-美食城	餐饮服务-美食城	0	NULL
+industry	0	生活服务-本地婚介所	生活服务-本地婚介所	0	NULL
+industry	0	餐饮服务-热门/特色菜	餐饮服务-热门/特色菜	0	NULL
+industry	0	生活服务-情感咨询	生活服务-情感咨询	0	NULL
+industry	0	餐饮服务-音乐餐厅	餐饮服务-音乐餐厅	0	NULL
+industry	0	生活服务-起名测算	生活服务-起名测算	0	NULL
+industry	0	餐饮服务-自助餐	餐饮服务-自助餐	0	NULL
+industry	0	家居建材-防水补漏	家居建材-防水补漏	0	NULL
+industry	0	工具类软件-软件工具	工具类软件-软件工具	0	NULL
+industry	0	家居建材-轻钢别墅设计和建造业务	家居建材-轻钢别墅设计和建造业务	0	NULL
+industry	0	工具类软件-多媒体处理	工具类软件-多媒体处理	0	NULL
+industry	0	通信-电信运营商	通信-电信运营商	0	NULL
+industry	0	工具类软件-实用工具	工具类软件-实用工具	0	NULL
+industry	0	通信-虚拟运营商	通信-虚拟运营商	0	NULL
+industry	0	工具类软件-其他工具类软件	工具类软件-其他工具类软件	0	NULL
+industry	0	通信-其他通信	通信-其他通信	0	NULL
+industry	0	招商加盟-招商加盟联展平台	招商加盟-招商加盟联展平台	0	NULL
+industry	0	医药健康-保健品-国内	医药健康-保健品-国内	0	NULL
+industry	0	招商加盟-生活用品加盟	招商加盟-生活用品加盟	0	NULL
+industry	0	医药健康-药品	医药健康-药品	0	NULL
+industry	0	招商加盟-生活服务加盟	招商加盟-生活服务加盟	0	NULL
+industry	0	医药健康-医疗器械	医药健康-医疗器械	0	NULL
+industry	0	招商加盟-服装配饰加盟	招商加盟-服装配饰加盟	0	NULL
+industry	0	食品饮料-海外膳食营养品	食品饮料-海外膳食营养品	0	NULL
+industry	0	招商加盟-美容美发加盟	招商加盟-美容美发加盟	0	NULL
+industry	0	招商加盟-室内娱乐加盟	招商加盟-室内娱乐加盟	0	NULL
+industry	0	招商加盟-教育培训加盟	招商加盟-教育培训加盟	0	NULL
+industry	0	招商加盟-酒店加盟	招商加盟-酒店加盟	0	NULL
+industry	0	招商加盟-餐食加盟	招商加盟-餐食加盟	0	NULL
+industry	0	招商加盟-房产家居建材加盟	招商加盟-房产家居建材加盟	0	NULL
+industry	0	招商加盟-食品加盟	招商加盟-食品加盟	0	NULL
+industry	0	招商加盟-互联网软件加盟	招商加盟-互联网软件加盟	0	NULL
+invoice_content	0	现代服务*信息服务费	现代服务*信息服务费	0	NULL
+invoice_content	1	现代服务*信息费	现代服务*信息费	0	NULL
+invoice_content	2	广告服务*推广费	广告服务*推广费	0	NULL
+invoice_content	4	千川竞价	千川竞价	0	[{"label":"信息服务费","value":91.5},{"label":"广告发布费","value":8.5}]
+invoice_content	100	其它	其它	0	NULL
+invoice_type	0	增值税纸质普票	增值税纸质普票	0	NULL
+invoice_type	0	增值税纸质专票	增值税纸质专票	0	NULL
+invoice_type	0	数电普票	数电普票	0	NULL
+invoice_type	0	数电专票	数电专票	0	NULL
+invoice_type	0	数电纸质专票	数电纸质专票	0	NULL
+ks_account_type	0	金牛	0	1	NULL
+ks_account_type	3	医疗	3	1	NULL
+ks_account_type	4	快手信息	4	1	NULL
+ks_account_type	5	磁力本地	5	1	NULL
+ks_account_type	100	巨量AD	100	0	NULL
+ks_account_type	101	巨量星图	101	1	NULL
+ks_account_type	102	巨量本地	102	0	NULL
+ks_account_type	120	TK	120	1	NULL
+ks_account_type	200	视频号	200	1	NULL
+ks_account_type	204	广点通	204	1	NULL
+ks_account_type	300	小书	300	1	NULL
+ks_account_type	1001	本地推	1001	0	NULL
+ks_account_type	1002	腾讯K4	1002	0	NULL
+ks_account_type	1003	快手	1003	0	NULL
+ks_account_type	1004	巨量AD	1004	0	NULL
+ks_comsume_type	1	非全站	1	0	NULL
+ks_comsume_type	2	全站	2	0	NULL
+ks_comsume_type	3	本地推	3	0	NULL
+ks_comsume_type	4	磁力智投	4	0	NULL
+ks_comsume_type	5	品牌自助	5	0	NULL
+openaccountstate	1	待处理	0	0	NULL
+openaccountstate	2	已处理	1	0	NULL
+oper_balance_type	1	扣罚抵扣	1	0	NULL
+oper_balance_type	2	激励金抵扣	2	0	NULL
+oper_balance_type	10	框返抵扣	10	0	NULL
+oper_balance_type	100	其它	100	0	NULL
+reimburse_type	0	设备费	0	0	NULL
+reimburse_type	0	办公费	1	0	NULL
+reimburse_type	0	招待费	2	0	NULL
+reimburse_type	0	交通费	3	0	NULL
+reimburse_type	0	快递费	4	0	NULL
+reimburse_type	0	广告费	5	0	NULL
+reimburse_type	0	货款	6	0	NULL
+reimburse_type	0	其他	7	0	NULL
+sync_state	0	不同步/人工操作	0	0	NULL
+sync_state	0	等待同步	10	0	NULL
+sync_state	0	同步处理中	20	0	NULL
+sync_state	0	同步成功	30	0	NULL
+sync_state	0	同步失败	40	0	NULL
+sys_common_status	1	成功	0	0	正常状态
+sys_common_status	2	失败	1	0	停用状态
+sys_job_group	1	默认	DEFAULT	0	默认分组
+sys_job_group	2	系统	SYSTEM	0	系统分组
+sys_job_status	1	正常	0	0	正常状态
+sys_job_status	2	暂停	1	0	停用状态
+sys_normal_disable	1	正常	0	0	正常状态
+sys_normal_disable	2	停用	1	0	停用状态
+sys_notice_status	1	正常	0	0	正常状态
+sys_notice_status	2	关闭	1	0	关闭状态
+sys_notice_type	1	通知	1	0	通知
+sys_notice_type	2	公告	2	0	公告
+sys_oper_type	1	新增	1	0	新增操作
+sys_oper_type	2	修改	2	0	修改操作
+sys_oper_type	3	删除	3	0	删除操作
+sys_oper_type	4	授权	4	0	授权操作
+sys_oper_type	5	导出	5	0	导出操作
+sys_oper_type	6	导入	6	0	导入操作
+sys_oper_type	7	强退	7	0	强退操作
+sys_oper_type	8	生成代码	8	0	生成操作
+sys_oper_type	9	清空数据	9	0	清空操作
+sys_show_hide	1	显示	0	0	显示菜单
+sys_show_hide	2	隐藏	1	0	隐藏菜单
+sys_user_qualification	0	初中以下	1	0	NULL
+sys_user_qualification	10	初中	2	0	NULL
+sys_user_qualification	30	中专	3	0	NULL
+sys_user_qualification	40	高中	4	0	NULL
+sys_user_qualification	50	大专	5	0	NULL
+sys_user_qualification	60	本科	6	0	NULL
+sys_user_qualification	70	本科以上	7	0	NULL
+sys_user_sex	1	男	0	0	性别男
+sys_user_sex	2	女	1	0	性别女
+sys_user_sex	3	未知	2	0	性别未知
+sys_user_state	0	实习期	0	0	NULL
+sys_user_state	0	正式员工	1	0	NULL
+sys_user_state	0	离职员工	2	0	NULL
+sys_yes_no	1	是	Y	0	系统默认是
+sys_yes_no	2	否	N	0	系统默认否
+_
+## sys_config
+config_name	config_key	config_value	config_type
+是否允许跨客户转户[0-禁止,1-允许]	crossCustomer	[已脱敏]	N
+店铺是否需要分快手端口	selectAgentId	[已脱敏]	N
+是否限制超客户返点充值	allowExceeding	[已脱敏]	N
+账户充值客户抹零阈值	zeroingThreshold	[已脱敏]	N
+阿里云发送短信验证码配置	alibabasmsconfig	[已脱敏]	N
+转出/退币返点规则计算规则[auto-自动/逆推，ratio-指定返点，equipoise-平转]	transferConversion	[已脱敏]	N
+客户现金流水对账单生成模式[automatic-自动生成，manually-手动触发	generateType	[已脱敏]	N
+抖音默认扣款项	douyinTransferType	[已脱敏]	N
+腾讯默认扣款项	tencentTransferType	[已脱敏]	N
+creditToken	creditToken	[已脱敏]	N
+weixinService	weixinService	[已脱敏]	N
+weixinServiceLimit	weixinServiceLimit	[已脱敏]	N
+xhsTransferType	xhsTransferType	[已脱敏]	N
+客户对账单结算模式[automatic-自动结算，manually-手动结算]	settlementType	[已脱敏]	N
+是否开启返点限制0-否 1-是	rebeatLimitOpen444	[已脱敏]	N
+rebateLimit	rebateLimit	[已脱敏]	N
+rebeatLimitOpen	rebeatLimitOpen	[已脱敏]	N
+kuaishouTransferType	kuaishouTransferType	[已脱敏]	N

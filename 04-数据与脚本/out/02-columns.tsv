@@ -1,0 +1,2160 @@
+﻿table_name	ordinal_position	column_name	column_type	is_nullable	column_default	column_key	column_comment
+base_approval_process	1	id	int(11)	NO	NULL	PRI	主键id
+base_approval_process	2	no	varchar(30)	YES	NULL		流程编号
+base_approval_process	3	user_id	int(11)	YES	NULL		用户编号
+base_approval_process	4	user_name	varchar(100)	YES	NULL		用户名称
+base_approval_process	5	dept_id	int(11)	YES	NULL		部门id
+base_approval_process	6	dept_name	varchar(100)	YES	NULL		部门名称
+base_approval_process	7	role_id	int(11)	YES	NULL		角色id
+base_approval_process	8	role_name	varchar(100)	YES	NULL		角色名称
+base_approval_process	9	sort	int(11)	YES	0		排序(倒叙)
+base_approval_process	10	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+base_approval_process	11	create_by	varchar(64)	YES			创建者
+base_approval_process	12	create_time	datetime	YES	NULL		创建时间
+base_approval_process	13	update_by	varchar(64)	YES			更新者
+base_approval_process	14	update_time	datetime	YES	NULL		更新时间
+base_approval_process	15	revision	int(11)	YES	0		乐观锁版本号
+base_approval_process	16	type	char(1)	YES	NULL		审批类型 （0 按人员 1按角色）
+base_approval_process	17	limit_start	decimal(18,2)	YES	0.00		
+base_approval_process	18	limit_end	decimal(18,2)	YES	0.00		
+base_approval_process_detail	1	id	int(11)	NO	NULL	PRI	
+base_approval_process_detail	2	approval_id	int(11)	YES	NULL		主表ID，base_approval_process
+base_approval_process_detail	3	type	varchar(10)	YES	NULL		审批类型 （0 按人员 1按角色）
+base_approval_process_detail	4	user_id	int(11)	YES	NULL		用户编号
+base_approval_process_detail	5	user_name	varchar(100)	YES	NULL		用户名称
+base_approval_process_detail	6	dept_id	int(11)	YES	NULL		部门id
+base_approval_process_detail	7	dept_name	varchar(100)	YES	NULL		部门名称
+base_approval_process_detail	8	role_id	int(11)	YES	NULL		角色id
+base_approval_process_detail	9	role_name	varchar(100)	YES	NULL		角色名称
+base_approval_process_detail	10	limit_start	decimal(18,2)	YES	0.00		
+base_approval_process_detail	11	limit_end	decimal(18,2)	YES	0.00		
+base_approval_process_detail	12	account_type	varchar(255)	YES	NULL		业务类型客户类型
+base_approval_process_detail_copy	1	id	int(11)	NO	NULL	PRI	
+base_approval_process_detail_copy	2	approval_id	int(11)	YES	NULL		主表ID，base_approval_process
+base_approval_process_detail_copy	3	type	varchar(10)	YES	NULL		审批类型 （0 按人员 1按角色）
+base_approval_process_detail_copy	4	user_id	int(11)	YES	NULL		用户编号
+base_approval_process_detail_copy	5	user_name	varchar(100)	YES	NULL		用户名称
+base_approval_process_detail_copy	6	dept_id	int(11)	YES	NULL		部门id
+base_approval_process_detail_copy	7	dept_name	varchar(100)	YES	NULL		部门名称
+base_approval_process_detail_copy	8	role_id	int(11)	YES	NULL		角色id
+base_approval_process_detail_copy	9	role_name	varchar(100)	YES	NULL		角色名称
+base_approval_process_detail_copy	10	limit_start	decimal(18,2)	YES	0.00		
+base_approval_process_detail_copy	11	limit_end	decimal(18,2)	YES	0.00		
+base_approval_process_detail_copy	12	account_type	varchar(255)	YES	NULL		业务类型客户类型
+crm_msgconfig	1	id	int(11)	NO	NULL	PRI	
+crm_msgconfig	2	msgtype	int(11)	YES	0		消息类型 1-快手账户充值申请 2-快手转户申请 3-快手退币申请 4-抖音账户充值申请 5-抖音转户申请 6-抖音退币申请
+crm_msgconfig	3	userIds	varchar(255)	YES	NULL		人员IDS
+crm_msgconfig	4	userNames	varchar(255)	YES	NULL		人员名称s
+crm_msgconfig	5	roleIds	varchar(100)	YES	NULL		岗位IDs，多个逗号分割
+crm_msgconfig	6	roleNames	varchar(200)	YES	NULL		岗位名称s
+crm_msgconfig	7	datatype	char(1)	YES	NULL		数据类型：1-按角色 2-按人员 3-按申请人部门负责人
+crm_msgconfig	8	create_by	int(11)	YES	0		创建人
+crm_msgconfig	9	create_time	datetime	YES	NULL		创建时间
+crm_msgconfig	10	datajson	text	YES	NULL		
+dig_abnormal_clock	1	id	int(11)	NO	NULL	PRI	主键id
+dig_abnormal_clock	2	user_id	bigint(20)	YES	NULL		员工id
+dig_abnormal_clock	3	user_name	varchar(100)	YES	NULL		员工名称
+dig_abnormal_clock	4	dept_id	bigint(20)	YES	NULL		部门id
+dig_abnormal_clock	5	dept_name	varchar(100)	YES	NULL		部门名称
+dig_abnormal_clock	6	abnormal_time	datetime	YES	NULL		异常时间
+dig_abnormal_clock	7	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_abnormal_clock	8	create_by	varchar(64)	YES			创建者
+dig_abnormal_clock	9	create_time	datetime	YES	NULL		创建时间
+dig_abnormal_clock	10	update_by	varchar(64)	YES			更新者
+dig_abnormal_clock	11	update_time	datetime	YES	NULL		更新时间
+dig_abnormal_clock	12	remark	varchar(500)	YES	NULL		备注 (异常原因)
+dig_abnormal_clock	13	revision	int(11)	YES	0		乐观锁版本号
+dig_account	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_account	2	account_name	varchar(32)	YES	NULL		账户名称
+dig_account	3	account_type	int(1)	YES	1		账户类型1-银行卡2-支付宝3-微信
+dig_account	4	account_number	varchar(32)	YES	NULL		账户号码
+dig_account	5	bankname	varchar(32)	YES	NULL		开户行
+dig_account	6	balance	decimal(32,2)	YES	0.00		当前余额
+dig_account	7	revision	int(11)	YES	0		版本号
+dig_account	8	create_by	int(11)	YES	NULL		创建人
+dig_account	9	create_time	datetime	YES	NULL		创建时间
+dig_account	10	update_by	varchar(32)	YES	NULL		更新人
+dig_account	11	update_time	datetime	YES	NULL		更新时间
+dig_account	12	del_flag	char(1)	YES	0		是否删除 0-否 1-是 实现逻辑删除
+dig_account	13	is_virtually	char(1)	YES	0		是否虚拟账户 0-现实账户 1-虚拟账户
+dig_account	14	business_type	varchar(50)	YES	0		1-抖音 2-快手达人 3-快手短视频
+dig_account	15	no_business	char(1)	YES	0		是否非业务账户 0-否 1-是
+dig_account	16	is_hand	char(1)	YES	0		是否手工确认收款记录0是自动 1是手工
+dig_account	17	supplier_name	varchar(100)	YES	NULL		供应商名称，主要用于财务看板的集团日资金汇总表
+dig_accountopen_apply	1	id	int(11)	NO	NULL	PRI	
+dig_accountopen_apply	2	subject_name	varchar(255)	YES	NULL		开户主体名称
+dig_accountopen_apply	3	shop_no	varchar(200)	YES	NULL		店铺ID
+dig_accountopen_apply	4	account_type	varchar(255)	YES			账户类型
+dig_accountopen_apply	5	add_num	int(11)	YES	0		复制数量
+dig_accountopen_apply	6	category	varchar(300)	YES	NULL		开户类目
+dig_accountopen_apply	7	cid	varchar(200)	YES	NULL		CID(商品ID)
+dig_accountopen_apply	8	customer_name	varchar(255)	YES	NULL		客户名称
+dig_accountopen_apply	9	depname	varchar(255)	YES	NULL		申请人部门
+dig_accountopen_apply	10	applyname	varchar(255)	YES	NULL		申请人名称
+dig_accountopen_apply	11	manager	varchar(255)	YES	NULL		商务经理
+dig_accountopen_apply	12	reply	varchar(500)	YES	NULL		媒介回复
+dig_accountopen_apply	13	reply_date	datetime	YES	NULL		回复日期
+dig_accountopen_apply	14	reply_userid	int(11)	YES	NULL		回复人
+dig_accountopen_apply	15	reply_username	varchar(255)	YES	NULL		回复人
+dig_accountopen_apply	16	state	char(1)	YES	0		状态 0-待处理 1-已处理
+dig_accountopen_apply	17	create_by	int(11)	YES	NULL		创建人
+dig_accountopen_apply	18	create_time	datetime	YES	NULL		申请日期
+dig_accountopen_apply	19	shop_name	varchar(100)	YES	NULL		店铺名称
+dig_accountopen_apply	20	data_type	varchar(10)	YES	NULL		数据类型：1-端内 2-端外
+dig_accountopen_apply	21	supplier_name	varchar(100)	YES	NULL		供应商名称
+dig_accountopen_apply	22	customer_type	varchar(100)	YES	NULL		客户类别
+dig_accountopen_apply	23	account_nos	text	YES	NULL		开户的账户ID
+dig_accountopen_apply	24	customer_id	int(11)	YES	0		客户ID
+dig_accountopen_apply	25	remark	varchar(300)	YES	NULL		备注
+dig_adveraccount_wallet	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_adveraccount_wallet	2	account_id	varchar(255)	NO	NULL		广告账户id，作为条件时可以是多个
+dig_adveraccount_wallet	3	wallet_key	varchar(255)	YES	NULL		设置全局钱包
+dig_adveraccount_wallet	4	before_ratio	decimal(10,2)	YES	NULL		
+dig_adveraccount_wallet	5	after_ratio	decimal(10,2)	YES	NULL		
+dig_adveraccount_wallet	6	operator	varchar(255)	YES	NULL		操作人
+dig_adveraccount_wallet	7	creat_time	datetime	YES	NULL		创建时间
+dig_adveraccount_wallet	8	account_service_point	decimal(10,4)	YES	NULL		服务费点数
+dig_adveracoount_recharge	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_adveracoount_recharge	2	cashrecharge_id	bigint(20)	YES	0		现金充值记录ID，如果从现金充值记录来，同时记录
+dig_adveracoount_recharge	3	customer_id	bigint(20)	YES	0		客户ID
+dig_adveracoount_recharge	4	adveraccount_id	bigint(20)	YES	0		广告账户ID
+dig_adveracoount_recharge	5	cash_recharge	decimal(32,3)	YES	0.000		现金充值金额 从客户的现金账户支出
+dig_adveracoount_recharge	6	currency_recharge	decimal(32,3)	YES	0.000		实际充值货币金额 实际上充值到广告账户的余额
+dig_adveracoount_recharge	7	credit_pay	decimal(32,3)	YES	0.000		授信付款金额
+dig_adveracoount_recharge	8	cash_pay	decimal(32,3)	YES	0.000		现金付款金额 授信付款金额+现金付款金额=现金充值金额
+dig_adveracoount_recharge	9	opentypes	char(1)	YES	1		是否开户1-开单开户2-开单不开户
+dig_adveracoount_recharge	10	service_charge	decimal(32,3)	YES	0.000		服务费
+dig_adveracoount_recharge	11	supplier_id	bigint(20)	YES	0		供应商ID
+dig_adveracoount_recharge	12	supplier_name	varchar(32)	YES	NULL		供应商名称
+dig_adveracoount_recharge	13	actual_expenditure	decimal(32,3)	YES	0.000		实际支付金额【付给供应商】
+dig_adveracoount_recharge	14	supplier_accountid	bigint(20)	YES	0		供应商账户ID
+dig_adveracoount_recharge	15	supplier_ratio	decimal(32,4)	YES	0.0000		供应商折扣点数，1.02表示返点2%
+dig_adveracoount_recharge	16	payment_types	char(1)	YES	0		是否已经打款给供应商0-否1-是
+dig_adveracoount_recharge	17	approval_state	char(1)	YES	0		审批状态0-待确认 1-媒介确认充值 2-已完成
+dig_adveracoount_recharge	18	confirm_userid	int(11)	YES	0		媒介确认人
+dig_adveracoount_recharge	19	complete_time	datetime	YES	NULL		审批完成时间
+dig_adveracoount_recharge	20	cash_balance	decimal(32,3)	YES	0.000		充值后现金余额
+dig_adveracoount_recharge	21	credit_usemoney	decimal(32,3)	YES	0.000		充值后客户授信已用额度
+dig_adveracoount_recharge	22	account_balance	decimal(32,3)	YES	0.000		充值后账户货币余额
+dig_adveracoount_recharge	23	remark	varchar(512)	YES	NULL		备注
+dig_adveracoount_recharge	24	revision	int(11)	YES	0		乐观锁
+dig_adveracoount_recharge	25	create_by	int(11)	YES	NULL		创建人
+dig_adveracoount_recharge	26	create_time	datetime	YES	NULL		创建时间
+dig_adveracoount_recharge	27	update_by	varchar(32)	YES	NULL		更新人
+dig_adveracoount_recharge	28	update_time	datetime	YES	NULL		更新时间
+dig_adveracoount_recharge	29	datatypes	char(1)	YES	0		数据类型：0.实际充值 1.修改客户前返比例 2.转户 3.退币
+dig_adveracoount_recharge	30	service_id	int(11)	YES	0		运营id
+dig_adveracoount_recharge	31	service_name	varchar(255)	YES	NULL		运营名称
+dig_adveracoount_recharge	32	before_ratio	decimal(6,2)	YES	0.00		客户返点比例，记录当时客户返点比例
+dig_adveracoount_recharge	33	sale_id	int(11)	YES	0		销售ID
+dig_adveracoount_recharge	34	sale_name	varchar(30)	YES	NULL		销售名称
+dig_adveracoount_recharge	35	merge_id	int(11)	YES	0		合并记录ID
+dig_adveracoount_recharge	36	sync_state	int(11)	YES	0		同快手同步状态：0-不同步 10-同步未发送 20-同步已发送 30-同步成功 40-同步失败
+dig_adveracoount_recharge	37	ks_reason	text	YES	NULL		快手同步返回不成功原因
+dig_adveracoount_recharge	38	sync_time	datetime	YES	NULL		同步成功时间
+dig_adveracoount_recharge	39	account_ratio	decimal(10,2)	YES	0.00		广告账户当时返点
+dig_adveracoount_recharge	40	supplement_state	char(1)	YES	0		是否补单 0-否 1-是
+dig_adveracoount_recharge	41	supplement_date	datetime	YES	NULL		补单时间
+dig_adveracoount_recharge	42	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_adveracoount_recharge	43	del_flag	char(1)	YES	0		是否删除 0-否 1-是
+dig_adveracoount_recharge	44	after_ratio	decimal(10,2)	YES	NULL		后返点数
+dig_adveracoount_recharge	45	refuse_reason	varchar(500)	YES	NULL		拒绝原因
+dig_adveracoount_recharge	46	account	varchar(255)	YES	NULL		
+dig_adveracoount_recharge	47	after_ratio_last	decimal(10,4)	YES	NULL		上次充值的后返点数
+dig_adveracoount_recharge	48	capital_type	varchar(255)	YES	auto		腾讯资金账户类型 auto默认 
+dig_adveracoount_recharge	49	tags	varchar(50)	YES	NULL		标签
+dig_adveracoount_recharge	50	source	varchar(50)	YES	NULL		来源
+dig_adveracoount_recharge	51	monetary_credit_pay	decimal(18,2)	YES	0.00		货币授信使用
+dig_adveracoount_recharge	52	monetary_credituse	decimal(18,2)	YES	0.00		货币授信使用
+dig_adveracoount_recharge	53	credit_datatype	int(11)	YES	1		客户授信类型：1-现金授信 2-货币授信
+dig_adveracoount_recharge	54	wallet_key	varchar(50)	YES	NULL		钱包KEY
+dig_advertising_account	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_advertising_account	2	customer_id	bigint(20)	YES	0		客户ID
+dig_advertising_account	3	subject_id	bigint(20)	YES	0		主体ID
+dig_advertising_account	4	shop_id	bigint(20)	YES	0		店铺ID
+dig_advertising_account	5	account_no	varchar(120)	YES	NULL	MUL	账户ID
+dig_advertising_account	6	account_name	varchar(100)	YES	NULL		账户名称
+dig_advertising_account	7	currencymoney	decimal(32,4)	YES	0.0000		货币余额
+dig_advertising_account	8	incentives	decimal(32,4)	YES	0.0000		其他余额【包括框返、激励金、前返、后返这些】
+dig_advertising_account	9	returnmoney	decimal(32,4)	YES	0.0000		框返余额[暂时弃用]
+dig_advertising_account	10	service_id	int(11)	YES	0	MUL	运营ID
+dig_advertising_account	11	service_name	varchar(32)	YES	NULL		运营名称
+dig_advertising_account	12	remark	varchar(512)	YES	NULL		备注
+dig_advertising_account	13	revision	int(11)	YES	0		乐观锁
+dig_advertising_account	14	create_by	int(11)	YES	NULL		创建人
+dig_advertising_account	15	create_time	datetime	YES	NULL		创建时间
+dig_advertising_account	16	update_by	varchar(32)	YES	NULL		更新人
+dig_advertising_account	17	update_time	datetime	YES	NULL		更新时间
+dig_advertising_account	18	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_advertising_account	19	type	int(11)	YES	0	MUL	广告账户类型（0快手短视频 1快手达人 2抖音运营 3快手商务 4抖音商务）
+dig_advertising_account	20	run_status	char(1)	YES	0		账户状态 0-在投 1-停户
+dig_advertising_account	21	editor_id	int(11)	YES	0		剪辑员工ID
+dig_advertising_account	22	editor_name	varchar(32)	YES			
+dig_advertising_account	23	account_ratio	decimal(10,2)	YES	NULL		广告账户返点
+dig_advertising_account	24	ks_agentId	int(11)	YES	1		快手端口ID
+dig_advertising_account	25	supplier_id	int(11)	YES	0		供应商ID
+dig_advertising_account	26	dy_agentId	int(11)	YES	1		抖音端口ID
+dig_advertising_account	27	secondary_industry	varchar(200)	YES	NULL		二级行业
+dig_advertising_account	28	primary_industry	varchar(200)	YES	NULL		
+dig_advertising_account	29	consume	decimal(18,3)	YES	0.000		当月总消耗
+dig_advertising_account	30	after_ratio	decimal(10,2)	YES	NULL		后返点数
+dig_advertising_account	31	customer_type	varchar(255)	YES	1		客户类型  1抖音2快手3腾讯
+dig_advertising_account	32	original_subjectid	int(11)	YES	0		原始主体ID
+dig_advertising_account	33	advertiser_id	bigint(11) unsigned	YES	NULL		对应小红书的广告主id
+dig_advertising_account	34	account_service_point	decimal(10,4)	YES	NULL		服务费点数
+dig_advertising_account	35	data_type	int(11)	YES	10		账户数据类型 10-普通账户 90-子端口 95-共享钱包
+dig_advertising_tag	1	id	bigint(11)	NO	NULL	PRI	
+dig_advertising_tag	2	account_id	bigint(11)	YES	0	MUL	客户ID
+dig_advertising_tag	3	tag_name	varchar(255)	YES	NULL		标签
+dig_assessment	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_assessment	2	user_id	bigint(20)	YES	NULL		员工id
+dig_assessment	3	user_name	varchar(100)	YES	NULL		员工名称
+dig_assessment	4	rule_id	bigint(20)	YES	NULL		规则id
+dig_assessment	5	is_qualified	char(1)	YES	0		是否合格 (0否 1是)
+dig_assessment	6	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_assessment	7	create_by	varchar(64)	YES			创建者
+dig_assessment	8	reviewer_name	varchar(100)	YES	NULL		考核人名称
+dig_assessment	9	create_time	datetime	YES	NULL		创建时间
+dig_assessment	10	remark	varchar(500)	YES			备注
+dig_assessment	11	approval_status	char(1)	YES	0		考核状态(0 考核中 1合格 2不合格)
+dig_assessment	12	reviewer_login_name	varchar(100)	YES	NULL		考核人登录名
+dig_assessment_rule	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_assessment_rule	2	job_id	bigint(20)	YES	NULL		岗位id
+\n
+dig_assessment_rule	3	assessment_criteria	varchar(255)	YES	NULL		考核标准
+dig_assessment_rule	4	reviewer_id	bigint(20)	YES	NULL		审核人id
+dig_assessment_rule	5	reviewer_name	varchar(255)	YES	NULL		审核人名称
+dig_assessment_rule	6	revision	int(11)	YES	0		乐观锁版本号
+dig_assessment_rule	7	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_assessment_rule	8	create_by	varchar(64)	YES			创建者
+dig_assessment_rule	9	create_time	datetime	YES	NULL		创建时间
+dig_assessment_rule	10	update_by	varchar(64)	YES			更新者
+dig_assessment_rule	11	update_time	datetime	YES	NULL		更新时间
+dig_assessment_rule	12	remark	varchar(500)	YES			备注
+dig_bank_statement	1	id	int(11)	NO	NULL	PRI	
+dig_bank_statement	2	no	varchar(255)	YES	NULL		流水号/生成唯一编号sha256(时间+收支+余额)
+dig_bank_statement	3	money	decimal(32,2)	YES	0.00	MUL	收支
+dig_bank_statement	4	balance	decimal(32,2)	YES	0.00		结余
+dig_bank_statement	5	pay_date	datetime	YES	NULL	MUL	时间
+dig_bank_statement	6	payer	varchar(255)	YES	NULL		付款人
+dig_bank_statement	7	pay_account	varchar(50)	YES	NULL		付款账户
+dig_bank_statement	8	bank_id	int(11)	YES	0	MUL	关联账户ID
+dig_bank_statement	9	create_time	datetime	YES	NULL		创建时间
+dig_bank_statement	10	create_by	int(255)	YES	0		创建人
+dig_bank_statement	11	note	varchar(200)	YES	NULL		
+dig_bank_statement	12	ismate	char(1)	YES	0		是否匹配 0-否 1-是
+dig_bank_statement	13	data_type	char(1)	YES	0		类型:1-现金充值记录
+dig_bank_statement	14	data_id	int(11)	YES	0		对应类型记录的ID
+dig_bank_statement	15	revision	int(11)	YES	0		版本号
+dig_bank_statement	16	remark	varchar(600)	YES	NULL		手工备注
+dig_bank_statement	17	remark_type	varchar(200)	YES	NULL		备注类型
+dig_bank_statement	18	system_no	varchar(200)	YES	NULL	UNI	系统生成的流水号/生成唯一编号sha256(时间+收支+余额)
+dig_bank_statement	19	bill_category	varchar(100)	YES	NULL		收支类别
+dig_bank_statement	20	business_line	varchar(100)	YES	NULL		业务线
+dig_bank_statement	21	business_dep	varchar(100)	YES	NULL		业务部门
+dig_bank_statement	22	business_type	varchar(100)	YES	NULL		业务收支类型
+dig_become_worker	1	id	int(11)	NO	NULL	PRI	
+dig_become_worker	2	apply_userid	int(11)	YES	0		申请人
+dig_become_worker	3	apply_username	varchar(255)	YES	NULL		申请人
+dig_become_worker	4	dept_id	int(11)	YES	0		部门
+dig_become_worker	5	dept_name	varchar(255)	YES	NULL		部门
+dig_become_worker	6	become_time	datetime	YES	NULL		转正日期
+dig_become_worker	7	joind_time	datetime	YES	NULL		入职日期
+dig_become_worker	8	reason	text	YES	NULL		申请说明
+dig_become_worker	9	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_become_worker	10	revision	int(11)	YES	0		版本号
+dig_become_worker	11	create_by	int(11)	YES	NULL		创建人
+dig_become_worker	12	create_time	datetime	YES	NULL		创建时间
+dig_become_worker	13	update_by	varchar(32)	YES	NULL		更新人
+dig_become_worker	14	update_time	datetime	YES	NULL		更新时间
+dig_become_worker	15	voucher	text	YES	NULL		附件路径
+dig_bussiness_statelog	1	id	int(11)	NO	NULL	PRI	
+dig_bussiness_statelog	2	status	char(1)	YES	NULL		状态
+dig_bussiness_statelog	3	remarks	varchar(255)	YES	NULL		备注
+dig_bussiness_statelog	4	create_by	bigint(20)	YES	NULL		操作人
+dig_bussiness_statelog	5	create_date	datetime	YES	NULL		操作日期
+dig_bussiness_statelog	6	business_type	char(1)	YES	NULL		业务表类型
+dig_bussiness_statelog	7	business_dataid	bigint(20)	YES	0		业务数据ID
+dig_cashrecharge	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_cashrecharge	2	customer_id	bigint(20)	YES	0		客户ID
+dig_cashrecharge	3	customer_name	varchar(600)	YES	NULL		客户名称
+dig_cashrecharge	4	money	decimal(32,2)	YES	0.00		充值金额
+dig_cashrecharge	5	retype	char(1)	YES	0		充值类型：0,客户普通充值 1.客户向供应商打款充值
+dig_cashrecharge	6	payer	varchar(50)	YES	NULL		付款人
+dig_cashrecharge	7	pay_time	datetime	YES	NULL		付款时间
+dig_cashrecharge	8	payment_voucher	varchar(1024)	YES	NULL		付款凭证URL
+dig_cashrecharge	9	account_id	bigint(20)	YES	0		收款账户ID
+dig_cashrecharge	10	account_no	varchar(32)	YES			收款账户NO
+dig_cashrecharge	11	account_name	varchar(32)	YES	NULL		收款账户名称
+dig_cashrecharge	12	approval_state	char(1)	YES	0		审批状态0-待确认2-1确认到账
+dig_cashrecharge	13	confirm_userid	int(11)	YES	0		确认人
+dig_cashrecharge	14	complete_time	datetime	YES	NULL		确认时间
+dig_cashrecharge	15	cash_balance	decimal(32,2)	YES	0.00		充值后现金余额
+dig_cashrecharge	16	credit_usemoney	decimal(32,2)	YES	0.00		充值后授信已用额度
+dig_cashrecharge	17	remark	varchar(512)	YES	NULL		备注
+dig_cashrecharge	18	revision	int(11)	YES	0		乐观锁
+dig_cashrecharge	19	create_by	int(11)	YES	NULL		创建人
+dig_cashrecharge	20	create_time	datetime	YES	NULL		创建时间
+dig_cashrecharge	21	update_by	varchar(32)	YES	NULL		更新人
+dig_cashrecharge	22	update_time	datetime	YES	NULL		更新时间
+dig_cashrecharge	23	serialnum	int(11)	YES	0		当前是第几笔充值，在确认到账时更新
+dig_cashrecharge	24	commission	decimal(32,4)	YES	0.0000		已发佣金
+dig_cashrecharge	25	all_send_out	char(1)	YES	0		佣金是否全部发完 0-否 1-是
+dig_cashrecharge	26	sale_id	int(11)	YES	0		销售ID
+dig_cashrecharge	27	sale_name	varchar(50)	YES	NULL		销售名称
+dig_cashrecharge	28	before_ratio	decimal(32,2)	YES	0.00		充值返点；这个实际是对应到广告账户的，这里仅做记录
+dig_cashrecharge	29	statement_id	int(11)	YES	0		流水记录ID
+dig_cashrecharge	30	first_order_num	decimal(11,1)	YES	0.0		新单数量
+dig_cashrecharge	31	del_flag	char(1)	YES	0		是否手工确认收款记录0是自动 1是手工
+dig_cashrecharge	32	first_order_price	decimal(32,2)	YES	0.00		首单首续金额
+dig_cashrecharge	33	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_cashrecharge	34	commission_ratio	decimal(10,3)	YES	0.000		提成返点
+dig_cashrecharge	35	recharge_flag	int(11)	YES	0		是否已经全部充值到广告账户 0-否 1-是
+dig_cashrecharge	36	invoice_flag	char(1)	YES	0		开票状态 0-未开票 1-已开票
+dig_cashrecharge	37	tag	varchar(255)	YES	NULL		现金充值金额标签  首充，首续，N续
+dig_cashrecharge	38	service_charge	decimal(18,2)	YES	0.00		服务费
+dig_cash_flow	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_cash_flow	2	account_id	bigint(20)	YES	0		收支账户id
+dig_cash_flow	3	money	decimal(32,2)	YES	0.00		收支金额 (正数表示收入，负数表示支出)
+dig_cash_flow	4	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_cash_flow	5	create_by	varchar(64)	YES			创建者
+dig_cash_flow	6	create_time	datetime	YES	NULL		创建时间
+dig_cash_flow	7	remark	varchar(500)	YES			备注
+dig_cash_flow	8	payer	varchar(50)	YES	NULL		付款人
+dig_cash_flow	9	pay_time	datetime	YES	NULL		付款时间
+dig_cash_flow	10	payment_voucher	varchar(1024)	YES	NULL		付款凭证URL
+dig_cash_flow	11	status	char(1)	YES	0		是否已完成 0-否 1-已付款
+dig_cash_flow	12	business_type	int(11)	YES	4		业务类型：1.客户现金充值 2.向供应商打款 3.退现 4.其他
+dig_cash_flow	13	business_dataid	int(11)	YES	0		业务数据ID【如果是1，对应现金充值记录ID，如果是2，对应广告账户充值记录ID,如果是3，这里一般没有】
+dig_cash_flow	14	balance	decimal(32,2)	YES	0.00		余额
+dig_cash_flow	15	check_state	char(1)	YES	0		复核状态 0-未复核 1-已复核
+dig_cash_flow	16	check_userid	bigint(20)	YES	0		复核人
+dig_cash_flow	17	check_username	varchar(30)	YES	NULL		复核人名称
+dig_cash_flow	18	check_time	datetime	YES	NULL		复核时间
+dig_cash_flow	19	revision	bigint(20)	YES	0		乐观锁版本
+dig_consume	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_consume	2	account_id	bigint(20)	YES	0	MUL	广告账户id
+dig_consume	3	account_no	varchar(50)	YES	NULL		账户ID，字符串
+dig_consume	4	account_name	varchar(100)	YES	NULL		账户名称
+dig_consume	5	accounttype	varchar(255)	YES	NULL		账户类型
+dig_consume	6	nickname	varchar(255)	YES	NULL		昵称
+dig_consume	7	kuaishou_no	varchar(100)	YES	NULL		注册快手号
+dig_consume	8	company_name	varchar(255)	YES	NULL		公司名称
+dig_consume	9	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_consume	10	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_consume	11	product_name	varchar(255)	YES	NULL		产品名称
+dig_consume	12	subport_id	varchar(100)	YES	NULL		子端口ID
+dig_consume	13	subport_name	varchar(255)	YES	NULL		子端口名称
+dig_consume	14	sum_balance	decimal(32,4)	YES	0.0000		总余额
+dig_consume	15	cash_balance	decimal(32,4)	YES	0.0000		现金余额
+dig_consume	16	credit_balance	decimal(32,4)	YES	0.0000		信用余额
+dig_consume	17	incentive_balance	decimal(32,4)	YES	0.0000		激励余额
+dig_consume	18	previous_balance	decimal(32,4)	YES	0.0000		前返余额
+dig_consume	19	subsequent_balance	decimal(32,4)	YES	0.0000		后返余额
+dig_consume	20	boxreturn_balance	decimal(32,4)	YES	0.0000		框返余额
+dig_consume	21	sum_spend	decimal(32,4)	YES	0.0000		总花费
+dig_consume	22	cash_spend	decimal(32,4)	YES	0.0000		现金花费
+dig_consume	23	credit_spend	decimal(32,4)	YES	0.0000		信用花费
+dig_consume	24	incentive_spend	decimal(32,4)	YES	0.0000		激励花费
+dig_consume	25	previous_spend	decimal(32,4)	YES	0.0000		前返花费
+dig_consume	26	subsequent_spend	decimal(32,4)	YES	0.0000		后返花费
+dig_consume	27	boxreturn_spend	decimal(32,4)	YES	0.0000		框返花费
+dig_consume	28	sum_spendnojili	decimal(32,4)	YES	0.0000		总花费-不含激励花费
+dig_consume	29	commerce_incentive_spend	decimal(32,4)	YES	0.0000		电商激励花费
+dig_consume	30	create_by	int(11)	YES	NULL		创建人
+dig_consume	31	create_time	datetime	YES	NULL		创建时间
+dig_consume	32	service_id	int(11)	YES	0		运营ID
+dig_consume	33	service_name	varchar(30)	YES	NULL		运营名称
+dig_consume	34	consume_time	datetime	YES	NULL	MUL	消耗日期
+dig_consume	35	before_ratio	decimal(4,2)	YES	0.00		客户返点，每次导入消耗时记录
+dig_consume	36	sale_id	int(11)	YES	0		销售ID
+dig_consume	37	sale_name	varchar(255)	YES	NULL		销售名称
+dig_consume	38	account_currency_balance	decimal(32,4)	YES	0.0000		本次消耗之后，广告账户余额
+dig_consume	39	new_video_num	int(11)	YES	0		新建视频数
+dig_consume	40	new_unit_num	int(11)	YES	0		新建单元数
+dig_consume	41	new_idea_num	int(11)	YES	0		新建创意数
+dig_consume	42	customer_id	int(11)	YES	0		客户ID
+dig_consume	43	customer_name	varchar(80)	YES	NULL		客户名称
+dig_consume	44	editor_id	int(11)	YES	0		
+dig_consume	45	editor_name	varchar(80)	YES	NULL		
+dig_consume	46	ismate	char(1)	YES	0		
+dig_consume	47	performance_spend	decimal(32,4)	YES	0.0000		计算业绩的货币消耗【现金+信用+前返+后返】
+dig_consume	48	account_ratio	decimal(10,2)	YES	NULL		广告账户返点
+dig_consume	49	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_consume	50	datatype	char(1)	YES	1		数据类型: 1-非全站 2-全站
+dig_consume	51	evorders	decimal(32,2)	YES	0.00		直接订单数
+dig_consume	52	evGMV	decimal(32,2)	YES	0.00		直接GMV
+dig_consume	53	t0orders	decimal(32,2)	YES	0.00		累计订单数
+dig_consume	54	t0GMV	decimal(32,2)	YES	0.00		累计GMV
+dig_consume	55	customer_statement_id	bigint(20)	YES	0		客户账单ID
+dig_consume_importtemp	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_consume_importtemp	2	account_id	bigint(20)	YES	0	MUL	广告账户id
+dig_consume_importtemp	3	account_no	varchar(50)	YES	NULL		账户ID，字符串
+dig_consume_importtemp	4	account_name	varchar(100)	YES	NULL		账户名称
+dig_consume_importtemp	5	accounttype	varchar(255)	YES	NULL		账户类型
+dig_consume_importtemp	6	nickname	varchar(255)	YES	NULL		昵称
+dig_consume_importtemp	7	kuaishou_no	varchar(100)	YES	NULL		注册快手号
+dig_consume_importtemp	8	company_name	varchar(255)	YES	NULL		公司名称
+dig_consume_importtemp	9	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_consume_importtemp	10	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_consume_importtemp	11	product_name	varchar(255)	YES	NULL		产品名称
+dig_consume_importtemp	12	subport_id	varchar(100)	YES	NULL		子端口ID
+dig_consume_importtemp	13	subport_name	varchar(255)	YES	NULL		子端口名称
+dig_consume_importtemp	14	sum_balance	decimal(32,4)	YES	0.0000		总余额
+dig_consume_importtemp	15	cash_balance	decimal(32,4)	YES	0.0000		现金余额
+dig_consume_importtemp	16	credit_balance	decimal(32,4)	YES	0.0000		信用余额
+dig_consume_importtemp	17	incentive_balance	decimal(32,4)	YES	0.0000		激励余额
+dig_consume_importtemp	18	previous_balance	decimal(32,4)	YES	0.0000		前返余额
+dig_consume_importtemp	19	subsequent_balance	decimal(32,4)	YES	0.0000		后返余额
+dig_consume_importtemp	20	boxreturn_balance	decimal(32,4)	YES	0.0000		框返余额
+dig_consume_importtemp	21	sum_spend	decimal(32,4)	YES	0.0000		总花费
+dig_consume_importtemp	22	cash_spend	decimal(32,4)	YES	0.0000		现金花费
+dig_consume_importtemp	23	credit_spend	decimal(32,4)	YES	0.0000		信用花费
+dig_consume_importtemp	24	incentive_spend	decimal(32,4)	YES	0.0000		激励花费
+dig_consume_importtemp	25	previous_spend	decimal(32,4)	YES	0.0000		前返花费
+dig_consume_importtemp	26	subsequent_spend	decimal(32,4)	YES	0.0000		后返花费
+dig_consume_importtemp	27	boxreturn_spend	decimal(32,4)	YES	0.0000		框返花费
+dig_consume_importtemp	28	sum_spendnojili	decimal(32,4)	YES	0.0000		总花费-不含激励花费
+dig_consume_importtemp	29	commerce_incentive_spend	decimal(32,4)	YES	0.0000		电商激励花费
+dig_consume_importtemp	30	create_by	int(11)	YES	NULL		创建人
+dig_consume_importtemp	31	create_time	datetime	YES	NULL		创建时间
+dig_consume_importtemp	32	service_id	int(11)	YES	0		运营ID
+dig_consume_importtemp	33	service_name	varchar(30)	YES	NULL		运营名称
+dig_consume_importtemp	34	consume_time	datetime	YES	NULL	MUL	消耗日期
+dig_consume_importtemp	35	before_ratio	decimal(4,2)	YES	0.00		客户返点，每次导入消耗时记录
+dig_consume_importtemp	36	sale_id	int(11)	YES	0		销售ID
+dig_consume_importtemp	37	sale_name	varchar(255)	YES	NULL		销售名称
+dig_consume_importtemp	38	account_currency_balance	decimal(32,4)	YES	0.0000		本次消耗之后，广告账户余额
+dig_consume_importtemp	39	new_video_num	int(11)	YES	0		新建视频数
+dig_consume_importtemp	40	new_unit_num	int(11)	YES	0		新建单元数
+dig_consume_importtemp	41	new_idea_num	int(11)	YES	0		新建创意数
+dig_consume_importtemp	42	customer_id	int(11)	YES	0		客户ID
+dig_consume_importtemp	43	customer_name	varchar(80)	YES	NULL		客户名称
+dig_consume_importtemp	44	editor_id	int(11)	YES	0		
+dig_consume_importtemp	45	editor_name	varchar(80)	YES	NULL		
+dig_consume_importtemp	46	ismate	char(1)	YES	0		
+dig_consume_importtemp	47	performance_spend	decimal(32,4)	YES	0.0000		计算业绩的货币消耗【现金+信用+前返+后返】
+dig_consume_importtemp	48	account_ratio	decimal(10,2)	YES	0.00		广告账户返点
+dig_consume_importtemp	49	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_consume_importtemp	50	datatype	char(1)	YES	1		数据类型: 1-非全站 2-全站
+dig_consume_importtemp	51	evorders	decimal(32,2)	YES	0.00		直接订单数
+dig_consume_importtemp	52	evGMV	decimal(32,2)	YES	0.00		直接GMV
+dig_consume_importtemp	53	t0orders	decimal(32,2)	YES	0.00		累计订单数
+dig_consume_importtemp	54	t0GMV	decimal(32,2)	YES	0.00		累计GMV
+dig_consume_refrecharge	1	id	int(11)	NO	NULL	PRI	
+dig_consume_refrecharge	2	account_id	int(11)	YES	0		广告账号ID
+dig_consume_refrecharge	3	account_bill_id	int(11)	YES	0		广告账号流水ID,对应dig_customer_bill表ID
+dig_consume_refrecharge	4	consume_id	int(11)	YES	0		消耗表ID
+dig_consume_refrecharge	5	consume_currency	decimal(32,4)	YES	0.0000		消耗货币
+dig_consume_refrecharge	6	cashmoney	decimal(32,4)	YES	0.0000		消耗现金
+dig_consume_refrecharge	7	convert_ratio	decimal(32,4)	YES	0.0000		返点比例，也就是现金和货币之间的转换
+dig_consume_refrecharge	8	consume_time	datetime	YES	NULL		消耗日期
+dig_consume_refrecharge	9	datatype	char(1)	NO			消耗数据类型 1-抖音 2-快手
+dig_consume_refrecharge	10	create_time	datetime	YES	NULL		创建时间
+dig_consume_refrecharge	11	create_by	int(11)	YES	0		创建人
+dig_contract	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_contract	2	user_id	bigint(20)	YES	NULL		员工id
+dig_contract	3	user_name	varchar(100)	YES	NULL		员工名称
+dig_contract	4	dept_id	varchar(255)	YES	NULL		部门id
+dig_contract	5	dept_name	varchar(255)	YES	NULL		部门名称
+dig_contract	6	phone	varchar(30)	YES	NULL		联系方式
+dig_contract	7	contract_url	varchar(500)	YES	NULL		劳动合同路径
+dig_contract	8	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_contract	9	create_by	varchar(64)	YES			创建者
+dig_contract	10	create_time	datetime	YES	NULL		创建时间
+dig_contract	11	update_by	varchar(64)	YES			更新者
+dig_contract	12	update_time	datetime	YES	NULL		更新时间
+dig_contract	13	remark	varchar(500)	YES	NULL		备注
+dig_contract	14	revision	int(11)	YES	0		乐观锁版本号
+dig_costrecord	1	id	int(11)	NO	NULL	PRI	
+dig_costrecord	2	cost_type	char(1)	YES	0		费用类型
+dig_costrecord	3	cost_time	datetime	YES	NULL		费用日期
+dig_costrecord	4	cost	decimal(18,2)	YES	0.00		费用
+dig_costrecord	5	reason	varchar(800)	YES	NULL		申请事由
+dig_costrecord	6	voucher	varchar(3000)	YES	NULL		凭证，多个用英文逗号分割
+dig_costrecord	7	approval_state	char(1)	YES	0		审批状态：0-审批中 1-审批通过 2-审批拒回
+dig_costrecord	8	pay_state	char(1)	YES	0		是否支付 0-否 1-是
+dig_costrecord	9	revision	int(11)	YES	0		版本号
+dig_costrecord	10	create_by	int(11)	YES	NULL		创建人
+dig_costrecord	11	create_time	datetime	YES	NULL		创建时间
+dig_costrecord	12	update_by	varchar(32)	YES	NULL		更新人
+dig_costrecord	13	update_time	datetime	YES	NULL		更新时间
+dig_costrecord	14	bank_user_name	varchar(40)	YES	NULL		收款人
+dig_costrecord	15	bank_name	varchar(40)	YES	NULL		银行名称
+dig_costrecord	16	bank_no	varchar(60)	YES	NULL		银行账号
+dig_costrecord	17	supplier_name	varchar(255)	YES	NULL		
+dig_cusneworder_bill	1	id	int(11)	NO	NULL	PRI	
+dig_cusneworder_bill	2	customer_id	int(11)	YES	0		客户ID
+dig_cusneworder_bill	3	sale_id	int(11)	YES	0		销售ID
+dig_cusneworder_bill	4	first_order_pay	decimal(18,3)	YES	0.000		首单收支金额 正数新增 负数支出
+dig_cusneworder_bill	5	first_order_balance	decimal(18,3)	YES	0.000		首单剩余余额
+dig_cusneworder_bill	6	first_renewal_pay	decimal(18,3)	YES	0.000		首续收支金额，正数收入，负数支出
+dig_cusneworder_bill	7	first_renewal_balance	decimal(18,3)	YES	0.000		首续剩余余额
+dig_cusneworder_bill	8	business_type	int(11)	YES	0		业务类型 1-标首单 2-标首续 3-提成计算
+dig_cusneworder_bill	9	business_dataid	int(11)	YES	0		业务数据ID，如果是标首单首续，对应的是现金充值记录ID，如果是提成计算，对应的是提成表ID
+dig_cusneworder_bill	10	create_by	int(11)	YES	0		操作人
+dig_cusneworder_bill	11	create_time	datetime	YES	NULL		创建时间
+dig_customer	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_customer	2	types	char(2)	NO	1	MUL	数据类型：1.抖音2.快手
+dig_customer	3	customer_no	varchar(128)	YES	NULL	UNI	客户编号
+dig_customer	4	customer_name	varchar(1024)	YES	NULL		客户名称
+dig_customer	5	contact_name	varchar(1024)	YES	NULL		联系人
+dig_customer	6	tel	varchar(128)	YES	NULL		联系电话
+dig_customer	7	before_ratio	decimal(10,2)	YES	0.00		前返点数
+dig_customer	8	credit_money	decimal(32,3)	YES	0.000		授信额度
+dig_customer	9	credit_usemoney	decimal(32,3)	YES	0.000		授信已用金额
+dig_customer	10	balance	decimal(32,3)	YES	0.000		现金备款余额
+dig_customer	11	total_recharge	decimal(32,3)	YES	0.000		累计充值
+dig_customer	12	total_consume	decimal(32,3)	YES	0.000		累计消耗
+dig_customer	13	sale_id	int(11)	YES	0		销售ID
+dig_customer	14	sale_name	varchar(128)	YES	NULL		销售名称
+dig_customer	15	service_id	int(11)	YES	0		运营ID
+dig_customer	16	service_name	varchar(128)	YES	NULL		运营名称
+dig_customer	17	status	char(1)	YES	0		状态0-意向1-确认 
+dig_customer	18	remark	varchar(512)	YES	NULL		备注
+dig_customer	19	revision	int(11)	YES	0		乐观锁
+dig_customer	20	create_by	int(11)	YES	NULL		创建人
+dig_customer	21	create_time	datetime	YES	NULL		创建时间
+dig_customer	22	update_by	varchar(32)	YES	NULL		更新人
+dig_customer	23	update_time	datetime	YES	NULL		更新时间
+dig_customer	24	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_customer	25	payer	varchar(50)	YES	NULL		付款人
+dig_customer	26	service_balance	decimal(32,4)	YES	0.0000		服务费余额【用于提醒运营】
+dig_customer	27	service_point	decimal(10,4)	YES	0.0000		服务费点数
+dig_customer	28	is_sea	char(1)	YES	0		是否公海客户 0-否 1-是
+dig_customer	29	sea_type	char(1)	YES	NULL		公海客户类型：0 - 快手达人 1-快手短视频 2-抖音
+dig_customer	30	sea_region	varchar(255)	YES	NULL		公海客户资料--区域
+dig_customer	31	sea_account_no	varchar(100)	YES	NULL		公海客户资料--抖音ID/快手ID/店铺ID
+dig_customer	32	sea_account_nickname	varchar(255)	YES	NULL		公海客户资料--抖音昵称/快手昵称/店铺昵称
+dig_customer	33	sea_subject_name	varchar(255)	YES	NULL		公海客户资料--主体名称
+dig_customer	34	sea_legal_person	varchar(255)	YES	NULL		公海客户资料--法人
+dig_customer	35	sea_industry	varchar(255)	YES	NULL		公海客户资料--行业
+dig_customer	36	sea_category	varchar(255)	YES	NULL		公海客户资料--类目
+dig_customer	37	sea_product	varchar(255)	YES	NULL		公海客户资料--产品
+dig_customer	38	sea_store_sales	varchar(255)	YES	NULL		公海客户资料--店铺销量
+dig_customer	39	sea_numoffans	varchar(255)	YES	NULL		公海客户资料--粉丝数
+dig_customer	40	sea_wechat_name	varchar(255)	YES	NULL		公海客户资料--微信名
+dig_customer	41	sea_license_name	varchar(255)	YES	NULL		公海客户资料--营业执照名称
+dig_customer	42	sea_license_tel	varchar(255)	YES	NULL		公海客户资料--营业执照电话
+dig_customer	43	sea_other_contact	varchar(255)	YES	NULL		公海客户资料--其他联系方式
+dig_customer	44	sea_remarks	varchar(1200)	YES	NULL		公海客户资料--备注/跟进情况
+dig_customer	45	sea_add_time	datetime	YES	NULL		添加日期
+dig_customer	46	sea_live_mode	varchar(255)	YES	NULL		直播模式
+dig_customer	47	customer_status	char(2)	YES	0		客户状态 0-意向客户 1-线索 2-跟进 3-今日通过 10-在投 11-停止 12-暂停 13-未上线
+dig_customer	48	updatestatus_time	datetime	YES	NULL		修改状态时间
+dig_customer	49	first_cooperation_time	datetime	YES	NULL		第一次合作时间
+dig_customer	50	new_orderfirst_pay	decimal(32,2)	YES	0.00		
+dig_customer	51	new_orderfirst_consume	decimal(32,2)	YES	0.00		
+dig_customer	52	last_return_time	datetime	YES	NULL		上次回款时间
+dig_customer	53	return_type	char(1)	YES	0		回款周期类型 1-固定几天回款 2-固定几号回款 3-固定周几回款
+dig_customer	54	return_value	int(11)	YES	0		回款类型的值，如果是几天的话，对应的就是天数
+dig_customer	55	return_money	decimal(10,2)	YES	0.00		需回款金额
+dig_customer	56	next_return_time	datetime	YES	NULL		下次需回款时间
+dig_customer	57	is_brand	char(1)	YES	0		是否品牌 0-否 1-是
+dig_customer	58	account_infojson	varchar(1000)	YES	NULL		账户信息json
+dig_customer	59	temp_credit_money	decimal(18,3)	YES	0.000		临时额度
+dig_customer	60	trans_ratio	decimal(18,3)	YES	0.000		客户转账返点
+dig_customer	61	consume_prev	decimal(18,3)	YES	0.000		7天环比消耗-当前时间7天前7天的消耗总和
+dig_customer	62	consume_current	decimal(18,3)	YES	0.000		7天环比消耗-当前时间7天前到现在的消耗总和
+dig_customer	63	consume	decimal(18,3)	YES	0.000		当月总消耗
+dig_customer	64	cycle_return_time	datetime	YES	NULL		周期需回款时间
+dig_customer	65	after_ratio	decimal(10,2)	YES	0.00		后返点数
+dig_customer	66	after_currency	decimal(10,3)	YES	0.000		后返剩余货币
+dig_customer	67	wallet_status	char(1)	YES	0		钱包状态 0-关闭 1-开启
+dig_customer	68	monetary_credit	decimal(18,3)	YES	0.000		货币授信额度
+dig_customer	69	monetary_credituse	decimal(18,3)	YES	0.000		货币授信已用
+dig_customer	70	credit_datatype	char(1)	YES	1		授信类型：1-现金授信 2-货币授信
+dig_customer	71	account_num	int(11)	YES	0	MUL	广告账户数量
+dig_customer	72	credit_limit_type	int(11)	YES	0		授信额度类型：1-永久额度 2-临时额度 3-限期额度 21-永久+临时额度
+dig_customer_account	1	id	int(11)	NO	NULL	PRI	
+dig_customer_account	2	customer_id	int(11)	YES	0		所属客户
+dig_customer_account	3	types	int(11)	YES	0		账户类型(备用0-客户正常账户)
+dig_customer_account	4	alias	varchar(255)	YES			账户别名
+dig_customer_account	5	account_name	varchar(255)	YES	NULL		户名
+dig_customer_account	6	account_no	varchar(255)	YES	NULL		账号
+dig_customer_account	7	pay_num	int(11)	YES	0		付款次数
+dig_customer_account	8	pay_date	datetime	YES	NULL		最后支付时间
+dig_customer_account	9	create_time	datetime	YES	NULL		创建时间
+dig_customer_bill	1	id	bigint(20)	NO	NULL	PRI	
+dig_customer_bill	2	customer_id	bigint(20)	YES	0		客户ID
+dig_customer_bill	3	account_id	bigint(20)	YES	0		广告账户ID
+dig_customer_bill	4	cash_pay	decimal(32,3)	YES	0.000		客户现金备款变更金额
+dig_customer_bill	5	credit_pay	decimal(32,3)	YES	0.000		客户授信使用金额变更
+dig_customer_bill	6	monetary_credit_pay	decimal(32,3)	YES	0.000		货币授信支付
+dig_customer_bill	7	currency	decimal(32,3)	YES	0.000		账户货币金额变更
+dig_customer_bill	8	cash_balance	decimal(32,3)	YES	0.000		操作后客户现金备款余额
+dig_customer_bill	9	credit_usemoney	decimal(32,3)	YES	0.000		操作后客户授信使用金额
+dig_customer_bill	10	monetary_credituse	decimal(32,3)	YES	0.000		货币授信已用
+dig_customer_bill	11	currency_balance	decimal(32,3)	YES	0.000		操作后账户货币余额
+dig_customer_bill	12	remarks	varchar(255)	YES	NULL		
+dig_customer_bill	13	business_type	char(2)	YES	NULL	MUL	业务类型
+dig_customer_bill	14	business_dataid	bigint(20)	YES	0		业务数据ID
+dig_customer_bill	15	create_by	int(11)	YES	NULL		
+dig_customer_bill	16	create_time	datetime	YES	NULL		创建时间
+dig_customer_bill	17	before_ratio	decimal(6,3)	YES	0.000		客户返点
+dig_customer_bill	18	serialnum	int(11)	YES	3		区分1-首单 2-首续 3-续费 ；这个主要用于抖音的服务费计算提成
+dig_customer_bill	19	unconsumed_currency	decimal(18,3)	YES	0.000		
+dig_customer_bill	20	business_ratio	decimal(18,3)	YES	0.000		
+dig_customer_bill	21	applicant_userid	int(11)	YES	0		申请人
+dig_customer_bill	22	applicant_time	datetime	YES	NULL		申请时间
+dig_customer_bill	23	supplier_id	int(11)	YES	0		供应商ID
+dig_customer_bill	24	display_statement	int(11)	YES	1		是否显示对账单 0-否 1-是
+dig_customer_bill	25	wallet_info	varchar(300)	YES	NULL		钱包json
+dig_customer_bill	26	service_id	int(11)	YES	0		运营ID
+dig_customer_bill	27	service_name	varchar(200)	YES	NULL		运营名称
+dig_customer_bill	28	sale_id	int(11)	YES	0		销售ID
+dig_customer_bill	29	sale_name	varchar(200)	YES	NULL		销售名称
+dig_customer_bill	30	ks_agentId	int(11)	YES	0		快手端口ID
+dig_customer_bill	31	zero_amount	decimal(32,3)	YES	0.000		抹零金额
+dig_customer_bill	32	data_create_date	datetime	YES	CURRENT_TIMESTAMP		数据创建时间
+dig_customer_bill	33	te_create_time	datetime	YES	NULL		
+dig_customer_bill	34	billtype	char(1)	YES	0		0-现金 1-非现金
+dig_customer_bill	35	customer_statement_id	bigint(20)	YES	0		
+dig_customer_bill	36	tags	varchar(50)	YES	NULL		标签
+dig_customer_bill_split	1	id	bigint(20)	NO	NULL	PRI	
+dig_customer_bill_split	2	statement_id	bigint(20)	YES	NULL		现金流水对账单ID
+dig_customer_bill_split	3	bill_id	bigint(20)	YES	NULL		现金流水记录ID
+dig_customer_bill_split	4	out_bill_id	bigint(20)	YES	0		这个id主要是对于bill_type为3的数据
+dig_customer_bill_split	5	bill_type	char(1)	YES	NULL		现金流水类型 1-欠款 2-回款  3- 流水明细对应
+dig_customer_bill_split	6	bill_total_amount	decimal(32,3)	YES	NULL		现金流水 (欠款/回款)总金额
+dig_customer_bill_split	7	bill_used_amount	decimal(32,3)	YES	NULL		现金流水 已对账关联金额
+dig_customer_brand	1	id	int(11)	NO	NULL	PRI	
+dig_customer_brand	2	customer_id	int(11)	YES	0		客户ID
+dig_customer_brand	3	customer_brandtype	varchar(255)	YES	NULL		品牌客户类型
+dig_customer_brand	4	isbrand	int(11)	YES	NULL		是否品牌单合作 0-否 1-是
+dig_customer_brand	5	base_rebate_rate	decimal(18,2)	YES	0.00		基础返点比例
+dig_customer_brand	6	operating_rebate_rate	decimal(18,2)	YES	0.00		经营返点比例
+dig_customer_brand	7	nvestment_rebete_rate	decimal(18,2)	YES	0.00		招商激励返点比例
+dig_customer_brand	8	isyear_brand_new	int(11)	YES	0		是否年度品牌新客 0-否 1-是
+dig_customer_brand	9	isfirst_agent	int(11)	YES	NULL		是否首消代理 0-否 1-是
+dig_customer_brand	10	consume30day	decimal(18,2)	YES	0.00		首消30天累量消耗
+dig_customer_brand	11	consume90day	decimal(18,2)	YES	0.00		首消90天品牌合约消耗
+dig_customer_brand	12	brand_consume_this_year	decimal(18,2)	YES	0.00		本年度品牌广告消耗
+dig_customer_brand	13	brand_bidding_consume_this_year	decimal(18,2)	YES	0.00		本年度品牌竞价广告消耗
+dig_customer_brand	14	brand_contract_consume_this_year	decimal(18,2)	YES	0.00		本年度品牌合约广告消耗
+dig_customer_brand	15	brand_consume_last_year	decimal(18,2)	YES	0.00		去年度品牌广告消耗
+dig_customer_brand	16	brand_bidding_consume_last_year	decimal(18,2)	YES	0.00		去年度品牌竞价广告消耗
+dig_customer_brand	17	brand_contract_consume_last_year	decimal(18,2)	YES	0.00		去年度品牌合约广告消耗
+dig_customer_brand	18	brand_rebate_price_this_year	decimal(18,2)	YES	0.00		客户关联组A在全平台26年 最大能享受的品牌广告返点金额
+dig_customer_brand	19	estimated_consume_this_year	decimal(18,2)	YES	0.00		本年度代理端口消耗预估
+dig_customer_brand	20	estimated_ratio_this_year	decimal(18,2)	YES	0.00		红包返点比例
+dig_customer_brand	21	estimated_price_this_year	decimal(18,2)	YES	0.00		红包返点金额
+dig_customer_brand	22	data_time	datetime	YES	NULL		品牌广告政策的归属日期，1年一条
+dig_customer_brand	23	create_by	int(11)	YES	0		创建人
+dig_customer_brand	24	create_time	datetime	YES	NULL		创建时间
+dig_customer_contract	1	id	int(11)	NO	NULL	PRI	
+dig_customer_contract	2	customer_id	int(11)	YES	0		客户ID
+dig_customer_contract	3	customer_name	varchar(200)	YES	NULL		客户名称
+dig_customer_contract	4	subject_id	int(11)	YES	0		主体ID
+dig_customer_contract	5	subject_name	varchar(255)	YES	NULL		主体名称
+dig_customer_contract	6	contract_name	varchar(255)	YES	NULL		合同名称
+dig_customer_contract	7	customer_creditcode	varchar(255)	YES	NULL		客户统一社会信用代码
+dig_customer_contract	8	customer_phone	varchar(255)	YES	NULL		联系电话
+dig_customer_contract	9	customer_address	varchar(255)	YES	NULL		客户地址
+dig_customer_contract	10	payment_unit	varchar(255)	YES	NULL		付款单位
+dig_customer_contract	11	bank_name	varchar(255)	YES	NULL		开户行
+dig_customer_contract	12	bank_no	varchar(255)	YES	NULL		账号
+dig_customer_contract	13	voucher_url	varchar(1000)	YES	NULL		合同附件
+dig_customer_contract	14	start_date	datetime	YES	NULL		合同起始时间
+dig_customer_contract	15	effective_date	datetime	YES	NULL		截止日期
+dig_customer_contract	16	create_by	int(11)	YES	NULL		创建人
+dig_customer_contract	17	create_time	datetime	YES	NULL		创建时间
+dig_customer_contract	18	update_by	varchar(32)	YES	NULL		更新人
+dig_customer_contract	19	update_time	datetime	YES	NULL		更新时间
+dig_customer_contract	20	del_flag	char(1)	YES	0		
+dig_customer_contract	21	company	varchar(255)	NO	NULL		开票公司
+dig_customer_contract	22	invoice_type	varchar(255)	YES	NULL		发票类型
+dig_customer_contract	23	invoice_content	varchar(255)	YES	NULL		开票内容
+dig_customer_contract	24	invoice_content_txt	varchar(600)	YES	NULL		
+dig_customer_contract	25	state	char(1)	YES	0		开票状态：0-待确认 1-已确认 2-审批拒绝
+dig_customer_contract	26	confirm_userid	int(11)	YES	0		确认人ID
+dig_customer_contract	27	confirm_username	varchar(255)	YES	NULL		确认人名称
+dig_customer_contract	28	confirm_date	datetime	YES	NULL		确认时间
+dig_customer_contract	29	refuse_reason	varchar(500)	YES	NULL		拒绝原因
+dig_customer_contract	30	operation_mode	varchar(50)	YES	NULL		运营方式
+dig_customer_contract	31	company_type	varchar(50)	YES	NULL		公司类型
+dig_customer_contract	32	industry	varchar(200)	YES	NULL		行业
+dig_customer_contract	33	before_ratio	decimal(18,3)	YES	0.000		返点
+dig_customer_contract	34	after_ratio	decimal(18,3)	YES	0.000		后返
+dig_customer_contract	35	sale_id	int(11)	YES	0		销售ID
+dig_customer_contract	36	sale_name	varchar(255)	YES	NULL		销售名称
+dig_customer_contract	37	finance_id	int(11)	YES	0		财务ID
+dig_customer_contract	38	finance_name	varchar(255)	YES	NULL		财务名称
+dig_customer_contract	39	complete_time	datetime	YES	NULL		审批完成时间
+dig_customer_contract	40	approval_state	char(1)	YES	0		审批状态
+dig_customer_contract	41	revision	int(11)	YES	0		版本
+dig_customer_contract	42	return_type	char(1)	YES	0		回款周期类型 1-固定几天回款 2-固定几号回款 3-固定周几回款
+dig_customer_contract	43	return_value	int(11)	YES	0		回款类型的值，如果是几天的话，对应的就是天数
+dig_customer_contract	44	sign_type	varchar(255)	YES	NULL		客户签订类型
+dig_customer_contract	45	credit_money	int(11)	YES	0		垫款额度
+dig_customer_contract	46	invoice_header	varchar(100)	YES	NULL		发票抬头
+dig_customer_contract	47	contract_no	varchar(255)	YES	NULL	UNI	自定义合同编号
+dig_customer_expand	1	id	int(11)	NO	NULL	PRI	
+dig_customer_expand	2	customer_id	int(11)	YES	0	UNI	客户ID
+dig_customer_expand	3	cash_pending_num	int(11)	YES	0		现金收款待确认数量
+dig_customer_expand	4	cash_undone_price	decimal(18,3)	YES	0.000		现金收款在途金额
+dig_customer_expand	5	refund_pending_num	int(11)	YES	0		申请退现待处理数量
+dig_customer_expand	6	refund_undone_price	decimal(18,3)	YES	0.000		申请退现未完成金额
+dig_customer_expand	7	credit_undone_num	int(11)	YES	0		授信申请待处理数量
+dig_customer_expand	8	recharge_pending_num	int(11)	YES	0		账户充值待确认数量
+dig_customer_expand	9	returncoin_pending_num	int(11)	YES	0		账户退币待处理数量
+dig_customer_expand	10	transfer_pending_num	int(11)	YES	0		账户转户待处理数量
+dig_customer_followup	1	id	bigint(20)	NO	NULL	PRI	客户ID
+dig_customer_followup	2	customer_id	bigint(20)	YES	NULL		
+dig_customer_followup	3	content	varchar(3000)	YES	NULL		跟进内容
+dig_customer_followup	4	create_by	bigint(20)	YES	NULL		
+dig_customer_followup	5	create_time	datetime	YES	NULL		
+dig_customer_limit_apply	1	id	int(11)	NO	NULL	PRI	
+dig_customer_limit_apply	2	customer_id	int(11)	YES	0		客户ID
+dig_customer_limit_apply	3	customer_name	varchar(255)	YES	NULL		客户名称
+dig_customer_limit_apply	4	before_value	decimal(18,3)	YES	0.000		修改前的值
+dig_customer_limit_apply	5	after_value	decimal(18,3)	YES	0.000		修改后的值
+dig_customer_limit_apply	6	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_customer_limit_apply	7	complete_time	datetime	YES	NULL		审批完成时间
+dig_customer_limit_apply	8	datatype	char(1)	YES	1		数据类型 1-垫款额度修改
+dig_customer_limit_apply	9	revision	int(11)	YES	0		
+dig_customer_limit_apply	10	create_name	varchar(255)	YES	NULL		创建人名称
+dig_customer_limit_apply	11	create_by	int(11)	YES	0		申请人
+dig_customer_limit_apply	12	create_time	datetime	YES	NULL		申请时间
+dig_customer_limit_apply	13	reason	varchar(300)	YES	NULL		申请理由
+dig_customer_limit_apply	14	voucher	varchar(500)	YES	NULL		附件
+dig_customer_limit_apply	15	state	char(1)	YES	0		是否完结 0-否 1-是
+dig_customer_limit_apply	16	deducted	decimal(18,3)	YES	0.000		已回款金额
+dig_customer_limit_apply	17	return_time	datetime	YES	NULL		回款时间
+dig_customer_limit_apply	18	return_type	char(1)	YES	0		回款类型
+dig_customer_limit_apply	19	return_value	int(11)	YES	0		回款值
+dig_customer_limit_apply	20	timely_pay	char(1)	YES	0		是否需要按时回款，未按时回款的话就额度清零， 0-否 1-是
+dig_customer_limit_apply	21	usable	char(1)	YES	0		是否生效 0-否 1-是
+dig_customer_limit_apply	22	credit_datatype	char(1)	YES	1		额度类型 ：1-现金 2-货币
+dig_customer_refcontract	1	customer_id	int(11)	NO	0	MUL	客户ID
+dig_customer_refcontract	2	contract_id	int(11)	YES	0		合同ID
+dig_customer_refdep	1	customer_id	bigint(20)	NO	0	PRI	客户ID
+dig_customer_refdep	2	dep_id	bigint(20)	NO	0	PRI	部门ID
+dig_customer_refdep	3	create_by	bigint(20)	YES	0		创建人
+dig_customer_refdep	4	create_date	datetime	YES	NULL		
+dig_customer_refuser	1	customer_id	bigint(20)	NO	0	MUL	客户ID
+dig_customer_refuser	2	service_id	bigint(20)	NO	0		运营ID
+dig_customer_refuser	3	create_by	bigint(20)	YES	0		创建人
+dig_customer_refuser	4	create_date	datetime	YES	NULL		
+dig_customer_statement	1	id	bigint(20)	NO	NULL	PRI	主键ID
+dig_customer_statement	2	customer_id	bigint(20)	YES	NULL		客户ID
+dig_customer_statement	3	customer_name	varchar(50)	YES	NULL		客户名称
+dig_customer_statement	4	current_return_date	datetime	YES	NULL		本期回款日期
+dig_customer_statement	5	previous_return_date	datetime	YES	NULL		上期回款日期
+dig_customer_statement	6	generate_date	datetime	YES	NULL		本期对账单生成日期
+dig_customer_statement	7	arrears_amount	decimal(32,3)	YES	NULL		欠款金额
+dig_customer_statement	8	return_amount	decimal(32,3)	YES	NULL		回款金额
+dig_customer_statement	9	detail_json	text	YES	NULL		各业务流水汇总Json
+dig_customer_statement	10	is_completed	char(1)	YES	0		是否已对账 1-已对账 0-未对账(默认值)
+dig_customer_statement	11	last_return_date	datetime	YES	NULL		最后回款日期
+dig_customer_statement	12	overdue_amount	decimal(32,3)	YES	NULL		逾期回款金额
+dig_customer_statement	13	overdue_days	int(11)	YES	NULL		回款逾期天数
+dig_customer_statement	14	update_date	datetime	YES	NULL		对账单修改日期
+dig_customer_statement	15	remark	varchar(255)	YES	NULL		备注说明
+dig_customer_statement	16	credit_datatype	char(1)	YES	1		账单类型 1-现金账单 2-消耗账单
+dig_customer_statement	17	consume	decimal(32,3)	YES	0.000		消耗数量
+dig_customer_statement	18	consume_before_ratio	decimal(10,3)	YES	NULL		折算返点
+dig_customer_subject	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_customer_subject	2	customer_id	int(11)	NO	NULL		客户ID
+dig_customer_subject	3	contact_name	varchar(32)	YES	NULL		联系人
+dig_customer_subject	4	contact_tel	varchar(32)	YES	NULL		联系电话
+dig_customer_subject	5	subject_name	varchar(100)	NO	NULL		主体名称
+dig_customer_subject	6	create_by	int(11)	YES	NULL		创建人
+dig_customer_subject	7	create_time	datetime	YES	NULL		创建时间
+dig_customer_subject	8	update_by	varchar(32)	YES	NULL		更新人
+dig_customer_subject	9	update_time	datetime	YES	NULL		更新时间
+dig_customer_subject	10	remark	varchar(512)	YES	NULL		备注
+dig_customer_subject	11	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_customer_subject	12	supplier_id	int(11)	YES	0		供应商ID
+dig_customer_subject	13	account_infojson	varchar(1000)	YES	NULL		账户信息json
+dig_customer_subject	14	ks_agentId	int(11)	YES	0		快手端口ID
+dig_customer_subject	15	isapi	char(1)	YES	0		是否API建立 0-否 1-是
+dig_customer_tag	1	id	int(11)	NO	NULL	PRI	
+dig_customer_tag	2	customer_id	int(11)	YES	0	MUL	客户ID
+dig_customer_tag	3	tag_name	varchar(255)	YES	NULL		标签
+dig_customer_transfer	1	id	int(11)	NO	NULL	PRI	
+dig_customer_transfer	2	before_customerid	int(11)	YES	0		转出客户ID
+dig_customer_transfer	3	before_customername	varchar(200)	YES	NULL		转出客户名称
+dig_customer_transfer	4	after_customerid	int(11)	YES	0		转入客户ID
+dig_customer_transfer	5	after_customername	varchar(200)	YES	NULL		转入客户名称
+dig_customer_transfer	6	money	decimal(18,3)	YES	0.000		转账金额
+dig_customer_transfer	7	approval_state	char(1)	YES	NULL		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_customer_transfer	8	remark	varchar(500)	YES	NULL		转账备注
+dig_customer_transfer	9	create_name	varchar(255)	YES	NULL		创建人名称
+dig_customer_transfer	10	create_by	int(11)	YES	0		申请人
+dig_customer_transfer	11	create_time	datetime	YES	NULL		申请时间
+dig_customer_transfer	12	revision	int(11)	YES	0		版本
+dig_customer_transfer	13	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_customer_transfer	14	voucher_url	varchar(600)	YES	NULL		附件
+dig_customer_transfer	15	trans_type	varchar(20)	YES	普通转账		类型:普通转账/资方转账
+dig_customer_transfer	16	transout_ratio	decimal(18,3)	YES	0.000		资方返点
+dig_customer_transfer	17	transin_ratio	decimal(18,3)	YES	0.000		客户返点
+dig_customer_transfer	18	profit	decimal(18,3)	YES	0.000		利润
+dig_customer_transfer	19	complete_time	datetime	YES	NULL		审批完成时间
+dig_customer_wallet	1	id	int(11)	NO	NULL	PRI	
+dig_customer_wallet	2	customer_id	int(11)	YES	0		客户ID
+dig_customer_wallet	3	a_name	varchar(255)	YES	NULL		账户名称
+dig_customer_wallet	4	balance	decimal(18,3)	YES	0.000		余额
+dig_customer_wallet	5	before_ratio	decimal(18,3)	YES	0.000		返点
+dig_customer_wallet	6	revision	int(11)	YES	0		版本号
+dig_customer_wallet	7	del_flag	char(1)	YES	0		是否删除 1-删除
+dig_customer_wallet	8	create_by	int(11)	YES	0		创建者
+dig_customer_wallet	9	create_time	datetime	YES	NULL		创建时间
+dig_customer_wallet	10	sortnum	int(11)	YES	0		排序
+dig_customer_wallet	11	after_ratio	decimal(10,2)	YES	0.00		后返点数
+dig_customer_wallet	12	wallet_key	varchar(255)	YES	NULL		钱包key
+dig_customer_wallet	13	credit_usemoney	decimal(18,3)	YES	0.000		授信已用
+dig_customer_wallet_bill	1	id	int(11)	NO	NULL	PRI	
+dig_customer_wallet_bill	2	customer_id	int(11)	YES	0		客户ID
+dig_customer_wallet_bill	3	wallet_id	int(11)	YES	0		钱包ID
+dig_customer_wallet_bill	4	wallet_name	varchar(80)	YES	NULL		钱包名字
+dig_customer_wallet_bill	5	money	decimal(18,3)	YES	0.000		操作金额
+dig_customer_wallet_bill	6	balance	decimal(18,3)	YES	0.000		操作后余额
+dig_customer_wallet_bill	7	business_type	int(11)	YES	0		业务类型
+dig_customer_wallet_bill	8	business_dataid	int(11)	YES	0		关联业务ID
+dig_customer_wallet_bill	9	remark	varchar(500)	YES	NULL		备注
+dig_customer_wallet_bill	10	create_by	int(11)	YES	0		创建人
+dig_customer_wallet_bill	11	create_time	datetime	YES	NULL		创建时间
+dig_customer_wallet_bill	12	before_ratio	decimal(10,3)	YES	0.000		返点
+dig_customer_wallet_bill	13	applicant_userid	int(11)	YES	0		申请人
+dig_customer_wallet_bill	14	applicant_time	datetime	YES	NULL		申请时间
+dig_customer_wallet_bill	15	supplier_id	int(11)	YES	0		供应商ID
+dig_customer_wallet_bill	16	customer_bill_id	int(11)	YES	0		客户流水ID
+dig_customer_wallet_bill	17	wallet_key	varchar(255)	YES	NULL		钱包key
+dig_customer_wallet_bill	18	credit_pay	decimal(18,3)	YES	0.000		本次授信已用
+dig_customer_wallet_bill	19	credit_usemoney	decimal(18,3)	YES	0.000		总共授信已用
+dig_cus_operbalance	1	id	int(11)	NO	NULL	PRI	
+dig_cus_operbalance	2	datatype	varchar(30)	YES	1		类型 1-市场费
+dig_cus_operbalance	3	customer_id	int(11)	YES	0		客户ID
+dig_cus_operbalance	4	oper_balance	decimal(18,3)	YES	0.000		操作的余额数
+dig_cus_operbalance	5	oper_credit_usemoney	decimal(18,3)	YES	0.000		操作的垫款已使用数
+dig_cus_operbalance	6	remarks	varchar(500)	YES	NULL		备注
+dig_cus_operbalance	7	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_cus_operbalance	8	create_by	int(11)	YES	0		创建人
+dig_cus_operbalance	9	create_name	varchar(30)	YES	NULL		创建人名字
+dig_cus_operbalance	10	create_time	datetime	YES	NULL		创建时间
+dig_cus_operbalance	11	revision	int(11)	YES	0		
+dig_cus_operbalance	12	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_cus_operbalance	13	voucher_url	varchar(600)	YES	NULL		附件
+dig_cus_operbalance	14	complete_time	datetime	YES	NULL		审批完成时间
+dig_cus_operbalance	15	after_currency	decimal(18,3)	YES	0.000		调整的后返币
+dig_cus_operbalance	16	after_money	decimal(18,3)	YES	0.000		调整的后返款
+dig_cus_operratio	1	id	int(11)	NO	NULL	PRI	
+dig_cus_operratio	2	customer_id	int(11)	YES	0		客户ID
+dig_cus_operratio	3	bf_before_ratio	decimal(18,3)	YES	0.000		之前的前返点数
+dig_cus_operratio	4	af_before_ratio	decimal(18,3)	YES	0.000		修改的前返点数
+dig_cus_operratio	5	bf_after_ratio	decimal(18,3)	YES	0.000		之前的后返点数
+dig_cus_operratio	6	af_after_ratio	decimal(18,3)	YES	0.000		操作之后的后返点数
+dig_cus_operratio	7	bf_service_ratio	decimal(18,3)	YES	0.000		之前的服务费点数
+dig_cus_operratio	8	af_service_ratio	decimal(18,3)	YES	0.000		本次申请的服务费点数
+dig_cus_operratio	9	remarks	varchar(500)	YES	NULL		备注
+dig_cus_operratio	10	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_cus_operratio	11	create_by	int(11)	YES	0		创建人
+dig_cus_operratio	12	create_name	varchar(30)	YES	NULL		创建人名字
+dig_cus_operratio	13	create_time	datetime	YES	NULL		创建时间
+dig_cus_operratio	14	revision	int(11)	YES	0		
+dig_cus_operratio	15	voucher_url	varchar(600)	YES	NULL		附件
+dig_cus_operratio	16	complete_time	datetime	YES	NULL		审批完成时间
+dig_cus_operratio	17	usable	char(1)	YES	0		有效状态 0-失效 1-有效
+dig_cus_operratio	18	wallet_json	text	YES	NULL		客户钱包数据
+dig_douyin_account_consume	1	id	int(11)	NO	NULL	PRI	
+dig_douyin_account_consume	2	consume_date	datetime	YES	NULL		消耗日期
+dig_douyin_account_consume	3	customer_id	int(11)	YES	0		客户ID
+dig_douyin_account_consume	4	customer_name	varchar(300)	YES	NULL		客户名称
+dig_douyin_account_consume	5	account_id	int(11)	YES	0		广告账户ID
+dig_douyin_account_consume	6	account_no	varchar(100)	YES	NULL		账户ID
+dig_douyin_account_consume	7	account_name	varchar(255)	YES	NULL		账户名称
+dig_douyin_account_consume	8	actual_spend	decimal(32,4)	YES	0.0000		实际消耗
+dig_douyin_account_consume	9	nongrant_spend	decimal(32,4)	YES	0.0000		非赠款消耗
+dig_douyin_account_consume	10	service_ratio	decimal(10,4)	YES	0.0000		服务费点数
+dig_douyin_account_consume	11	service_spend	decimal(32,4)	YES	0.0000		消耗服务费
+dig_douyin_account_consume	12	unsettled_service_fee	decimal(32,4)	YES	0.0000		已消耗未结算服务费
+dig_douyin_account_consume	13	settlement_service_fee	decimal(32,4)	YES	0.0000		实际结算服务费
+dig_douyin_account_consume	14	service_id	int(11)	YES	0		运营ID
+dig_douyin_account_consume	15	service_name	varchar(255)	YES	NULL		运营名称
+dig_douyin_account_consume	16	dept_id	int(11)	YES	0		部门ID
+dig_douyin_account_consume	17	dept_name	varchar(255)	YES	NULL		部门名称
+dig_douyin_account_consume	18	create_by	int(11)	YES	NULL		创建人
+dig_douyin_account_consume	19	create_time	datetime	YES	NULL		创建时间
+dig_douyin_account_consume	20	update_by	varchar(32)	YES	NULL		更新人
+dig_douyin_account_consume	21	update_time	datetime	YES	NULL		更新时间
+dig_douyin_account_consume	22	sale_id	int(11)	YES	0		销售ID
+dig_douyin_account_consume	23	sale_name	varchar(50)	YES	NULL		销售名称
+dig_douyin_account_consume	24	editor_id	int(11)	YES	0		
+dig_douyin_account_consume	25	editor_name	varchar(80)	YES	NULL		
+dig_douyin_account_consume	26	ismate	char(1)	YES	0		
+dig_douyin_account_consume	27	account_ratio	decimal(10,2)	YES	NULL		广告账户返点
+dig_douyin_account_consume	28	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_douyin_account_consume	29	agent_companyid	varchar(20)	YES	NULL		代理商公司ID
+dig_douyin_account_consume	30	agent_companyname	varchar(50)	YES	NULL		代理商公司名称
+dig_douyin_account_consume	31	agent_id	varchar(30)	YES	NULL		代理商ID
+dig_douyin_account_consume	32	agent_name	varchar(50)	YES	NULL		代理商名称
+dig_douyin_account_consume	33	bidding_spend	decimal(32,4)	YES	0.0000		竞价消耗
+dig_douyin_account_consume	34	brand_spend	decimal(32,4)	YES	0.0000		品牌消耗
+dig_douyin_account_consume	35	grant_spend	decimal(32,4)	YES	0.0000		赠款消耗
+dig_douyin_account_consume	36	torderROI	decimal(32,4)	YES	0.0000		总下单ROI
+dig_douyin_account_consume	37	tpayROI	decimal(32,4)	YES	0.0000		总支付ROI
+dig_douyin_account_consume	38	ev_ordernum	decimal(32,4)	YES	0.0000		直接成交订单数
+dig_douyin_account_consume	39	ev_orderprice	decimal(32,4)	YES	0.0000		直接成交订单金额
+dig_douyin_account_consume	40	ev_payROI	decimal(32,4)	YES	0.0000		直接支付ROI
+dig_douyin_account_consume	41	dt_ordernum	decimal(32,4)	YES	0.0000		直接下单订单数
+dig_douyin_account_consume	42	dt_orderprice	decimal(32,4)	YES	0.0000		直接下单订单金额
+dig_douyin_account_consume	43	dt_orderROI	decimal(32,4)	YES	0.0000		直接下单ROI
+dig_douyin_account_consume	44	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_douyin_account_consume	45	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_douyin_account_consume	46	business_type	varchar(20)	YES	NULL		业务来源
+dig_douyin_account_consume	47	business_type_name	varchar(50)	YES	NULL		业务来源名称
+dig_douyin_account_consume	48	isreadroi	char(1)	YES	0		是否读取ROI信息 0-否 1-是
+dig_douyin_account_consume	49	dy_agentId	int(11)	YES	0		抖音端口ID
+dig_douyin_account_consume	50	gmv_max	decimal(32,0)	YES	0		
+dig_douyin_account_consume	51	customer_statement_id	bigint(20)	YES	0		客户账单ID
+dig_douyin_account_consume	52	account_reporting_tag	varchar(20)	YES	NULL		账户报备类型
+dig_douyin_account_consume	53	company_name	varchar(100)	YES	NULL		客户主体公司名称
+dig_douyin_commission	1	id	int(11)	NO	NULL	PRI	
+dig_douyin_commission	2	sale_id	int(11)	YES	0		销售ID
+dig_douyin_commission	3	sale_name	varchar(30)	YES	NULL		销售名称
+dig_douyin_commission	4	newnum	int(11)	YES	0		新单数量
+dig_douyin_commission	5	new_servicefee	decimal(10,2)	YES	0.00		新单服务费
+dig_douyin_commission	6	first_renewal_servicefee	decimal(10,2)	YES	0.00		首续服务费
+dig_douyin_commission	7	renewal_servicefee	decimal(10,2)	YES	0.00		续费服务费
+dig_douyin_commission	8	new_ratio	decimal(10,2)	YES	0.00		新单比例，存百分比的数值，比如3%，存3
+dig_douyin_commission	9	first_renewal_ratio	decimal(10,2)	YES	0.00		首续比例
+dig_douyin_commission	10	renewal_ratio	decimal(10,2)	YES	0.00		续费服务费
+dig_douyin_commission	11	commission	decimal(10,2)	YES	0.00		总提成
+dig_douyin_commission	12	commission_time	datetime	YES	NULL		提成日期
+dig_douyin_commission	13	create_by	bigint(20)	YES	NULL		
+dig_douyin_commission	14	create_time	datetime	YES	NULL		创建时间
+dig_douyin_consume	1	id	int(11)	NO	NULL	PRI	
+dig_douyin_consume	2	consume_date	datetime	YES	NULL		消耗日期
+dig_douyin_consume	3	service_id	int(11)	YES	0		运营ID
+dig_douyin_consume	4	service_name	varchar(30)	YES	NULL		运营名称
+dig_douyin_consume	5	consume_money	decimal(10,2)	YES	0.00		总消费
+dig_douyin_consume	6	golive_num	int(11)	YES	0		上线数
+dig_douyin_consume	7	dept_id	int(11)	YES	0		部门ID
+dig_douyin_consume	8	dept_name	varchar(255)	YES	NULL		部门名称
+dig_douyin_consume	9	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_douyin_consume	10	create_by	varchar(64)	YES			创建者
+dig_douyin_consume	11	create_time	datetime	YES	NULL		创建时间
+dig_douyin_consume	12	update_by	varchar(64)	YES			更新者
+dig_douyin_consume	13	update_time	datetime	YES	NULL		更新时间
+dig_douyin_consume	14	remark	varchar(500)	YES	NULL		备注
+dig_douyin_consume	15	datatype	char(1)	YES	NULL		数据类型：1-抖音 2-快手
+dig_dy_developinfo	1	id	int(11)	NO	NULL	PRI	
+dig_dy_developinfo	2	appid	varchar(50)	YES	NULL		
+dig_dy_developinfo	3	secret	varchar(255)	YES	NULL		
+dig_dy_developinfo	4	access_token	varchar(500)	YES	NULL		用于验证权限的token 
+dig_dy_developinfo	5	agent_id	varchar(30)	YES	NULL		代理商ID
+dig_dy_developinfo	6	expires_in	bigint(20)	YES	NULL		access_token剩余有效时间,单位(秒)
+dig_dy_developinfo	7	refresh_token	varchar(500)	YES	NULL		刷新access_token,用于获取新的access_token和refresh_token，并且刷新过期时间
+dig_dy_developinfo	8	refresh_token_expires_in	bigint(20)	YES	NULL		refresh_token剩余有效时间,单位(秒)
+dig_dy_developinfo	9	create_time	datetime	YES	NULL		
+dig_dy_developinfo	10	update_time	datetime	YES	NULL		
+dig_dy_developinfo	11	account_type	int(11)	YES	2		抖音广告账户类型
+dig_dy_developinfo	12	types	int(11)	YES	3		平台类型1是抖音 3是腾讯
+dig_dy_developinfo	13	userid	varchar(50)	YES	NULL		授权账户ID
+dig_dy_developinfo	14	username	varchar(255)	YES	NULL		授权的用户名称
+dig_dy_developinfo	15	platformtype	varchar(50)	YES	NULL		抖音平台类型
+dig_edit_accountrecharge	1	id	int(11)	NO	NULL	PRI	
+dig_edit_accountrecharge	2	adverrecharge_id	int(11)	YES	0		账户充值记录ID
+dig_edit_accountrecharge	3	customer_id	int(11)	YES	0		客户ID
+dig_edit_accountrecharge	4	account_id	int(11)	YES	0		账户ID
+dig_edit_accountrecharge	5	edit_type	char(1)	YES	1		修改类型：1.基于金额根据新返点调整货币 2-基于货币根据新返点调整备款
+dig_edit_accountrecharge	6	before_ratio	decimal(18,3)	YES	0.000		改之前的返点
+dig_edit_accountrecharge	7	before_currency	decimal(18,3)	YES	NULL		改之前的货币数量
+dig_edit_accountrecharge	8	before_service_charge	decimal(18,3)	YES	0.000		改之前的服务费
+dig_edit_accountrecharge	9	before_servicepoint	decimal(18,3)	YES	0.000		改之前的服务费点数
+dig_edit_accountrecharge	10	later_ratio	decimal(18,3)	YES	0.000		后返点数
+dig_edit_accountrecharge	11	after_ratio	decimal(18,3)	YES	0.000		改之后的返点
+dig_edit_accountrecharge	12	after_service_charge	decimal(18,3)	YES	0.000		改之后的服务费
+dig_edit_accountrecharge	13	after_servicepoint	decimal(18,3)	YES	NULL		改之后的服务费点数
+dig_edit_accountrecharge	14	edit_later_ratio	decimal(18,3)	YES	0.000		改之后的后返点数
+dig_edit_accountrecharge	15	oper_balance	decimal(18,3)	YES	0.000		备款操作金额
+dig_edit_accountrecharge	16	oper_service_charge	decimal(18,3)	YES	0.000		操作服务费金额
+dig_edit_accountrecharge	17	oper_currency	decimal(18,3)	YES	0.000		操作货币金额
+dig_edit_accountrecharge	18	oper_later_money	decimal(18,3)	YES	0.000		操作的后返金额
+dig_edit_accountrecharge	19	oper_later_currency	decimal(18,3)	YES	0.000		操作的后返货币
+dig_edit_accountrecharge	20	remarks	varchar(500)	YES	NULL		备注
+dig_edit_accountrecharge	21	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_edit_accountrecharge	22	create_by	int(11)	YES	0		创建人
+dig_edit_accountrecharge	23	create_name	varchar(30)	YES	NULL		创建人名字
+dig_edit_accountrecharge	24	create_time	datetime	YES	NULL		创建时间
+dig_edit_accountrecharge	25	revision	int(11)	YES	0		
+dig_edit_accountrecharge	26	customer_name	varchar(200)	YES	NULL		客户名称
+dig_edit_accountrecharge	27	account_no	varchar(100)	YES	NULL		账户ID
+dig_edit_accountrecharge	28	account_name	varchar(100)	YES	NULL		账户名称
+dig_edit_accountrecharge	29	data_type	char(1)	YES	1		数据类型 ： 1-账户充值记录 2-退币记录
+dig_edit_accountrecharge	30	wallet_key	varchar(30)	YES	NULL		改之前的钱包key
+dig_edit_accountrecharge	31	edit_wallet_key	varchar(30)	YES	NULL		改之后的钱包key
+dig_edit_accountrecharge	32	complete_time	datetime	YES	NULL		审批完成时间
+dig_edit_accountrecharge	33	sync_state	int(11)	YES	0		同步状态 0-否 10-是
+dig_edit_accountrecharge	34	infojson	text	YES	NULL		批量调整信息【账户数量，调整数量，开始时间和结束时间】
+dig_edit_accountrecharge_detail	1	id	bigint(20)	NO	NULL	PRI	
+dig_edit_accountrecharge_detail	2	edit_recharge_id	bigint(20)	YES	NULL		调整账户充值id（关联调整账户充值表）
+dig_edit_accountrecharge_detail	3	recharge_id	bigint(20)	YES	NULL		充值记录主键id（关联账户充值记录表）
+dig_edit_accountrecharge_detail	4	customer_id	int(11)	YES	0		客户ID
+dig_edit_accountrecharge_detail	5	account_id	int(11)	YES	0		账户ID
+dig_edit_accountrecharge_detail	6	before_ratio	decimal(18,3)	YES	0.000		改之前的返点
+dig_edit_accountrecharge_detail	7	before_service_charge	decimal(18,3)	YES	0.000		改之前的服务费
+dig_edit_accountrecharge_detail	8	before_currency	decimal(18,3)	YES	NULL		改之前的货币数量
+dig_edit_accountrecharge_detail	9	after_ratio	decimal(18,3)	YES	0.000		改之后的返点
+dig_edit_accountrecharge_detail	10	after_service_charge	decimal(18,3)	YES	0.000		改之后的服务费
+dig_edit_accountrecharge_detail	11	later_ratio	decimal(18,3)	YES	0.000		后返点数
+dig_edit_accountrecharge_detail	12	edit_later_ratio	decimal(18,3)	YES	0.000		改之后的后返点数
+dig_edit_accountrecharge_detail	13	oper_balance	decimal(18,3)	YES	0.000		备款操作金额
+dig_edit_accountrecharge_detail	14	oper_service_charge	decimal(18,3)	YES	0.000		操作服务费金额
+dig_edit_accountrecharge_detail	15	oper_currency	decimal(18,3)	YES	0.000		操作货币金额
+dig_edit_accountrecharge_detail	16	oper_later_money	decimal(18,3)	YES	0.000		操作的后返金额
+dig_edit_accountrecharge_detail	17	oper_later_currency	decimal(18,3)	YES	0.000		操作的后返货币
+dig_edit_accountrecharge_detail	18	remarks	varchar(500)	YES	NULL		备注
+dig_edit_accountrecharge_detail	19	create_by	int(11)	YES	0		创建人
+dig_edit_accountrecharge_detail	20	create_name	varchar(30)	YES	NULL		创建人名字
+dig_edit_accountrecharge_detail	21	create_time	datetime	YES	NULL		创建时间
+dig_edit_accountrecharge_detail	22	revision	int(11)	YES	0		
+dig_edit_accountrecharge_detail	23	customer_name	varchar(200)	YES	NULL		客户名称
+dig_edit_accountrecharge_detail	24	account_no	varchar(100)	YES	NULL		账户ID
+dig_edit_accountrecharge_detail	25	account_name	varchar(100)	YES	NULL		账户名称
+dig_edit_accountrecharge_detail	26	wallet_key	varchar(30)	YES	NULL		改之前的钱包key
+dig_edit_accountrecharge_detail	27	edit_wallet_key	varchar(30)	YES	NULL		改之后的钱包key
+dig_edit_accountrecharge_detail	28	after_servicepoint	decimal(18,3)	YES	NULL		改之后的服务费点数
+dig_external_orderno	1	id	int(11)	NO	NULL	PRI	
+dig_external_orderno	2	order_no	varchar(200)	YES	NULL	UNI	单号
+dig_external_orderno	3	response_txt	varchar(3000)	YES	NULL		单号返回内容
+dig_external_orderno	4	data_id	int(11)	YES	0		关联记录ID
+dig_external_orderno	5	data_type	int(11)	YES	0		数据类型：1-充值 2-退币 3-转户
+dig_external_orderno	6	create_by	int(11)	YES	0		创建人
+dig_external_orderno	7	create_time	datetime	YES	NULL		创建时间
+dig_incentive_apply	1	id	int(11)	NO	NULL	PRI	
+dig_incentive_apply	2	title	varchar(255)	YES	NULL		激励活动名称
+dig_incentive_apply	3	remark	varchar(500)	YES	NULL		激励说明
+dig_incentive_apply	4	voucherFile	varchar(800)	YES	NULL		激励明细附件
+dig_incentive_apply	5	approval_state	char(1)	YES	0		审批状态：0-审批中 1-审批通过 2-审批拒回
+dig_incentive_apply	6	revision	int(11)	YES	0		版本号
+dig_incentive_apply	7	create_by	int(11)	YES	NULL		创建人
+dig_incentive_apply	8	create_time	datetime	YES	NULL		创建时间
+dig_incentive_apply	9	update_by	varchar(32)	YES	NULL		更新人
+dig_incentive_apply	10	update_time	datetime	YES	NULL		更新时间
+dig_invoice	1	id	int(11)	NO	NULL	PRI	
+dig_invoice	2	customer_id	int(11)	NO	0		客户ID
+dig_invoice	3	customer_name	varchar(255)	NO	NULL		客户名称
+dig_invoice	4	company	varchar(255)	NO	NULL		开票公司
+dig_invoice	5	is_authorization	char(1)	NO	0		是否属于委托证明开票 0-否 1-是
+dig_invoice	6	authorization_url	varchar(400)	YES	NULL		委托证明附件
+dig_invoice	7	settlement_invoice_type	varchar(255)	YES	NULL		结算发票类型
+dig_invoice	8	invoice_type	varchar(255)	YES	NULL		发票类型
+dig_invoice	9	invoice_content	varchar(255)	YES	NULL		开票内容
+dig_invoice	10	invoice_price	decimal(18,2)	YES	0.00		开票金额
+dig_invoice	11	collection_price	decimal(18,2)	YES	0.00		收款金额
+dig_invoice	12	cashrecharge_price	decimal(18,2)	YES	0.00		关联的记录的总金额
+dig_invoice	13	cus_invoice_header	varchar(255)	YES	NULL		（客户方）发票抬头*
+dig_invoice	14	cus_credit_code	varchar(255)	YES	NULL		（客户方）统一社会信用代码（税号/纳税识别号）*
+dig_invoice	15	cus_bankname	varchar(255)	YES	NULL		（客户方）开户银行*
+dig_invoice	16	cus_bankno	varchar(255)	YES	NULL		（客户方）银行账号*
+dig_invoice	17	cus_phone	varchar(255)	YES	NULL		（客户方）注册电话*
+dig_invoice	18	cus_address	varchar(255)	YES	NULL		（客户方）注册地址*
+dig_invoice	19	voucher_url	varchar(500)	YES	NULL		附件上传
+dig_invoice	20	remark	varchar(255)	YES	NULL		备注
+dig_invoice	21	invoice_state	char(1)	YES	0		开票状态：0-待开票 1-已开票 2-审批拒绝
+dig_invoice	22	confirm_userid	int(11)	YES	0		确认人ID
+dig_invoice	23	confirm_username	varchar(255)	YES	NULL		确认人名称
+dig_invoice	24	confirm_date	datetime	YES	NULL		确认时间
+dig_invoice	25	create_by	int(11)	YES	NULL		创建人
+dig_invoice	26	create_name	varchar(255)	YES	NULL		创建人名字
+dig_invoice	27	create_time	datetime	YES	NULL		创建时间
+dig_invoice	28	update_by	varchar(32)	YES	NULL		更新人
+dig_invoice	29	update_time	datetime	YES	NULL		更新时间
+dig_invoice	30	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_invoice	31	contract_id	int(11)	YES	0		合同ID
+dig_invoice	32	invoice_content_txt	varchar(600)	YES	NULL		
+dig_invoice	33	refuse_reason	varchar(500)	YES	NULL		拒绝原因
+dig_invoice	34	invoice_price_a	decimal(18,2)	YES	NULL		开票金额1
+dig_invoice	35	invoice_price_b	decimal(18,2)	YES	NULL		开票金额2
+dig_invoice	36	red_reversal_reason	varchar(300)	YES	NULL		红冲原因
+dig_invoice_detail	1	id	int(11)	NO	NULL	PRI	
+dig_invoice_detail	2	invoice_id	int(11)	YES	0		发票ID
+dig_invoice_detail	3	data_id	int(11)	YES	0		关联记录ID
+dig_invoice_detail	4	data_type	int(11)	YES	1		关联类型 1-现金收款 2-退款记录
+dig_ks_commission	1	id	int(11)	NO	NULL	PRI	
+dig_ks_commission	2	sale_id	int(11)	YES	0		销售ID
+dig_ks_commission	3	sale_name	varchar(255)	YES	NULL		销售名称
+dig_ks_commission	4	neworder_price	decimal(10,2)	YES	0.00		新单充值金额【累计了上个月的】
+dig_ks_commission	5	first_renewal_price	decimal(10,2)	YES	0.00		首续充值金额【累计了上个月的】
+dig_ks_commission	6	renewal_price	decimal(10,2)	YES	0.00		续费充值金额【累计了上个月剩余的】
+dig_ks_commission	7	sum_consume	decimal(32,2)	YES	0.00		本月总消耗
+dig_ks_commission	8	neworder_consume	decimal(10,2)	YES	0.00		新单消耗
+dig_ks_commission	9	neworder_ratio	decimal(10,2)	YES	0.00		新单比例
+dig_ks_commission	10	first_renewal_consume	decimal(10,2)	YES	0.00		首续消耗
+dig_ks_commission	11	first_renewal_ratio	decimal(10,2)	YES	0.00		首续比例
+dig_ks_commission	12	renewal_consume	decimal(10,2)	YES	0.00		续费消耗
+dig_ks_commission	13	renewal_ratio	decimal(10,2)	YES	NULL		
+dig_ks_commission	14	commission	decimal(10,2)	YES	0.00		总提成
+dig_ks_commission	15	conmission_time	datetime	YES	NULL		提成日期【每个人每个月一条】
+dig_ks_commission	16	create_by	bigint(20)	YES	0		创建人
+dig_ks_commission	17	create_time	datetime	YES	NULL		创建时间
+dig_ks_customer_notconsume	1	id	int(11)	NO	NULL	PRI	
+dig_ks_customer_notconsume	2	customer_id	int(11)	YES	0		客户ID
+dig_ks_customer_notconsume	3	neworder_notconsume	decimal(10,2)	YES	0.00		剩余新单未消耗
+dig_ks_customer_notconsume	4	first_renewal_notconsume	decimal(10,2)	YES	0.00		剩余首续未消耗
+dig_ks_customer_notconsume	5	renewal_notconsume	decimal(10,2)	YES	0.00		剩余续费未消耗
+dig_ks_customer_notconsume	6	conmission_time	datetime	YES	NULL		提成日期【每个人每个月一条】
+dig_ks_customer_notconsume	7	create_by	bigint(20)	YES	0		创建人
+dig_ks_customer_notconsume	8	create_time	datetime	YES	NULL		创建时间
+dig_kuaishou_jinfu	1	id	int(11)	NO	NULL	PRI	
+dig_kuaishou_jinfu	2	user_id	bigint(30)	YES	0		快手ID
+dig_kuaishou_jinfu	3	user_name	varchar(255)	YES	NULL		快手昵称
+dig_kuaishou_jinfu	4	agent_id	bigint(30)	YES	0		代理端口ID
+dig_kuaishou_jinfu	5	agent_name	varchar(255)	YES	NULL		服务商名称
+dig_kuaishou_jinfu	6	corporation_name	varchar(255)	YES	NULL		服务商名称
+dig_kuaishou_jinfu	7	balance	decimal(50,0)	YES	0		现金余额
+dig_kuaishou_jinfu	8	credit_balance	decimal(50,0)	YES	0		信用余额
+dig_kuaishou_jinfu	9	extended_balance	decimal(50,0)	YES	0		后返余额
+dig_kuaishou_jinfu	10	rebate	decimal(50,0)	YES	0		
+dig_kuaishou_jinfu	11	pre_rebate	decimal(50,0)	YES	0		前返余额
+dig_kuaishou_jinfu	12	total_balance	decimal(50,0)	YES	0		总余额
+dig_kuaishou_jinfu	13	cookie_txt	text	YES	NULL		登录cookie
+dig_kuaishou_jinfu	14	online_state	int(11)	YES	1		在线状态 1-在线 2-离线
+dig_kuaishou_jinfu	15	create_by	int(11)	YES	NULL		创建人
+dig_kuaishou_jinfu	16	create_time	datetime	YES	NULL		创建时间
+dig_kuaishou_jinfu	17	update_by	varchar(32)	YES	NULL		更新人
+dig_kuaishou_jinfu	18	update_time	datetime	YES	NULL		更新时间
+dig_kuaishou_jinfu	19	staff_id	varchar(55)	YES			
+dig_kuaishou_jinfu	20	belong_type	varchar(30)	YES	ALL		
+dig_kuaishou_jinfu	21	account_type	int(11)	YES	0		广告账户类型
+dig_kuaishou_jinfu	22	prev_url	varchar(80)	YES	NULL		端口请求地址前缀
+dig_kuaishou_jinfu	23	consume_type	varchar(255)	YES	NULL		
+dig_kuaishou_jinfu	24	includedstr	varchar(255)	YES	NULL		包含的消耗数据，对应消耗数据返回的belongtype，多个用英文逗号分割
+dig_kuaishou_jinfu	25	sendmsg	char(1)	YES	1		是否发送微信消息通知 0-否 1-是
+dig_kuaishou_jinfu	26	threshold	decimal(18,3)	YES	0.000		金额提醒阈值，代理商余额低于这个值提醒
+dig_kuaishou_jinfu	27	remind_userid	varchar(100)	YES	NULL		提醒人员ID，多个用逗号分隔
+dig_kuaishou_jinfu	28	app_id	bigint(20)	YES	NULL		应用id
+dig_kuaishou_jinfu	29	secret	varchar(255)	YES	NULL		应用密钥
+dig_kuaishou_jinfu	30	token	varchar(500)	YES	NULL		授权验证token
+dig_kuaishou_jinfu	31	refresh_token	varchar(500)	YES	NULL		用于获取新的token
+dig_kuaishou_jinfu	32	last_consume_date	datetime	YES	NULL		上次拉取成功消耗日期
+dig_kuaishou_jinfu	33	del_flag	int(11)	YES	0		删除标识 1-删除 0-否
+dig_leave	1	id	bigint(20)	NO	NULL	PRI	
+dig_leave	2	apply_userid	bigint(20)	YES	0		申请人
+dig_leave	3	apply_username	varchar(255)	YES	NULL		申请人
+dig_leave	4	leave_type	char(1)	YES	1		请假类型
+dig_leave	5	start_time	datetime	YES	NULL		请假开始时间
+dig_leave	6	end_time	datetime	YES	NULL		请假结束时间
+dig_leave	7	leave_hours	decimal(10,2)	YES	0.00		请假时长【小时】
+dig_leave	8	leave_hours_label	varchar(255)	YES	NULL		说明
+dig_leave	9	reason	varchar(255)	YES	NULL		请假事由
+dig_leave	10	voucherFile	varchar(800)	YES	NULL		附件路径
+dig_leave	11	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批完成 2-审批拒回
+dig_leave	12	revision	int(11)	YES	0		版本号
+dig_leave	13	create_by	int(11)	YES	NULL		创建人
+dig_leave	14	create_time	datetime	YES	NULL		创建时间
+dig_leave	15	update_by	varchar(32)	YES	NULL		更新人
+dig_leave	16	update_time	datetime	YES	NULL		更新时间
+dig_leave	17	datatype	char(1)	YES	0		数据类型：0.请假 1.日常调休
+dig_materiel_consume	1	id	int(11)	NO	NULL	PRI	
+dig_materiel_consume	2	subject_no	varchar(20)	YES	NULL		公司ID
+dig_materiel_consume	3	subject_name	varchar(255)	YES	NULL		公司名称
+dig_materiel_consume	4	operation_tags	varchar(255)	YES	NULL		运营标签
+dig_materiel_consume	5	materiel_id	varchar(40)	YES	NULL		素材ID
+dig_materiel_consume	6	performance_date	datetime	YES	NULL		业绩归属月份，格式2020-01-01
+dig_materiel_consume	7	performance_month	int(11)	YES	NULL		业绩归属月
+dig_materiel_consume	8	performance_quarter	int(11)	YES	NULL		归属季度
+dig_materiel_consume	9	motivate_price	decimal(18,2)	YES	0.00		激励金额
+dig_materiel_consume	10	performance_consume	decimal(18,2)	YES	NULL		参与计算业绩消耗
+dig_materiel_consume	11	highquality_materials_motivate	decimal(18,2)	YES	0.00		优质素材激励
+dig_materiel_consume	12	ratio	decimal(18,2)	YES	0.00		当前点位
+dig_materiel_consume	13	star_performance_consume	decimal(18,2)	YES	0.00		星图-参与计算业绩消耗
+dig_materiel_consume	14	star_motivate	decimal(18,2)	YES	0.00		星图激励金额
+dig_materiel_consume	15	star_ratio	varchar(255)	YES	NULL		星图当前点位
+dig_materiel_consume	16	data_type	int(11)	YES	0		数据类型：1-优质素材-星图 2-首发
+dig_materiel_consume	17	business_type	varchar(255)	YES	NULL		业务线归属：千川/AD/本地推
+dig_materiel_consume	18	create_by	int(11)	YES	0		
+dig_materiel_consume	19	create_time	datetime	YES	NULL		创建时间
+dig_media_operbill	1	id	int(11)	NO	NULL	PRI	
+dig_media_operbill	2	account_no	varchar(50)	YES	NULL		广告账户ID
+dig_media_operbill	3	money	decimal(18,3)	YES	0.000		操作金额(元)
+dig_media_operbill	4	oper_time	datetime	YES	NULL		操作时间
+dig_media_operbill	5	oper_user	varchar(255)	YES	NULL		操作人
+dig_media_operbill	6	oper_type	varchar(255)	YES	NULL		操作类型：充值/退币/转户
+dig_media_operbill	7	ks_agentId	int(11)	YES	0		快手端口ID
+dig_media_operbill	8	supplier_id	varchar(50)	YES	0		供应商ID
+dig_media_operbill	9	media_type	int(11)	YES	0		媒体类型：1-抖音 2-快手 3-腾讯 4-小红书
+dig_media_operbill	10	is_ignore	char(1)	YES	0		是否忽略对账异常 0-否 1-是
+dig_media_operbill	11	create_time	datetime	YES	NULL		创建时间
+dig_media_operbill	12	remark	varchar(500)	YES	NULL		
+dig_media_operbill	13	account_type	int(11)	YES	1		账户类型
+dig_montage	1	id	bigint(11)	NO	NULL	PRI	主键id
+dig_montage	2	user_id	bigint(20)	YES	NULL		剪辑人员id
+dig_montage	3	user_name	varchar(100)	YES	NULL		剪辑人员名称
+dig_montage	4	dept_id	int(11)	YES	NULL		部门id
+dig_montage	5	dept_name	varchar(100)	YES	NULL		部门名称
+dig_montage	6	count	decimal(10,2)	YES	NULL		总数量
+dig_montage	7	other_count	decimal(10,2)	YES	NULL		其他数量
+dig_montage	8	beauty_makeup_count	decimal(10,2)	YES	NULL		美妆数量
+dig_montage	9	other_valid_count	decimal(10,2)	YES	NULL		其他有效数量
+dig_montage	10	beauty_makeup_valid_count	decimal(10,2)	YES	NULL		美妆有效数量
+dig_montage	11	valid_ratio	decimal(6,2)	YES	NULL		视频有效比例
+dig_montage	12	money	decimal(10,2)	YES	NULL		奖金
+dig_montage	13	montage_date	date	YES	NULL		剪辑日期
+dig_montage	14	revision	int(11)	YES	0		乐观锁
+dig_montage	15	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_montage	16	create_by	int(11)	YES	NULL		创建人
+dig_montage	17	create_time	datetime	YES	NULL		创建时间
+dig_montage	18	update_by	varchar(32)	YES	NULL		更新人
+dig_montage	19	update_time	datetime	YES	NULL		更新时间
+dig_montage	20	remark	varchar(500)	YES			备注
+dig_motivate	1	id	int(11)	NO	NULL	PRI	
+dig_motivate	2	motivate_name	varchar(255)	YES	NULL		激励期名字
+dig_motivate	3	reference_startdate	datetime	YES	NULL		参考日期-开始
+dig_motivate	4	reference_enddate	datetime	YES	NULL		参考日期-结束
+dig_motivate	5	check_startdate	datetime	YES	NULL		考核期-开始
+dig_motivate	6	check_enddate	datetime	YES	NULL		考核期-结束
+dig_motivate	7	check_days	int(11)	YES	0		考核天数
+dig_motivate	8	create_by	int(11)	YES	NULL		创建人
+dig_motivate	9	create_time	datetime	YES	NULL		创建时间
+dig_motivate_customer_rel	1	id	int(11)	NO	NULL	PRI	
+dig_motivate_customer_rel	2	motivate_id	int(11)	YES	NULL		激励期id
+dig_motivate_customer_rel	3	customer_id	int(11)	YES	NULL		客户id
+dig_motivate_customer_rel	4	customer_name	varchar(255)	YES	NULL		客户名称
+dig_motivate_customer_rel	5	customer_group	varchar(255)	YES	NULL		客户集团（名称）
+dig_motivate_customer_rel	6	customer_subject	varchar(255)	YES	NULL		客户主体
+dig_motivate_customer_rel	7	daily_consume_add	decimal(13,3)	YES	NULL		【客户集团】千川竞价业绩日均消耗增量
+dig_motivate_customer_rel	8	daily_consume_add_speed	decimal(13,0)	YES	NULL		【客户集团】千川竞价业绩消耗日均增速
+dig_motivate_customer_rel	9	non_increase_quantity_consume	decimal(13,3)	YES	NULL		千川竞价非收业绩消耗
+dig_motivate_customer_rel	10	motivate_daily_avg_consume	decimal(13,3)	YES	NULL		激励期日均消耗=non_increase_quantity_consume/考核天数
+dig_motivate_customer_rel	11	reference_total_daily_avg	decimal(13,4)	YES	NULL		客户集团参考期总日均=daily_consume_add/daily_consume_add_speed
+dig_motivate_customer_rel	12	motivate_daily_avg	decimal(13,4)	YES	NULL		客户集团激励期日均=reference_total_daily_avg+daily_consume_add
+dig_motivate_customer_rel	13	motivation_other_port_total_daily_avg	decimal(13,4)	YES	NULL		激励期其他端口的总日均
+dig_motivate_customer_rel	14	penetration_rate	decimal(10,3)	YES	NULL		渗透率
+dig_motivate_customer_rel	15	daily_growth_rate_gt_1pct	decimal(10,3)	YES	NULL		日均增速大于1%
+dig_motivate_customer_rel	16	daily_growth_rate_gt_10pct	decimal(10,3)	YES	NULL		日均增速大于10%
+dig_motivate_customer_rel	17	daily_GAP	varchar(50)	YES	NULL		日均GAP值
+dig_motivate_customer_rel	18	motivate_money	decimal(10,3)	YES	NULL		激励金额
+dig_motivate_customer_rel	19	create_time	date	YES	NULL		创建时间
+dig_motivate_customer_rel	20	update_time	date	YES	NULL		更新时间
+dig_motivate_customer_rel	21	create_by	varchar(100)	YES	NULL		创建人
+dig_operate_wages	1	id	int(11)	NO	NULL	PRI	
+dig_operate_wages	2	user_id	int(11)	NO	0		用户ID
+dig_operate_wages	3	user_name	varchar(50)	YES	NULL		用户名称
+dig_operate_wages	4	wage_month	datetime	YES	NULL		工资月份
+dig_operate_wages	5	last_month_cashconsume	decimal(32,4)	YES	0.0000		上月现金消耗
+dig_operate_wages	6	this_month_cashconsume	decimal(32,4)	YES	0.0000		本月现金消耗
+dig_operate_wages	7	commission	decimal(32,2)	YES	0.00		提成
+dig_operate_wages	8	user_type	char(1)	YES	0		用户类型 1-运营 2-剪辑
+dig_operate_wages	9	create_by	int(11)	YES	0		创建人
+dig_operate_wages	10	create_time	datetime	YES	NULL		创建时间
+dig_other_account_consume	1	id	int(11)	NO	NULL	PRI	
+dig_other_account_consume	2	consume_date	datetime	YES	NULL	MUL	消耗日期
+dig_other_account_consume	3	customer_id	int(11)	YES	0		客户ID
+dig_other_account_consume	4	customer_name	varchar(300)	YES	NULL		客户名称
+dig_other_account_consume	5	account_id	int(11)	YES	0		广告账户ID
+dig_other_account_consume	6	account_no	varchar(100)	YES	NULL		账户ID
+dig_other_account_consume	7	account_name	varchar(255)	YES	NULL		账户名称
+dig_other_account_consume	8	cost	decimal(32,4)	YES	0.0000		实际消耗，花费
+dig_other_account_consume	9	service_ratio	decimal(10,4)	YES	0.0000		服务费点数
+dig_other_account_consume	10	service_spend	decimal(32,4)	YES	0.0000		消耗服务费
+dig_other_account_consume	11	unsettled_service_fee	decimal(32,4)	YES	0.0000		已消耗未结算服务费
+dig_other_account_consume	12	settlement_service_fee	decimal(32,4)	YES	0.0000		实际结算服务费
+dig_other_account_consume	13	service_id	int(11)	YES	0		运营ID
+dig_other_account_consume	14	service_name	varchar(255)	YES	NULL		运营名称
+dig_other_account_consume	15	dept_id	int(11)	YES	0		部门ID
+dig_other_account_consume	16	dept_name	varchar(255)	YES	NULL		部门名称
+dig_other_account_consume	17	create_by	int(11)	YES	NULL		创建人
+dig_other_account_consume	18	create_time	datetime	YES	NULL		创建时间
+dig_other_account_consume	19	update_by	varchar(32)	YES	NULL		更新人
+dig_other_account_consume	20	update_time	datetime	YES	NULL		更新时间
+dig_other_account_consume	21	sale_id	int(11)	YES	0		销售ID
+dig_other_account_consume	22	sale_name	varchar(50)	YES	NULL		销售名称
+dig_other_account_consume	23	editor_id	int(11)	YES	0		
+dig_other_account_consume	24	editor_name	varchar(80)	YES	NULL		
+dig_other_account_consume	25	ismate	char(1)	YES	0		
+dig_other_account_consume	26	account_radio	decimal(10,2)	YES	NULL		广告账户返点
+dig_other_account_consume	27	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_other_account_consume	28	agent_companyid	varchar(20)	YES	NULL		代理商公司ID
+dig_other_account_consume	29	company_name	varchar(50)	YES	NULL		公司名称
+dig_other_account_consume	30	agent_id	varchar(30)	YES	NULL		代理商ID
+dig_other_account_consume	31	agent_name	varchar(50)	YES	NULL		代理商名称
+dig_other_account_consume	32	bidding_spend	decimal(32,4)	YES	0.0000		竞价消耗
+dig_other_account_consume	33	cash_spend	decimal(32,3)	YES	0.000		现金消耗
+dig_other_account_consume	34	brand_spend	decimal(32,4)	YES	0.0000		品牌消耗
+dig_other_account_consume	35	grant_spend	decimal(32,4)	YES	0.0000		赠款消耗
+dig_other_account_consume	36	torderROI	decimal(32,4)	YES	0.0000		总下单ROI
+dig_other_account_consume	37	tpayROI	decimal(32,4)	YES	0.0000		总支付ROI
+dig_other_account_consume	38	ev_ordernum	decimal(32,4)	YES	0.0000		直接成交订单数
+dig_other_account_consume	39	ev_orderprice	decimal(32,4)	YES	0.0000		直接成交订单金额
+dig_other_account_consume	40	ev_payROI	decimal(32,4)	YES	0.0000		直接支付ROI
+dig_other_account_consume	41	order_pv	decimal(32,4)	YES	0.0000		直接下单订单数
+dig_other_account_consume	42	order_amount	decimal(32,4)	YES	0.0000		直接下单订单金额
+dig_other_account_consume	43	order_roi	decimal(32,4)	YES	0.0000		直接下单ROI
+dig_other_account_consume	44	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_other_account_consume	45	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_other_account_consume	46	business_type	varchar(20)	YES	NULL		业务来源
+dig_other_account_consume	47	business_type_name	varchar(50)	YES	NULL		业务来源名称
+dig_other_account_consume	48	isreadroi	char(1)	YES	0		是否读取ROI信息 0-否 1-是
+dig_other_account_consume	49	supplier_id	int(11)	YES	0		供应商ID
+dig_other_account_consume	50	customer_statement_id	bigint(20)	YES	0		客户账单ID
+dig_purchase	1	id	int(11)	NO	NULL	PRI	
+dig_purchase	2	reason	varchar(500)	YES	NULL		申请事由
+dig_purchase	3	apply_time	datetime	YES	NULL		申请日期
+dig_purchase	4	expected_delivery_time	datetime	YES	NULL		期望交付日期
+dig_purchase	5	purchase_items	varchar(500)	YES	NULL		采购物品图片URL,多个用逗号分割
+dig_purchase	6	purchase_price	decimal(18,2)	YES	0.00		采购金额
+dig_purchase	7	approval_state	char(1)	YES	0		审批状态 0-审批中 1-审批通过 2-审批拒回
+dig_purchase	8	state	char(1)	YES	0		是否已完成 0-待付款 1-已付款
+dig_purchase	9	revision	int(11)	YES	0		版本号
+dig_purchase	10	create_by	int(11)	YES	NULL		创建人
+dig_purchase	11	create_time	datetime	YES	NULL		创建时间
+dig_purchase	12	update_by	varchar(32)	YES	NULL		更新人
+dig_purchase	13	update_time	datetime	YES	NULL		更新时间
+dig_purchase	14	actualpay_money	decimal(32,2)	YES	0.00		实际支付金额【财务付款时输入】
+dig_purchase_item	1	id	bigint(20)	NO	NULL	PRI	
+dig_purchase_item	2	purchase_id	bigint(20)	YES	0		采购单主表ID
+dig_purchase_item	3	item_name	varchar(255)	YES	NULL		物品名称
+dig_purchase_item	4	item_spec	varchar(255)	YES	NULL		规格或型号
+dig_purchase_item	5	item_num	decimal(10,2)	YES	0.00		数量
+dig_purchase_item	6	item_price	decimal(18,2)	YES	0.00		金额
+dig_purchase_item	7	remark	varchar(255)	YES	NULL		备注
+dig_purchase_item	8	create_by	int(11)	YES	NULL		创建人
+dig_purchase_item	9	create_time	datetime	YES	NULL		创建时间
+dig_purchase_item	10	update_by	varchar(32)	YES	NULL		更新人
+dig_purchase_item	11	update_time	datetime	YES	NULL		更新时间
+dig_reimbursement	1	id	int(11)	NO	NULL	PRI	编号
+dig_reimbursement	2	no	varchar(30)	YES	NULL		报销单号
+dig_reimbursement	3	subject	varchar(50)	YES	NULL		报销事由 
+dig_reimbursement	4	money	decimal(10,2)	YES	NULL		报销金额
+dig_reimbursement	5	revision	int(11)	YES	0		乐观锁
+dig_reimbursement	6	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_reimbursement	7	create_by	int(11)	YES	NULL		创建人
+dig_reimbursement	8	create_time	datetime	YES	NULL		创建时间
+dig_reimbursement	9	update_by	varchar(32)	YES	NULL		更新人
+dig_reimbursement	10	update_time	datetime	YES	NULL		更新时间
+dig_reimbursement	11	remark	varchar(500)	YES			备注
+dig_reimbursement	12	cost_desc	varchar(500)	YES	NULL		费用说明
+dig_reimbursement	13	type	char(1)	YES	NULL		报销类型(0.设备费、1.办公费、2.招待费、3.交通费、4.快递费、5.广告费)
+dig_reimbursement	14	approval_state	char(1)	YES	0		审批状态 (0审批中 1审批通过 2审批拒回)
+dig_reimbursement	15	state	char(1)	YES	0		报销状态 (0未报销 1已报销)
+dig_reimbursement	16	reimburse_time	datetime	YES	NULL		报销时间
+dig_reimbursement	17	voucher_url	text	YES	NULL		报销凭证
+dig_reimbursement	18	bank_user_name	varchar(40)	YES	NULL		收款人
+dig_reimbursement	19	bank_name	varchar(40)	YES	NULL		银行名称
+dig_reimbursement	20	bank_no	varchar(60)	YES	NULL		银行账号
+dig_return_coin	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_return_coin	2	custom_id	bigint(20)	YES	0		客户id
+dig_return_coin	3	account_id	bigint(20)	YES	0		广告账户id
+dig_return_coin	4	return_money	decimal(10,3)	YES	0.000		退币金额
+dig_return_coin	5	applicant	bigint(20)	YES	NULL		申请人
+dig_return_coin	6	applicant_time	datetime	YES	NULL		申请时间
+dig_return_coin	7	approval_state	char(1)	YES	0		审批状态 (0审批中 1审批通过 2审批拒回)
+dig_return_coin	8	revision	int(11)	YES	0		乐观锁版本号
+dig_return_coin	9	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_return_coin	10	create_by	varchar(64)	YES			创建者
+dig_return_coin	11	create_time	datetime	YES	NULL		创建时间
+dig_return_coin	12	update_by	varchar(64)	YES			更新者
+dig_return_coin	13	update_time	datetime	YES	NULL		更新时间
+dig_return_coin	14	remark	varchar(500)	YES			备注
+dig_return_coin	15	account_name	varchar(100)	YES	NULL		账户名称
+dig_return_coin	16	custom_name	varchar(100)	YES	NULL		客户名称
+dig_return_coin	17	applicant_name	varchar(100)	YES	NULL		申请人名称
+dig_return_coin	18	actual_returncash	decimal(32,3)	YES	0.000		实际退到客户的金额
+dig_return_coin	19	status	char(1)	YES	0		状态0-待处理 1-已退币
+dig_return_coin	20	supplier_id	int(11)	YES	0		供应商ID
+dig_return_coin	21	refund_type	char(1)	YES	0		退币类型：0-退到客户备款 1-抵扣服务费
+dig_return_coin	22	apply_return_money	decimal(32,3)	YES	0.000		申请退币金额
+dig_return_coin	23	apply_returncash	decimal(32,3)	YES	0.000		申请退现金额
+dig_return_coin	24	sync_state	int(11)	YES	0		同快手同步状态：0-不同步 10-同步未发送 20-同步已发送 30-同步成功 40-同步失败
+dig_return_coin	25	ks_reason	text	YES	NULL		快手同步返回不成功原因
+dig_return_coin	26	sync_time	datetime	YES	NULL		同步成功时间
+dig_return_coin	27	confirm_userid	int(11)	YES	0		媒介确认人
+dig_return_coin	28	confirm_date	datetime	YES	NULL		媒介确认时间
+dig_return_coin	29	supplement_state	char(1)	YES	0		
+dig_return_coin	30	supplement_date	datetime	YES	NULL		
+dig_return_coin	31	account_ratio	decimal(6,2)	YES	0.00		退币返点
+dig_return_coin	32	service_charge	decimal(32,3)	YES	0.000		退服务费
+dig_return_coin	33	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_return_coin	34	after_ratio	decimal(10,2)	YES	0.00		后返点数
+dig_return_coin	35	refuse_reason	varchar(500)	YES	NULL		拒绝原因
+dig_return_coin	36	after_ratio_last	decimal(10,2)	YES	NULL		上次后返
+dig_return_coin	37	before_ratio_last	decimal(10,2)	YES	NULL		上次前返
+dig_return_coin	38	transfer_conversion	varchar(20)	YES	ratio		转户现金类型 auto-自动-逆推  ratio - 指定返点
+dig_return_coin	39	capital_type	varchar(255)	YES	auto		腾讯资金账户类型 auto默认 
+dig_return_coin	40	tags	varchar(50)	YES	NULL		标签
+dig_return_coin	41	source	varchar(50)	YES	NULL		来源
+dig_return_coin	42	credit_datatype	int(11)	YES	1		客户授信类型：1-现金授信 2-货币授信
+dig_return_coin	43	wallet_key	varchar(50)	YES	NULL		钱包KEY
+dig_return_coin	44	service_point	decimal(18,3)	YES	NULL		退币申请服务费点数
+dig_return_money	1	id	bigint(20)	NO	NULL	PRI	主键id
+\n
+dig_return_money	2	custom_id	bigint(20)	YES	0		客户id
+dig_return_money	3	recharge_money	decimal(10,3)	YES	0.000		充值退款
+dig_return_money	4	service_money	decimal(10,3)	YES	0.000		服务费退款
+dig_return_money	5	return_money	decimal(10,3)	YES	0.000		总退款金额
+dig_return_money	6	applicant	bigint(20)	YES	0		申请人
+dig_return_money	7	applicant_time	datetime	YES	NULL		申请时间
+dig_return_money	8	approval_state	char(1)	YES	0		审批状态 (0审批中 1审批通过 2审批拒回)
+dig_return_money	9	revision	int(11)	YES	0		乐观锁版本号
+dig_return_money	10	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_return_money	11	create_by	varchar(64)	YES			创建者
+dig_return_money	12	create_time	datetime	YES	NULL		创建时间
+dig_return_money	13	update_by	varchar(64)	YES			更新者
+dig_return_money	14	update_time	datetime	YES	NULL		更新时间
+dig_return_money	15	remark	varchar(500)	YES	NULL		备注
+dig_return_money	16	custom_name	varchar(100)	YES	NULL		客户名称
+dig_return_money	17	applicant_name	varchar(100)	YES	NULL		申请人名称
+dig_return_money	18	status	char(1)	YES	0		是否已退现 0.否 1.是
+dig_return_money	19	supplier_id	int(11)	YES	0		供应商ID
+dig_return_money	20	supplier_ratio	decimal(10,3)	YES	0.000		供应商折扣
+dig_return_money	21	supplier_returnmoney	decimal(18,2)	YES	0.00		供应商退款金额
+dig_return_money	22	sale_id	int(11)	YES	0		销售ID
+dig_return_money	23	sale_name	varchar(50)	YES	NULL		销售名称
+dig_return_money	24	before_ratio	decimal(10,3)	YES	0.000		客户返点
+dig_return_money	25	serialnum	int(11)	YES	NULL		记录该客户当前是第几笔退款
+dig_return_money	26	bank_name	varchar(255)	YES	NULL		银行姓名
+dig_return_money	27	bank_user_name	varchar(255)	YES	NULL		用户名
+dig_return_money	28	bank_no	varchar(50)	YES	NULL		银行卡号
+dig_return_money	29	reason	varchar(255)	YES	NULL		退款原因
+dig_return_money	30	telephone	varchar(30)	YES	NULL		联系电话
+dig_return_money	31	first_order_num	decimal(18,1)	YES	0.0		扣首单数量
+dig_return_money	32	wallet_json	varchar(600)	YES	NULL		钱包json
+dig_return_money	33	voucher_url	varchar(600)	YES	NULL		附件
+dig_return_money	34	complete_time	datetime	YES	NULL		审批完成时间
+dig_robot_ex	1	id	bigint(20)	NO	NULL	PRI	
+dig_robot_ex	2	users_id	bigint(20)	YES	NULL		系统用户id
+dig_robot_ex	3	group_name	varchar(255)	YES	NULL		机器人群名称
+dig_robot_ex	4	creat_time	datetime	YES	NULL		创建时间
+dig_robot_ex	5	token	varchar(255)	YES	NULL		
+dig_robot_ex	6	style_json	varchar(2000)	YES	NULL		机器人发送模板样式，是发图片还是文本
+dig_robot_ex	7	room_id	varchar(255)	YES	NULL		企业微信群id
+dig_robot_ex	8	webhook_url	varchar(256)	YES	NULL		群机器人Webhook地址
+dig_robot_ex	9	robot_name	varchar(100)	YES	NULL		机器人名称
+dig_robot_ex	10	corp_id	varchar(100)	YES	wwce304e7ebbc7846f		企业id
+dig_salary	1	id	int(11)	NO	NULL	PRI	编号
+dig_salary	2	user_id	int(11)	YES	NULL		用户ID
+dig_salary	3	user_name	varchar(100)	YES	NULL		用户名称
+dig_salary	4	dept_id	int(11)	YES	NULL		部门ID
+dig_salary	5	dept_name	varchar(100)	YES	NULL		部门名称
+dig_salary	6	role_id	int(11)	YES	NULL		岗位ID
+dig_salary	7	role_name	varchar(100)	YES	NULL		岗位名称
+dig_salary	8	bank_card_no	varchar(100)	YES	NULL		银行卡号
+dig_salary	9	joined_date	date	YES	NULL		入职日期
+dig_salary	10	level	varchar(50)	YES	NULL		级别
+dig_salary	11	base_salary	decimal(10,2)	YES	NULL		基本工资
+dig_salary	12	post_perk	decimal(10,2)	YES	NULL		岗位精贴
+dig_salary	13	achievement_bonus	decimal(10,2)	YES	NULL		绩效奖金
+dig_salary	14	post_subsidy	decimal(10,2)	YES	NULL		岗位补贴
+dig_salary	15	salary_sum	decimal(10,2)	YES	NULL		薪资合计
+dig_salary	16	phone_bill_subsidy	decimal(10,2)	YES	NULL		话费补贴
+dig_salary	17	percentage	decimal(10,2)	YES	NULL		提成
+dig_salary	18	annual_leave_salary	decimal(10,2)	YES	NULL		补年假工资
+dig_salary	19	job_day	int(3)	YES	NULL		在职天数
+dig_salary	20	total_payable	decimal(10,2)	YES	NULL		应发合计
+dig_salary	21	leave_hours	int(4)	YES	NULL		请假小时 
+dig_salary	22	leave_deduction	decimal(10,2)	YES	NULL		请假扣款
+dig_salary	23	work_fines	decimal(10,2)	YES	NULL		工作罚款
+dig_salary	24	personal_income_tax	decimal(10,2)	YES	NULL		扣个税
+dig_salary	25	personal_social_security	decimal(10,2)	YES	NULL		个人社保扣款
+dig_salary	26	corporate_social_security	decimal(10,2)	YES	NULL		公司社保扣款
+dig_salary	27	individual_should_deducted	decimal(10,2)	YES	NULL		应扣个人合计
+dig_salary	28	company_expenses	decimal(10,2)	YES	NULL		应扣公司合计
+dig_salary	29	net_salary	decimal(10,2)	YES	NULL		10日实发工资
+dig_salary	30	send_percentage	decimal(10,2)	YES	NULL		25日实发提成
+dig_salary	31	send_sum_money	decimal(10,2)	YES	NULL		实发合计
+dig_salary	32	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_salary	33	create_by	varchar(64)	YES			创建者
+dig_salary	34	create_time	datetime	YES	NULL		创建时间
+dig_salary	35	update_by	varchar(64)	YES			更新者
+dig_salary	36	update_time	datetime	YES	NULL		更新时间
+dig_salary	37	remark	varchar(500)	YES	NULL		备注
+dig_salary	38	payment_date	date	YES	NULL		工资支付日期
+dig_sales_wages	1	id	int(11)	NO	NULL	PRI	
+dig_sales_wages	2	sale_id	int(11)	YES	0		销售ID
+dig_sales_wages	3	sale_name	varchar(50)	YES	NULL		销售名称
+dig_sales_wages	4	wage_month	datetime	YES	NULL		工资日期
+dig_sales_wages	5	new_order_num	decimal(10,1)	YES	NULL		新单数量
+dig_sales_wages	6	new_order_receipt	decimal(32,2)	YES	0.00		新单收款
+dig_sales_wages	7	new_order_renewal_pay	decimal(32,2)	YES	0.00		新单加首续收款
+dig_sales_wages	8	new_order_refund_num	decimal(32,2)	YES	0.00		新单退款数
+dig_sales_wages	9	sum_refund	decimal(32,2)	YES	NULL		总退款
+dig_sales_wages	10	new_order_renewal_commission	decimal(32,2)	YES	0.00		新单首续提成
+dig_sales_wages	11	new_order_consume	decimal(32,2)	YES	0.00		新单首续现金消耗
+dig_sales_wages	12	follow_up_pay	decimal(32,2)	YES	NULL		后续现金消耗
+dig_sales_wages	13	follow_up_servicepay	decimal(32,2)	YES	0.00		后续收服务费
+dig_sales_wages	14	follow_up_commission	decimal(32,2)	YES	0.00		后续提成
+dig_sales_wages	15	commission	decimal(32,2)	YES	0.00		总提成
+dig_sales_wages	16	user_type	char(1)	YES	0		员工类型 1-快手销售 2-抖音销售
+dig_sales_wages	17	create_by	int(11)	YES	0		创建人
+dig_sales_wages	18	create_time	datetime	YES	NULL		创建时间
+dig_shop	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_shop	2	customer_id	bigint(20)	YES	0		客户ID
+dig_shop	3	subject_id	bigint(20)	YES	0		主体ID
+dig_shop	4	shop_name	varchar(80)	YES	NULL		店铺名称
+dig_shop	5	shop_no	varchar(100)	YES	NULL	MUL	店铺编号
+dig_shop	6	serveice_id	int(11)	YES	NULL		运营ID
+dig_shop	7	service_name	varchar(32)	YES	NULL		运营名称
+dig_shop	8	sale_id	bigint(20)	YES	NULL		销售id
+dig_shop	9	sale_name	varchar(32)	YES	NULL		销售名称
+dig_shop	10	remark	varchar(512)	YES	NULL		备注
+dig_shop	11	revision	int(11)	YES	0		乐观锁
+dig_shop	12	create_by	int(11)	YES	NULL		创建人
+dig_shop	13	create_time	datetime	YES	NULL		创建时间
+dig_shop	14	update_by	varchar(32)	YES	NULL		更新人
+dig_shop	15	update_time	datetime	YES	NULL		更新时间
+dig_shop	16	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_shop	17	ks_agentId	int(11)	YES	0		快手端口ID
+dig_shop	18	supplier_id	int(11)	YES	0		供应商ID
+dig_shop	19	account_infojson	varchar(1000)	YES	NULL		账户信息json
+dig_sms_config	1	id	int(11)	NO	NULL	PRI	
+dig_sms_config	2	sms_type	varchar(255)	YES	NULL		短信类型
+dig_sms_config	3	access_key_id	varchar(255)	YES	NULL		应用KEY
+dig_sms_config	4	sdk_app_id	varchar(255)	YES	NULL		
+dig_sms_config	5	access_key_secret	varchar(255)	YES	NULL		应用密钥
+dig_sms_config	6	signature	varchar(255)	YES	NULL		签名
+dig_sms_config	7	template_id	varchar(255)	YES	NULL		消息模板ID
+dig_sms_config	8	template_name	varchar(255)	YES	NULL		消息模板名称
+dig_sms_config	9	supplier	varchar(255)	YES	NULL		短信供应商
+dig_sms_config	10	isabled	char(1)	YES	0		是否有效 0-否 1-是
+dig_supplier	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_supplier	2	supplier_name	varchar(32)	YES	NULL		供应商名称
+dig_supplier	3	returnratio	decimal(4,2)	YES	0.00		返点比例
+dig_supplier	4	types	char(2)	NO	1		数据类型：1.抖音2.快手
+dig_supplier	5	remark	varchar(512)	YES	NULL		备注
+dig_supplier	6	arrears	decimal(32,2)	YES	0.00		数跳对该供应商的欠款金额
+dig_supplier	7	revision	int(11)	YES	0		乐观锁
+dig_supplier	8	create_by	int(11)	YES	NULL		创建人
+dig_supplier	9	create_time	datetime	YES	NULL		创建时间
+dig_supplier	10	update_by	varchar(32)	YES	NULL		更新人
+dig_supplier	11	update_time	datetime	YES	NULL		更新时间
+dig_supplier	12	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_supplier	13	pay_type	char(1)	YES	2		支付类型 ：1-直接支付 2-垫款支付
+dig_supplier	14	ks_agentId	int(11)	YES	0		快手端口ID
+dig_supplier	15	dy_agentId	int(11)	YES	0		对应dig_dy_developinfo的供应商id 平台共用
+dig_supplier	16	account_type	int(11)	YES	0		广告账户类型
+dig_supplier	17	suppliertype	varchar(100)	YES	NOAGENT		供应商类型：AGENT-一级代理商 SECODEAGENT-二级代理商，NOAGENT-普通供应商没有接口
+dig_supplier	18	apiprevfix	varchar(300)	YES	NULL		请求接口API前缀，如果是二级供应商就需要配置好这个；
+dig_supplier	19	first_userId	int(11)	YES	0		对应一级代理商系统里的用户ID
+dig_supplier	20	first_userpwd	varchar(255)	YES	NULL		对应一级代理供应商的用户密码
+dig_supplier	21	first_customerId	int(11)	YES	0		对应的一级代理系统里的客户ID
+dig_supplier	22	first_supplierId	int(11)	YES	0		对应的一级代理系统里的供应商ID
+dig_supplier	23	main_wallet_id	varchar(64)	YES	NULL		抖音大钱包ID
+dig_supplier	24	sendmsg	char(1)	YES	1		是否发送微信消息，0-否 1-是
+dig_supplier	25	threshold	decimal(18,3)	YES	0.000		金额提醒阈值，代理商余额低于这个值提醒
+dig_supplier	26	remind_userid	varchar(100)	YES	NULL		提醒人员ID，多个用逗号分隔
+dig_supplier	27	last_consume_date	datetime	YES	NULL		上次拉取成功消耗日期
+dig_supplier	28	media_balance	decimal(18,3)	YES	0.000		媒体后台余额
+dig_supplier	29	media_balancejson	text	YES	NULL		媒体后台余额json
+dig_supplier_account	1	id	bigint(20)	NO	NULL	PRI	ID
+dig_supplier_account	2	supplier_id	bigint(20)	NO	0		供应商ID
+dig_supplier_account	3	account_no	varchar(32)	YES	NULL		账户NO
+dig_supplier_account	4	account_name	varchar(32)	YES	NULL		账户名称
+dig_supplier_account	5	bankname	varchar(32)	YES	NULL		开户行
+dig_supplier_account	6	account_type	int(11)	YES	0		账户类型1-银行卡2-支付宝3-微信
+dig_supplier_account	7	remark	varchar(512)	YES	NULL		备注
+dig_supplier_account	8	revision	int(11)	YES	NULL		乐观锁
+dig_supplier_account	9	create_by	int(11)	YES	NULL		创建人
+dig_supplier_account	10	create_time	datetime	YES	NULL		创建时间
+dig_supplier_account	11	update_by	varchar(32)	YES	NULL		更新人
+dig_supplier_account	12	update_time	datetime	YES	NULL		更新时间
+dig_supplier_account	13	del_flag	char(1)	YES	0		逻辑删除 0-未删除 1-已删除
+dig_supplier_bill	1	id	bigint(20)	NO	NULL	PRI	
+dig_supplier_bill	2	supplier_id	bigint(20)	YES	0		供应商ID
+dig_supplier_bill	3	supplier_account_id	bigint(20)	YES	0		供应商收款账号ID
+dig_supplier_bill	4	money	decimal(32,2)	YES	0.00		收支金额，正数加，负数扣
+dig_supplier_bill	5	arrears	decimal(32,2)	YES	0.00		操作之后当前数跳对供应商欠款
+dig_supplier_bill	6	returnratio	decimal(8,2)	YES	0.00		供应商返点比例
+dig_supplier_bill	7	remarks	varchar(255)	YES	NULL		备注
+dig_supplier_bill	8	business_type	char(1)	YES	NULL		业务类型：1.广告账号充值扣款 2.向供应商支付回款 3.供应商退款
+dig_supplier_bill	9	business_dataid	bigint(20)	YES	0		业务数据ID，如果类型是广告账号充值，对应的就是账号充值记录ID，如果是向供应商支付回款，则对应的就是现金流水记录ID，如果是供应商退款，则对应的就是现金流水记录供应商退款记录ID
+dig_supplier_bill	10	revision	int(11)	YES	0		乐观锁
+dig_supplier_bill	11	create_by	bigint(20)	YES	0		创建人
+dig_supplier_bill	12	create_date	datetime	YES	NULL		创建日期
+dig_target	1	id	int(11)	NO	NULL	PRI	
+dig_target	2	data_id	int(11)	YES	0		对应记录ID,如果是部门目标就是部门ID，如果是个人目标就是用户ID
+dig_target	3	data_type	char(2)	YES	10		目标类型 10-公司总目标 20-部门新单数量目标 21-部门消耗数量目标  30-个人新单数量目标 31-个人消耗数量目标
+dig_target	4	data_time	datetime	YES	NULL		目标日期
+dig_target	5	data_val	decimal(18,4)	YES	0.0000		目标值
+dig_target	6	create_by	int(11)	YES	NULL		创建人
+dig_target	7	create_time	datetime	YES	NULL		创建时间
+dig_target	8	update_by	int(11)	YES	0		修改人
+dig_target	9	update_time	datetime	YES	NULL		修改时间
+dig_tencent_account_consume	1	id	int(11)	NO	NULL	PRI	
+dig_tencent_account_consume	2	consume_date	datetime	YES	NULL	MUL	消耗日期
+dig_tencent_account_consume	3	customer_id	int(11)	YES	0		客户ID
+dig_tencent_account_consume	4	customer_name	varchar(300)	YES	NULL		客户名称
+dig_tencent_account_consume	5	account_id	int(11)	YES	0		广告账户ID
+dig_tencent_account_consume	6	account_no	varchar(100)	YES	NULL		账户ID
+dig_tencent_account_consume	7	account_name	varchar(255)	YES	NULL		账户名称
+dig_tencent_account_consume	8	cost	decimal(32,4)	YES	0.0000		实际消耗，花费
+dig_tencent_account_consume	9	service_ratio	decimal(10,4)	YES	0.0000		服务费点数
+dig_tencent_account_consume	10	service_spend	decimal(32,4)	YES	0.0000		消耗服务费
+dig_tencent_account_consume	11	unsettled_service_fee	decimal(32,4)	YES	0.0000		已消耗未结算服务费
+dig_tencent_account_consume	12	settlement_service_fee	decimal(32,4)	YES	0.0000		实际结算服务费
+dig_tencent_account_consume	13	service_id	int(11)	YES	0		运营ID
+dig_tencent_account_consume	14	service_name	varchar(255)	YES	NULL		运营名称
+dig_tencent_account_consume	15	dept_id	int(11)	YES	0		部门ID
+dig_tencent_account_consume	16	dept_name	varchar(255)	YES	NULL		部门名称
+dig_tencent_account_consume	17	create_by	int(11)	YES	NULL		创建人
+dig_tencent_account_consume	18	create_time	datetime	YES	NULL		创建时间
+dig_tencent_account_consume	19	update_by	varchar(32)	YES	NULL		更新人
+dig_tencent_account_consume	20	update_time	datetime	YES	NULL		更新时间
+dig_tencent_account_consume	21	sale_id	int(11)	YES	0		销售ID
+dig_tencent_account_consume	22	sale_name	varchar(50)	YES	NULL		销售名称
+dig_tencent_account_consume	23	editor_id	int(11)	YES	0		
+dig_tencent_account_consume	24	editor_name	varchar(80)	YES	NULL		
+dig_tencent_account_consume	25	ismate	char(1)	YES	0		
+dig_tencent_account_consume	26	account_radio	decimal(10,2)	YES	NULL		广告账户返点
+dig_tencent_account_consume	27	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_tencent_account_consume	28	agent_companyid	varchar(20)	YES	NULL		代理商公司ID
+dig_tencent_account_consume	29	agent_companyname	varchar(50)	YES	NULL		代理商公司名称
+dig_tencent_account_consume	30	agent_id	varchar(30)	YES	NULL		代理商ID
+dig_tencent_account_consume	31	agent_name	varchar(50)	YES	NULL		代理商名称
+dig_tencent_account_consume	32	bidding_spend	decimal(32,4)	YES	0.0000		竞价消耗
+dig_tencent_account_consume	33	brand_spend	decimal(32,4)	YES	0.0000		品牌消耗
+dig_tencent_account_consume	34	grant_spend	decimal(32,4)	YES	0.0000		赠款消耗
+dig_tencent_account_consume	35	torderROI	decimal(32,4)	YES	0.0000		总下单ROI
+dig_tencent_account_consume	36	tpayROI	decimal(32,4)	YES	0.0000		总支付ROI
+dig_tencent_account_consume	37	ev_ordernum	decimal(32,4)	YES	0.0000		直接成交订单数
+dig_tencent_account_consume	38	ev_orderprice	decimal(32,4)	YES	0.0000		直接成交订单金额
+dig_tencent_account_consume	39	ev_payROI	decimal(32,4)	YES	0.0000		直接支付ROI
+dig_tencent_account_consume	40	order_pv	decimal(32,4)	YES	0.0000		直接下单订单数
+dig_tencent_account_consume	41	order_amount	decimal(32,4)	YES	0.0000		直接下单订单金额
+dig_tencent_account_consume	42	order_roi	decimal(32,4)	YES	0.0000		直接下单ROI
+dig_tencent_account_consume	43	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_tencent_account_consume	44	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_tencent_account_consume	45	business_type	varchar(20)	YES	NULL		业务来源
+dig_tencent_account_consume	46	business_type_name	varchar(50)	YES	NULL		业务来源名称
+dig_tencent_account_consume	47	isreadroi	char(1)	YES	0		是否读取ROI信息 0-否 1-是
+dig_tencent_account_consume	48	supplier_id	int(11)	YES	0		供应商ID
+dig_tencent_account_consume	49	version	char(1)	YES	1		腾讯投放版本0是旧版1是新版
+dig_tencent_account_consume	50	customer_statement_id	bigint(20)	YES	0		客户账单ID
+dig_transfer_account	1	id	bigint(20)	NO	NULL	PRI	主键id
+dig_transfer_account	2	account_id	bigint(20)	YES	0		广告账户id
+dig_transfer_account	3	account_name	varchar(100)	YES	NULL		账户名称
+dig_transfer_account	4	transfer_account_id	bigint(20)	YES	0		转户之后账户id
+dig_transfer_account	5	transfer_account_name	varchar(100)	YES	NULL		转户之后账户名称
+dig_transfer_account	6	transfer_account_money	decimal(10,3)	YES	0.000		申请转户金额
+dig_transfer_account	7	applicant	bigint(20)	YES	NULL		申请人
+dig_transfer_account	8	applicant_time	datetime	YES	NULL		申请时间
+dig_transfer_account	9	approval_state	char(1)	YES	0		审批状态 (0审批中 1审批通过 2审批拒回)
+dig_transfer_account	10	revision	int(11)	YES	0		乐观锁版本号
+dig_transfer_account	11	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+dig_transfer_account	12	update_by	varchar(64)	YES			更新者
+dig_transfer_account	13	update_time	datetime	YES	NULL		更新时间
+dig_transfer_account	14	remark	varchar(500)	YES			备注
+dig_transfer_account	15	applicant_name	varchar(100)	YES	NULL		申请人名称
+dig_transfer_account	16	status	char(1)	YES	0		处理状态0-待转户 1-已转户
+dig_transfer_account	17	actual_transmoney	decimal(18,3)	YES	0.000		实际转户金额，由媒介输入
+dig_transfer_account	18	transinmoney	decimal(18,3)	YES	0.000		
+dig_transfer_account	19	transinratio	decimal(10,2)	YES	0.00		转入返点，用于后续计算消耗对应现金提成
+dig_transfer_account	20	transoutratio	decimal(10,2)	YES	0.00		
+dig_transfer_account	21	sync_state	int(11)	YES	0		同快手同步状态：0-不同步 10-同步未发送 20-同步已发送 30-同步成功 40-同步失败
+dig_transfer_account	22	sync_state_in	int(11)	YES	0		转入同快手同步状态：0-不同步 10-同步未发送 20-同步已发送 30-同步成功 40-同步失败
+dig_transfer_account	23	transout_time	datetime	YES	NULL		快手转出完成时间
+dig_transfer_account	24	transin_time	datetime	YES	NULL		快手转入完成时间
+dig_transfer_account	25	ks_reason	text	YES	NULL		快手同步返回不成功原因
+dig_transfer_account	26	confirm_userid	int(11)	YES	0		媒介确认人
+dig_transfer_account	27	confirm_date	datetime	YES	NULL		媒介确认时间
+dig_transfer_account	28	sync_resultjson	text	YES	NULL		同步快手返回结果
+dig_transfer_account	29	supplier_id	int(11)	YES	0		供应商ID
+dig_transfer_account	30	supplement_state	char(1)	YES	0		
+dig_transfer_account	31	supplement_date	datetime	YES	NULL		
+dig_transfer_account	32	refuse_reason	varchar(500)	YES	NULL		拒绝原因
+dig_transfer_account	33	customer_out_id	bigint(20)	YES	NULL		转出客户id
+dig_transfer_account	34	customer_in_id	bigint(20)	YES	NULL		转入客户id
+dig_transfer_account	35	transfer_conversion	varchar(20)	YES	ratio		转户现金类型 auto-自动-逆推  ratio - 指定返点
+dig_transfer_account	36	capital_type	varchar(255)	YES	auto		腾讯资金账户类型 auto默认
+dig_transfer_account	37	source	varchar(50)	YES	NULL		来源
+dig_transfer_account	38	wallet_json	text	YES	NULL		转出钱包数据
+dig_transfer_account	39	wallet_json_in	text	YES	NULL		转入钱包数据
+dig_transfer_account	40	wallet_key	varchar(50)	YES	NULL		钱包KEY
+dig_transfer_subjectapply	1	id	int(11)	NO	NULL	PRI	
+dig_transfer_subjectapply	2	subject_id	int(11)	YES	0		转出主体ID
+dig_transfer_subjectapply	3	outcustomer_id	int(11)	YES	0		转出客户ID
+dig_transfer_subjectapply	4	incustomer_id	int(11)	YES	0		转入客户ID
+dig_transfer_subjectapply	5	supplier_id	int(11)	YES	0		转入供应商ID
+dig_transfer_subjectapply	6	supplier_name	varchar(255)	YES	NULL		转入供应商名称
+dig_transfer_subjectapply	7	account_typejson	text	YES	NULL		账户类型json，记录某个账户类型转成某个账户类型
+dig_transfer_subjectapply	8	reply	varchar(500)	YES	NULL		媒介回复
+dig_transfer_subjectapply	9	reply_date	datetime	YES	NULL		回复日期
+dig_transfer_subjectapply	10	reply_userid	int(11)	YES	NULL		回复人
+dig_transfer_subjectapply	11	reply_username	varchar(255)	YES	NULL		回复人
+dig_transfer_subjectapply	12	state	char(1)	YES	0		状态 0-待处理 1-处理成功2-处理失败
+dig_transfer_subjectapply	13	create_by	int(11)	YES	NULL		创建人
+dig_transfer_subjectapply	14	create_time	datetime	YES	NULL		申请日期
+dig_transfer_subjectapply	15	subject_name	varchar(255)	YES	NULL		主体名称
+dig_transfer_subjectapply	16	outcustomer_name	varchar(255)	YES	NULL		转出客户名称
+dig_transfer_subjectapply	17	out_custypes	int(11)	YES	NULL		转出客户类型
+dig_transfer_subjectapply	18	incustomer_name	varchar(255)	YES	NULL		转入客户名称
+dig_transfer_subjectapply	19	in_custypes	int(11)	YES	NULL		转入客户类型
+dig_transfer_subjectapply	20	apply_username	varchar(255)	YES	NULL		申请人名字
+dig_transfer_subjectapply	21	remark	varchar(500)	YES	NULL		备注
+dig_transfer_subjectapply	22	out_supplier_id	int(11)	YES	0		转出供应商ID
+dig_transfer_subjectapply	23	out_supplier_name	varchar(200)	YES	NULL		转出供应商名称
+dig_xhs_account_consume	1	id	int(11)	NO	NULL	PRI	
+dig_xhs_account_consume	2	consume_date	date	YES	NULL	MUL	消耗日期
+dig_xhs_account_consume	3	customer_id	int(11)	YES	0		客户ID
+dig_xhs_account_consume	4	customer_name	varchar(300)	YES	NULL		客户名称
+dig_xhs_account_consume	5	account_id	int(11)	YES	0		广告账户ID
+dig_xhs_account_consume	6	account_no	varchar(100)	YES	NULL		账户ID
+dig_xhs_account_consume	7	account_name	varchar(255)	YES	NULL		账户名称
+dig_xhs_account_consume	8	cost	decimal(12,2) unsigned	YES	0.00		实际消耗，花费
+dig_xhs_account_consume	9	service_ratio	decimal(10,4)	YES	0.0000		服务费点数
+dig_xhs_account_consume	10	service_spend	decimal(32,4)	YES	0.0000		消耗服务费
+dig_xhs_account_consume	11	unsettled_service_fee	decimal(32,4)	YES	0.0000		已消耗未结算服务费
+dig_xhs_account_consume	12	settlement_service_fee	decimal(32,4)	YES	0.0000		实际结算服务费
+dig_xhs_account_consume	13	service_id	int(11)	YES	0		运营ID
+dig_xhs_account_consume	14	service_name	varchar(255)	YES	NULL		运营名称
+dig_xhs_account_consume	15	dept_id	int(11)	YES	0		部门ID
+dig_xhs_account_consume	16	dept_name	varchar(255)	YES	NULL		部门名称
+dig_xhs_account_consume	17	create_by	int(11)	YES	NULL		创建人
+dig_xhs_account_consume	18	create_time	datetime	YES	NULL		创建时间
+dig_xhs_account_consume	19	update_by	varchar(32)	YES	NULL		更新人
+dig_xhs_account_consume	20	update_time	datetime	YES	NULL		更新时间
+dig_xhs_account_consume	21	sale_id	int(11)	YES	0		销售ID
+dig_xhs_account_consume	22	sale_name	varchar(50)	YES	NULL		销售名称
+dig_xhs_account_consume	23	editor_id	int(11)	YES	0		
+dig_xhs_account_consume	24	editor_name	varchar(80)	YES	NULL		
+dig_xhs_account_consume	25	ismate	char(1)	YES	0		
+dig_xhs_account_consume	26	account_radio	decimal(10,2)	YES	NULL		广告账户返点
+dig_xhs_account_consume	27	business_cash	decimal(32,4)	YES	0.0000		现金提成=业绩货币消耗/(1+返点比例/100)
+dig_xhs_account_consume	28	agent_companyid	varchar(20)	YES	NULL		代理商公司ID
+dig_xhs_account_consume	29	agent_companyname	varchar(50)	YES	NULL		代理商公司名称
+dig_xhs_account_consume	30	agent_id	varchar(30)	YES	NULL		代理商ID
+dig_xhs_account_consume	31	agent_name	varchar(50)	YES	NULL		代理商名称
+dig_xhs_account_consume	32	bidding_spend	decimal(32,4)	YES	0.0000		竞价消耗
+dig_xhs_account_consume	33	brand_spend	decimal(32,4)	YES	0.0000		品牌消耗
+dig_xhs_account_consume	34	grant_spend	decimal(32,4)	YES	0.0000		赠款消耗
+dig_xhs_account_consume	35	torderROI	decimal(32,4)	YES	0.0000		总下单ROI
+dig_xhs_account_consume	36	tpayROI	decimal(32,4)	YES	0.0000		总支付ROI
+dig_xhs_account_consume	37	ev_ordernum	decimal(32,4)	YES	0.0000		直接成交订单数
+dig_xhs_account_consume	38	ev_orderprice	decimal(32,4)	YES	0.0000		直接成交订单金额
+dig_xhs_account_consume	39	ev_payROI	decimal(32,4)	YES	0.0000		直接支付ROI
+dig_xhs_account_consume	40	order_pv	decimal(32,4)	YES	0.0000		直接下单订单数
+dig_xhs_account_consume	41	order_amount	decimal(32,4)	YES	0.0000		直接下单订单金额
+dig_xhs_account_consume	42	order_roi	decimal(32,4)	YES	0.0000		直接下单ROI
+dig_xhs_account_consume	43	primary_industry	varchar(255)	YES	NULL		一级行业
+dig_xhs_account_consume	44	secondary_industry	varchar(255)	YES	NULL		二级行业
+dig_xhs_account_consume	45	business_type	varchar(20)	YES	NULL		业务来源
+dig_xhs_account_consume	46	business_type_name	varchar(50)	YES	NULL		业务来源名称
+dig_xhs_account_consume	47	isreadroi	char(1)	YES	0		是否读取ROI信息 0-否 1-是
+dig_xhs_account_consume	48	supplier_id	int(11)	YES	0		供应商ID
+dig_xhs_account_consume	49	version	varchar(10)	YES	300		对应小红书账户类型300-399
+dig_xhs_account_consume	50	customer_statement_id	bigint(20)	YES	0		客户账单ID
+gen_table	1	table_id	bigint(20)	NO	NULL	PRI	编号
+gen_table	2	table_name	varchar(200)	YES			表名称
+gen_table	3	table_comment	varchar(500)	YES			表描述
+gen_table	4	sub_table_name	varchar(64)	YES	NULL		关联子表的表名
+gen_table	5	sub_table_fk_name	varchar(64)	YES	NULL		子表关联的外键名
+gen_table	6	class_name	varchar(100)	YES			实体类名称
+gen_table	7	tpl_category	varchar(200)	YES	crud		使用的模板（crud单表操作 tree树表操作）
+gen_table	8	package_name	varchar(100)	YES	NULL		生成包路径
+gen_table	9	module_name	varchar(30)	YES	NULL		生成模块名
+gen_table	10	business_name	varchar(30)	YES	NULL		生成业务名
+gen_table	11	function_name	varchar(50)	YES	NULL		生成功能名
+gen_table	12	function_author	varchar(50)	YES	NULL		生成功能作者
+gen_table	13	gen_type	char(1)	YES	0		生成代码方式（0zip压缩包 1自定义路径）
+gen_table	14	gen_path	varchar(200)	YES	/		生成路径（不填默认项目路径）
+gen_table	15	options	varchar(1000)	YES	NULL		其它生成选项
+gen_table	16	create_by	varchar(64)	YES			创建者
+gen_table	17	create_time	datetime	YES	NULL		创建时间
+gen_table	18	update_by	varchar(64)	YES			更新者
+gen_table	19	update_time	datetime	YES	NULL		更新时间
+gen_table	20	remark	varchar(500)	YES	NULL		备注
+gen_table_column	1	column_id	bigint(20)	NO	NULL	PRI	编号
+gen_table_column	2	table_id	varchar(64)	YES	NULL		归属表编号
+gen_table_column	3	column_name	varchar(200)	YES	NULL		列名称
+gen_table_column	4	column_comment	varchar(500)	YES	NULL		列描述
+gen_table_column	5	column_type	varchar(100)	YES	NULL		列类型
+gen_table_column	6	java_type	varchar(500)	YES	NULL		JAVA类型
+gen_table_column	7	java_field	varchar(200)	YES	NULL		JAVA字段名
+gen_table_column	8	is_pk	char(1)	YES	NULL		是否主键（1是）
+gen_table_column	9	is_increment	char(1)	YES	NULL		是否自增（1是）
+gen_table_column	10	is_required	char(1)	YES	NULL		是否必填（1是）
+gen_table_column	11	is_insert	char(1)	YES	NULL		是否为插入字段（1是）
+gen_table_column	12	is_edit	char(1)	YES	NULL		是否编辑字段（1是）
+gen_table_column	13	is_list	char(1)	YES	NULL		是否列表字段（1是）
+gen_table_column	14	is_query	char(1)	YES	NULL		是否查询字段（1是）
+gen_table_column	15	query_type	varchar(200)	YES	EQ		查询方式（等于、不等于、大于、小于、范围）
+gen_table_column	16	html_type	varchar(200)	YES	NULL		显示类型（文本框、文本域、下拉框、复选框、单选框、日期控件）
+gen_table_column	17	dict_type	varchar(200)	YES			字典类型
+gen_table_column	18	sort	int(11)	YES	NULL		排序
+gen_table_column	19	create_by	varchar(64)	YES			创建者
+gen_table_column	20	create_time	datetime	YES	NULL		创建时间
+gen_table_column	21	update_by	varchar(64)	YES			更新者
+gen_table_column	22	update_time	datetime	YES	NULL		更新时间
+qrtz_blob_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_blob_triggers	2	trigger_name	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_name的外键
+qrtz_blob_triggers	3	trigger_group	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_group的外键
+qrtz_blob_triggers	4	blob_data	blob	YES	NULL		存放持久化Trigger对象
+qrtz_calendars	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_calendars	2	calendar_name	varchar(200)	NO	NULL	PRI	日历名称
+qrtz_calendars	3	calendar	blob	NO	NULL		存放持久化calendar对象
+qrtz_cron_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_cron_triggers	2	trigger_name	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_name的外键
+qrtz_cron_triggers	3	trigger_group	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_group的外键
+qrtz_cron_triggers	4	cron_expression	varchar(200)	NO	NULL		cron表达式
+qrtz_cron_triggers	5	time_zone_id	varchar(80)	YES	NULL		时区
+qrtz_fired_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_fired_triggers	2	entry_id	varchar(95)	NO	NULL	PRI	调度器实例id
+qrtz_fired_triggers	3	trigger_name	varchar(200)	NO	NULL		qrtz_triggers表trigger_name的外键
+qrtz_fired_triggers	4	trigger_group	varchar(200)	NO	NULL		qrtz_triggers表trigger_group的外键
+qrtz_fired_triggers	5	instance_name	varchar(200)	NO	NULL		调度器实例名
+qrtz_fired_triggers	6	fired_time	bigint(13)	NO	NULL		触发的时间
+qrtz_fired_triggers	7	sched_time	bigint(13)	NO	NULL		定时器制定的时间
+qrtz_fired_triggers	8	priority	int(11)	NO	NULL		优先级
+qrtz_fired_triggers	9	state	varchar(16)	NO	NULL		状态
+qrtz_fired_triggers	10	job_name	varchar(200)	YES	NULL		任务名称
+qrtz_fired_triggers	11	job_group	varchar(200)	YES	NULL		任务组名
+qrtz_fired_triggers	12	is_nonconcurrent	varchar(1)	YES	NULL		是否并发
+qrtz_fired_triggers	13	requests_recovery	varchar(1)	YES	NULL		是否接受恢复执行
+qrtz_job_details	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_job_details	2	job_name	varchar(200)	NO	NULL	PRI	任务名称
+qrtz_job_details	3	job_group	varchar(200)	NO	NULL	PRI	任务组名
+qrtz_job_details	4	description	varchar(250)	YES	NULL		相关介绍
+qrtz_job_details	5	job_class_name	varchar(250)	NO	NULL		执行任务类名称
+qrtz_job_details	6	is_durable	varchar(1)	NO	NULL		是否持久化
+qrtz_job_details	7	is_nonconcurrent	varchar(1)	NO	NULL		是否并发
+qrtz_job_details	8	is_update_data	varchar(1)	NO	NULL		是否更新数据
+qrtz_job_details	9	requests_recovery	varchar(1)	NO	NULL		是否接受恢复执行
+qrtz_job_details	10	job_data	blob	YES	NULL		存放持久化job对象
+qrtz_locks	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_locks	2	lock_name	varchar(40)	NO	NULL	PRI	悲观锁名称
+qrtz_paused_trigger_grps	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_paused_trigger_grps	2	trigger_group	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_group的外键
+qrtz_scheduler_state	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_scheduler_state	2	instance_name	varchar(200)	NO	NULL	PRI	实例名称
+qrtz_scheduler_state	3	last_checkin_time	bigint(13)	NO	NULL		上次检查时间
+qrtz_scheduler_state	4	checkin_interval	bigint(13)	NO	NULL		检查间隔时间
+qrtz_simple_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_simple_triggers	2	trigger_name	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_name的外键
+qrtz_simple_triggers	3	trigger_group	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_group的外键
+qrtz_simple_triggers	4	repeat_count	bigint(7)	NO	NULL		重复的次数统计
+qrtz_simple_triggers	5	repeat_interval	bigint(12)	NO	NULL		重复的间隔时间
+qrtz_simple_triggers	6	times_triggered	bigint(10)	NO	NULL		已经触发的次数
+qrtz_simprop_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_simprop_triggers	2	trigger_name	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_name的外键
+qrtz_simprop_triggers	3	trigger_group	varchar(200)	NO	NULL	PRI	qrtz_triggers表trigger_group的外键
+qrtz_simprop_triggers	4	str_prop_1	varchar(512)	YES	NULL		String类型的trigger的第一个参数
+qrtz_simprop_triggers	5	str_prop_2	varchar(512)	YES	NULL		String类型的trigger的第二个参数
+qrtz_simprop_triggers	6	str_prop_3	varchar(512)	YES	NULL		String类型的trigger的第三个参数
+qrtz_simprop_triggers	7	int_prop_1	int(11)	YES	NULL		int类型的trigger的第一个参数
+qrtz_simprop_triggers	8	int_prop_2	int(11)	YES	NULL		int类型的trigger的第二个参数
+qrtz_simprop_triggers	9	long_prop_1	bigint(20)	YES	NULL		long类型的trigger的第一个参数
+qrtz_simprop_triggers	10	long_prop_2	bigint(20)	YES	NULL		long类型的trigger的第二个参数
+qrtz_simprop_triggers	11	dec_prop_1	decimal(13,4)	YES	NULL		decimal类型的trigger的第一个参数
+qrtz_simprop_triggers	12	dec_prop_2	decimal(13,4)	YES	NULL		decimal类型的trigger的第二个参数
+qrtz_simprop_triggers	13	bool_prop_1	varchar(1)	YES	NULL		Boolean类型的trigger的第一个参数
+qrtz_simprop_triggers	14	bool_prop_2	varchar(1)	YES	NULL		Boolean类型的trigger的第二个参数
+qrtz_triggers	1	sched_name	varchar(120)	NO	NULL	PRI	调度名称
+qrtz_triggers	2	trigger_name	varchar(200)	NO	NULL	PRI	触发器的名字
+qrtz_triggers	3	trigger_group	varchar(200)	NO	NULL	PRI	触发器所属组的名字
+qrtz_triggers	4	job_name	varchar(200)	NO	NULL		qrtz_job_details表job_name的外键
+qrtz_triggers	5	job_group	varchar(200)	NO	NULL		qrtz_job_details表job_group的外键
+qrtz_triggers	6	description	varchar(250)	YES	NULL		相关介绍
+qrtz_triggers	7	next_fire_time	bigint(13)	YES	NULL		上一次触发时间（毫秒）
+qrtz_triggers	8	prev_fire_time	bigint(13)	YES	NULL		下一次触发时间（默认为-1表示不触发）
+qrtz_triggers	9	priority	int(11)	YES	NULL		优先级
+qrtz_triggers	10	trigger_state	varchar(16)	NO	NULL		触发器状态
+qrtz_triggers	11	trigger_type	varchar(8)	NO	NULL		触发器的类型
+qrtz_triggers	12	start_time	bigint(13)	NO	NULL		开始时间
+qrtz_triggers	13	end_time	bigint(13)	YES	NULL		结束时间
+qrtz_triggers	14	calendar_name	varchar(200)	YES	NULL		日程表名称
+qrtz_triggers	15	misfire_instr	smallint(2)	YES	NULL		补偿执行的策略
+qrtz_triggers	16	job_data	blob	YES	NULL		存放持久化job对象
+robot_send_record	1	id	bigint(20)	NO	NULL	PRI	主键ID
+robot_send_record	2	group_name	varchar(200)	NO	NULL	MUL	微信群名称
+robot_send_record	3	send_success	tinyint(1)	NO	0		是否发送成功 0失败 1成功
+robot_send_record	4	error_msg	text	YES	NULL		失败错误信息
+robot_send_record	5	content_json	text	NO	NULL		原始下发消息内容（content数组json）
+robot_send_record	6	create_time	datetime	NO	CURRENT_TIMESTAMP	MUL	回执接收时间
+robot_send_record	7	update_time	datetime	NO	CURRENT_TIMESTAMP		
+sys_approval	1	id	int(20)	NO	NULL	PRI	主键id
+sys_approval	2	service_id	int(11)	YES	NULL		业务编号
+sys_approval	3	rule_id	int(11)	YES	NULL		审批流程规则编号
+sys_approval	4	user_id	varchar(100)	YES	NULL		
+sys_approval	5	user_name	varchar(100)	YES	NULL		用户名称
+sys_approval	6	dept_id	varchar(100)	YES	NULL		
+sys_approval	7	dept_name	varchar(100)	YES	NULL		部门名称
+sys_approval	8	role_id	varchar(100)	YES	NULL		
+sys_approval	9	role_name	varchar(100)	YES	NULL		角色名称
+sys_approval	10	approval_state	char(1)	YES	0		审核状态 (0待审核 1已通过  2未通过)
+sys_approval	11	sort	int(11)	YES	NULL		审批排序(倒叙)
+sys_approval	12	audit_time	datetime	YES	NULL		审批时间
+sys_approval	13	create_by	varchar(64)	YES			创建者
+sys_approval	14	create_time	datetime	YES	NULL		创建时间
+sys_approval	15	type	varchar(100)	YES	NULL		
+sys_approval	16	remark	varchar(500)	YES	NULL		备注 
+sys_config	1	config_id	int(5)	NO	NULL	PRI	参数主键
+sys_config	2	config_name	varchar(100)	YES			参数名称
+sys_config	3	config_key	varchar(100)	YES			参数键名
+sys_config	4	config_value	varchar(500)	YES			参数键值
+sys_config	5	config_type	char(1)	YES	N		系统内置（Y是 N否）
+sys_config	6	create_by	varchar(64)	YES			创建者
+sys_config	7	create_time	datetime	YES	NULL		创建时间
+sys_config	8	update_by	varchar(64)	YES			更新者
+sys_config	9	update_time	datetime	YES	NULL		更新时间
+sys_config	10	remark	varchar(500)	YES	NULL		备注
+sys_dept	1	dept_id	bigint(20)	NO	NULL	PRI	部门id
+sys_dept	2	parent_id	bigint(20)	YES	0		父部门id
+sys_dept	3	ancestors	varchar(50)	YES			祖级列表
+sys_dept	4	dept_name	varchar(30)	YES			部门名称
+sys_dept	5	order_num	int(4)	YES	0		显示顺序
+sys_dept	6	leader	varchar(20)	YES	NULL		负责人
+sys_dept	7	phone	varchar(11)	YES	NULL		联系电话
+sys_dept	8	email	varchar(50)	YES	NULL		邮箱
+sys_dept	9	status	char(1)	YES	0		部门状态（0正常 1停用）
+sys_dept	10	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+sys_dept	11	create_by	varchar(64)	YES			创建者
+sys_dept	12	create_time	datetime	YES	NULL		创建时间
+sys_dept	13	update_by	varchar(64)	YES			更新者
+sys_dept	14	update_time	datetime	YES	NULL		更新时间
+sys_dept	15	leader_id	int(11)	YES	NULL		负责人Id
+sys_dict_data	1	dict_code	bigint(20)	NO	NULL	PRI	字典编码
+sys_dict_data	2	dict_sort	int(4)	YES	0		字典排序
+sys_dict_data	3	dict_label	varchar(100)	YES			字典标签
+sys_dict_data	4	dict_value	varchar(100)	YES			字典键值
+sys_dict_data	5	dict_type	varchar(100)	YES			字典类型
+sys_dict_data	6	css_class	varchar(100)	YES	NULL		样式属性（其他样式扩展）
+sys_dict_data	7	list_class	varchar(100)	YES	NULL		表格回显样式
+sys_dict_data	8	is_default	char(1)	YES	N		是否默认（Y是 N否）
+sys_dict_data	9	status	char(1)	YES	0		状态（0正常 1停用）
+sys_dict_data	10	create_by	varchar(64)	YES			创建者
+sys_dict_data	11	create_time	datetime	YES	NULL		创建时间
+sys_dict_data	12	update_by	varchar(64)	YES			更新者
+sys_dict_data	13	update_time	datetime	YES	NULL		更新时间
+sys_dict_data	14	remark	varchar(500)	YES	NULL		备注
+sys_dict_type	1	dict_id	bigint(20)	NO	NULL	PRI	字典主键
+sys_dict_type	2	dict_name	varchar(100)	YES			字典名称
+sys_dict_type	3	dict_type	varchar(100)	YES		UNI	字典类型
+sys_dict_type	4	status	char(1)	YES	0		状态（0正常 1停用）
+sys_dict_type	5	create_by	varchar(64)	YES			创建者
+sys_dict_type	6	create_time	datetime	YES	NULL		创建时间
+sys_dict_type	7	update_by	varchar(64)	YES			更新者
+sys_dict_type	8	update_time	datetime	YES	NULL		更新时间
+sys_dict_type	9	remark	varchar(500)	YES	NULL		备注
+sys_job	1	job_id	bigint(20)	NO	NULL	PRI	任务ID
+sys_job	2	job_name	varchar(64)	NO		PRI	任务名称
+sys_job	3	job_group	varchar(64)	NO	DEFAULT	PRI	任务组名
+sys_job	4	invoke_target	varchar(500)	NO	NULL		调用目标字符串
+sys_job	5	cron_expression	varchar(255)	YES			cron执行表达式
+sys_job	6	misfire_policy	varchar(20)	YES	3		计划执行错误策略（1立即执行 2执行一次 3放弃执行）
+sys_job	7	concurrent	char(1)	YES	1		是否并发执行（0允许 1禁止）
+sys_job	8	status	char(1)	YES	0		状态（0正常 1暂停）
+sys_job	9	create_by	varchar(64)	YES			创建者
+sys_job	10	create_time	datetime	YES	NULL		创建时间
+sys_job	11	update_by	varchar(64)	YES			更新者
+sys_job	12	update_time	datetime	YES	NULL		更新时间
+sys_job	13	remark	varchar(500)	YES			备注信息
+sys_job_log	1	job_log_id	bigint(20)	NO	NULL	PRI	任务日志ID
+sys_job_log	2	job_name	varchar(64)	NO	NULL		任务名称
+sys_job_log	3	job_group	varchar(64)	NO	NULL		任务组名
+sys_job_log	4	invoke_target	varchar(500)	NO	NULL		调用目标字符串
+sys_job_log	5	job_message	varchar(500)	YES	NULL		日志信息
+sys_job_log	6	status	char(1)	YES	0		执行状态（0正常 1失败）
+sys_job_log	7	exception_info	varchar(2000)	YES			异常信息
+sys_job_log	8	create_time	datetime	YES	NULL		创建时间
+sys_logininfor	1	info_id	bigint(20)	NO	NULL	PRI	访问ID
+sys_logininfor	2	user_name	varchar(50)	YES			用户账号
+sys_logininfor	3	ipaddr	varchar(128)	YES			登录IP地址
+sys_logininfor	4	login_location	varchar(255)	YES			登录地点
+sys_logininfor	5	browser	varchar(50)	YES			浏览器类型
+sys_logininfor	6	os	varchar(50)	YES			操作系统
+sys_logininfor	7	status	char(1)	YES	0		登录状态（0成功 1失败）
+sys_logininfor	8	msg	varchar(1000)	YES			提示消息
+sys_logininfor	9	login_time	datetime	YES	NULL		访问时间
+sys_menu	1	menu_id	bigint(20)	NO	NULL	PRI	菜单ID
+sys_menu	2	menu_name	varchar(50)	NO	NULL		菜单名称
+sys_menu	3	parent_id	bigint(20)	YES	0		父菜单ID
+sys_menu	4	order_num	int(4)	YES	0		显示顺序
+sys_menu	5	path	varchar(200)	YES			路由地址
+sys_menu	6	component	varchar(255)	YES	NULL		组件路径
+sys_menu	7	query	varchar(255)	YES	NULL		路由参数
+sys_menu	8	is_frame	int(1)	YES	1		是否为外链（0是 1否）
+sys_menu	9	is_cache	int(1)	YES	0		是否缓存（0缓存 1不缓存）
+sys_menu	10	menu_type	char(1)	YES			菜单类型（M目录 C菜单 F按钮）
+sys_menu	11	visible	char(1)	YES	0		菜单状态（0显示 1隐藏）
+sys_menu	12	status	char(1)	YES	0		菜单状态（0正常 1停用）
+sys_menu	13	perms	varchar(100)	YES	NULL		权限标识
+sys_menu	14	icon	varchar(100)	YES	#		菜单图标
+sys_menu	15	create_by	varchar(64)	YES			创建者
+sys_menu	16	create_time	datetime	YES	NULL		创建时间
+sys_menu	17	update_by	varchar(64)	YES			更新者
+sys_menu	18	update_time	datetime	YES	NULL		更新时间
+sys_menu	19	remark	varchar(500)	YES			备注
+sys_notice	1	notice_id	int(4)	NO	NULL	PRI	公告ID
+sys_notice	2	notice_title	varchar(50)	NO	NULL		公告标题
+sys_notice	3	notice_type	char(1)	NO	NULL		公告类型（1通知 2公告）
+sys_notice	4	notice_content	longblob	YES	NULL		公告内容
+sys_notice	5	status	char(1)	YES	0		公告状态（0正常 1关闭）
+sys_notice	6	create_by	varchar(64)	YES			创建者
+sys_notice	7	create_time	datetime	YES	NULL		创建时间
+sys_notice	8	update_by	varchar(64)	YES			更新者
+sys_notice	9	update_time	datetime	YES	NULL		更新时间
+sys_notice	10	remark	varchar(255)	YES	NULL		备注
+sys_oper_log	1	oper_id	bigint(20)	NO	NULL	PRI	日志主键
+sys_oper_log	2	title	varchar(50)	YES			模块标题
+sys_oper_log	3	business_type	int(2)	YES	0		业务类型（0其它 1新增 2修改 3删除）
+sys_oper_log	4	method	varchar(300)	YES			方法名称
+sys_oper_log	5	request_method	varchar(10)	YES			请求方式
+sys_oper_log	6	operator_type	int(1)	YES	0		操作类别（0其它 1后台用户 2手机端用户）
+sys_oper_log	7	oper_name	varchar(50)	YES			操作人员
+sys_oper_log	8	dept_name	varchar(50)	YES			部门名称
+sys_oper_log	9	oper_url	varchar(255)	YES			请求URL
+sys_oper_log	10	oper_ip	varchar(128)	YES			主机地址
+sys_oper_log	11	oper_location	varchar(255)	YES			操作地点
+sys_oper_log	12	oper_param	varchar(2000)	YES			请求参数
+sys_oper_log	13	json_result	varchar(2000)	YES			返回参数
+sys_oper_log	14	status	int(1)	YES	0		操作状态（0正常 1异常）
+sys_oper_log	15	error_msg	varchar(2000)	YES			错误消息
+sys_oper_log	16	oper_time	datetime	YES	NULL		操作时间
+sys_post	1	post_id	bigint(20)	NO	NULL	PRI	岗位ID
+sys_post	2	post_code	varchar(64)	NO	NULL		岗位编码
+sys_post	3	post_name	varchar(50)	NO	NULL		岗位名称
+sys_post	4	post_sort	int(4)	NO	NULL		显示顺序
+sys_post	5	status	char(1)	NO	NULL		状态（0正常 1停用）
+sys_post	6	create_by	varchar(64)	YES			创建者
+sys_post	7	create_time	datetime	YES	NULL		创建时间
+sys_post	8	update_by	varchar(64)	YES			更新者
+sys_post	9	update_time	datetime	YES	NULL		更新时间
+sys_post	10	remark	varchar(500)	YES	NULL		备注
+sys_role	1	role_id	bigint(20)	NO	NULL	PRI	角色ID
+sys_role	2	role_name	varchar(30)	NO	NULL		角色名称
+sys_role	3	role_key	varchar(100)	NO	NULL		角色权限字符串
+sys_role	4	role_sort	int(4)	NO	NULL		显示顺序
+sys_role	5	data_scope	char(1)	YES	1		数据范围（1：全部数据权限 2：自定数据权限 3：本部门数据权限 4：本部门及以下数据权限）
+sys_role	6	menu_check_strictly	tinyint(1)	YES	1		菜单树选择项是否关联显示
+sys_role	7	dept_check_strictly	tinyint(1)	YES	1		部门树选择项是否关联显示
+sys_role	8	status	char(1)	NO	NULL		角色状态（0正常 1停用）
+sys_role	9	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+sys_role	10	create_by	varchar(64)	YES			创建者
+sys_role	11	create_time	datetime	YES	NULL		创建时间
+sys_role	12	update_by	varchar(64)	YES			更新者
+sys_role	13	update_time	datetime	YES	NULL		更新时间
+sys_role	14	remark	varchar(500)	YES	NULL		备注
+sys_role	15	account_typestr	varchar(255)	YES	NULL		可管理的账户类型 all-全部 其余则是多个逗号分隔
+sys_role_dept	1	role_id	bigint(20)	NO	NULL	PRI	角色ID
+sys_role_dept	2	dept_id	bigint(20)	NO	NULL	PRI	部门ID
+sys_role_menu	1	role_id	bigint(20)	NO	NULL	PRI	角色ID
+sys_role_menu	2	menu_id	bigint(20)	NO	NULL	PRI	菜单ID
+sys_user	1	user_id	bigint(20)	NO	NULL	PRI	用户ID
+sys_user	2	dept_id	bigint(20)	YES	NULL		部门ID
+sys_user	3	user_name	varchar(30)	NO	NULL		用户账号
+sys_user	4	nick_name	varchar(30)	NO	NULL		用户昵称
+sys_user	5	user_type	varchar(2)	YES	00		用户类型（00系统用户）
+sys_user	6	email	varchar(50)	YES			用户邮箱
+sys_user	7	phonenumber	varchar(11)	YES			手机号码
+sys_user	8	sex	char(1)	YES	0		用户性别（0男 1女 2未知）
+sys_user	9	avatar	varchar(100)	YES			头像地址
+sys_user	10	password	varchar(100)	YES			密码
+sys_user	11	status	char(1)	YES	0		帐号状态（0正常 1停用）
+sys_user	12	del_flag	char(1)	YES	0		删除标志（0代表存在 2代表删除）
+sys_user	13	login_ip	varchar(128)	YES			最后登录IP
+sys_user	14	login_date	datetime	YES	NULL		最后登录时间
+sys_user	15	create_by	varchar(64)	YES			创建者
+sys_user	16	create_time	datetime	YES	NULL		创建时间
+sys_user	17	update_by	varchar(64)	YES			更新者
+sys_user	18	update_time	datetime	YES	NULL		更新时间
+sys_user	19	remark	varchar(500)	YES	NULL		备注
+sys_user	20	nation	varchar(50)	YES	NULL		民族
+\n
+sys_user	21	height	char(10)	YES	NULL		身高
+sys_user	22	weight	char(10)	YES	NULL		体重
+sys_user	23	blood_type	varchar(10)	YES	NULL		血型
+sys_user	24	hobby	varchar(100)	YES	NULL		兴趣爱好
+sys_user	25	qualification	varchar(10)	YES	NULL		学历
+sys_user	26	marital_status	char(1)	YES	NULL		婚姻状况 (0未婚 1已婚)
+sys_user	27	native_place	varchar(50)	YES	NULL		籍贯
+sys_user	28	basic_salary	decimal(10,2)	YES	0.00		底薪
+sys_user	29	expire_time	datetime	YES	NULL		劳动合同到期时间
+sys_user	30	emergency_contact	varchar(50)	YES	NULL		紧急联系人
+sys_user	31	emergency_contact_phone	varchar(50)	YES	NULL		紧急联系人电话
+sys_user	32	birthday	date	YES	NULL		出生日期
+sys_user	33	joined_date	date	YES	NULL		入职日期
+sys_user	34	state	varchar(255)	YES	0		状态(0实习期 1正式员工 2离职员工)
+sys_user	35	id_card	char(25)	YES	NULL		身份证号码
+sys_user	36	approval_state	char(1)	YES	0		审批状态
+sys_user	37	is_assess	char(1)	YES	0		是否生成过考核记录(0否 1是)
+sys_user	38	no	varchar(30)	YES	NULL		员工编码
+sys_user	39	purchase_social_security_company	varchar(100)	YES	NULL		购买社保公司
+sys_user	40	domicile	varchar(255)	YES	NULL		户口所在地
+sys_user	41	address	varchar(255)	YES	NULL		通讯地址
+sys_user	42	school	varchar(255)	YES	NULL		毕业院校
+sys_user	43	major	varchar(255)	YES	NULL		专业
+sys_user	44	graduation_date	date	YES	NULL		毕业日期
+sys_user	45	emergency_contact_relationship	varchar(50)	YES	NULL		与紧急联系人关系
+sys_user	46	motto	varchar(500)	YES	爱拼才会赢		座右铭
+sys_user	47	openid	varchar(60)	YES	NULL		
+sys_user	48	leave_date	datetime	YES	NULL		离职日期
+sys_user	49	querytimes	int(11)	YES	0		
+sys_user	50	become_time	datetime	YES	NULL		转正时间
+sys_user	51	is_editor	char(1)	YES	0		是否剪辑
+sys_user	52	login_user_type	char(1)	YES	0		用户类型 0-内部员工 1-外部账号
+sys_user	53	token	varchar(1000)	YES	NULL		API对接用户TOKEN
+sys_user	54	group_name	varchar(255)	YES	NULL		外部账户对应群名
+sys_user_post	1	user_id	bigint(20)	NO	NULL	PRI	用户ID
+sys_user_post	2	post_id	bigint(20)	NO	NULL	PRI	岗位ID
+sys_user_role	1	user_id	bigint(20)	NO	NULL	PRI	用户ID
+sys_user_role	2	role_id	bigint(20)	NO	NULL	PRI	角色ID
+test_0312account	1	客户名称	varchar(255)	YES	NULL		
+test_0312account	2	店铺ID	varchar(255)	YES	NULL		
+test_0312account	3	店铺名称	varchar(255)	YES	NULL		
+test_0312account	4	广告账户id	varchar(255)	YES	NULL		
+test_0312account	5	广告账户名称	varchar(255)	YES	NULL		
+test_0312account	6	账户返点	varchar(255)	YES	NULL		
+test_0312account	7	销售名称	varchar(255)	YES	NULL		
+test_0312account	8	运营名称	varchar(255)	YES	NULL		
+test_consume28	1	accountname	varchar(255)	YES	NULL		
+test_consume28	2	accountId	varchar(255)	YES	NULL		
+test_consume28	3	账户类型	varchar(255)	YES	NULL		
+test_consume28	4	快手昵称	varchar(255)	YES	NULL		
+test_consume28	5	快手ID	varchar(255)	YES	NULL		
+test_consume28	6	公司名称	varchar(255)	YES	NULL		
+test_consume28	7	二级行业	varchar(255)	YES	NULL		
+test_consume28	8	一级行业	varchar(255)	YES	NULL		
+test_consume28	9	优化师责任人	varchar(255)	YES	NULL		
+test_consume28	10	总花费(元)	varchar(255)	YES	NULL		
+test_consume28	11	现金花费(元)	varchar(255)	YES	NULL		
+test_consume28	12	信用花费(元)	varchar(255)	YES	NULL		
+test_consume28	13	前返花费(元)	varchar(255)	YES	NULL		
+test_consume28	14	后返花费(元)	varchar(255)	YES	NULL		
+test_consume28	15	框返花费(元)	varchar(255)	YES	NULL		
+test_consume28	16	激励花费(元)	varchar(255)	YES	NULL		
+test_consume28	17	电商激励花费(元)	varchar(255)	YES	NULL		
+test_consume28	18	sumbalance_nojili	varchar(255)	YES	NULL		
+untitled	1	id	int(11)	NO	NULL	PRI	
+untitled	2	motivate_id	int(11)	YES	NULL		激励期id
+untitled	3	customer_id	int(11)	YES	NULL		客户id
+untitled	4	customer_name	varchar(255)	YES	NULL		客户名称
+untitled	5	customer_group	varchar(255)	YES	NULL		客户集团（名称）
+untitled	6	customer_subject	varchar(255)	YES	NULL		客户主体
+untitled	7	daily_consume_add	decimal(15,3)	YES	NULL		【客户集团】千川竞价业绩日均消耗增量
+untitled	8	daily_consume_add_speed	decimal(15,6)	YES	NULL		【客户集团】千川竞价业绩消耗日均增速
+untitled	9	non_increase_quantity_consume	decimal(15,3)	YES	NULL		千川竞价非收业绩消耗
+untitled	10	motivate_daily_avg_consume	decimal(15,6)	YES	NULL		激励期日均消耗=non_increase_quantity_consume/考核天数
+untitled	11	reference_total_daily_avg	decimal(15,6)	YES	NULL		客户集团参考期总日均=daily_consume_add/daily_consume_add_speed
+untitled	12	motivate_daily_avg	decimal(15,6)	YES	NULL		客户集团激励期日均=reference_total_daily_avg+daily_consume_add
+untitled	13	motivation_other_port_total_daily_avg	decimal(15,6)	YES	NULL		激励期其他端口的总日均
+untitled	14	penetration_rate	decimal(10,3)	YES	NULL		渗透率
+untitled	15	daily_growth_rate_gt_1pct	decimal(15,6)	YES	NULL		日均增速大于1%
+untitled	16	daily_growth_rate_gt_10pct	decimal(15,6)	YES	NULL		日均增速大于10%
+untitled	17	daily_GAP	varchar(50)	YES	NULL		日均GAP值
+untitled	18	motivate_money	decimal(10,3)	YES	NULL		激励金额
+untitled	19	create_time	datetime	YES	NULL		创建时间
+untitled	20	update_time	datetime	YES	NULL		更新时间
+untitled	21	create_by	varchar(100)	YES	NULL		创建人
+wecom_config	1	id	bigint(20)	NO	NULL	PRI	主键ID
+wecom_config	2	corp_id	varchar(64)	NO	NULL	UNI	企业微信ID
+wecom_config	3	corp_name	varchar(128)	YES	NULL		企业名称
+wecom_config	4	secret	varchar(256)	NO	NULL		会话存档应用Secret
+wecom_config	5	private_key_path	varchar(512)	NO	NULL		RSA私钥文件路径
+wecom_config	6	public_key_ver	int(11)	YES	1		公钥版本号
+wecom_config	7	poll_interval_ms	bigint(20)	YES	3000		轮询间隔(毫秒)
+wecom_config	8	limit_count	int(11)	YES	100		每次拉取消息条数
+wecom_config	9	enabled	tinyint(1)	YES	0	MUL	是否启用：0-禁用，1-启用
+wecom_config	10	status	tinyint(1)	YES	1		运行状态：0-停止，1-运行中
+wecom_config	11	sort_order	int(11)	YES	0		排序号
+wecom_config	12	remark	varchar(500)	YES	NULL		备注
+wecom_config	13	create_by	varchar(64)	YES			创建者
+wecom_config	14	create_time	datetime	YES	CURRENT_TIMESTAMP		创建时间
+wecom_config	15	update_by	varchar(64)	YES			更新者
+wecom_config	16	update_time	datetime	YES	CURRENT_TIMESTAMP		更新时间
+wecom_config	17	last_seq	bigint(20)	YES	0		最后处理的消息序列号
+wecom_config	18	app_secret	varchar(255)	YES	NULL		
+wecom_config	19	token	varchar(255)	YES	NULL		
+wecom_config	20	webhook_url	varchar(255)	YES	NULL		企微内部群webhookUrl
+wecom_config	21	sender	varchar(50)	YES	NULL		指定人员

@@ -1,0 +1,121 @@
+﻿table_name	table_rows	engine	table_collation	table_comment
+base_approval_process	10	InnoDB	utf8mb4_general_ci	审批流程
+base_approval_process_detail	11	InnoDB	utf8mb4_general_ci	
+base_approval_process_detail_copy	0	InnoDB	utf8mb4_general_ci	
+crm_msgconfig	0	InnoDB	utf8mb4_general_ci	CRM系统消息通知配置
+dig_abnormal_clock	0	InnoDB	utf8mb4_general_ci	异常考勤管理
+dig_account	4	InnoDB	utf8mb4_general_ci	 收支账户
+dig_accountopen_apply	189	InnoDB	utf8mb4_general_ci	开户申请
+dig_adveraccount_wallet	11985	InnoDB	utf8mb4_general_ci	广告账户钱包表
+dig_adveracoount_recharge	1246	InnoDB	utf8mb4_general_ci	 广告账户充值记录
+dig_advertising_account	12617	InnoDB	utf8mb4_general_ci	 广告账户
+dig_advertising_tag	572	InnoDB	utf8mb4_general_ci	广告账户标签表
+\n
+dig_assessment	0	InnoDB	utf8mb4_general_ci	考核记录表
+dig_assessment_rule	0	InnoDB	utf8mb4_general_ci	考核规则表
+dig_bank_statement	360	InnoDB	utf8mb4_general_ci	导入-银行流水记录
+dig_become_worker	0	InnoDB	utf8mb4_general_ci	转正申请
+dig_bussiness_statelog	1460	InnoDB	utf8mb4_general_ci	业务数据操作状态日志
+dig_cashrecharge	145	InnoDB	utf8mb4_general_ci	 现金充值记录
+dig_cash_flow	2	InnoDB	utf8mb4_general_ci	现金流水记录表
+dig_consume	0	InnoDB	utf8mb4_general_ci	渠道消耗记录表
+dig_consume_importtemp	0	InnoDB	utf8mb4_general_ci	渠道消耗记录表
+dig_consume_refrecharge	0	InnoDB	utf8mb4_general_ci	消耗和账号充值转入的对接中间表，用于计算每条消耗和广告账号的关联现金，计算业绩提成
+dig_contract	0	InnoDB	utf8mb4_general_ci	员工劳动合同
+dig_costrecord	0	InnoDB	utf8mb4_general_ci	费用记录
+dig_cusneworder_bill	0	InnoDB	utf8mb4_general_ci	客户的首单首续流水
+dig_customer	396	InnoDB	utf8mb4_general_ci	客户表 
+dig_customer_account	0	InnoDB	utf8mb4_general_ci	
+dig_customer_bill	1616	InnoDB	utf8mb4_general_ci	客户广告账户账单明细
+dig_customer_bill_split	47	InnoDB	utf8mb4_general_ci	客户现金流水拆分明细
+dig_customer_brand	0	InnoDB	utf8mb4_general_ci	客户品牌返点计算表
+dig_customer_contract	0	InnoDB	utf8mb4_general_ci	客户合同
+dig_customer_expand	111	InnoDB	utf8mb4_general_ci	客户待处理信息扩展表
+dig_customer_followup	0	InnoDB	utf8mb4_general_ci	客户跟进记录
+dig_customer_limit_apply	254	InnoDB	utf8mb4_general_ci	客户垫款额度申请变更
+dig_customer_refcontract	0	InnoDB	utf8mb4_general_ci	
+dig_customer_refdep	280	InnoDB	utf8mb4_general_ci	客户运营部门关联
+dig_customer_refuser	231	InnoDB	utf8mb4_general_ci	
+dig_customer_statement	225	InnoDB	utf8mb4_general_ci	客户现金流水对账单表
+dig_customer_subject	1860	InnoDB	utf8mb4_general_ci	 客户主体
+dig_customer_tag	404	InnoDB	utf8mb4_general_ci	
+dig_customer_transfer	0	InnoDB	utf8mb4_general_ci	客户转账申请
+dig_customer_wallet	474	InnoDB	utf8mb4_general_ci	客户钱包表
+dig_customer_wallet_bill	1339	InnoDB	utf8mb4_general_ci	客户钱包流水
+dig_cus_operbalance	14	InnoDB	utf8mb4_general_ci	申请修改客户余额表
+dig_cus_operratio	265	InnoDB	utf8mb4_general_ci	
+dig_douyin_account_consume	19930	InnoDB	utf8mb4_general_ci	抖音广告账户消耗记录
+dig_douyin_commission	0	InnoDB	utf8mb4_general_ci	抖音销售提成表
+dig_douyin_consume	0	InnoDB	utf8mb4_general_ci	抖音消耗列表
+dig_dy_developinfo	4	InnoDB	utf8mb4_general_ci	
+dig_edit_accountrecharge	2	InnoDB	utf8mb4_general_ci	修改账户充值返点申请
+dig_edit_accountrecharge_detail	2	InnoDB	utf8mb4_general_ci	调整账户充值批量映射表
+dig_external_orderno	1298	InnoDB	utf8mb4_general_ci	
+dig_incentive_apply	0	InnoDB	utf8mb4_general_ci	激励政策申请
+dig_invoice	0	InnoDB	utf8mb4_general_ci	客户开票记录
+dig_invoice_detail	0	InnoDB	utf8mb4_general_ci	开票记录明细
+dig_ks_commission	0	InnoDB	utf8mb4_general_ci	快手销售提成表
+dig_ks_customer_notconsume	0	InnoDB	utf8mb4_general_ci	客户每月剩余未消耗金额
+dig_kuaishou_jinfu	0	InnoDB	utf8mb4_general_ci	
+dig_leave	0	InnoDB	utf8mb4_general_ci	请假申请
+dig_materiel_consume	0	InnoDB	utf8mb4_general_ci	素材消耗
+dig_media_operbill	0	InnoDB	utf8mb4_general_ci	媒体端操作流水
+dig_montage	0	InnoDB	utf8mb4_general_ci	剪辑记录表
+dig_motivate	0	InnoDB	utf8mb4_general_ci	激励期数据
+dig_motivate_customer_rel	0	InnoDB	utf8mb4_general_ci	激励-客户关系表
+dig_operate_wages	0	InnoDB	utf8mb4_general_ci	运营和剪辑的工资提成表
+dig_other_account_consume	43613	InnoDB	utf8mb4_general_ci	外转广告账户消耗记录
+dig_purchase	0	InnoDB	utf8mb4_general_ci	采购单
+dig_purchase_item	0	InnoDB	utf8mb4_general_ci	采购单明细
+dig_reimbursement	0	InnoDB	utf8mb4_general_ci	报销记录表
+dig_return_coin	94	InnoDB	utf8mb4_general_ci	退币记录表
+dig_return_money	0	InnoDB	utf8mb4_general_ci	退现记录表
+dig_robot_ex	5	InnoDB	utf8mb4_general_ci	
+dig_salary	0	InnoDB	utf8mb4_general_ci	工资表
+dig_sales_wages	0	InnoDB	utf8mb4_general_ci	销售提成表
+dig_shop	8526	InnoDB	utf8mb4_general_ci	 店铺
+dig_sms_config	0	InnoDB	utf8mb4_general_ci	短信发送配置表
+dig_supplier	22	InnoDB	utf8mb4_general_ci	供应商
+dig_supplier_account	0	InnoDB	utf8mb4_general_ci	 供应商账户
+dig_supplier_bill	282	InnoDB	utf8mb4_general_ci	供应商账单明细
+dig_target	0	InnoDB	utf8mb4_general_ci	目标表
+dig_tencent_account_consume	0	InnoDB	utf8mb4_general_ci	腾讯广告账户消耗记录
+dig_transfer_account	87	InnoDB	utf8mb4_general_ci	转户记录表
+dig_transfer_subjectapply	33	InnoDB	utf8mb4_general_ci	主体转客户申请
+dig_xhs_account_consume	0	InnoDB	utf8mb4_general_ci	小红书广告账户消耗记录
+gen_table	0	InnoDB	utf8mb4_general_ci	代码生成业务表
+gen_table_column	0	InnoDB	utf8mb4_general_ci	代码生成业务表字段
+qrtz_blob_triggers	0	InnoDB	utf8mb4_general_ci	Blob类型的触发器表
+qrtz_calendars	0	InnoDB	utf8mb4_general_ci	日历信息表
+qrtz_cron_triggers	0	InnoDB	utf8mb4_general_ci	Cron类型的触发器表
+qrtz_fired_triggers	0	InnoDB	utf8mb4_general_ci	已触发的触发器表
+qrtz_job_details	0	InnoDB	utf8mb4_general_ci	任务详细信息表
+qrtz_locks	0	InnoDB	utf8mb4_general_ci	存储的悲观锁信息表
+qrtz_paused_trigger_grps	0	InnoDB	utf8mb4_general_ci	暂停的触发器表
+qrtz_scheduler_state	0	InnoDB	utf8mb4_general_ci	调度器状态表
+qrtz_simple_triggers	0	InnoDB	utf8mb4_general_ci	简单触发器的信息表
+qrtz_simprop_triggers	0	InnoDB	utf8mb4_general_ci	同步机制的行锁表
+qrtz_triggers	0	InnoDB	utf8mb4_general_ci	触发器详细信息表
+robot_send_record	70	InnoDB	utf8mb4_general_ci	微信机器人消息发送回执记录表
+sys_approval	36	InnoDB	utf8mb4_general_ci	审批记录表
+sys_config	18	InnoDB	utf8mb4_general_ci	参数配置表
+sys_dept	77	InnoDB	utf8mb4_general_ci	部门表
+sys_dict_data	567	InnoDB	utf8mb4_general_ci	字典数据表
+sys_dict_type	38	InnoDB	utf8mb4_general_ci	字典类型表
+sys_job	0	InnoDB	utf8mb4_general_ci	定时任务调度表
+sys_job_log	0	InnoDB	utf8mb4_general_ci	定时任务调度日志表
+sys_logininfor	743	InnoDB	utf8mb4_general_ci	系统访问记录
+sys_menu	650	InnoDB	utf8mb4_general_ci	菜单权限表
+sys_notice	0	InnoDB	utf8mb4_general_ci	通知公告表
+sys_oper_log	5285	InnoDB	utf8mb4_general_ci	操作日志记录
+sys_post	0	InnoDB	utf8mb4_general_ci	岗位信息表
+sys_role	53	InnoDB	utf8mb4_general_ci	角色信息表
+sys_role_dept	8	InnoDB	utf8mb4_general_ci	角色和部门关联表
+sys_role_menu	3961	InnoDB	utf8mb4_general_ci	角色和菜单关联表
+sys_user	49	InnoDB	utf8mb4_general_ci	用户信息表
+sys_user_post	0	InnoDB	utf8mb4_general_ci	用户与岗位关联表
+sys_user_role	53	InnoDB	utf8mb4_general_ci	用户和角色关联表
+test_0312account	0	InnoDB	utf8mb4_general_ci	
+test_consume28	0	InnoDB	utf8mb4_general_ci	
+untitled	0	InnoDB	utf8mb4_general_ci	激励-客户关系表
+wecom_config	0	InnoDB	utf8mb4_general_ci	企业微信配置表

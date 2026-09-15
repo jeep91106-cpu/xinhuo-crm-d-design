@@ -1,0 +1,651 @@
+﻿menu_id	parent_id	order_num	menu_type	menu_name	path	component	perms	visible	status	is_frame
+1064	0	50	M	快手事业部	kuaishou	NULL		0	1	1
+1096	0	55	M	抖音事业部	douyin	NULL		0	0	1
+1567	0	57	M	腾讯事业部	tencent			0	1	1
+1715	0	58	M	其他媒体	otherMedia	NULL		0	0	1
+1865	0	58	M	小红书事业部	xhs	NULL		0	1	1
+1069	0	60	M	合同/发票	contract	NULL		0	0	1
+1071	0	70	M	财务管理	finance	NULL		0	0	1
+1061	0	75	M	人事行政	users	NULL		0	0	1
+1074	0	90	M	公共管理	common	NULL		0	0	1
+1075	0	100	M	报表管理	report	NULL		0	0	1
+1	0	110	M	系统管理	system	NULL		0	0	1
+1089	0	110	M	通知管理	notice	NULL		1	1	1
+3	0	130	M	系统工具	tool	NULL		0	0	1
+2	0	140	M	系统监控	monitor	NULL		0	0	1
+1082	1	10	C	个人中心	user/profile	system/user/profile/index		0	0	1
+102	1	30	C	菜单管理	menu	system/menu/index	system:menu:list	0	0	1
+104	1	50	C	岗位管理2	post	system/post/index	system:post:list	1	1	1
+105	1	60	C	字典管理	dict	system/dict/index	system:dict:list	0	0	1
+106	1	70	C	参数设置	config	system/config/index	system:config:list	0	0	1
+108	1	90	M	日志管理	log			0	0	1
+1106	1	95	C	审批流程配置	approval	approval/approval	approval:approval:list	0	0	1
+109	2	1	C	在线用户	online	monitor/online/index	monitor:online:list	0	0	1
+110	2	2	C	定时任务	job	monitor/job/index	monitor:job:list	0	0	1
+111	2	3	C	数据监控	druid	monitor/druid/index	monitor:druid:list	0	0	1
+112	2	4	C	服务监控	server	monitor/server/index	monitor:server:list	0	0	1
+113	2	5	C	缓存监控	cache	monitor/cache/index	monitor:cache:list	0	0	1
+1861	3	0	M	系统文档	localhost:8084	NULL		0	0	1
+114	3	1	C	表单构建	build	tool/build/index	tool:build:list	0	0	1
+1267	3	1	C	echarts演示	index_v1	index_v1		0	0	1
+115	3	2	C	代码生成	gen	tool/gen/index	tool:gen:list	0	0	1
+116	3	3	C	系统接口	swagger	tool/swagger/index	tool:swagger:list	0	0	1
+1001	100	1	F	用户查询			system:user:query	0	0	1
+1002	100	2	F	用户新增			system:user:add	0	0	1
+1003	100	3	F	用户修改			system:user:edit	0	0	1
+1004	100	4	F	用户删除			system:user:remove	0	0	1
+1005	100	5	F	用户导出			system:user:export	0	0	1
+1006	100	6	F	用户导入			system:user:import	0	0	1
+1007	100	7	F	重置密码			system:user:resetPwd	0	0	1
+1008	101	1	F	角色查询			system:role:query	0	0	1
+1009	101	2	F	角色新增			system:role:add	0	0	1
+1010	101	3	F	角色修改			system:role:edit	0	0	1
+1011	101	4	F	角色删除			system:role:remove	0	0	1
+1012	101	5	F	角色导出			system:role:export	0	0	1
+1013	102	1	F	菜单查询			system:menu:query	0	0	1
+1014	102	2	F	菜单新增			system:menu:add	0	0	1
+1015	102	3	F	菜单修改			system:menu:edit	0	0	1
+1016	102	4	F	菜单删除			system:menu:remove	0	0	1
+1017	103	1	F	部门查询			system:dept:query	0	0	1
+1018	103	2	F	部门新增			system:dept:add	0	0	1
+1019	103	3	F	部门修改			system:dept:edit	0	0	1
+1020	103	4	F	部门删除			system:dept:remove	0	0	1
+1021	104	1	F	岗位查询			system:post:query	0	0	1
+1022	104	2	F	岗位新增			system:post:add	0	0	1
+1023	104	3	F	岗位修改			system:post:edit	0	0	1
+1024	104	4	F	岗位删除			system:post:remove	0	0	1
+1025	104	5	F	岗位导出			system:post:export	0	0	1
+1026	105	1	F	字典查询	#		system:dict:query	0	0	1
+1027	105	2	F	字典新增	#		system:dict:add	0	0	1
+1028	105	3	F	字典修改	#		system:dict:edit	0	0	1
+1029	105	4	F	字典删除	#		system:dict:remove	0	0	1
+1030	105	5	F	字典导出	#		system:dict:export	0	0	1
+1031	106	1	F	参数查询	#		system:config:query	0	0	1
+1032	106	2	F	参数新增	#		system:config:add	0	0	1
+1033	106	3	F	参数修改	#		system:config:edit	0	0	1
+1034	106	4	F	参数删除	#		system:config:remove	0	0	1
+1035	106	5	F	参数导出	#		system:config:export	0	0	1
+1036	107	1	F	公告查询	#		system:notice:query	0	0	1
+1037	107	2	F	公告新增	#		system:notice:add	0	0	1
+1038	107	3	F	公告修改	#		system:notice:edit	0	0	1
+1039	107	4	F	公告删除	#		system:notice:remove	0	0	1
+500	108	1	C	操作日志	operlog	monitor/operlog/index	monitor:operlog:list	0	0	1
+501	108	2	C	登录日志	logininfor	monitor/logininfor/index	monitor:logininfor:list	0	0	1
+1046	109	1	F	在线查询	#		monitor:online:query	0	0	1
+1047	109	2	F	批量强退	#		monitor:online:batchLogout	0	0	1
+1048	109	3	F	单条强退	#		monitor:online:forceLogout	0	0	1
+1049	110	1	F	任务查询	#		monitor:job:query	0	0	1
+1050	110	2	F	任务新增	#		monitor:job:add	0	0	1
+1051	110	3	F	任务修改	#		monitor:job:edit	0	0	1
+1052	110	4	F	任务删除	#		monitor:job:remove	0	0	1
+1053	110	5	F	状态修改	#		monitor:job:changeStatus	0	0	1
+1054	110	7	F	任务导出	#		monitor:job:export	0	0	1
+1055	115	1	F	生成查询	#		tool:gen:query	0	0	1
+1056	115	2	F	生成修改	#		tool:gen:edit	0	0	1
+1058	115	2	F	导入代码	#		tool:gen:import	0	0	1
+1057	115	3	F	生成删除	#		tool:gen:remove	0	0	1
+1059	115	4	F	预览代码	#		tool:gen:preview	0	0	1
+1060	115	5	F	生成代码	#		tool:gen:code	0	0	1
+1040	500	1	F	操作查询	#		monitor:operlog:query	0	0	1
+1041	500	2	F	操作删除	#		monitor:operlog:remove	0	0	1
+1042	500	4	F	日志导出	#		monitor:operlog:export	0	0	1
+1043	501	1	F	登录查询	#		monitor:logininfor:query	0	0	1
+1044	501	2	F	登录删除	#		monitor:logininfor:remove	0	0	1
+1045	501	3	F	日志导出	#		monitor:logininfor:export	0	0	1
+100	1061	20	C	人事档案管理	user	system/user/index	system:user:list	0	0	1
+101	1061	20	C	岗位管理	role	system/role/index	system:role:list	0	0	1
+103	1061	40	C	部门管理	dept	system/dept/index	system:dept:list	0	0	1
+1065	1064	10	C	客户管理	customer	kuaishou/customer/index	digital:customer:list	0	0	1
+1066	1064	20	C	市场主体/公司	body	kuaishou/customer/body/index	digital:customersubject:list	0	0	1
+1067	1064	30	C	店铺管理	shop	kuaishou/shop/index	digital:shop:list	0	0	1
+1068	1064	40	C	广告账户	advertising	kuaishou/advertising/account/index	digital:advertisingAccount:list	0	0	1
+1088	1064	100	C	账户消耗	consumption	kuaishou/consumption/index	digital:kuaishouconsume:list	0	0	1
+1087	1064	200	C	账户充值	recharge	kuaishou/customer/intermediary		0	0	1
+1081	1064	210	C	转户管理	transfer	kuaishou/transfer/account/index		0	0	1
+1078	1064	220	C	退币管理	coinreturn	kuaishou/coinreturn/index		0	0	1
+1463	1064	400	M	我的	my	NULL		0	0	1
+1447	1065	0	F	导入客户主体店铺		NULL	digital:customer:import	0	0	1
+1114	1065	1	F	客户 查询	#		digital:customer:query	0	0	1
+1274	1065	1	F	查看联系方式		NULL	ks:customer:phone	0	0	1
+1115	1065	2	F	客户 新增	#		digital:customer:add	0	0	1
+1116	1065	3	F	客户 修改	#		digital:customer:edit	0	0	1
+1117	1065	4	F	客户 删除	#		digital:customer:remove	0	0	1
+1118	1065	5	F	客户 导出	#		digital:customer:export	0	0	1
+1858	1065	6	F	开启/关闭钱包		NULL	digital:cuswallet:add	0	0	1
+1481	1065	30	F	批量重置客户数据权限		NULL	digital:customer:restprice	0	0	1
+1133	1066	1	F	 客户主体查询	#		digital:customersubject:query	0	0	1
+1275	1066	1	F	查看联系方式		NULL	ks:customersubject:phone	0	0	1
+1134	1066	2	F	 客户主体新增	#		digital:customersubject:add	0	0	1
+1135	1066	3	F	 客户主体修改	#		digital:customersubject:edit	0	0	1
+1136	1066	4	F	 客户主体删除	#		digital:customersubject:remove	0	0	1
+1137	1066	5	F	 客户主体导出	#		digital:customersubject:export	0	0	1
+1119	1067	1	F	 店铺查询	#		digital:shop:query	0	0	1
+1120	1067	2	F	 店铺新增	#		digital:shop:add	0	0	1
+1121	1067	3	F	 店铺修改	#		digital:shop:edit	0	0	1
+1122	1067	4	F	 店铺删除	#		digital:shop:remove	0	0	1
+1123	1067	5	F	 店铺导出	#		digital:shop:export	0	0	1
+1109	1068	1	F	 广告账户查询	#		digital:advertisingAccount:query	0	0	1
+1273	1068	1	F	广告账户导入		NULL	digital:advertisingAccount:import	0	0	1
+1110	1068	2	F	 广告账户新增	#		digital:advertisingAccount:add	0	0	1
+1111	1068	3	F	 广告账户修改	#		digital:advertisingAccount:edit	0	0	1
+1112	1068	4	F	 广告账户删除	#		digital:advertisingAccount:remove	0	0	1
+1113	1068	5	F	 广告账户导出	#		digital:advertisingAccount:export	0	0	1
+1209	1068	7	F	申请退币		NULL	digital:coin:add	0	0	1
+1210	1068	8	F	申请转户		NULL	digital:transferaccount:add	0	0	1
+1070	1069	10	C	合同管理	contract	contract/contract/index		0	0	1
+1547	1069	20	C	发票管理	invoice	contract/invoice/index		0	0	1
+1551	1070	1	F	合同详情		NULL	digital:customercontract:query	0	0	1
+1565	1070	1	F	合同列表		NULL	digital:customercontract:list	0	0	1
+1548	1070	2	F	合同新增		NULL	digital:customercontract:add	0	0	1
+1549	1070	3	F	审批通过后修改		NULL	digital:customercontract:edit	0	0	1
+1550	1070	4	F	合同删除		NULL	digital:customercontract:remove	0	0	1
+1563	1070	5	F	合同导出		NULL	digital:customercontract:export	0	0	1
+1454	1071	1	C	运营和剪辑提成	operatewages	report/operatewages/index	digital:operatewages:list	0	1	1
+1458	1071	1	C	销售提成	wages	report/wages/index	digital:wages:list	0	1	1
+1072	1071	10	C	现金收款	cashrecharge	finance/recharge/index	digital:cashrecharge:list	0	0	1
+1321	1071	25	C	工资管理	salary	finance/salary/index	digital:salary:list	1	1	1
+1079	1071	30	C	退现管理	refund	finance/refund/index	digital:money:list	0	0	1
+1090	1071	100	C	现金流水	bill	finance/bill/index	digital:cashflow:list	1	1	1
+1434	1071	100	C	导入流水记录	import_statement	system/Income/account/import_statement	digital:import_statement	1	0	1
+1084	1071	110	C	供应商管理	supplier	system/supplier/index	digitial:supplier:list	0	0	1
+1093	1071	110	C	向供应商支付记录	expense	finance/expense/index	\t digital:adveraccountRecharge:list	1	1	1
+1948	1071	110	C	快手端口	jinfu	system/supplier/jinfu	digitial:supplier:list	0	1	1
+1085	1071	120	C	收支账户管理	Income/account	system/Income/account/index	digital:account:list	0	0	1
+1435	1071	125	C	收支账户流水	bankstatement	finance/bankstatement/index	digital:bankstatement:list	0	0	1
+1316	1071	130	C	抖音退币确认到账	coinreturn	finance/coinreturn/index	digital:coin:list	0	1	1
+1138	1072	1	F	 充值管理查询	#		digital:cashrecharge:query	0	0	1
+1139	1072	2	F	 充值管理新增	#		digital:cashrecharge:add	0	0	1
+1140	1072	3	F	 充值管理修改	#		digital:cashrecharge:edit	0	0	1
+1141	1072	4	F	 充值管理删除	#		digital:cashrecharge:remove	0	0	1
+1142	1072	5	F	 充值管理导出	#		digital:cashrecharge:export	0	0	1
+1105	1072	10	F	确认到账		NULL	digital:cashrecharge:confirmReceipt	1	0	1
+1965	1074	0	C	迁移主体(跨媒体)	subjectapply	common/subjectapply.vue	digital:subjectapply:list	0	0	1
+1268	1074	1	C	开户申请	accountopenapply	kuaishou/accountopenapply/index	digital:accountopenapply:list	0	0	1
+1530	1074	2	C	客户转账申请	customertransfer	common/customertransfer/index		0	0	1
+1863	1074	20	C	费用审批	costrecord	common/costrecord/index	digital:costrecord:list	0	1	1
+1482	1074	80	C	授信额度申请	customerlimitapply	common/customerlimitapply/index		0	0	1
+1536	1074	100	C	备款调整申请	operbalance	common/operbalance/index		0	0	1
+1540	1074	100	C	充值/退币调整	accountrecharge	common/editaccountrecharge/index		0	0	1
+1557	1074	100	C	客户返点申请	operratio	common/operratio/index		0	0	1
+1947	1074	110	C	媒体充/退核对	checkBill	common/checkBill/index		1	1	1
+2000	1075	0	C	全媒体消耗明细	fullconsume	report/consumeReport/fullConsum.vue	fullconsume	0	0	1
+10000	1075	0	C	全媒体消耗环比	fullconsumeQOQ	report/consumeReport/fullConsumQoQ.vue	fullconsumeQOQ	0	0	1
+1314	1075	5	C	日常费用明细汇总	costsumreport	report/costSumReport/index		0	1	1
+1293	1075	10	C	快手运营消耗	videoconsume	report/consumeReport/index		0	1	1
+1304	1075	20	C	抖音运营消耗	douyinconsumecensus	report/douyinConsumeReport/index		0	0	1
+1311	1075	30	C	各项目收入明细	adverProjectPayment	report/adverProjectPayment/index		0	1	1
+1312	1075	40	C	客户垫款汇总	credituseMoneyReport	report/customerReport/creditUseMoney		0	0	1
+1860	1075	41	C	垫款分期明细	creditDetail	report/customerReport/creditDetail		0	0	1
+1313	1075	50	C	客户备款汇总	customerbalance	report/customerReport/balanceCensus	NULL	0	0	1
+1319	1075	60	C	供应商垫款充值明细表	supplieradvancepayment	report/supplierAdvancePayment/index		1	1	1
+1318	1075	70	C	客户充值账户明细	customerrechargeflow	report/customerRechargeAccount/index	NULL	0	0	1
+1480	1075	71	C	核对快手账户流水	checkJinfuKS	report/customerRechargeAccount/checkJinfuKS	checkJinfuKS	1	0	1
+1335	1075	75	C	抖音计提明细	douyinservicefeebill	report/douyinservicefeebill/index		0	1	1
+1327	1075	80	C	抖音提成表	douyincommission	report/douyinCommission/index		0	1	1
+1334	1075	90	C	快手提成计算表	kssalecommission	report/kssalecommission/index		0	1	1
+1378	1075	100	C	快手运营日消耗	ksserviceconsume	report/ksserviceconsume/index		0	1	1
+1545	1075	100	C	快手销售消耗预览	ksSalesConsumePreview	report/ksSalesConsumePreview/index		0	1	1
+1546	1075	100	C	抖音销售消耗预览	dySalesConsumePreview	report/dySalesConsumePreview/index		1	1	1
+1413	1075	110	C	抖音运营日消耗	douyinserviceconsume	report/douyinserviceconsume/index		0	0	1
+1143	1078	1	F	退币记录查询	#		digital:coin:list	0	0	1
+1144	1078	2	F	账户退币申请	#		digital:coin:add	0	0	1
+1146	1078	4	F	退币删除(未确认)	#		digital:coin:remove	0	0	1
+1496	1078	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1148	1079	1	F	退现记录查询	#		digital:money:query	0	0	1
+1149	1079	2	F	退现记录新增	#		digital:money:add	0	0	1
+1150	1079	3	F	退现记录修改	#		digital:money:edit	0	0	1
+1151	1079	4	F	退现记录删除	#		digital:money:remove	0	0	1
+1152	1079	5	F	退现记录导出	#		digital:money:export	0	0	1
+1153	1081	1	F	转户记录查询	#		digital:transferaccount:list	0	0	1
+1154	1081	2	F	账户转户申请	#		digital:transferaccount:add	0	0	1
+1156	1081	4	F	转户删除(未确认)	#		digital:transferaccount:remove	0	0	1
+1500	1081	6	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1194	1084	1	F	供应商查询	#		digitial:supplier:query	0	0	1
+1195	1084	2	F	供应商新增	#		digitial:supplier:add	0	0	1
+1196	1084	3	F	供应商修改	#		digitial:supplier:edit	0	0	1
+1197	1084	4	F	供应商删除	#		digitial:supplier:remove	0	0	1
+1198	1084	5	F	供应商导出	#		digitial:supplier:export	0	0	1
+1199	1085	1	F	 收支账户查询	#		digital:account:query	0	0	1
+1200	1085	2	F	 收支账户新增	#		digital:account:add	0	0	1
+1201	1085	3	F	 收支账户修改	#		digital:account:edit	0	0	1
+1202	1085	4	F	 收支账户删除	#		digital:account:remove	0	0	1
+1203	1085	5	F	 收支账户导出	#		digital:account:export	0	0	1
+1206	1087	1	F	充值记录查询		NULL	digital:adveraccountRecharge:list	0	0	1
+1130	1087	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1132	1087	4	F	充值记录删除(未确认)	#		digital:adveraccountRecharge:remove	0	0	1
+1379	1087	5	F	媒介确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1124	1088	1	F	查询	#		digital:kuaishouconsume:query	0	0	1
+1125	1088	2	F	渠道消耗记录新增	#		digital:kuaishouconsume:add	0	0	1
+1126	1088	3	F	渠道消耗记录修改	#		digital:kuaishouconsume:edit	0	0	1
+1127	1088	4	F	渠道消耗记录删除	#		digital:kuaishouconsume:remove	0	0	1
+1128	1088	5	F	渠道消耗记录导出	#		digital:kuaishouconsume:export	0	0	1
+1278	1088	6	F	消耗列表导入		NULL	digital:kuaishouconsume:import	0	0	1
+107	1089	80	C	通知公告	notice	system/notice/index	system:notice:list	0	0	1
+1158	1090	1	F	现金流水记录查询	#		digital:cashflow:query	0	0	1
+1159	1090	2	F	现金流水记录新增	#		digital:cashflow:add	0	0	1
+1160	1090	3	F	现金流水记录修改	#		digital:cashflow:edit	0	0	1
+1161	1090	4	F	现金流水记录删除	#		digital:cashflow:remove	0	0	1
+1162	1090	5	F	现金流水记录导出	#		digital:cashflow:export	0	0	1
+1333	1090	7	F	现金流水复核		NULL	digital:cashflow:check	0	0	1
+1292	1093	10	F	确认支付		NULL	digital:cashrecharge:add	0	0	1
+1315	1093	20	F	详情		NULL	digital:adveraccountRecharge:query	0	0	1
+1211	1096	10	C	客户管理	customer	douyin/customer/index	digital:customer:list	0	0	1
+1212	1096	20	C	市场主体/公司	body	douyin/customer/body/index	digital:customersubject:list	0	0	1
+1213	1096	30	C	店铺管理	shop	douyin/shop/index	digital:shop:list	0	0	1
+1214	1096	40	C	广告账户	advertising	douyin/advertising/account/index	digital:advertisingAccount:list	0	0	1
+1218	1096	100	C	渠道消耗列表	consumption_dy	douyin/consumption/index	digital:douyinconsume:list	1	0	1
+1305	1096	120	C	广告账户消耗	consumption	douyin/douyinaccountconsume/index	digital:douyinaccountconsume:list	0	0	1
+1217	1096	200	C	账户充值	recharge	douyin/customer/intermediary		0	0	1
+1216	1096	210	C	转户管理	transfer	douyin/transfer/account/index		0	0	1
+1215	1096	220	C	退币管理	coinreturn	douyin/coinreturn/index		0	0	1
+1467	1096	400	M	我的	my	NULL		0	0	1
+1450	1106	1	F	新增		NULL	approval:approval:add	0	0	1
+1451	1106	2	F	修改		NULL	approval:approval:edit	0	0	1
+1452	1106	3	F	删除		NULL	approval:approval:remove	0	0	1
+1453	1106	4	F	查看		NULL	approval:approval:query	0	0	1
+1448	1211	0	F	导入客户主体店铺		NULL	digital:customer:import	0	0	1
+1963	1211	0	F	 开启/关闭钱包		NULL	digital:cuswallet:add	0	0	1
+1221	1211	1	F	客户 查询	#	NULL	digital:customer:query	0	0	1
+1276	1211	1	F	查看联系方式		NULL	dy:customer:phone	0	0	1
+1222	1211	2	F	客户 新增	#	NULL	digital:customer:add	0	0	1
+1223	1211	3	F	客户 修改	#	NULL	digital:customer:edit	0	0	1
+1224	1211	4	F	客户 删除	#	NULL	digital:customer:remove	0	0	1
+1225	1211	5	F	客户 导出	#	NULL	digital:customer:export	0	0	1
+1562	1211	30	F	批量重置客户数据权限		NULL	digital:customer:restprice	0	0	1
+1231	1212	1	F	 客户主体查询	#	NULL	digital:customersubject:query	0	0	1
+1277	1212	1	F	查看联系方式		NULL	dy:customersubject:phone	0	0	1
+1232	1212	2	F	 客户主体新增	#	NULL	digital:customersubject:add	0	0	1
+1233	1212	3	F	 客户主体修改	#	NULL	digital:customersubject:edit	0	0	1
+1234	1212	4	F	 客户主体删除	#	NULL	digital:customersubject:remove	0	0	1
+1235	1212	5	F	 客户主体导出	#	NULL	digital:customersubject:export	0	0	1
+1236	1213	1	F	 店铺查询	#	NULL	digital:shop:query	0	0	1
+1237	1213	2	F	 店铺新增	#	NULL	digital:shop:add	0	0	1
+1238	1213	3	F	 店铺修改	#	NULL	digital:shop:edit	0	0	1
+1239	1213	4	F	 店铺删除	#	NULL	digital:shop:remove	0	0	1
+1240	1213	5	F	 店铺导出	#	NULL	digital:shop:export	0	0	1
+1241	1214	1	F	 广告账户查询	#	NULL	digital:advertisingAccount:query	0	0	1
+1242	1214	2	F	 广告账户新增	#	NULL	digital:advertisingAccount:add	0	0	1
+1243	1214	3	F	 广告账户修改	#	NULL	digital:advertisingAccount:edit	0	0	1
+1244	1214	4	F	 广告账户删除	#	NULL	digital:advertisingAccount:remove	0	0	1
+1245	1214	5	F	 广告账户导出	#	NULL	digital:advertisingAccount:export	0	0	1
+1246	1214	7	F	申请退币	NULL	NULL	digital:coin:add	0	0	1
+1247	1214	8	F	申请转户	NULL	NULL	digital:transferaccount:add	0	0	1
+1248	1215	1	F	退币记录查询	#	NULL	digital:coin:list	0	0	1
+1249	1215	2	F	账户退币申请	#	NULL	digital:coin:add	0	0	1
+1251	1215	4	F	退币记录删除(未确认)	#	NULL	digital:coin:remove	0	0	1
+1498	1215	6	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1253	1216	1	F	转户记录查询	#	NULL	digital:transferaccount:list	0	0	1
+1254	1216	2	F	账户转户申请	#	NULL	digital:transferaccount:add	0	0	1
+1256	1216	4	F	转户记录删除(未确认)	#	NULL	digital:transferaccount:remove	0	0	1
+1502	1216	6	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1258	1217	1	F	充值记录查询	#	NULL	digital:adveraccountRecharge:list	0	0	1
+1259	1217	2	F	账户充值申请	#	NULL	digital:adveraccountRecharge:add	0	0	1
+1261	1217	4	F	充值记录删除(未确认)	#	NULL	digital:adveraccountRecharge:remove	0	0	1
+1380	1217	5	F	媒介确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1262	1218	1	F	查询	#	NULL	digital:douyinconsume:query	0	0	1
+1263	1218	2	F	渠道消耗记录新增	#	NULL	digital:douyinconsume:add	0	0	1
+1264	1218	3	F	渠道消耗记录修改	#	NULL	digital:douyinconsume:edit	0	0	1
+1265	1218	4	F	渠道消耗记录删除	#	NULL	digital:douyinconsume:remove	0	0	1
+1266	1218	5	F	渠道消耗记录导出	#	NULL	digital:douyinconsume:export	0	0	1
+1269	1268	1	F	开户申请查询	#		digital:accountopenapply:query	0	0	1
+1270	1268	2	F	开户申请新增	#		digital:accountopenapply:add	0	0	1
+1271	1268	3	F	处理开户申请	#		digital:accountopenapply:edit	0	0	1
+1272	1268	5	F	开户申请导出	#		digital:accountopenapply:export	0	0	1
+1964	1268	6	F	开户申请删除		NULL	digital:accountopenapply:remove	0	0	1
+1306	1305	1	F	抖音广告账户消耗记录查询	#		digital:douyinaccountconsume:query	0	0	1
+1307	1305	2	F	抖音广告账户消耗记录新增	#		digital:douyinaccountconsume:add	0	0	1
+1308	1305	3	F	抖音广告账户消耗记录修改	#		digital:douyinaccountconsume:edit	0	0	1
+1309	1305	4	F	抖音广告账户消耗记录删除	#		digital:douyinaccountconsume:remove	0	0	1
+1310	1305	5	F	抖音广告账户消耗记录导出	#		digital:douyinaccountconsume:export	0	0	1
+1479	1305	8	F	导入		NULL	digital:douyinaccountconsume:import	0	0	1
+1317	1316	10	F	确认到账		NULL	digital:cashflow:add	0	0	1
+1322	1321	1	F	工资管理查询	#		digital:salary:query	0	0	1
+1323	1321	2	F	工资管理新增	#		digital:salary:add	0	0	1
+1324	1321	3	F	工资管理修改	#		digital:salary:edit	0	0	1
+1325	1321	4	F	工资管理删除	#		digital:salary:remove	0	0	1
+1326	1321	5	F	工资管理导出	#		digital:salary:export	0	0	1
+1384	1381	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1385	1381	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1382	1381	4	F	充值记录删除(未确认)		NULL	digital:adveraccountRecharge:remove	0	0	1
+1494	1381	5	F	确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1387	1383	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1388	1383	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1449	1383	5	F	充值记录删除(未确认)		NULL	digital:adveraccountRecharge:remove	0	0	1
+1495	1383	6	F	确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1436	1435	1	F	导入-银行流水记录查询	#		digital:bankstatement:query	0	0	1
+1437	1435	2	F	导入-银行流水记录新增	#		digital:bankstatement:add	0	0	1
+1438	1435	3	F	导入-银行流水记录修改	#		digital:bankstatement:edit	0	0	1
+1439	1435	4	F	导入-银行流水记录删除	#		digital:bankstatement:remove	0	0	1
+1440	1435	5	F	导入-银行流水记录导出	#		digital:bankstatement:export	0	0	1
+1204	1441	1	F	收款查询		NULL	digital:cashrecharge:list	0	0	1
+1205	1441	2	F	申请收款		NULL	digital:cashrecharge:add	0	0	1
+1445	1441	3	F	修改收款		NULL	digital:cashrecharge:edit	0	0	1
+1446	1441	4	F	删除收款(未确认)		NULL	digital:cashrecharge:remove	0	0	1
+1226	1442	1	F	收款查询	NULL	NULL	digital:cashrecharge:list	0	0	1
+1227	1442	2	F	申请收款	NULL	NULL	digital:cashrecharge:add	0	0	1
+1443	1442	3	F	修改收款		NULL	digital:cashrecharge:edit	0	0	1
+1444	1442	4	F	删除收款(未确认)		NULL	digital:cashrecharge:remove	0	0	1
+1455	1454	1	F	运营和剪辑的工资提成查询	#		digital:operatewages:query	0	0	1
+1456	1454	2	F	运营和剪辑的工资提成新增	#		digital:operatewages:add	0	0	1
+1457	1454	5	F	运营和剪辑的工资提成导出	#		digital:operatewages:export	0	0	1
+1459	1458	1	F	销售提成查询	#		digital:wages:query	0	0	1
+1460	1458	2	F	销售提成新增	#		digital:wages:add	0	0	1
+1461	1458	3	F	销售提成修改	#		digital:wages:edit	0	0	1
+1462	1458	5	F	销售提成导出	#		digital:wages:export	0	0	1
+1441	1463	100	C	现金收款	cashrecharge	kuaishou/customer/recharge		0	0	1
+1483	1463	140	C	备款退现	refund	finance/refund/index	digital:money:list	0	0	1
+1381	1463	200	C	账户充值	recharge	kuaishou/customer/intermediary		0	0	1
+1464	1463	210	C	账户转户	transfer	kuaishou/transfer/account/index		0	0	1
+1465	1463	220	C	账户退币	coinreturn	kuaishou/coinreturn/index		0	0	1
+1466	1463	300	C	待领取收款	receiveRecharge	kuaishou/customer/receiveRecharge	digital:receiveRecharge:list	0	0	1
+1471	1464	1	F	转户记录查询		NULL	digital:transferaccount:list	0	0	1
+1477	1464	2	F	账户转户申请		NULL	digital:transferaccount:add	0	0	1
+1701	1464	4	F	转户记录删除(未确认)		NULL	digital:transferaccount:remove	0	0	1
+1501	1464	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1859	1465	0	F	退币记录id查询		NULL	digital:coin:query	0	0	1
+1472	1465	1	F	退币记录查询		NULL	digital:coin:list	0	0	1
+1478	1465	2	F	账户退币申请		NULL	digital:coin:add	0	0	1
+1700	1465	4	F	退币记录删除(未确认)		NULL	digital:coin:remove	0	0	1
+1497	1465	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1442	1467	100	C	现金收款	cashrecharge	kuaishou/customer/recharge		0	0	1
+1484	1467	140	C	备款退现	refund	finance/refund/index		0	0	1
+1383	1467	200	C	账户充值	recharge	douyin/customer/intermediary		0	0	1
+1468	1467	210	C	账户转户	transfer	douyin/transfer/account/index		0	0	1
+1469	1467	220	C	账户退币	coinreturn	douyin/coinreturn/index		0	0	1
+1470	1467	300	C	待领取收款	receiveRecharge	kuaishou/customer/receiveRecharge	digital:receiveRecharge:list	0	0	1
+1473	1468	1	F	转户记录查询		NULL	digital:transferaccount:list	0	0	1
+1697	1468	2	F	 账户转户申请		NULL	digital:transferaccount:add	0	0	1
+1698	1468	4	F	转户记录删除(未确认)		NULL	digital:transferaccount:remove	0	0	1
+1503	1468	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1474	1469	1	F	退币记录查询		NULL	digital:coin:list	0	0	1
+1476	1469	2	F	账户退币申请		NULL	digital:coin:add	0	0	1
+1696	1469	4	F	退币记录删除(未确认)		NULL	digital:coin:remove	0	0	1
+1499	1469	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1710	1482	0	F	授信额度申请详情		NULL	digital:customerlimitapply:query	0	0	1
+1489	1482	1	F	授信额度申请查询		NULL	digital:customerlimitapply:list	0	0	1
+1490	1482	2	F	授信额度申请新增		NULL	digital:customerlimitapply:add	0	0	1
+1108	1482	3	F	修改授信额度		NULL	digital:customer:updateCredit	0	0	1
+1857	1482	3	F	调整授信额度		NULL	digital:customerlimitapply:update	0	0	1
+1493	1482	4	F	授信额度申请删除		NULL	digital:customerlimitapply:remove	0	0	1
+1556	1482	5	F	回款周期调整/延期回款		NULL	digital:edit:setcycle	0	0	1
+1485	1483	1	F	退现记录查询		NULL	digital:money:list	0	0	1
+1208	1483	2	F	备款退现申请		NULL	digital:money:add	0	0	1
+1488	1483	4	F	退现记录删除(未确认)		NULL	digital:money:remove	0	0	1
+1486	1484	1	F	退现记录查询		NULL	digital:money:list	0	0	1
+1230	1484	2	F	备款退现申请	NULL	NULL	digital:money:add	0	0	1
+1487	1484	4	F	退现记录删除(未确认)		NULL	digital:money:remove	0	0	1
+1711	1530	0	F	客户转账申请详情		NULL	digital:customertransfer:query	0	0	1
+1531	1530	1	F	客户转账申请查询	#		digital:customertransfer:list	0	0	1
+1532	1530	2	F	客户转账申请新增	#		digital:customertransfer:add	0	0	1
+1533	1530	3	F	客户转账申请修改	#		digital:customertransfer:edit	0	0	1
+1534	1530	4	F	客户转账申请删除	#		digital:customertransfer:remove	0	0	1
+1535	1530	5	F	客户转账申请导出	#		digital:customertransfer:export	0	0	1
+1712	1536	0	F	备款调整详请		NULL	digital:operbalance:query	0	0	1
+1537	1536	1	F	备款调整查询		NULL	digital:operbalance:list	0	0	1
+1538	1536	2	F	备款调整申请		NULL	digital:operbalance:add	0	0	1
+1539	1536	4	F	备款调整删除		NULL	digital:operbalance:remove	0	0	1
+1491	1536	5	F	调整备款		NULL	digital:customer:insbalancebill	0	0	1
+1946	1536	110	F	备款调整导出		NULL	digital:operbalance:export	0	0	1
+1541	1540	0	F	调整账户充值详情		NULL	digital:accountrecharge:query	0	0	1
+1713	1540	1	F	充值调整申请查询		NULL	digital:accountrecharge:list	0	0	1
+1542	1540	2	F	调整账户充值申请		NULL	digital:accountrecharge:add	0	0	1
+1543	1540	4	F	调整账户充值删除		NULL	digital:accountrecharge:remove	0	0	1
+1544	1540	5	F	撤销账户充值		NULL	digital:adveraccountRecharge:revoke	0	0	1
+1961	1540	5	F	调整充值标签		NULL	digital:adveraccountRecharge:edittag	0	0	1
+1962	1540	5	F	调整充/退导出		NULL	digital:accountrecharge:export	0	0	1
+1555	1547	1	F	发票详情		NULL	digital:invoice:query	0	0	1
+1566	1547	1	F	发票列表		NULL	digital:invoice:list	0	0	1
+1552	1547	2	F	申请开票		NULL	digital:invoice:add	0	0	1
+1553	1547	3	F	确认开票		NULL	digital:invoice:edit	0	0	1
+1554	1547	4	F	发票删除		NULL	digital:invoice:remove	0	0	1
+1564	1547	5	F	发票导出		NULL	digital:invoice:export	0	0	1
+1558	1557	1	F	返点调整查询		NULL	digital:operratio:list	0	0	1
+1559	1557	2	F	返点调整申请		NULL	digital:operratio:add	0	0	1
+1560	1557	4	F	返点调整删除		NULL	digital:operratio:remove	0	0	1
+1107	1557	5	F	返点调整		NULL	digital:customer:updateRatio	0	0	1
+1568	1567	10	C	客户管理	customer	tencent/customer/index	digital:customer:list	0	0	1
+1569	1567	20	C	市场主体/公司	body	tencent/customer/body/index	digital:customersubject:list	0	0	1
+1570	1567	30	C	店铺管理	shop	tencent/shop/index	digital:shop:list	0	0	1
+1571	1567	40	C	广告账户	advertising	tencent/advertising/account/index	digital:advertisingAccount:list	0	0	1
+1575	1567	100	C	账户消耗	consumption	tencent/consumption/index	digital:tencentaccountconsume:list	0	0	1
+1574	1567	200	C	账户充值	recharge	tencent/customer/intermediary		0	0	1
+1573	1567	210	C	转户管理	transfer	tencent/transfer/index		0	0	1
+1572	1567	220	C	退币管理	coinreturn	tencent/coinreturn/index		0	0	1
+1577	1567	400	M	我的	my	NULL		0	0	1
+1583	1568	1	F	客户 详情	#		digital:customer:query	0	0	1
+1592	1568	1	F	查看联系方式		NULL	tx:customer:phone	0	0	1
+1714	1568	1	F	客户 查询		NULL	digital:customer:list	0	0	1
+1584	1568	2	F	客户 新增	#		digital:customer:add	0	0	1
+1585	1568	3	F	客户 修改	#		digital:customer:edit	0	0	1
+1586	1568	4	F	客户 删除	#		digital:customer:remove	0	0	1
+1587	1568	5	F	客户 导出	#		digital:customer:export	0	0	1
+1593	1568	5	F	导入客户主体店铺		NULL	digital:customer:import	0	0	1
+1594	1568	6	F	批量重置客户数据权限		NULL	digital:customer:restprice	0	0	1
+1598	1569	1	F	 客户主体查询	#		digital:customersubject:query	0	0	1
+1603	1569	1	F	查看联系方式		NULL	tx:customersubject:phone	0	0	1
+1599	1569	2	F	 客户主体新增	#		digital:customersubject:add	0	0	1
+1600	1569	3	F	 客户主体修改	#		digital:customersubject:edit	0	0	1
+1601	1569	4	F	 客户主体删除	#		digital:customersubject:remove	0	0	1
+1602	1569	5	F	 客户主体导出	#		digital:customersubject:export	0	0	1
+1605	1570	1	F	 店铺查询	#		digital:shop:query	0	0	1
+1606	1570	2	F	 店铺新增	#		digital:shop:add	0	0	1
+1607	1570	3	F	 店铺修改	#		digital:shop:edit	0	0	1
+1608	1570	4	F	 店铺删除	#		digital:shop:remove	0	0	1
+1609	1570	5	F	 店铺导出	#		digital:shop:export	0	0	1
+1612	1571	1	F	 广告账户查询	#		digital:advertisingAccount:query	0	0	1
+1619	1571	1	F	广告账户导入		NULL	digital:advertisingAccount:import	0	0	1
+1613	1571	2	F	 广告账户新增	#		digital:advertisingAccount:add	0	0	1
+1614	1571	3	F	 广告账户修改	#		digital:advertisingAccount:edit	0	0	1
+1615	1571	4	F	 广告账户删除	#		digital:advertisingAccount:remove	0	0	1
+1616	1571	5	F	 广告账户导出	#		digital:advertisingAccount:export	0	0	1
+1617	1571	7	F	申请退币		NULL	digital:coin:add	0	0	1
+1618	1571	8	F	申请转户		NULL	digital:transferaccount:add	0	0	1
+1627	1572	1	F	退币记录查询	#		digital:coin:list	0	0	1
+1628	1572	2	F	 账户退币申请	#		digital:coin:add	0	0	1
+1630	1572	4	F	退币记录删除(未确认)	#		digital:coin:remove	0	0	1
+1632	1572	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1634	1573	1	F	转户记录查询	#		digital:transferaccount:list	0	0	1
+1635	1573	2	F	账户转户申请	#		digital:transferaccount:add	0	0	1
+1637	1573	4	F	转户记录删除(未确认)	#		digital:transferaccount:remove	0	0	1
+1639	1573	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1641	1574	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1642	1574	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1644	1574	4	F	充值记录删除(未确认)	#		digital:adveraccountRecharge:remove	0	0	1
+1645	1574	5	F	媒介确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1648	1575	1	F	查询	#		\t digital:tencentaccountconsume:list	0	0	1
+1649	1575	2	F	渠道消耗记录新增	#		digital:tencentaccountconsume:add	0	0	1
+1650	1575	3	F	渠道消耗记录修改	#		digital:tencentaccountconsume:edit	0	0	1
+1651	1575	4	F	渠道消耗记录删除	#		digital:tencentaccountconsume:remove	0	0	1
+1652	1575	5	F	渠道消耗记录导出	#		digital:tencentaccountconsume:import	0	0	1
+1653	1575	6	F	消耗列表导入		NULL	digital:tencentaccountconsume:import	0	0	1
+1663	1577	100	C	现金收款	cashrecharge	kuaishou/customer/recharge		0	0	1
+1667	1577	140	C	备款退现	refund	finance/refund/index		0	0	1
+1662	1577	200	C	账户充值	recharge	tencent/customer/intermediary		0	0	1
+1664	1577	210	C	账户转户	transfer	tencent/transfer/index		0	0	1
+1665	1577	220	C	账户退币	coinreturn	tencent/coinreturn/index		0	0	1
+1666	1577	300	C	待领取收款	receiveRecharge	kuaishou/customer/receiveRecharge	digital:receiveRecharge:list	0	0	1
+1670	1662	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1671	1662	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1669	1662	4	F	充值记录删除(未确认)		NULL	digital:adveraccountRecharge:remove	0	0	1
+1673	1662	5	F	确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1678	1663	1	F	收款查询		NULL	digital:cashrecharge:list	0	0	1
+1692	1663	2	F	申请收款		NULL	digital:cashrecharge:add	0	0	1
+1676	1663	3	F	修改收款		NULL	digital:cashrecharge:edit	0	0	1
+1677	1663	4	F	删除收款(未确认)		NULL	digital:cashrecharge:remove	0	0	1
+1679	1664	1	F	转户记录查询		NULL	digital:transferaccount:list	0	0	1
+1688	1664	2	F	账户转户申请		NULL	digital:transferaccount:add	0	0	1
+1689	1664	4	F	转户记录删除(未确认)		NULL	digital:transferaccount:remove	0	0	1
+1681	1664	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1682	1665	1	F	退币记录查询		NULL	digital:coin:list	0	0	1
+1690	1665	2	F	账户退币申请		NULL	digital:coin:add	0	0	1
+1691	1665	4	F	退币记录删除(未确认)		NULL	digital:coin:remove	0	0	1
+1684	1665	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1685	1667	1	F	退现记录查询		NULL	digital:money:list	0	0	1
+1693	1667	2	F	备款退现申请		NULL	digital:money:add	0	0	1
+1686	1667	4	F	退现记录删除(未确认)		NULL	digital:money:remove	0	0	1
+1732	1715	10	C	客户管理	customer	otherMedia/customer/index	digital:customer:list	0	0	1
+1733	1715	20	C	市场主体/公司	body	otherMedia/customer/body/index	digital:customersubject:list	0	0	1
+1734	1715	30	C	店铺管理	shop	otherMedia/shop/index	digital:shop:list	0	0	1
+1735	1715	40	C	广告账户	advertising	otherMedia/advertising/account/index	digital:advertisingAccount:list	0	0	1
+1739	1715	100	C	账户消耗	consumption	otherMedia/consumption/index	externalTransfer:consume:list	0	0	1
+1738	1715	200	C	账户充值	recharge	otherMedia/customer/intermediary		0	0	1
+1737	1715	210	C	转户管理	transfer	otherMedia/transfer/index		0	0	1
+1736	1715	220	C	退币管理	coinreturn	otherMedia/coinreturn/index		0	0	1
+1740	1715	400	M	我的	my	NULL		0	0	1
+1747	1732	1	F	客户 详情	#		digital:customer:query	0	0	1
+1752	1732	1	F	查看联系方式		NULL	tx:customer:phone	0	0	1
+1755	1732	1	F	客户 查询		NULL	digital:customer:list	0	0	1
+1748	1732	2	F	客户 新增	#		digital:customer:add	0	0	1
+1749	1732	3	F	客户 修改	#		digital:customer:edit	0	0	1
+1750	1732	4	F	客户 删除	#		digital:customer:remove	0	0	1
+1751	1732	5	F	客户 导出	#		digital:customer:export	0	0	1
+1753	1732	5	F	导入客户主体店铺		NULL	digital:customer:import	0	0	1
+1754	1732	6	F	批量重置客户数据权限		NULL	digital:customer:restprice	0	0	1
+1762	1733	1	F	 客户主体查询	#		digital:customersubject:query	0	0	1
+1767	1733	1	F	查看联系方式		NULL	tx:customersubject:phone	0	0	1
+1763	1733	2	F	 客户主体新增	#		digital:customersubject:add	0	0	1
+1764	1733	3	F	 客户主体修改	#		digital:customersubject:edit	0	0	1
+1765	1733	4	F	 客户主体删除	#		digital:customersubject:remove	0	0	1
+1766	1733	5	F	 客户主体导出	#		digital:customersubject:export	0	0	1
+1769	1734	1	F	 店铺查询	#		digital:shop:query	0	0	1
+1770	1734	2	F	 店铺新增	#		digital:shop:add	0	0	1
+1771	1734	3	F	 店铺修改	#		digital:shop:edit	0	0	1
+1772	1734	4	F	 店铺删除	#		digital:shop:remove	0	0	1
+1773	1734	5	F	 店铺导出	#		digital:shop:export	0	0	1
+1776	1735	1	F	 广告账户查询	#		digital:advertisingAccount:query	0	0	1
+1783	1735	1	F	广告账户导入		NULL	digital:advertisingAccount:import	0	0	1
+1777	1735	2	F	 广告账户新增	#		digital:advertisingAccount:add	0	0	1
+1778	1735	3	F	 广告账户修改	#		digital:advertisingAccount:edit	0	0	1
+1779	1735	4	F	 广告账户删除	#		digital:advertisingAccount:remove	0	0	1
+1780	1735	5	F	 广告账户导出	#		digital:advertisingAccount:export	0	0	1
+1781	1735	7	F	申请退币		NULL	digital:coin:add	0	0	1
+1782	1735	8	F	申请转户		NULL	digital:transferaccount:add	0	0	1
+1791	1736	1	F	退币记录查询	#		digital:coin:list	0	0	1
+1792	1736	2	F	 账户退币申请	#		digital:coin:add	0	0	1
+1793	1736	4	F	退币记录删除(未确认)	#		digital:coin:remove	0	0	1
+1794	1736	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1798	1737	1	F	转户记录查询	#		digital:transferaccount:list	0	0	1
+1799	1737	2	F	账户转户申请	#		digital:transferaccount:add	0	0	1
+1800	1737	4	F	转户记录删除(未确认)	#		digital:transferaccount:remove	0	0	1
+1801	1737	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1805	1738	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1806	1738	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1807	1738	4	F	充值记录删除(未确认)	#		digital:adveraccountRecharge:remove	0	0	1
+1808	1738	5	F	媒介确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1812	1739	1	F	查询	#		externalTransfer:consume:query	0	0	1
+1813	1739	2	F	渠道消耗记录新增	#		externalTransfer:consume:add	0	0	1
+1814	1739	3	F	渠道消耗记录修改	#		digital:kuaishouconsume:edit	0	0	1
+1815	1739	4	F	渠道消耗记录删除	#		externalTransfer:consume:remove	0	0	1
+1816	1739	5	F	渠道消耗记录导出	#		externalTransfer:consume:export	0	0	1
+1817	1739	6	F	消耗列表导入		NULL	externalTransfer:consume:import	0	0	1
+10001	1739	7	F	调整消耗所属		NULL	digital:externalTransferaccountconsume:edit	0	0	1
+1820	1740	100	C	现金收款	cashrecharge	kuaishou/customer/recharge		0	0	1
+1824	1740	140	C	备款退现	refund	finance/refund/index		0	0	1
+1819	1740	200	C	账户充值	recharge	otherMedia/customer/intermediary		0	0	1
+1821	1740	210	C	账户转户	transfer	otherMedia/transfer/index		0	0	1
+1822	1740	220	C	账户退币	coinreturn	otherMedia/coinreturn/index		0	0	1
+1823	1740	300	C	待领取收款	receiveRecharge	kuaishou/customer/receiveRecharge	digital:receiveRecharge:list	0	0	1
+1827	1819	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1828	1819	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1826	1819	4	F	充值记录删除(未确认)		NULL	digital:adveraccountRecharge:remove	0	0	1
+1829	1819	5	F	确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1835	1820	1	F	收款查询		NULL	digital:cashrecharge:list	0	0	1
+1836	1820	2	F	申请收款		NULL	digital:cashrecharge:add	0	0	1
+1833	1820	3	F	修改收款		NULL	digital:cashrecharge:edit	0	0	1
+1834	1820	4	F	删除收款(未确认)		NULL	digital:cashrecharge:remove	0	0	1
+1840	1821	1	F	转户记录查询		NULL	digital:transferaccount:list	0	0	1
+1842	1821	2	F	账户转户申请		NULL	digital:transferaccount:add	0	0	1
+1843	1821	4	F	转户记录删除(未确认)		NULL	digital:transferaccount:remove	0	0	1
+1841	1821	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1847	1822	1	F	退币记录查询		NULL	digital:coin:list	0	0	1
+1849	1822	2	F	账户退币申请		NULL	digital:coin:add	0	0	1
+1850	1822	4	F	退币记录删除(未确认)		NULL	digital:coin:remove	0	0	1
+1848	1822	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1854	1824	1	F	退现记录查询		NULL	digital:money:list	0	0	1
+1856	1824	2	F	备款退现申请		NULL	digital:money:add	0	0	1
+1855	1824	4	F	退现记录删除(未确认)		NULL	digital:money:remove	0	0	1
+1864	1863	0	F	新增		NULL	digital:costrecord:add	0	0	1
+1866	1865	10	C	客户管理	customer	xhs/customer/index	digital:customer:list	0	0	1
+1876	1865	20	C	市场主体/公司	body	xhs/customer/body/index	digital:customersubject:list	0	0	1
+1883	1865	30	C	店铺管理	shop	xhs/shop/index	digital:shop:list	0	0	1
+1889	1865	40	C	广告账户	advertising	xhs/advertising/account/index	digital:advertisingAccount:list	0	0	1
+1913	1865	100	C	账户消耗	consumption	xhs/consumption/index	digital:xhsaccountconsume:list	0	0	1
+1908	1865	200	C	账户充值	recharge	xhs/customer/intermediary		0	0	1
+1903	1865	210	C	转户管理	transfer	xhs/transfer/index		0	0	1
+1898	1865	220	C	退币管理	coinreturn	xhs/coinreturn/index		0	0	1
+1920	1865	400	M	我的	my	NULL		0	0	1
+1867	1866	1	F	客户 详情	#		digital:customer:query	0	0	1
+1872	1866	1	F	查看联系方式		NULL	tx:customer:phone	0	0	1
+1875	1866	1	F	客户 查询		NULL	digital:customer:list	0	0	1
+1868	1866	2	F	客户 新增	#		digital:customer:add	0	0	1
+1869	1866	3	F	客户 修改	#		digital:customer:edit	0	0	1
+1870	1866	4	F	客户 删除	#		digital:customer:remove	0	0	1
+1871	1866	5	F	客户 导出	#		digital:customer:export	0	0	1
+1873	1866	5	F	导入客户主体店铺		NULL	digital:customer:import	0	0	1
+1874	1866	6	F	批量重置客户数据权限		NULL	digital:customer:restprice	0	0	1
+1877	1876	1	F	 客户主体查询	#		digital:customersubject:query	0	0	1
+1882	1876	1	F	查看联系方式		NULL	tx:customersubject:phone	0	0	1
+1878	1876	2	F	 客户主体新增	#		digital:customersubject:add	0	0	1
+1879	1876	3	F	 客户主体修改	#		digital:customersubject:edit	0	0	1
+1880	1876	4	F	 客户主体删除	#		digital:customersubject:remove	0	0	1
+1881	1876	5	F	 客户主体导出	#		digital:customersubject:export	0	0	1
+1884	1883	1	F	 店铺查询	#		digital:shop:query	0	0	1
+1885	1883	2	F	 店铺新增	#		digital:shop:add	0	0	1
+1886	1883	3	F	 店铺修改	#		digital:shop:edit	0	0	1
+1887	1883	4	F	 店铺删除	#		digital:shop:remove	0	0	1
+1888	1883	5	F	 店铺导出	#		digital:shop:export	0	0	1
+1890	1889	1	F	 广告账户查询	#		digital:advertisingAccount:query	0	0	1
+1897	1889	1	F	广告账户导入		NULL	digital:advertisingAccount:import	0	0	1
+1891	1889	2	F	 广告账户新增	#		digital:advertisingAccount:add	0	0	1
+1892	1889	3	F	 广告账户修改	#		digital:advertisingAccount:edit	0	0	1
+1893	1889	4	F	 广告账户删除	#		digital:advertisingAccount:remove	0	0	1
+1894	1889	5	F	 广告账户导出	#		digital:advertisingAccount:export	0	0	1
+1895	1889	7	F	申请退币		NULL	digital:coin:add	0	0	1
+1896	1889	8	F	申请转户		NULL	digital:transferaccount:add	0	0	1
+1899	1898	1	F	退币记录查询	#		digital:coin:list	0	0	1
+1900	1898	2	F	 账户退币申请	#		digital:coin:add	0	0	1
+1901	1898	4	F	退币记录删除(未确认)	#		digital:coin:remove	0	0	1
+1902	1898	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1904	1903	1	F	转户记录查询	#		digital:transferaccount:list	0	0	1
+1905	1903	2	F	账户转户申请	#		digital:transferaccount:add	0	0	1
+1906	1903	4	F	转户记录删除(未确认)	#		digital:transferaccount:remove	0	0	1
+1907	1903	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1909	1908	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1910	1908	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1911	1908	4	F	充值记录删除(未确认)	#		digital:adveraccountRecharge:remove	0	0	1
+1912	1908	5	F	媒介确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1914	1913	1	F	查询	#		\t digital:xhsaccountconsume:list	0	0	1
+1915	1913	2	F	渠道消耗记录新增	#		digital:xhsaccountconsume:add	0	0	1
+1916	1913	3	F	渠道消耗记录修改	#		digital:xhsaccountconsume:edit	0	0	1
+1917	1913	4	F	渠道消耗记录删除	#		digital:xhsaccountconsume:remove	0	0	1
+1918	1913	5	F	渠道消耗记录导出	#		digital:xhsaccountconsume:export	0	0	1
+1919	1913	6	F	消耗列表导入		NULL	digital:xhsaccountconsume:import	0	0	1
+1926	1920	100	C	现金收款	cashrecharge	kuaishou/customer/recharge		0	0	1
+1942	1920	140	C	备款退现	refund	finance/refund/index		0	0	1
+1921	1920	200	C	账户充值	recharge	xhs/customer/intermediary		0	0	1
+1931	1920	210	C	账户转户	transfer	xhs/transfer/index		0	0	1
+1936	1920	220	C	账户退币	coinreturn	xhs/coinreturn/index		0	0	1
+1941	1920	300	C	待领取收款	receiveRecharge	kuaishou/customer/receiveRecharge	digital:receiveRecharge:list	0	0	1
+1923	1921	1	F	充值记录查询	#		digital:adveraccountRecharge:list	0	0	1
+1924	1921	2	F	账户充值申请	#		digital:adveraccountRecharge:add	0	0	1
+1922	1921	4	F	充值记录删除(未确认)		NULL	digital:adveraccountRecharge:remove	0	0	1
+1925	1921	5	F	确认充值		NULL	digital:adveraccountRecharge:confirmpay	0	0	1
+1929	1926	1	F	收款查询		NULL	digital:cashrecharge:list	0	0	1
+1930	1926	2	F	申请收款		NULL	digital:cashrecharge:add	0	0	1
+1927	1926	3	F	修改收款		NULL	digital:cashrecharge:edit	0	0	1
+1928	1926	4	F	删除收款(未确认)		NULL	digital:cashrecharge:remove	0	0	1
+1932	1931	1	F	转户记录查询		NULL	digital:transferaccount:list	0	0	1
+1934	1931	2	F	账户转户申请		NULL	digital:transferaccount:add	0	0	1
+1935	1931	4	F	转户记录删除(未确认)		NULL	digital:transferaccount:remove	0	0	1
+1933	1931	5	F	确认转户		NULL	digital:transferaccount:confirm	0	0	1
+1937	1936	1	F	退币记录查询		NULL	digital:coin:list	0	0	1
+1939	1936	2	F	账户退币申请		NULL	digital:coin:add	0	0	1
+1940	1936	4	F	退币记录删除(未确认)		NULL	digital:coin:remove	0	0	1
+1938	1936	5	F	确认退币		NULL	digital:coin:confirm	0	0	1
+1943	1942	1	F	退现记录查询		NULL	digital:money:list	0	0	1
+1945	1942	2	F	备款退现申请		NULL	digital:money:add	0	0	1
+1944	1942	4	F	退现记录删除(未确认)		NULL	digital:money:remove	0	0	1
+1949	1948	0	F	修改		NULL	digital:kuaishoujinfu:edit	0	0	1
+1966	1965	0	F	申请转迁移主体		NULL	digital:subjectapply:add	0	0	1
+1967	1965	0	F	确认迁移		NULL	digital:subjectapply:edit	0	0	1
+1968	1965	0	F	删除迁移申请		NULL	digital:subjectapply:remove	0	0	1
