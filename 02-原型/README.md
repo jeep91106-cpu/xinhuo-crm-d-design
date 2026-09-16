@@ -50,4 +50,4 @@ docker --context desktop-linux compose -p xinhuo-crm-prototype -f 'D:\CodexWorks
 docker --context desktop-linux compose -p xinhuo-crm-prototype -f 'D:\CodexWorkspace\xinhuo-crm-d-design\02-原型\compose.yaml' stop
 ```
 
-容器使用 `restart: unless-stopped`。Windows 登录时现有 HKCU 启动项会调用 D 盘 `Start-DockerDesktop.ps1`；Docker 引擎就绪后，该容器自动恢复。若手工执行过 `stop`，需再次运行 `up -d` 才会恢复自动启动状态。
+容器使用 `restart: unless-stopped`。Windows 登录时独立 HKCU 启动项 `Docker Desktop Guarded Startup` 会调用 D 盘 `Start-DockerDesktop.ps1`；Docker 引擎就绪后，该容器自动恢复。Docker Desktop 自有启动项保持禁用，避免绕过安全包装器。若手工执行过 `stop`，需再次运行 `up -d` 才会恢复自动启动状态。

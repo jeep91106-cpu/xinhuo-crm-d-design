@@ -28,9 +28,11 @@
     "browserReload": "passed"
   },
   "windowsLoginStartup": {
-    "mode": "HKCU Run -> guarded Docker Desktop startup wrapper -> restart unless-stopped",
+    "mode": "independent HKCU Run -> guarded Docker Desktop startup wrapper -> restart unless-stopped",
+    "runEntryName": "Docker Desktop Guarded Startup",
     "wrapper": "D:\\Dependencies\\Docker\\scripts\\Start-DockerDesktop.ps1",
     "startupApproved": "02-00-00-00-00-00-00-00-00-00-00-00",
+    "dockerManagedStartupApproved": "01-00-00-00-00-00-00-00-00-00-00-00",
     "dockerDesktopAutoStart": false,
     "reasonAutoStartRemainsFalse": "Direct Docker Desktop auto-start would bypass the guarded wrapper."
   },
