@@ -1,17 +1,26 @@
-﻿SELECT '## A. S4 店铺 850 / 账户 8381 的来源' AS _;
+﻿SELECT '## A. 脱敏样本店铺 / 账户的来源' AS _;
+-- 仅在本地脱敏数据库副本中设置样本值；禁止提交真实客户、主体或行 ID。
+SET @sample_shop_id := NULL;
+SET @sample_account_row_id := NULL;
+SET @sample_customer_id := NULL;
+SET @sample_subject_prefix := '示例主体%';
+
 SELECT s.id, s.shop_no, s.shop_name = cs.subject_name AS name_eq_subject, s.create_time, s.remark, s.supplier_id, s.ks_agentId, s.account_infojson,
  (SELECT GROUP_CONCAT(DISTINCT r.role_name SEPARATOR '+') FROM sys_user_role ur JOIN sys_role r ON r.role_id=ur.role_id WHERE ur.user_id=s.create_by) creator_roles,
  (SELECT d.dept_name FROM sys_user u JOIN sys_dept d ON d.dept_id=u.dept_id WHERE u.user_id=s.create_by) creator_dept
-FROM dig_shop s JOIN dig_customer_subject cs ON cs.id=s.subject_id WHERE s.id=850;
+FROM dig_shop s JOIN dig_customer_subject cs ON cs.id=s.subject_id WHERE s.id=@sample_shop_id;
 SELECT a.id, a.create_time, a.update_time, a.remark, a.data_type, a.advertiser_id, a.editor_name IS NOT NULL has_editor,
  (SELECT GROUP_CONCAT(DISTINCT r.role_name SEPARATOR '+') FROM sys_user_role ur JOIN sys_role r ON r.role_id=ur.role_id WHERE ur.user_id=a.create_by) creator_roles,
  (SELECT d.dept_name FROM sys_user u JOIN sys_dept d ON d.dept_id=u.dept_id WHERE u.user_id=a.create_by) creator_dept
-FROM dig_advertising_account a WHERE a.id=8381;
+FROM dig_advertising_account a WHERE a.id=@sample_account_row_id;
 SELECT '## A2. 同一分钟内该用户的操作日志（判断是导入还是手工新增）' AS _;
-SELECT l.title, l.method, l.oper_url, l.oper_time FROM sys_oper_log l JOIN dig_shop s ON s.id=850 JOIN sys_user u ON u.user_id=s.create_by
+SELECT l.title, l.method, l.oper_url, l.oper_time FROM sys_oper_log l JOIN dig_shop s ON s.id=@sample_shop_id JOIN sys_user u ON u.user_id=s.create_by
 WHERE l.oper_name=u.user_name AND l.oper_time BETWEEN DATE_SUB(s.create_time, INTERVAL 3 MINUTE) AND DATE_ADD(s.create_time, INTERVAL 3 MINUTE) ORDER BY l.oper_time;
 SELECT '## A3. 该客户/主体有没有开户申请单' AS _;
-SELECT id, LEFT(subject_name,12) subj, shop_no, CHAR_LENGTH(shop_no) len, account_type, state, create_time, supplier_name FROM dig_accountopen_apply WHERE customer_id=1246 OR subject_name LIKE '秦皇岛致合信行%';
+SELECT id, LEFT(subject_name,12) subj, shop_no, CHAR_LENGTH(shop_no) len, account_type, state, create_time, supplier_name
+FROM dig_accountopen_apply
+WHERE (@sample_customer_id IS NOT NULL AND customer_id=@sample_customer_id)
+   OR subject_name LIKE @sample_subject_prefix;
 SELECT '## B. 全库 19 位 shop_no 的店铺是怎么来的' AS _;
 SELECT COALESCE((SELECT GROUP_CONCAT(DISTINCT r.role_name SEPARATOR '+') FROM sys_user_role ur JOIN sys_role r ON r.role_id=ur.role_id WHERE ur.user_id=s.create_by),'(空)') creator_roles,
  DATE_FORMAT(s.create_time,'%Y-%m') ym, COUNT(*) shops, SUM(s.shop_name=cs.subject_name) name_eq_subject,

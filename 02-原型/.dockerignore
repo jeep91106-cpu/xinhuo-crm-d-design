@@ -1,0 +1,10 @@
+*
+!Dockerfile
+!index.html
+!css/
+!css/**
+!js/
+!js/**
+!docker/
+!docker/default.conf
+!docker/nginx.conf

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "deployedAt": "2026-09-15T05:44:44-04:00",
+  "scope": "local-only static prototype",
+  "composeProject": "xinhuo-crm-prototype",
+  "composeFile": "D:\\CodexWorkspace\\xinhuo-crm-d-design\\02-原型\\compose.yaml",
+  "service": "web",
+  "container": "xinhuo-crm-prototype-web-1",
+  "url": "http://127.0.0.1:8766/",
+  "hostBinding": "127.0.0.1:8766->8080/tcp",
+  "dockerContext": "desktop-linux",
+  "dockerEngine": "29.7.2",
+  "dockerCompose": "5.5.1",
+  "baseImage": "nginx@sha256:dc5069ad14f19660b141b21236140b91656bf89bbc3e2417c70ae650cd66104c",
+  "applicationImage": "xinhuo-crm-prototype:v0.3-local",
+  "applicationImageId": "sha256:59877a6c64d8d0353da3f5b636886fdecdf4d2fd4ea8568e9e469a64486386f8",
+  "restartPolicy": "unless-stopped",
+  "readOnlyRootFilesystem": true,
+  "nginxWorkerProcesses": 1,
+  "persistentVolumes": 0,
+  "productionConnections": 0,
+  "health": "healthy",
+  "verification": {
+    "composeConfig": "passed",
+    "containerRestart": "passed",
+    "healthHttp": 200,
+    "indexHttp": 200,
+    "browserReload": "passed"
+  },
+  "windowsLoginStartup": {
+    "mode": "HKCU Run -> guarded Docker Desktop startup wrapper -> restart unless-stopped",
+    "wrapper": "D:\\Dependencies\\Docker\\scripts\\Start-DockerDesktop.ps1",
+    "startupApproved": "02-00-00-00-00-00-00-00-00-00-00-00",
+    "dockerDesktopAutoStart": false,
+    "reasonAutoStartRemainsFalse": "Direct Docker Desktop auto-start would bypass the guarded wrapper."
+  },
+  "acceptanceBoundary": "Container restart and the complete login-start configuration chain were verified. Windows itself was not restarted during this deployment."
+}

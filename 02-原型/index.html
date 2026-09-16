@@ -3,45 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>薪火 CRM · 可编辑原型</title>
-  <link rel="stylesheet" href="css/app.css" />
+  <meta name="color-scheme" content="light" />
+  <title>薪火 CRM · 业务共创原型 v0.3</title>
+  <link rel="stylesheet" href="css/app.css?v=0.3.0" />
 </head>
 <body>
-  <div class="app">
-    <aside class="nav">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
       <div class="brand">
-        <div class="mark"></div>
+        <div class="brand-mark" aria-hidden="true"></div>
         <div>
           <h1>薪火 CRM</h1>
-          <p>设计原型 · 可编辑</p>
+          <p>业务共创原型 · v0.3</p>
         </div>
       </div>
-      <div class="sec">工作台</div>
-      <button data-page="biz" class="active">商务工作台</button>
-      <button data-page="open">开户媒介</button>
-      <button data-page="recharge">充值媒介</button>
-      <button data-page="finance">财务工作台</button>
-      <button data-page="boss">老板看板</button>
-      <div class="sec">单据</div>
-      <button data-page="apply">开户申请</button>
-      <button data-page="handle">处理开户</button>
-      <button data-page="customer">客户四层</button>
-      <div class="sec">配置</div>
-      <button data-page="tpl">字段模板</button>
-      <button data-page="wf">工作流</button>
-    </aside>
-    <main class="main">
-      <div class="top">
+
+      <div class="snapshot-note">
+        <strong>生产事实已对齐</strong>
+        <span>角色、流程、字段与聚合数据</span>
+      </div>
+
+      <nav id="nav" class="nav-list"></nav>
+
+      <div class="sidebar-foot">
+        <span class="status-dot" aria-hidden="true"></span>
         <div>
-          <h2 id="title">商务工作台</h2>
-          <p class="desc" id="desc">只处理我发起的单、被驳回的单，以及媒介改过来客/资质后的确认。</p>
+          <strong>脱敏生产快照</strong>
+          <span id="snapshotDate">2026-09-15</span>
         </div>
-        <div class="role-switch" id="roles"></div>
       </div>
-      <div id="view"></div>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <div class="page-heading">
+          <div class="eyebrow" id="eyebrow">我的工作台</div>
+          <h2 id="title">商务工作台</h2>
+          <p id="desc">只显示我需要处理、确认和持续跟进的业务。</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="button edit-page-trigger" id="pageEditToggle">
+            编辑页面
+          </button>
+          <div class="page-edit-actions" id="pageEditActions" hidden>
+            <span class="edit-mode-label">正在自由编辑：点虚线文字直接修改</span>
+            <button type="button" class="button small secondary" id="addPageCard">＋ 增加内容卡片</button>
+            <button type="button" class="button small secondary" id="resetPageEdit">恢复本页默认</button>
+            <button type="button" class="button small secondary" id="cancelPageEdit">取消</button>
+            <button type="button" class="button small primary" id="savePageEdit">保存本页</button>
+          </div>
+          <button type="button" class="button secondary feedback-trigger" data-open-feedback>
+            <span aria-hidden="true">＋</span> 提交字段调整
+            <span class="count-badge" id="feedbackCount">0</span>
+          </button>
+          <label class="role-picker">
+            <span>模拟实际角色</span>
+            <select id="roleSelect" aria-label="模拟实际角色"></select>
+          </label>
+          <div class="role-context" id="roleContext"></div>
+        </div>
+      </header>
+
+      <section id="view" aria-live="polite"></section>
     </main>
   </div>
-  <div class="toast" id="toast"></div>
-  <script src="js/app.js"></script>
+
+  <button type="button" class="floating-feedback" data-open-feedback aria-label="提交字段调整">
+    <span aria-hidden="true">＋</span>
+    <span>字段建议</span>
+  </button>
+
+  <div class="overlay" id="overlay" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div>
+          <span class="eyebrow" id="modalEyebrow">需求共创</span>
+          <h3 id="modalTitle">提交字段调整</h3>
+        </div>
+        <button type="button" class="icon-button" id="closeModal" aria-label="关闭弹窗">关闭</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js?v=0.3.0"></script>
 </body>
 </html>
