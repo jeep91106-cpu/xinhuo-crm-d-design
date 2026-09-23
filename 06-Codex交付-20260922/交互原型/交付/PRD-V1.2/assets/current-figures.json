@@ -1,0 +1,98 @@
+[
+  {
+    "id": "5-1",
+    "title": "开户主线泳道",
+    "file": "fig-5-1.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1240
+  },
+  {
+    "id": "5-9",
+    "title": "批量校验与行级状态：原单续办",
+    "file": "fig-5-9.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1190
+  },
+  {
+    "id": "4-2",
+    "title": "个人工作台：个人草稿与申请通知",
+    "file": "fig-4-2.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "7-1",
+    "title": "账户与公共资料关系",
+    "file": "fig-7-1.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1420
+  },
+  {
+    "id": "4-3",
+    "title": "广告账户完整列表：一账户一行",
+    "file": "fig-4-3.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-4",
+    "title": "一条账户的完整资料",
+    "file": "fig-4-4.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-5",
+    "title": "商务申请：合并录入与搜索选择",
+    "file": "fig-4-5.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-6",
+    "title": "同页主体店铺与名称联动",
+    "file": "fig-4-6.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-7",
+    "title": "同页账户数量与资质附件",
+    "file": "fig-4-7.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-8",
+    "title": "合并页提交与原单摘要",
+    "file": "fig-4-8.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-9",
+    "title": "媒介批量办理：TSV预览与草稿填入",
+    "file": "fig-4-9.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  },
+  {
+    "id": "4-10",
+    "title": "产品资质：主体与供应商资料分开",
+    "file": "fig-4-10.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120
+  }
+]

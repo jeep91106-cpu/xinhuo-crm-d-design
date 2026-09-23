@@ -1,0 +1,14 @@
+project: 薪火CRM系统
+document: XH-CRM-PRD-001
+content_version: '1.5'
+filename_version: '1.0'
+status: 当前修订待评审
+chapters: [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+modules: 40
+figures: 24
+updated_figures: 12
+financial_rules_changed: false
+output_root: D:/PROJECT/薪火CRM系统/重构调研/PRD评审稿-20260921
+canonical_source: 薪火CRM-完整PRD-V1.0.md
+formats: [markdown, html, docx, pdf, png]
+ui_tests_claimed: false

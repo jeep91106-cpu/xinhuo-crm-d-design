@@ -1,0 +1,5 @@
+Pillow
+Markdown
+python-docx
+pypdf
+reportlab==5.0.1

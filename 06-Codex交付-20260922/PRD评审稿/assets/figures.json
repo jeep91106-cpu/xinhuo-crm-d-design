@@ -1,0 +1,242 @@
+[
+  {
+    "id": "4-1",
+    "title": "功能结构：业务域 → 模块 → 子功能",
+    "file": "fig-4-1.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1280,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "4b614f1612e526cfa37269eda2b08a7d7f2a0547f11d21e7af3a5cab3b060552"
+  },
+  {
+    "id": "5-1",
+    "title": "开户主线泳道",
+    "file": "fig-5-1.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1240,
+    "provenance": "V1.2重绘",
+    "sha256": "75c593717a85408cb4a44235a4ff9648af62eed1c64a4a15a94a554cb0e01625"
+  },
+  {
+    "id": "5-2",
+    "title": "收款认领、分配与还债",
+    "file": "fig-5-2.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1300,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "5471f5a0ae1831f729e5260b93af2166d86e1a66a18384807988af10701769ed"
+  },
+  {
+    "id": "5-3",
+    "title": "充值结果、入账与重试",
+    "file": "fig-5-3.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1310,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "e3374f940096abae9969835b0fb4562444f46569c77a72a00a151d8e0566ad10"
+  },
+  {
+    "id": "5-4",
+    "title": "渠道三种资金动作",
+    "file": "fig-5-4.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1300,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "825f990e180b343503b0474f414e7f582aecd60ca1cb106782dc7a53f92fe07d"
+  },
+  {
+    "id": "5-5",
+    "title": "信用、欠款与实际还款",
+    "file": "fig-5-5.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1320,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "c29f4415a78c5bd390efadcc065c1db467a069c510febcaf83c814e026b5cd23"
+  },
+  {
+    "id": "5-6",
+    "title": "对账差异、调整及期间",
+    "file": "fig-5-6.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1340,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "9aa77a88076f7e6a62195f7ef51b0bf8576d3dabcb76038bf1f208fd70b45fc1"
+  },
+  {
+    "id": "7-1",
+    "title": "账户与公共资料关系",
+    "file": "fig-7-1.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1420,
+    "provenance": "V1.2重绘",
+    "sha256": "34700b4a4a831b93d0a02de7f1c33bfb28ffe720dad85273d828a957f4e49478"
+  },
+  {
+    "id": "7-2",
+    "title": "资金对象与可追溯分录",
+    "file": "fig-7-2.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1300,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "7e8989ba9ca1de0ea95831be21fbba6bfea0001647f5b7821ed9724b9421b943"
+  },
+  {
+    "id": "5-7",
+    "title": "配置发布与在途版本",
+    "file": "fig-5-7.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1330,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "a6e755386e656d0837e8ab82578c55ce97d61526f655c9bb026c1c1282857411"
+  },
+  {
+    "id": "5-8",
+    "title": "人事与薪资的事实分层",
+    "file": "fig-5-8.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1320,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "a2076ac04f23693355f2592764849e6118504bbdc8bf9b6a0d6001631933d4a4"
+  },
+  {
+    "id": "6-1",
+    "title": "价值与确定性优先级矩阵",
+    "file": "fig-6-1.png",
+    "kind": "priority",
+    "width": 1680,
+    "height": 1080,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "76993f4cb0f8f5a1d6258c93f37038dddda5534f87cdc76147030fc1e34e3449"
+  },
+  {
+    "id": "12-1",
+    "title": "阶段依赖与发布轨道",
+    "file": "fig-12-1.png",
+    "kind": "gantt",
+    "width": 1680,
+    "height": 1080,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "2eba90f0519bad7d4d3db8253ae4bb92c90593f1b1782a758fe19a0cda5206bd"
+  },
+  {
+    "id": "4-2",
+    "title": "个人工作台：个人草稿与申请通知",
+    "file": "fig-4-2.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "25dc9bfca1bfbbf6731c68c32ba01fecd57c4fda75bb861615355f4e52ab63aa"
+  },
+  {
+    "id": "4-3",
+    "title": "广告账户完整列表：一账户一行",
+    "file": "fig-4-3.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "6da5c48d604bdcec7f5f1891f147c1b7fb44849dbe18eefc1d4006a99243afae"
+  },
+  {
+    "id": "4-4",
+    "title": "一条账户的完整资料",
+    "file": "fig-4-4.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "f513f1814c0dbb8e01478039aeb039f3f958d56082e3c26cbde53a17cc0aa706"
+  },
+  {
+    "id": "4-5",
+    "title": "商务申请：合并录入与搜索选择",
+    "file": "fig-4-5.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "3769fd6ae24e63ab485e7c04484dacb81d4f2f79106e3e0768cdc232c9597798"
+  },
+  {
+    "id": "4-6",
+    "title": "同页主体店铺与名称联动",
+    "file": "fig-4-6.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "d70d9da6f5bf0dcff0e6b152861ee2eea168c32906e7b0b9d0270b8333198558"
+  },
+  {
+    "id": "4-7",
+    "title": "同页账户数量与资质附件",
+    "file": "fig-4-7.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "bcc427b3e5dc80db2e3d457bb093cb81ceff9764d7f7f3c068ebf47d72978e6c"
+  },
+  {
+    "id": "4-8",
+    "title": "合并页提交与原单摘要",
+    "file": "fig-4-8.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "d27d9b2e99aa5ed595b95bb754681e688fc368440a856622a6da1206c53de540"
+  },
+  {
+    "id": "4-9",
+    "title": "媒介批量办理：TSV预览与草稿填入",
+    "file": "fig-4-9.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "f56fa2530ba4e90a249695a96aedf51f4947cc0d04040743ea8735dbd531a3bc"
+  },
+  {
+    "id": "5-9",
+    "title": "批量校验与行级状态：原单续办",
+    "file": "fig-5-9.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1190,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "3d8bb47f7f673804ac457a3906e060aa9a65dfd05217800897c1621ba15fd84a"
+  },
+  {
+    "id": "4-10",
+    "title": "产品资质：主体与供应商资料分开",
+    "file": "fig-4-10.png",
+    "kind": "page_schematic",
+    "width": 1680,
+    "height": 1120,
+    "provenance": "V1.2重绘",
+    "sha256": "bcec117e7429c2630a8d4bf53b0cfdac87150c9ae1ac4e9efa64b6655a0071ab"
+  },
+  {
+    "id": "5-10",
+    "title": "实际退款/返付：审批、支付、核销分开",
+    "file": "fig-5-10.png",
+    "kind": "diagram",
+    "width": 1680,
+    "height": 1460,
+    "provenance": "复用V1.0未受影响图",
+    "sha256": "39887deb6fd9cd495e834551d164bb5586c54466a4a57ed3f61d3fd109a14e5c"
+  }
+]

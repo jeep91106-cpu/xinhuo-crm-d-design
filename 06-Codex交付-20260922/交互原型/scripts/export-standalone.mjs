@@ -1,0 +1,10 @@
+import {build} from 'esbuild';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+await mkdir('交付',{recursive:true});
+const result=await build({entryPoints:['src/main.jsx'],bundle:true,minify:true,format:'iife',write:false,outfile:'standalone.js',define:{'process.env.NODE_ENV':'"production"'}});
+const js=result.outputFiles.find(f=>f.path.endsWith('.js')).text;
+const css=result.outputFiles.find(f=>f.path.endsWith('.css')).text;
+const html='<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>薪火 CRM · 完整交互评审原型</title><style>'+css+'</style></head><body><div id="root"></div><script>'+js.replace(/<\/script/gi,'<\\/script')+'</script></body></html>';
+await writeFile('交付/薪火CRM-完整可交互原型.html',html,'utf8');
+const data=JSON.parse(await readFile('src/realData.json','utf8'));
+console.log(JSON.stringify({standaloneBytes:Buffer.byteLength(html),accounts:data.accounts.length,customers:data.customers.length,externalAssets:0}));

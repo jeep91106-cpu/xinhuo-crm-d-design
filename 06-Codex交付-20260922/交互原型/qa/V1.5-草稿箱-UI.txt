@@ -1,0 +1,163 @@
+Browser tab: 1100906508, Title: "薪火 CRM · 完整交互评审原型", URL: "http://127.0.0.1:4318/#M06?%7B%22mode%22%3A%22drafts%22%7D".
+0 AXWebArea 薪火 CRM · 完整交互评审原型, URL: 127.0.0.1:4318/#M06?%7B%22mode%22%3A%22drafts%22%7D
+	1 container root
+		2 container
+			3 text 薪火 CRM 业务协作工作空间 业务导航
+			4 text field (settable) 查找功能菜单
+			5 text 当前位置 开户申请与办理
+			6 container 业务功能导航
+				7 container 工作与公共资料
+					8 heading 工作与公共资料, Value: 2
+						9 text 工作与公共资料
+					10 button 个人工作台
+					11 button 客户与全局检索
+					12 button 主体与店铺档案
+					13 button 供应商与能力
+					14 button 广告账户总表
+					15 button 开户申请与办理 当前
+						16 text 开户申请与办理
+						17 text 当前
+					18 button 复制资料开户
+					19 button 归属交接与协办
+				20 container 资金与业务结算
+					21 heading 资金与业务结算, Value: 2
+						22 text 资金与业务结算
+					23 button 到账与认领
+					24 button 客户 / 渠道总账
+					25 button 授信与欠款
+					26 button 广告账户充值
+					27 button 续费业务
+					28 button 平台退币
+					29 button 客户现金退款
+					30 button 渠道 CRM 转账
+					31 button 平台余额转户
+					32 button 供应商往来
+					33 button 返点与服务费
+					34 button 合同档案
+					35 button 开票办理
+					36 button 对账与差异
+				37 container 经营与协作
+					38 heading 经营与协作, Value: 2
+						39 text 经营与协作
+					40 button 报销与采购
+					41 button 消耗与匹配
+					42 button 经营报表
+					43 button 收益与提成
+					44 button 激励政策
+					45 button 素材与绩效
+					46 button 公海与跟进
+				47 container 人事行政
+					48 heading 人事行政, Value: 2
+						49 text 人事行政
+					50 button 员工与任职
+					51 button 考勤与休假
+					52 button 薪资管理
+					53 button 考核与目标
+				54 container 配置与控制
+					55 heading 配置与控制, Value: 2
+						56 text 配置与控制
+					57 button 角色与权限
+					58 button 表单与工作流
+					59 button 站内信与企微
+					60 button 导入导出与附件
+					61 button 迁移与历史核对
+					62 button 审计与业务期间
+					63 button 同步与任务
+			64 button 功能目录与说明
+			65 text 薪火 CRM
+		66 container
+			67 text 工作与公共资料 开户申请与办理
+			68 text field (settable) 全局搜索
+			69 button 搜索
+			70 button 消息 8
+				71 text 消息
+				72 text 8
+			73 pop up button (collapsed, settable) Description: 切换角色, Value: 商务, Secondary Actions: Expand
+				74 menu
+					75 (selected) 商务
+					76 渠道商务
+					77 商务主管
+					78 媒介主管
+					79 开户媒介
+					80 充值媒介
+					81 财务
+					82 Boss
+					83 人事
+					84 系统管理员
+			116 pop up button (collapsed, settable) Description: 切换商务身份, Value: 商务 A, Secondary Actions: Expand
+				117 menu
+					118 (selected) 商务 A
+					119 商务 B
+		85 text 演示环境  · 操作仅保存在本机，不影响正式业务
+		86 container
+			87 button 数据来源
+			88 button 恢复演示数据
+		89 button 返回来源：表单与工作流
+			90 text 返回来源：
+			91 text 表单与工作流
+		92 text 可从列表继续办理原单
+		93 container
+			120 text 开户申请 / 未提交草稿
+			121 heading 我的开户草稿, Value: 1
+				122 text 我的开户草稿
+			123 text 草稿仅创建人可查看和继续填写；负责商务在申请中单独指定。
+			124 button 返回申请列表
+			125 button 新增开户
+			126 button 未提交草稿（1）
+				127 text 未提交草稿（
+				128 text 1
+				129 text ）
+			130 button 已删除（0）
+				131 text 已删除（
+				132 text 0
+				133 text ）
+			134 heading 本人未提交草稿, Value: 2
+				135 text 本人未提交草稿
+			136 text 列表视图
+			137 pop up button (collapsed, settable) Description: 列表显示密度, Value: 舒适间距, Secondary Actions: Expand
+				138 menu
+					139 (selected) 舒适间距
+					140 紧凑间距
+			141 button 列设置与排序
+			142 table
+				143 row
+					144 cell
+						145 button 按客户排序
+					146 cell
+						147 button 按主体 / 产品排序
+					148 cell
+						149 button 按开户数量排序
+					150 cell
+						151 button 按更新时间排序
+					152 cell
+						153 text 操作
+				154 row
+					155 cell
+						156 text 开户续办验收0922
+					157 cell
+						158 text 开户续办验收有限公司
+						159 text 本地推
+					160 cell
+						161 text 10 个
+					162 cell
+						163 text 2026/9/22 09:23:43
+					164 cell
+						165 container
+							166 button 继续填写
+							167 button 另存为新草稿
+							168 button 删除草稿
+			169 text 共  1  条
+			170 pop up button (collapsed, settable) Description: 每页条数, Value: 每页 10 条, Secondary Actions: Expand
+				171 menu
+					172 (selected) 每页 10 条
+					173 每页 20 条
+					174 每页 50 条
+			175 button (disabled) 上一页
+			176 text 1  /  1
+			177 button (disabled) 下一页
+		112 container
+			113 text M06  ·  开户申请、预审与逐行办理
+			114 button 查看本页业务规则
+			115 text 本地演示环境
+
+The focused UI element is 73 pop up button (collapsed, settable) Description: 切换角色, Value: 商务, Secondary Actions: Expand

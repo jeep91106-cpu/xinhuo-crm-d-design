@@ -1,0 +1,50 @@
+{
+  "version": "1.5",
+  "base_sha": "d97426cf6f6e289ef27b60f42aeabcc11d5185b2",
+  "source_prd": "D:\\PROJECT\\薪火CRM系统\\重构调研\\PRD评审稿-20260921\\薪火CRM-完整PRD-V1.0.md",
+  "source_sha256": "83eb8f044da7223a76f0a9e16e8f1b8a4650b3f0685c66e8b895529fc72e307f",
+  "modules": 40,
+  "figures": 24,
+  "updated_figures": [
+    "5-1",
+    "5-9",
+    "4-2",
+    "7-1",
+    "4-3",
+    "4-4",
+    "4-5",
+    "4-6",
+    "4-7",
+    "4-8",
+    "4-9",
+    "4-10"
+  ],
+  "module_acceptance_cases": 138,
+  "ui_acceptance_cases": 40,
+  "production_access": false,
+  "ui_tests_claimed": false,
+  "status": "完整修订评审稿；文档检查另附",
+  "revision_base_sha": "505572f4ebbec3ccb23511ee958fa2a4b48bddb0",
+  "revision_reason": "个人多份草稿、按申请聚合且个人已读的通知、Excel TSV预览填表",
+  "revision_figures": [
+    "4-2",
+    "4-9"
+  ],
+  "revision_modules": [
+    "M01",
+    "M06",
+    "M35"
+  ],
+  "role_view_revision": {
+    "base_sha": "876b879eefbe4cb5fea667d821e6b669f21d9b26",
+    "modules": [
+      "M01",
+      "M06"
+    ],
+    "figures": [
+      "4-2"
+    ],
+    "reason": "按商务、媒介主管、开户媒介组织页面范围和字段重点，同一申请稳定关联，他人只读",
+    "ui_tests_claimed": false
+  }
+}

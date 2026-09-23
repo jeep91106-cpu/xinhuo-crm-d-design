@@ -1,0 +1,272 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 57,
+    "sha256": "ff4bacffca31df450ba3ff5d7ceea8a86359a4761a932e549dc10de2da421fff"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 14,
+    "sha256": "6252093f8103b25bf77e3171bfc9952ba9c964480ae8f326dc9c4bb12e6aea28"
+  },
+  {
+    "path": "build-info.json",
+    "bytes": 1329,
+    "sha256": "07baa5eae2ada38578bb4a2a021f78e587f00ce28164229a0618e476be2dbec0"
+  },
+  {
+    "path": "modules.json",
+    "bytes": 76861,
+    "sha256": "26bd1ceecb751a0ed891131a980df94858095f3724e288b3a6b474c29abe1295"
+  },
+  {
+    "path": "pg-prd.config.yaml",
+    "bytes": 447,
+    "sha256": "6c5510ddf7fb9f1329b895575fada7cd638ca9e562def8a78227a256d0737179"
+  },
+  {
+    "path": "PRD修订补充-V1.2-20260922.md",
+    "bytes": 9488,
+    "sha256": "00055c70fd16a913b3446c9c771714d896d9e4c500db3f9e7251c05c572b036b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5673,
+    "sha256": "91fdca985adf96dbd5fffed69bc88009c3ad99f4c8f48446865d6beef333e801"
+  },
+  {
+    "path": "sources.json",
+    "bytes": 7692,
+    "sha256": "ce0eb0f7a87b2713e8d5d98d69167f9c84fef50cedf2e3a641711d554bafb89e"
+  },
+  {
+    "path": "方法论检查与执行说明.md",
+    "bytes": 3327,
+    "sha256": "17dcbf4408824345d864f5cf7cb27005b2ec89b229ecc146c5ae044901623bcb"
+  },
+  {
+    "path": "最新修订阅读指引-20260922.md",
+    "bytes": 5547,
+    "sha256": "07a011b19a0ba631bd50a320cedb733e3f7b76e85ada75ac9fb03f7725ab2262"
+  },
+  {
+    "path": "未变业务核对.json",
+    "bytes": 3478,
+    "sha256": "b45663dfda942c3898d735f5ab7cbcd90b549896f857071b2dc57c0d097af0c9"
+  },
+  {
+    "path": "薪火CRM-完整PRD-V1.0.docx",
+    "bytes": 4630084,
+    "sha256": "cb60ad00a6baf9ffa9dd2e5ee4b87351c8aa283912e77e1c6c28cff2523bf6b1"
+  },
+  {
+    "path": "薪火CRM-完整PRD-V1.0.html",
+    "bytes": 251256,
+    "sha256": "1149922f6ca2d0bdf1728ceedbec46fdbb2dc3efd301b198a66dd9b23137920d"
+  },
+  {
+    "path": "薪火CRM-完整PRD-V1.0.md",
+    "bytes": 198219,
+    "sha256": "bf8028efdb3073dbecee6cb8088f927c4485c118f7fb4b2f5a5396a8853cc997"
+  },
+  {
+    "path": "薪火CRM-完整PRD-V1.0.pdf",
+    "bytes": 5089257,
+    "sha256": "9b629a09219a2833067225ff00b033856354446fa38c4c17d8d9eb7f973e4cd1"
+  },
+  {
+    "path": "质量检查记录.json",
+    "bytes": 683,
+    "sha256": "009a5517471436d897e58077c4b677351bc84db0da9033d53cda6e5f2c2f3ed8"
+  },
+  {
+    "path": "质量检查记录.md",
+    "bytes": 994,
+    "sha256": "49e31619d734463008670802e6f7e12fb2a76d43b5a97e5b6f089435084acda6"
+  },
+  {
+    "path": "assets/current-figures.json",
+    "bytes": 2165,
+    "sha256": "beaae50496cf4adfc66cac988cbe6e3a5f1bd487ebb137e0cbe95503051d1483"
+  },
+  {
+    "path": "assets/diagram-checks-v12.json",
+    "bytes": 11022,
+    "sha256": "7e4014ca57518535598b89384053af40e911ff29362694086ca4b4e4be1f61ca"
+  },
+  {
+    "path": "assets/fig-12-1.png",
+    "bytes": 126041,
+    "sha256": "2eba90f0519bad7d4d3db8253ae4bb92c90593f1b1782a758fe19a0cda5206bd"
+  },
+  {
+    "path": "assets/fig-4-1.png",
+    "bytes": 173858,
+    "sha256": "4b614f1612e526cfa37269eda2b08a7d7f2a0547f11d21e7af3a5cab3b060552"
+  },
+  {
+    "path": "assets/fig-4-10.png",
+    "bytes": 254113,
+    "sha256": "bcec117e7429c2630a8d4bf53b0cfdac87150c9ae1ac4e9efa64b6655a0071ab"
+  },
+  {
+    "path": "assets/fig-4-2.png",
+    "bytes": 287299,
+    "sha256": "25dc9bfca1bfbbf6731c68c32ba01fecd57c4fda75bb861615355f4e52ab63aa"
+  },
+  {
+    "path": "assets/fig-4-3.png",
+    "bytes": 219562,
+    "sha256": "6da5c48d604bdcec7f5f1891f147c1b7fb44849dbe18eefc1d4006a99243afae"
+  },
+  {
+    "path": "assets/fig-4-4.png",
+    "bytes": 219261,
+    "sha256": "f513f1814c0dbb8e01478039aeb039f3f958d56082e3c26cbde53a17cc0aa706"
+  },
+  {
+    "path": "assets/fig-4-5.png",
+    "bytes": 250313,
+    "sha256": "3769fd6ae24e63ab485e7c04484dacb81d4f2f79106e3e0768cdc232c9597798"
+  },
+  {
+    "path": "assets/fig-4-6.png",
+    "bytes": 251218,
+    "sha256": "d70d9da6f5bf0dcff0e6b152861ee2eea168c32906e7b0b9d0270b8333198558"
+  },
+  {
+    "path": "assets/fig-4-7.png",
+    "bytes": 253101,
+    "sha256": "bcc427b3e5dc80db2e3d457bb093cb81ceff9764d7f7f3c068ebf47d72978e6c"
+  },
+  {
+    "path": "assets/fig-4-8.png",
+    "bytes": 212465,
+    "sha256": "d27d9b2e99aa5ed595b95bb754681e688fc368440a856622a6da1206c53de540"
+  },
+  {
+    "path": "assets/fig-4-9.png",
+    "bytes": 284622,
+    "sha256": "f56fa2530ba4e90a249695a96aedf51f4947cc0d04040743ea8735dbd531a3bc"
+  },
+  {
+    "path": "assets/fig-5-1.png",
+    "bytes": 171610,
+    "sha256": "75c593717a85408cb4a44235a4ff9648af62eed1c64a4a15a94a554cb0e01625"
+  },
+  {
+    "path": "assets/fig-5-10.png",
+    "bytes": 211025,
+    "sha256": "39887deb6fd9cd495e834551d164bb5586c54466a4a57ed3f61d3fd109a14e5c"
+  },
+  {
+    "path": "assets/fig-5-2.png",
+    "bytes": 176759,
+    "sha256": "5471f5a0ae1831f729e5260b93af2166d86e1a66a18384807988af10701769ed"
+  },
+  {
+    "path": "assets/fig-5-3.png",
+    "bytes": 175164,
+    "sha256": "e3374f940096abae9969835b0fb4562444f46569c77a72a00a151d8e0566ad10"
+  },
+  {
+    "path": "assets/fig-5-4.png",
+    "bytes": 164180,
+    "sha256": "825f990e180b343503b0474f414e7f582aecd60ca1cb106782dc7a53f92fe07d"
+  },
+  {
+    "path": "assets/fig-5-5.png",
+    "bytes": 168277,
+    "sha256": "c29f4415a78c5bd390efadcc065c1db467a069c510febcaf83c814e026b5cd23"
+  },
+  {
+    "path": "assets/fig-5-6.png",
+    "bytes": 173490,
+    "sha256": "9aa77a88076f7e6a62195f7ef51b0bf8576d3dabcb76038bf1f208fd70b45fc1"
+  },
+  {
+    "path": "assets/fig-5-7.png",
+    "bytes": 161904,
+    "sha256": "a6e755386e656d0837e8ab82578c55ce97d61526f655c9bb026c1c1282857411"
+  },
+  {
+    "path": "assets/fig-5-8.png",
+    "bytes": 165548,
+    "sha256": "a2076ac04f23693355f2592764849e6118504bbdc8bf9b6a0d6001631933d4a4"
+  },
+  {
+    "path": "assets/fig-5-9.png",
+    "bytes": 210224,
+    "sha256": "3d8bb47f7f673804ac457a3906e060aa9a65dfd05217800897c1621ba15fd84a"
+  },
+  {
+    "path": "assets/fig-6-1.png",
+    "bytes": 151371,
+    "sha256": "76993f4cb0f8f5a1d6258c93f37038dddda5534f87cdc76147030fc1e34e3449"
+  },
+  {
+    "path": "assets/fig-7-1.png",
+    "bytes": 132722,
+    "sha256": "34700b4a4a831b93d0a02de7f1c33bfb28ffe720dad85273d828a957f4e49478"
+  },
+  {
+    "path": "assets/fig-7-2.png",
+    "bytes": 159687,
+    "sha256": "7e8989ba9ca1de0ea95831be21fbba6bfea0001647f5b7821ed9724b9421b943"
+  },
+  {
+    "path": "assets/figures.json",
+    "bytes": 7222,
+    "sha256": "34f35b937ec272f3c7299ff2fc61a33db7c3f3667dc36b78d5774e95b8adbbaa"
+  },
+  {
+    "path": "scripts/build_prd.py",
+    "bytes": 806,
+    "sha256": "de798d51b5f206cbb1b50101725c62320be166555af97a01fb935c22c94e9156"
+  },
+  {
+    "path": "scripts/check_prd.py",
+    "bytes": 7642,
+    "sha256": "7a70a7c129bd115c5941d323e3ba4898108ef43c43ee67b4f4adfd3d7552112d"
+  },
+  {
+    "path": "scripts/diagram_helpers.py",
+    "bytes": 7536,
+    "sha256": "2bd8a047345f1058d3d251b42731a8f1da617e9088a06299b94602c4bcc6ccc5"
+  },
+  {
+    "path": "scripts/draw_current_figures.py",
+    "bytes": 12337,
+    "sha256": "ee4cc10963d94b3e8699b046cc865c6fd79455f25a66f6ff007cfb22a8968b30"
+  },
+  {
+    "path": "scripts/draw_figures.py",
+    "bytes": 775,
+    "sha256": "a021a5f0a77dae0ba7612f5a1f82cc80c15294472068fa8cfcbc396f5700ad01"
+  },
+  {
+    "path": "scripts/package_prd.py",
+    "bytes": 5107,
+    "sha256": "4d03e1482f8e53943d5b57e690426a9874d73f9f046a298abcde8679333ddc7a"
+  },
+  {
+    "path": "scripts/render_pdf.py",
+    "bytes": 4067,
+    "sha256": "dda15ba8c8a0ab65d53e5db5f034d1cdd440df601d64035be297b84ba071e5d9"
+  },
+  {
+    "path": "scripts/render_prd.py",
+    "bytes": 7102,
+    "sha256": "7188c60fd3686530eee3ca35a17d21e6d8fa1ebc72194990bbd5d65678d4bba7"
+  },
+  {
+    "path": "scripts/render_review.py",
+    "bytes": 217,
+    "sha256": "0938e34cd45c884d4a02642ae11c260da884308a77fcefd5fce006aa834cfff3"
+  },
+  {
+    "path": "scripts/requirements.txt",
+    "bytes": 56,
+    "sha256": "e97931a6fb96058524301ed6160743c309bedde4bfedbeebf61614dfb837207c"
+  }
+]

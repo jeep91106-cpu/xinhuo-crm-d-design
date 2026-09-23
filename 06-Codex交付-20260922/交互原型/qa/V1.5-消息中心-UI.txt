@@ -1,0 +1,273 @@
+Browser tab: 1100906508, Title: "薪火 CRM · 完整交互评审原型", URL: "http://127.0.0.1:4318/#M35".
+0 AXWebArea 薪火 CRM · 完整交互评审原型, URL: 127.0.0.1:4318/#M35
+	1 container root
+		2 container
+			3 text 薪火 CRM 业务协作工作空间 业务导航
+			4 text field (settable) 查找功能菜单
+			5 text 当前位置 站内信与企微
+			6 container 业务功能导航
+				7 container 工作与公共资料
+					8 heading 工作与公共资料, Value: 2
+						9 text 工作与公共资料
+					10 button 个人工作台
+					11 button 客户与全局检索
+					12 button 主体与店铺档案
+					13 button 供应商与能力
+					14 button 广告账户总表
+					15 button 开户申请与办理
+					18 button 复制资料开户
+					19 button 归属交接与协办
+				20 container 资金与业务结算
+					21 heading 资金与业务结算, Value: 2
+						22 text 资金与业务结算
+					23 button 到账与认领
+					24 button 客户 / 渠道总账
+					25 button 授信与欠款
+					26 button 广告账户充值
+					27 button 续费业务
+					28 button 平台退币
+					29 button 客户现金退款
+					30 button 渠道 CRM 转账
+					31 button 平台余额转户
+					32 button 供应商往来
+					33 button 返点与服务费
+					34 button 合同档案
+					35 button 开票办理
+					36 button 对账与差异
+				37 container 经营与协作
+					38 heading 经营与协作, Value: 2
+						39 text 经营与协作
+					40 button 报销与采购
+					41 button 消耗与匹配
+					42 button 经营报表
+					43 button 收益与提成
+					44 button 激励政策
+					45 button 素材与绩效
+					46 button 公海与跟进
+				47 container 人事行政
+					48 heading 人事行政, Value: 2
+						49 text 人事行政
+					50 button 员工与任职
+					51 button 考勤与休假
+					52 button 薪资管理
+					53 button 考核与目标
+				54 container 配置与控制
+					55 heading 配置与控制, Value: 2
+						56 text 配置与控制
+					57 button 角色与权限
+					58 button 表单与工作流
+					59 button 站内信与企微 当前
+						120 text 站内信与企微
+						121 text 当前
+					60 button 导入导出与附件
+					61 button 迁移与历史核对
+					62 button 审计与业务期间
+					63 button 同步与任务
+			64 button 功能目录与说明
+			65 text 薪火 CRM
+		66 container
+			67 text 配置与控制 站内信与企微
+			68 text field (settable) 全局搜索
+			69 button 搜索
+			70 button 消息 8
+				71 text 消息
+				72 text 8
+			73 pop up button (collapsed, settable) Description: 切换角色, Value: 商务, Secondary Actions: Expand
+				74 menu
+					75 (selected) 商务
+					76 渠道商务
+					77 商务主管
+					78 媒介主管
+					79 开户媒介
+					80 充值媒介
+					81 财务
+					82 Boss
+					83 人事
+					84 系统管理员
+			116 pop up button (collapsed, settable) Description: 切换商务身份, Value: 商务 A, Secondary Actions: Expand
+				117 menu
+					118 (selected) 商务 A
+					119 商务 B
+		85 text 演示环境  · 操作仅保存在本机，不影响正式业务
+		86 container
+			87 button 数据来源
+			88 button 恢复演示数据
+		89 button 返回来源：开户申请与办理
+			90 text 返回来源：
+			91 text 开户申请与办理
+		92 text 可从列表继续办理原单
+		93 container
+			122 text 协作与集成 / M35
+			123 heading 消息中心, Value: 1
+				124 text 消息中心
+			125 text 同一开户申请合并展示最新进度，可直接回到原申请继续办理。
+			126 pop up button (collapsed, settable) Description: 通知阅读状态, Value: 全部, Secondary Actions: Expand
+				127 menu
+					128 (selected) 全部
+					129 未读
+			130 text 共  9  条 · 未读  8  条
+			131 button 当前范围全部标记已读
+			132 heading 站内通知, Value: 2
+				133 text 站内通知
+			134 text 列表视图
+			135 pop up button (collapsed, settable) Description: 列表显示密度, Value: 舒适间距, Secondary Actions: Expand
+				136 menu
+					137 (selected) 舒适间距
+					138 紧凑间距
+			139 button 列设置与排序
+			140 table
+				141 row
+					142 cell
+						143 button 按消息与进度排序
+					144 cell
+						145 button 按当前状态排序
+					146 cell
+						147 button 按时间排序
+					148 cell
+						149 text 阅读状态
+					150 cell
+						151 text 操作
+				152 row
+					153 cell
+						154 text 开户配置 v4 已发布，仅新申请生效
+					155 cell
+						156 text —
+					157 cell
+						158 text 2026/9/22 09:33:29
+					159 cell
+						160 text 未读
+					161 cell
+						162 button 标记已读
+						163 button 打开业务列表
+				164 row
+					165 cell
+						166 container
+							167 text 开户续办验收0922  ·  开户续办体验店
+						168 container
+							169 text 本地推  · 申请  10  个 · 成功  10  个 · 待办  0  个 · 纵横待补  10  个
+						170 text 申请单号： KH-mucpmj7j-2962
+					171 cell
+						172 text 开户已完成
+					173 cell
+						174 text 2026/9/22 09:32:26
+					175 cell
+						176 text 已读
+					177 cell
+						178 button (disabled) 标记已读
+						179 button 打开开户申请
+				180 row
+					181 cell
+						182 text 开户配置 v3 已发布，仅新申请生效
+					183 cell
+						184 text —
+					185 cell
+						186 text 2026/9/22 09:28:16
+					187 cell
+						188 text 未读
+					189 cell
+						190 button 标记已读
+						191 button 打开业务列表
+				192 row
+					193 cell
+						194 container
+							195 text 开户续办验收0922  ·  开户续办体验店
+						196 container
+							197 text 本地推  · 申请  10  个 · 成功  10  个 · 待办  0  个 · 纵横待补  10  个
+						198 text 申请单号： KH-mucikrms-25h0
+					199 cell
+						200 text 开户已完成
+					201 cell
+						202 text 2026/9/22 06:19:27
+					203 cell
+						204 text 未读
+					205 cell
+						206 button 标记已读
+						207 button 打开开户申请
+				208 row
+					209 cell
+						210 container
+							211 text 开户续办验收0922  ·  开户续办体验店
+						212 container
+							213 text 本地推  · 申请  5  个 · 成功  5  个 · 待办  0  个 · 纵横待补  0  个
+						214 text 申请单号： KH-mucg6lhk-ftig
+					215 cell
+						216 text 开户已完成
+					217 cell
+						218 text 2026/9/22 05:06:09
+					219 cell
+						220 text 未读
+					221 cell
+						222 button 标记已读
+						223 button 打开开户申请
+				224 row
+					225 cell
+						226 container
+							227 text 薪火验收演示客户0922  ·  薪火验收演示店
+						228 container
+							229 text 本地推  · 申请  1  个 · 成功  1  个 · 待办  0  个 · 纵横待补  1  个
+						230 text 申请单号： KH-mucd1wam-lkd5
+					231 cell
+						232 text 开户已完成
+					233 cell
+						234 text 2026/9/22 03:36:37
+					235 cell
+						236 text 未读
+					237 cell
+						238 button 标记已读
+						239 button 打开开户申请
+				240 row
+					241 cell
+						242 text 开户配置 v2 已发布，仅新申请生效
+					243 cell
+						244 text —
+					245 cell
+						246 text 2026/9/22 03:33:53
+					247 cell
+						248 text 未读
+					249 cell
+						250 button 标记已读
+						251 button 打开业务列表
+				252 row
+					253 cell
+						254 container
+							255 text 薪火验收演示客户0922  ·  薪火验收演示店
+						256 container
+							257 text 本地推  · 申请  2  个 · 成功  2  个 · 待办  0  个 · 纵横待补  2  个
+						258 text 申请单号： KH-muccsw49-9sm6
+					259 cell
+						260 text 开户已完成
+					261 cell
+						262 text 2026/9/22 03:29:37
+					263 cell
+						264 text 未读
+					265 cell
+						266 button 标记已读
+						267 button 打开开户申请
+				268 row
+					269 cell
+						270 text 新一轮原型评审：真实历史样本与本地演示已分开
+					271 cell
+						272 text —
+					273 cell
+						274 text 2026/9/22 03:22:33
+					275 cell
+						276 text 未读
+					277 cell
+						278 button 标记已读
+						279 button 打开业务列表
+			280 text 共  9  条
+			281 pop up button (collapsed, settable) Description: 每页条数, Value: 每页 10 条, Secondary Actions: Expand
+				282 menu
+					283 (selected) 每页 10 条
+					284 每页 20 条
+					285 每页 50 条
+			286 button (disabled) 上一页
+			287 text 1  /  1
+			288 button (disabled) 下一页
+			289 text 已读只记录本人阅读状态，不代表业务已办理。申请进度变化后会再次提醒。
+		112 container
+			113 text M35  ·  站内信、企微审批与机器人
+			114 button 查看本页业务规则
+			115 text 本地演示环境
+
+The focused UI element is 73 pop up button (collapsed, settable) Description: 切换角色, Value: 商务, Secondary Actions: Expand

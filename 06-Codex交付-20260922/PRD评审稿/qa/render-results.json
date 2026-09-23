@@ -1,0 +1,33 @@
+[
+  {
+    "file": "preview-4-2.html",
+    "returncode": 0,
+    "image_exists": true
+  },
+  {
+    "file": "preview-4-3.html",
+    "returncode": 0,
+    "image_exists": true
+  },
+  {
+    "file": "preview-4-10.html",
+    "returncode": 0,
+    "image_exists": true
+  },
+  {
+    "file": "preview-5-9.html",
+    "returncode": 0,
+    "image_exists": true
+  },
+  {
+    "file": "薪火CRM-完整PRD-V1.0.pdf",
+    "returncode": 0,
+    "pdf_exists": true
+  },
+  {
+    "pdf_pages": 99,
+    "images_on_pages": 24,
+    "extractable_characters": 52133,
+    "text_empty_pages": []
+  }
+]

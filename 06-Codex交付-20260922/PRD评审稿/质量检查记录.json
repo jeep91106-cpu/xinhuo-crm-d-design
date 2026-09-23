@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "chapters": 14,
+  "modules": 40,
+  "six_elements": "all 40 passed",
+  "figures": 24,
+  "docx_images": 24,
+  "max_docx_image_width_cm": 13.8,
+  "html_explicit_image_dimensions": true,
+  "old_rule_scan": "passed",
+  "subject_shop_reuse_contract": "four formats passed",
+  "v13_media_flow_contract": "four formats passed",
+  "role_specific_opening_views": "four formats passed",
+  "v14_batch_opening_contract": "four formats passed",
+  "v15_drafts_notifications_tsv_contract": "four formats passed",
+  "pdf": {
+    "generated": true,
+    "pages": 80,
+    "text_readback": true
+  },
+  "browser_ui_test": false,
+  "production_test": false
+}

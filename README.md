@@ -12,6 +12,12 @@ git clone https://github.com/jeep91106-cpu/xinhuo-crm-d-design.git
 
 读取和写入均沿用现有 GitHub 私有仓库权限。不要把生产 dump、`.env`、客户明细拷进本仓库。
 
+## 这条分支
+
+`cursor/原型图文档` 从 `main` 拉出，专门给 Cursor 继续改原型和文档。`main` 上 9 月 16 日的需求一页纸、短 PRD 和 `02-原型` 都还在，没有被覆盖。
+
+Codex 已验收的 V1.5 原型和完整 PRD 在 [06-Codex交付-20260922](06-Codex交付-20260922/README.md)。Cursor 当前工作副本路径是 `D:\PROJECT\CRM-需求阶段`。
+
 ## 先读什么
 
 | 顺序 | 文件 | 用途 |

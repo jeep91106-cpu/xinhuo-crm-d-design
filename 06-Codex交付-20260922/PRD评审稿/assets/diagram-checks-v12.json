@@ -1,0 +1,578 @@
+{
+  "status": "NO OVERLAP ISSUES",
+  "checks": [
+    {
+      "id": "5-1",
+      "nodes": 6,
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "meaning": "提交原单",
+          "path": [
+            [
+              370,
+              315
+            ],
+            [
+              400,
+              315
+            ],
+            [
+              400,
+              320
+            ],
+            [
+              440,
+              320
+            ],
+            [
+              470,
+              320
+            ],
+            [
+              470,
+              315
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": false
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "meaning": "指派",
+          "path": [
+            [
+              770,
+              315
+            ],
+            [
+              800,
+              315
+            ],
+            [
+              800,
+              320
+            ],
+            [
+              840,
+              320
+            ],
+            [
+              870,
+              320
+            ],
+            [
+              870,
+              315
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "meaning": "保存",
+          "path": [
+            [
+              1170,
+              315
+            ],
+            [
+              1200,
+              315
+            ],
+            [
+              1200,
+              320
+            ],
+            [
+              1240,
+              320
+            ],
+            [
+              1270,
+              320
+            ],
+            [
+              1270,
+              315
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "meaning": "行结果闭合",
+          "path": [
+            [
+              1420,
+              400
+            ],
+            [
+              1420,
+              440
+            ],
+            [
+              1020,
+              440
+            ],
+            [
+              1020,
+              680
+            ],
+            [
+              1020,
+              720
+            ]
+          ],
+          "anchorSides": [
+            "B",
+            "T"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "meaning": "显式收尾",
+          "path": [
+            [
+              1170,
+              815
+            ],
+            [
+              1200,
+              815
+            ],
+            [
+              1200,
+              820
+            ],
+            [
+              1240,
+              820
+            ],
+            [
+              1270,
+              820
+            ],
+            [
+              1270,
+              815
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": false
+        }
+      ],
+      "nodeOverlap": false,
+      "arrowThroughUnrelatedNode": false,
+      "textOverflow": false
+    },
+    {
+      "id": "5-9",
+      "nodes": 6,
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "meaning": "选中登记",
+          "path": [
+            [
+              440,
+              285
+            ],
+            [
+              650,
+              285
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "meaning": "全部通过",
+          "path": [
+            [
+              1010,
+              285
+            ],
+            [
+              1220,
+              285
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "meaning": "任一失败",
+          "path": [
+            [
+              830,
+              370
+            ],
+            [
+              830,
+              500
+            ],
+            [
+              480,
+              500
+            ],
+            [
+              480,
+              720
+            ],
+            [
+              440,
+              720
+            ]
+          ],
+          "anchorSides": [
+            "L",
+            "R"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "D",
+          "to": "A",
+          "meaning": "修正输入",
+          "path": [
+            [
+              260,
+              630
+            ],
+            [
+              260,
+              370
+            ]
+          ],
+          "anchorSides": [
+            "T",
+            "B"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "meaning": "仍有余行",
+          "path": [
+            [
+              1400,
+              370
+            ],
+            [
+              1400,
+              460
+            ],
+            [
+              1090,
+              460
+            ],
+            [
+              1090,
+              720
+            ],
+            [
+              1010,
+              720
+            ]
+          ],
+          "anchorSides": [
+            "L",
+            "R"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "E",
+          "to": "A",
+          "meaning": "继续填",
+          "path": [
+            [
+              830,
+              630
+            ],
+            [
+              830,
+              550
+            ],
+            [
+              550,
+              550
+            ],
+            [
+              550,
+              145
+            ],
+            [
+              260,
+              145
+            ],
+            [
+              260,
+              200
+            ]
+          ],
+          "anchorSides": [
+            "L",
+            "R"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "C",
+          "to": "F",
+          "meaning": "全部行闭合",
+          "path": [
+            [
+              1460,
+              370
+            ],
+            [
+              1460,
+              630
+            ]
+          ],
+          "anchorSides": [
+            "B",
+            "T"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "meaning": "余行处理完",
+          "path": [
+            [
+              1010,
+              760
+            ],
+            [
+              1220,
+              760
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        }
+      ],
+      "nodeOverlap": false,
+      "arrowThroughUnrelatedNode": false,
+      "textOverflow": false
+    },
+    {
+      "id": "7-1",
+      "nodes": 6,
+      "edges": [
+        {
+          "from": "客户",
+          "to": "主体",
+          "meaning": "1:N",
+          "path": [
+            [
+              440,
+              280
+            ],
+            [
+              480,
+              280
+            ],
+            [
+              640,
+              280
+            ],
+            [
+              660,
+              280
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "主体",
+          "to": "店铺",
+          "meaning": "1:1",
+          "path": [
+            [
+              1020,
+              280
+            ],
+            [
+              1040,
+              280
+            ],
+            [
+              1200,
+              280
+            ],
+            [
+              1240,
+              280
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "主体",
+          "to": "直客",
+          "meaning": "1:1",
+          "path": [
+            [
+              840,
+              360
+            ],
+            [
+              840,
+              400
+            ],
+            [
+              840,
+              560
+            ],
+            [
+              840,
+              600
+            ]
+          ],
+          "anchorSides": [
+            "B",
+            "T"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "直客",
+          "to": "账户",
+          "meaning": "同主体共享",
+          "path": [
+            [
+              1020,
+              680
+            ],
+            [
+              1040,
+              680
+            ],
+            [
+              1200,
+              680
+            ],
+            [
+              1240,
+              680
+            ]
+          ],
+          "anchorSides": [
+            "R",
+            "L"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "店铺",
+          "to": "账户",
+          "meaning": "同店共享",
+          "path": [
+            [
+              1420,
+              360
+            ],
+            [
+              1420,
+              400
+            ],
+            [
+              1420,
+              560
+            ],
+            [
+              1420,
+              600
+            ]
+          ],
+          "anchorSides": [
+            "B",
+            "T"
+          ],
+          "onEdgeLabel": true
+        },
+        {
+          "from": "账户",
+          "to": "纵横",
+          "meaning": "非空1:1",
+          "path": [
+            [
+              1420,
+              760
+            ],
+            [
+              1420,
+              800
+            ],
+            [
+              1420,
+              960
+            ],
+            [
+              1420,
+              1000
+            ]
+          ],
+          "anchorSides": [
+            "B",
+            "T"
+          ],
+          "onEdgeLabel": true
+        }
+      ],
+      "nodeOverlap": false,
+      "arrowThroughUnrelatedNode": false,
+      "textOverflow": false
+    }
+  ],
+  "figures": 12,
+  "wire_checks": "each rectangle pair and text bounds asserted"
+}

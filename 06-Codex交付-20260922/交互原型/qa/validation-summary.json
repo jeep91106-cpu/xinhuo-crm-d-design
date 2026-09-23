@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-22",
+  "scope": "local interactive review prototype; no production writes",
+  "checks": {
+    "model_navigation_modal_tests": {
+      "passed": 104,
+      "failed": 0,
+      "command": "npm test"
+    },
+    "render_tests": {
+      "passed": 24,
+      "failed": 0,
+      "modulesCovered": 40,
+      "command": "npm run test:render"
+    },
+    "sites_protection_tests": {
+      "passed": 4,
+      "failed": 0,
+      "command": "npm run test:sites"
+    },
+    "browser_module_pages": 40,
+    "browser_journeys": "qa/浏览器验收记录-20260922.md",
+    "build": "passed with existing >500kB bundle advisory",
+    "standalone_browser": "opened over authorized localhost and media Laike form verified",
+    "standalone_final_error_logs": 0
+  },
+  "standalone": {
+    "path": "交付/薪火CRM-完整可交互原型.html",
+    "bytes": 909810,
+    "sha256": "521fd1c3dcac42a0bfa4dbce41d6913c3c75d2076c7b249600ff3f59459fd172",
+    "externalScripts": 0,
+    "externalStyles": 0
+  },
+  "data": {
+    "customers": 14,
+    "subjects": 69,
+    "shops": 186,
+    "accounts": 215,
+    "suppliers": 7,
+    "source": "archived read-only queries and database snapshot; not current production"
+  },
+  "limitations": [
+    "file:// browser policy not bypassed",
+    "no production banking, media, WeCom or backend authorization",
+    "not all role/state/version combinations tested",
+    "baseline PRD V1.0 preserved; current V1.1 supplement governs listed corrections"
+  ]
+}

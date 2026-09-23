@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+qa/*.png
+*.log
+data-private/
+qa/*.mjs
+qa/*.pid
+交付/*.zip
